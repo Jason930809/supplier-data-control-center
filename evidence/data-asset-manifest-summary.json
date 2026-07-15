@@ -1,0 +1,3377 @@
+{
+  "generatedAt": "2026-07-15T14:47:04.072Z",
+  "snapshotOnly": true,
+  "scope": {
+    "root": "data",
+    "method": "只读文件元数据扫描；未打开或修改供应商数据内容",
+    "includes": [
+      "data/raw",
+      "data/processed",
+      "data/intermediate",
+      "data 根级散落文件"
+    ],
+    "excludes": [
+      "项目根目录其他文件",
+      "node_modules",
+      ".git",
+      "输出网站构建目录"
+    ],
+    "limitation": "文件名信号只能决定复核优先级，不能单独证明内容错误、重复或可删除。",
+    "liveGrowthCaveat": "Leftbank 仍在生成分片；文件数量是 generatedAt 时刻的快照，后续必须重新生成 manifest，不能把旧数字当实时总数。"
+  },
+  "totals": {
+    "files": 76613,
+    "bytes": 112778560688,
+    "gib": 105.03,
+    "signaledFiles": 55282,
+    "unregisteredOrLooseFiles": 9
+  },
+  "snapshotDelta": {
+    "previousGeneratedAt": "2026-07-15T14:46:32.251Z",
+    "previousFiles": 76395,
+    "filesAdded": 218,
+    "bytesAdded": 13858294
+  },
+  "manifest": {
+    "href": "evidence/data-asset-manifest-2026-07-15.csv.gz",
+    "compressedBytes": 1228840,
+    "sha256": "012ced447a516338d72c50189da05e1accbf20593fdd50b41aba5146247c9904",
+    "columns": [
+      "path",
+      "layer",
+      "supplierFolder",
+      "supplierName",
+      "sizeBytes",
+      "modifiedAt",
+      "extension",
+      "signals"
+    ]
+  },
+  "layers": [
+    {
+      "name": "processed",
+      "files": 51625,
+      "bytes": 104650533298
+    },
+    {
+      "name": "raw",
+      "files": 24933,
+      "bytes": 7635106615
+    },
+    {
+      "name": "intermediate",
+      "files": 54,
+      "bytes": 492910531
+    },
+    {
+      "name": "data-root",
+      "files": 1,
+      "bytes": 10244
+    }
+  ],
+  "supplierFolders": [
+    {
+      "name": "processed/leftbank-art",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "registration": "registered",
+      "files": 20722,
+      "bytes": 79620946584,
+      "signaledFiles": 20721
+    },
+    {
+      "name": "processed/ashley",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "registration": "registered",
+      "files": 6294,
+      "bytes": 4581304163,
+      "signaledFiles": 6293
+    },
+    {
+      "name": "processed/safavieh",
+      "layer": "processed",
+      "supplierFolder": "safavieh",
+      "supplierName": "Safavieh",
+      "registration": "registered",
+      "files": 1028,
+      "bytes": 4056646161,
+      "signaledFiles": 998
+    },
+    {
+      "name": "processed/accent-decor",
+      "layer": "processed",
+      "supplierFolder": "accent-decor",
+      "supplierName": "Accent Decor",
+      "registration": "registered",
+      "files": 5061,
+      "bytes": 2815490641,
+      "signaledFiles": 5060
+    },
+    {
+      "name": "processed/meridian",
+      "layer": "processed",
+      "supplierFolder": "meridian",
+      "supplierName": "Meridian",
+      "registration": "registered",
+      "files": 4057,
+      "bytes": 2237940700,
+      "signaledFiles": 14
+    },
+    {
+      "name": "processed/surya",
+      "layer": "processed",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "registration": "registered",
+      "files": 31,
+      "bytes": 1973613994,
+      "signaledFiles": 30
+    },
+    {
+      "name": "processed/bernhardt",
+      "layer": "processed",
+      "supplierFolder": "bernhardt",
+      "supplierName": "Bernhardt",
+      "registration": "registered",
+      "files": 1504,
+      "bytes": 1937860082,
+      "signaledFiles": 1503
+    },
+    {
+      "name": "processed/coaster",
+      "layer": "processed",
+      "supplierFolder": "coaster",
+      "supplierName": "Coaster",
+      "registration": "registered",
+      "files": 3869,
+      "bytes": 1802689070,
+      "signaledFiles": 3868
+    },
+    {
+      "name": "raw/surya",
+      "layer": "raw",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "registration": "registered",
+      "files": 5,
+      "bytes": 1658819590,
+      "signaledFiles": 5
+    },
+    {
+      "name": "raw/ashley",
+      "layer": "raw",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "registration": "registered",
+      "files": 349,
+      "bytes": 1421281172,
+      "signaledFiles": 349
+    },
+    {
+      "name": "processed/acme",
+      "layer": "processed",
+      "supplierFolder": "acme",
+      "supplierName": "ACME",
+      "registration": "registered",
+      "files": 3033,
+      "bytes": 1386865824,
+      "signaledFiles": 2088
+    },
+    {
+      "name": "raw/arteriors",
+      "layer": "raw",
+      "supplierFolder": "arteriors",
+      "supplierName": "Arteriors",
+      "registration": "registered",
+      "files": 8,
+      "bytes": 1374287147,
+      "signaledFiles": 8
+    },
+    {
+      "name": "processed/dvkap",
+      "layer": "processed",
+      "supplierFolder": "dvkap",
+      "supplierName": "DV Kap",
+      "registration": "registered",
+      "files": 1578,
+      "bytes": 699810192,
+      "signaledFiles": 1577
+    },
+    {
+      "name": "raw/meridian",
+      "layer": "raw",
+      "supplierFolder": "meridian",
+      "supplierName": "Meridian",
+      "registration": "registered",
+      "files": 13134,
+      "bytes": 649355945,
+      "signaledFiles": 3
+    },
+    {
+      "name": "processed/modway",
+      "layer": "processed",
+      "supplierFolder": "modway",
+      "supplierName": "Modway",
+      "registration": "registered",
+      "files": 12,
+      "bytes": 548959100,
+      "signaledFiles": 12
+    },
+    {
+      "name": "processed/vig",
+      "layer": "processed",
+      "supplierFolder": "vig",
+      "supplierName": "VIG",
+      "registration": "registered",
+      "files": 1168,
+      "bytes": 522507075,
+      "signaledFiles": 16
+    },
+    {
+      "name": "raw/acme",
+      "layer": "raw",
+      "supplierFolder": "acme",
+      "supplierName": "ACME",
+      "registration": "registered",
+      "files": 1342,
+      "bytes": 468637955,
+      "signaledFiles": 2
+    },
+    {
+      "name": "raw/leftbank-art",
+      "layer": "raw",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "registration": "registered",
+      "files": 11,
+      "bytes": 400979483,
+      "signaledFiles": 11
+    },
+    {
+      "name": "processed/fourhands",
+      "layer": "processed",
+      "supplierFolder": "fourhands",
+      "supplierName": "Four Hands",
+      "registration": "registered",
+      "files": 11,
+      "bytes": 355164176,
+      "signaledFiles": 11
+    },
+    {
+      "name": "raw/fourhands",
+      "layer": "raw",
+      "supplierFolder": "fourhands",
+      "supplierName": "Four Hands",
+      "registration": "registered",
+      "files": 7769,
+      "bytes": 339005879,
+      "signaledFiles": 7768
+    },
+    {
+      "name": "raw/deco-marche",
+      "layer": "raw",
+      "supplierFolder": "deco-marche",
+      "supplierName": "Deco Marche",
+      "registration": "registered",
+      "files": 4,
+      "bytes": 306618700,
+      "signaledFiles": 4
+    },
+    {
+      "name": "processed/sunpan",
+      "layer": "processed",
+      "supplierFolder": "sunpan",
+      "supplierName": "Sunpan",
+      "registration": "registered",
+      "files": 1669,
+      "bytes": 296095680,
+      "signaledFiles": 1668
+    },
+    {
+      "name": "processed/poundex",
+      "layer": "processed",
+      "supplierFolder": "poundex",
+      "supplierName": "Poundex",
+      "registration": "registered",
+      "files": 589,
+      "bytes": 292221954,
+      "signaledFiles": 15
+    },
+    {
+      "name": "intermediate/safavieh",
+      "layer": "intermediate",
+      "supplierFolder": "safavieh",
+      "supplierName": "Safavieh",
+      "registration": "registered",
+      "files": 2,
+      "bytes": 245843140,
+      "signaledFiles": 2
+    },
+    {
+      "name": "processed/phillips-collection",
+      "layer": "processed",
+      "supplierFolder": "phillips-collection",
+      "supplierName": "Phillips Collection",
+      "registration": "registered",
+      "files": 17,
+      "bytes": 184413820,
+      "signaledFiles": 17
+    },
+    {
+      "name": "processed/uttermost",
+      "layer": "processed",
+      "supplierFolder": "uttermost",
+      "supplierName": "Uttermost",
+      "registration": "registered",
+      "files": 16,
+      "bytes": 174629073,
+      "signaledFiles": 16
+    },
+    {
+      "name": "raw/dovetail",
+      "layer": "raw",
+      "supplierFolder": "dovetail",
+      "supplierName": "Dovetail",
+      "registration": "registered",
+      "files": 2,
+      "bytes": 169968751,
+      "signaledFiles": 2
+    },
+    {
+      "name": "processed/universal-furniture",
+      "layer": "processed",
+      "supplierFolder": "universal-furniture",
+      "supplierName": "Universal",
+      "registration": "registered",
+      "files": 275,
+      "bytes": 151604132,
+      "signaledFiles": 275
+    },
+    {
+      "name": "processed/classic-home",
+      "layer": "processed",
+      "supplierFolder": "classic-home",
+      "supplierName": "Classic Home",
+      "registration": "registered",
+      "files": 8,
+      "bytes": 133399012,
+      "signaledFiles": 8
+    },
+    {
+      "name": "processed/global-views",
+      "layer": "processed",
+      "supplierFolder": "global-views",
+      "supplierName": "Global Views",
+      "registration": "registered",
+      "files": 16,
+      "bytes": 127261306,
+      "signaledFiles": 16
+    },
+    {
+      "name": "raw/azzurro-living",
+      "layer": "raw",
+      "supplierFolder": "azzurro-living",
+      "supplierName": "Azzurro Living",
+      "registration": "registered",
+      "files": 4,
+      "bytes": 111153268,
+      "signaledFiles": 4
+    },
+    {
+      "name": "raw/modway",
+      "layer": "raw",
+      "supplierFolder": "modway",
+      "supplierName": "Modway",
+      "registration": "registered",
+      "files": 9,
+      "bytes": 108661273,
+      "signaledFiles": 9
+    },
+    {
+      "name": "processed/deco-marche",
+      "layer": "processed",
+      "supplierFolder": "deco-marche",
+      "supplierName": "Deco Marche",
+      "registration": "registered",
+      "files": 4,
+      "bytes": 103277156,
+      "signaledFiles": 4
+    },
+    {
+      "name": "processed/globalviews-surya",
+      "layer": "processed",
+      "supplierFolder": "globalviews-surya",
+      "supplierName": "Global Views / Surya 共用旧目录",
+      "registration": "legacy-alias",
+      "files": 2,
+      "bytes": 72832536,
+      "signaledFiles": 2
+    },
+    {
+      "name": "raw/furniture-of-america",
+      "layer": "raw",
+      "supplierFolder": "furniture-of-america",
+      "supplierName": "Furniture of America",
+      "registration": "registered",
+      "files": 1296,
+      "bytes": 72625462,
+      "signaledFiles": 1296
+    },
+    {
+      "name": "intermediate/dvkap",
+      "layer": "intermediate",
+      "supplierFolder": "dvkap",
+      "supplierName": "DV Kap",
+      "registration": "registered",
+      "files": 1,
+      "bytes": 68659347,
+      "signaledFiles": 1
+    },
+    {
+      "name": "processed/dovetail",
+      "layer": "processed",
+      "supplierFolder": "dovetail",
+      "supplierName": "Dovetail",
+      "registration": "registered",
+      "files": 4,
+      "bytes": 65550197,
+      "signaledFiles": 4
+    },
+    {
+      "name": "processed/john-richard",
+      "layer": "processed",
+      "supplierFolder": "john-richard",
+      "supplierName": "John Richard",
+      "registration": "registered",
+      "files": 8,
+      "bytes": 65118229,
+      "signaledFiles": 8
+    },
+    {
+      "name": "intermediate/accent-decor",
+      "layer": "intermediate",
+      "supplierFolder": "accent-decor",
+      "supplierName": "Accent Decor",
+      "registration": "registered",
+      "files": 5,
+      "bytes": 63567337,
+      "signaledFiles": 5
+    },
+    {
+      "name": "processed/tov",
+      "layer": "processed",
+      "supplierFolder": "tov",
+      "supplierName": "TOV",
+      "registration": "registered",
+      "files": 7,
+      "bytes": 62469759,
+      "signaledFiles": 7
+    },
+    {
+      "name": "raw/uttermost",
+      "layer": "raw",
+      "supplierFolder": "uttermost",
+      "supplierName": "Uttermost",
+      "registration": "registered",
+      "files": 2,
+      "bytes": 61595001,
+      "signaledFiles": 2
+    },
+    {
+      "name": "raw/dvkap",
+      "layer": "raw",
+      "supplierFolder": "dvkap",
+      "supplierName": "DV Kap",
+      "registration": "registered",
+      "files": 1,
+      "bytes": 59205843,
+      "signaledFiles": 1
+    },
+    {
+      "name": "processed/eichholtz",
+      "layer": "processed",
+      "supplierFolder": "eichholtz",
+      "supplierName": "Eichholtz",
+      "registration": "registered",
+      "files": 11,
+      "bytes": 55767900,
+      "signaledFiles": 9
+    },
+    {
+      "name": "processed/best-master-furniture",
+      "layer": "processed",
+      "supplierFolder": "best-master-furniture",
+      "supplierName": "Best Master Furniture",
+      "registration": "registered",
+      "files": 256,
+      "bytes": 54628138,
+      "signaledFiles": 256
+    },
+    {
+      "name": "processed/allstate",
+      "layer": "processed",
+      "supplierFolder": "allstate",
+      "supplierName": "Allstate",
+      "registration": "registered",
+      "files": 42,
+      "bytes": 54400754,
+      "signaledFiles": 41
+    },
+    {
+      "name": "raw/crestview-collection",
+      "layer": "raw",
+      "supplierFolder": "crestview-collection",
+      "supplierName": "Crestview Collection",
+      "registration": "registered",
+      "files": 1,
+      "bytes": 51760001,
+      "signaledFiles": 1
+    },
+    {
+      "name": "raw/classic-home",
+      "layer": "raw",
+      "supplierFolder": "classic-home",
+      "supplierName": "Classic Home",
+      "registration": "registered",
+      "files": 9,
+      "bytes": 50462339,
+      "signaledFiles": 9
+    },
+    {
+      "name": "raw/coaster",
+      "layer": "raw",
+      "supplierFolder": "coaster",
+      "supplierName": "Coaster",
+      "registration": "registered",
+      "files": 29,
+      "bytes": 44192357,
+      "signaledFiles": 29
+    },
+    {
+      "name": "processed/azzurro-living",
+      "layer": "processed",
+      "supplierFolder": "azzurro-living",
+      "supplierName": "Azzurro Living",
+      "registration": "registered",
+      "files": 233,
+      "bytes": 43845726,
+      "signaledFiles": 140
+    },
+    {
+      "name": "raw/bernhardt",
+      "layer": "raw",
+      "supplierFolder": "bernhardt",
+      "supplierName": "Bernhardt",
+      "registration": "registered",
+      "files": 5,
+      "bytes": 41620125,
+      "signaledFiles": 5
+    },
+    {
+      "name": "intermediate/vig",
+      "layer": "intermediate",
+      "supplierFolder": "vig",
+      "supplierName": "VIG",
+      "registration": "registered",
+      "files": 12,
+      "bytes": 40111329,
+      "signaledFiles": 12
+    },
+    {
+      "name": "raw/phillips-collection",
+      "layer": "raw",
+      "supplierFolder": "phillips-collection",
+      "supplierName": "Phillips Collection",
+      "registration": "registered",
+      "files": 898,
+      "bytes": 39674618,
+      "signaledFiles": 898
+    },
+    {
+      "name": "raw/eichholtz",
+      "layer": "raw",
+      "supplierFolder": "eichholtz",
+      "supplierName": "Eichholtz",
+      "registration": "registered",
+      "files": 3,
+      "bytes": 38875900,
+      "signaledFiles": 3
+    },
+    {
+      "name": "raw/global-views",
+      "layer": "raw",
+      "supplierFolder": "global-views",
+      "supplierName": "Global Views",
+      "registration": "registered",
+      "files": 2,
+      "bytes": 34419449,
+      "signaledFiles": 2
+    },
+    {
+      "name": "processed/furniture-of-america",
+      "layer": "processed",
+      "supplierFolder": "furniture-of-america",
+      "supplierName": "Furniture of America",
+      "registration": "registered",
+      "files": 6,
+      "bytes": 34170153,
+      "signaledFiles": 6
+    },
+    {
+      "name": "intermediate/furniture-of-america",
+      "layer": "intermediate",
+      "supplierFolder": "furniture-of-america",
+      "supplierName": "Furniture of America",
+      "registration": "registered",
+      "files": 8,
+      "bytes": 30627716,
+      "signaledFiles": 8
+    },
+    {
+      "name": "processed/arteriors",
+      "layer": "processed",
+      "supplierFolder": "arteriors",
+      "supplierName": "Arteriors",
+      "registration": "registered",
+      "files": 8,
+      "bytes": 30349217,
+      "signaledFiles": 8
+    },
+    {
+      "name": "processed/caracole",
+      "layer": "processed",
+      "supplierFolder": "caracole",
+      "supplierName": "Caracole",
+      "registration": "registered",
+      "files": 30,
+      "bytes": 27212916,
+      "signaledFiles": 30
+    },
+    {
+      "name": "processed/artmax",
+      "layer": "processed",
+      "supplierFolder": "artmax",
+      "supplierName": "Artmax",
+      "registration": "registered",
+      "files": 33,
+      "bytes": 25731824,
+      "signaledFiles": 33
+    },
+    {
+      "name": "raw/tov",
+      "layer": "raw",
+      "supplierFolder": "tov",
+      "supplierName": "TOV",
+      "registration": "registered",
+      "files": 14,
+      "bytes": 20078425,
+      "signaledFiles": 6
+    },
+    {
+      "name": "processed/noir",
+      "layer": "processed",
+      "supplierFolder": "noir",
+      "supplierName": "Noir",
+      "registration": "registered",
+      "files": 7,
+      "bytes": 18939089,
+      "signaledFiles": 7
+    },
+    {
+      "name": "raw/caracole",
+      "layer": "raw",
+      "supplierFolder": "caracole",
+      "supplierName": "Caracole",
+      "registration": "registered",
+      "files": 2,
+      "bytes": 18721293,
+      "signaledFiles": 2
+    },
+    {
+      "name": "raw/noir",
+      "layer": "raw",
+      "supplierFolder": "noir",
+      "supplierName": "Noir",
+      "registration": "registered",
+      "files": 1,
+      "bytes": 16434570,
+      "signaledFiles": 1
+    },
+    {
+      "name": "raw/sunpan",
+      "layer": "raw",
+      "supplierFolder": "sunpan",
+      "supplierName": "Sunpan",
+      "registration": "registered",
+      "files": 1,
+      "bytes": 16388431,
+      "signaledFiles": 1
+    },
+    {
+      "name": "processed/jonathan-charles",
+      "layer": "processed",
+      "supplierFolder": "jonathan-charles",
+      "supplierName": "Jonathan Charles",
+      "registration": "registered",
+      "files": 4,
+      "bytes": 16097962,
+      "signaledFiles": 4
+    },
+    {
+      "name": "raw/accent-decor",
+      "layer": "raw",
+      "supplierFolder": "accent-decor",
+      "supplierName": "Accent Decor",
+      "registration": "registered",
+      "files": 2,
+      "bytes": 15698923,
+      "signaledFiles": 2
+    },
+    {
+      "name": "processed/crestview-collection",
+      "layer": "processed",
+      "supplierFolder": "crestview-collection",
+      "supplierName": "Crestview Collection",
+      "registration": "registered",
+      "files": 3,
+      "bytes": 11858254,
+      "signaledFiles": 3
+    },
+    {
+      "name": "raw/john-richard",
+      "layer": "raw",
+      "supplierFolder": "john-richard",
+      "supplierName": "John Richard",
+      "registration": "registered",
+      "files": 1,
+      "bytes": 11230104,
+      "signaledFiles": 1
+    },
+    {
+      "name": "intermediate/poundex",
+      "layer": "intermediate",
+      "supplierFolder": "poundex",
+      "supplierName": "Poundex",
+      "registration": "registered",
+      "files": 2,
+      "bytes": 10626402,
+      "signaledFiles": 2
+    },
+    {
+      "name": "intermediate/noir",
+      "layer": "intermediate",
+      "supplierFolder": "noir",
+      "supplierName": "Noir",
+      "registration": "registered",
+      "files": 3,
+      "bytes": 9227960,
+      "signaledFiles": 3
+    },
+    {
+      "name": "raw/replica-decor",
+      "layer": "raw",
+      "supplierFolder": "replica-decor",
+      "supplierName": "Replica",
+      "registration": "registered",
+      "files": 4,
+      "bytes": 8958226,
+      "signaledFiles": 4
+    },
+    {
+      "name": "raw/cfc",
+      "layer": "raw",
+      "supplierFolder": "cfc",
+      "supplierName": "CFC",
+      "registration": "registered",
+      "files": 4,
+      "bytes": 8537474,
+      "signaledFiles": 3
+    },
+    {
+      "name": "raw/allstate",
+      "layer": "raw",
+      "supplierFolder": "allstate",
+      "supplierName": "Allstate",
+      "registration": "registered",
+      "files": 10,
+      "bytes": 7888633,
+      "signaledFiles": 10
+    },
+    {
+      "name": "intermediate/replica-decor",
+      "layer": "intermediate",
+      "supplierFolder": "replica-decor",
+      "supplierName": "Replica",
+      "registration": "registered",
+      "files": 13,
+      "bytes": 7594973,
+      "signaledFiles": 12
+    },
+    {
+      "name": "processed/replica-decor",
+      "layer": "processed",
+      "supplierFolder": "replica-decor",
+      "supplierName": "Replica",
+      "registration": "registered",
+      "files": 1,
+      "bytes": 5980002,
+      "signaledFiles": 1
+    },
+    {
+      "name": "intermediate/jonathan-charles",
+      "layer": "intermediate",
+      "supplierFolder": "jonathan-charles",
+      "supplierName": "Jonathan Charles",
+      "registration": "registered",
+      "files": 1,
+      "bytes": 5184023,
+      "signaledFiles": 1
+    },
+    {
+      "name": "raw/best-master-furniture",
+      "layer": "raw",
+      "supplierFolder": "best-master-furniture",
+      "supplierName": "Best Master Furniture",
+      "registration": "registered",
+      "files": 4,
+      "bytes": 5077111,
+      "signaledFiles": 4
+    },
+    {
+      "name": "intermediate/universal-furniture",
+      "layer": "intermediate",
+      "supplierFolder": "universal-furniture",
+      "supplierName": "Universal",
+      "registration": "registered",
+      "files": 2,
+      "bytes": 4685669,
+      "signaledFiles": 2
+    },
+    {
+      "name": "intermediate/sunpan",
+      "layer": "intermediate",
+      "supplierFolder": "sunpan",
+      "supplierName": "Sunpan",
+      "registration": "registered",
+      "files": 1,
+      "bytes": 3712788,
+      "signaledFiles": 1
+    },
+    {
+      "name": "processed/cfc",
+      "layer": "processed",
+      "supplierFolder": "cfc",
+      "supplierName": "CFC",
+      "registration": "registered",
+      "files": 6,
+      "bytes": 2847322,
+      "signaledFiles": 5
+    },
+    {
+      "name": "raw/_loose-file",
+      "layer": "raw",
+      "supplierFolder": "_loose-file",
+      "supplierName": "未注册目录 / 根级散落文件",
+      "registration": "unregistered-or-loose",
+      "files": 2,
+      "bytes": 2280798,
+      "signaledFiles": 2
+    },
+    {
+      "name": "intermediate/cfc",
+      "layer": "intermediate",
+      "supplierFolder": "cfc",
+      "supplierName": "CFC",
+      "registration": "registered",
+      "files": 1,
+      "bytes": 1568314,
+      "signaledFiles": 1
+    },
+    {
+      "name": "intermediate/artmax",
+      "layer": "intermediate",
+      "supplierFolder": "artmax",
+      "supplierName": "Artmax",
+      "registration": "registered",
+      "files": 1,
+      "bytes": 1323616,
+      "signaledFiles": 1
+    },
+    {
+      "name": "raw/_run-20260629",
+      "layer": "raw",
+      "supplierFolder": "_run-20260629",
+      "supplierName": "未注册目录 / 根级散落文件",
+      "registration": "unregistered-or-loose",
+      "files": 3,
+      "bytes": 307879,
+      "signaledFiles": 3
+    },
+    {
+      "name": "raw/artmax",
+      "layer": "raw",
+      "supplierFolder": "artmax",
+      "supplierName": "Artmax",
+      "registration": "registered",
+      "files": 1,
+      "bytes": 297449,
+      "signaledFiles": 1
+    },
+    {
+      "name": "intermediate/azzurro-living",
+      "layer": "intermediate",
+      "supplierFolder": "azzurro-living",
+      "supplierName": "Azzurro Living",
+      "registration": "registered",
+      "files": 1,
+      "bytes": 159481,
+      "signaledFiles": 1
+    },
+    {
+      "name": "processed/_loose-file",
+      "layer": "processed",
+      "supplierFolder": "_loose-file",
+      "supplierName": "未注册目录 / 根级散落文件",
+      "registration": "unregistered-or-loose",
+      "files": 2,
+      "bytes": 33425,
+      "signaledFiles": 2
+    },
+    {
+      "name": "intermediate/_loose-file",
+      "layer": "intermediate",
+      "supplierFolder": "_loose-file",
+      "supplierName": "未注册目录 / 根级散落文件",
+      "registration": "unregistered-or-loose",
+      "files": 1,
+      "bytes": 18436,
+      "signaledFiles": 1
+    },
+    {
+      "name": "data-root/_loose-file",
+      "layer": "data-root",
+      "supplierFolder": "_loose-file",
+      "supplierName": "未注册目录 / 根级散落文件",
+      "registration": "unregistered-or-loose",
+      "files": 1,
+      "bytes": 10244,
+      "signaledFiles": 1
+    },
+    {
+      "name": "raw/poundex",
+      "layer": "raw",
+      "supplierFolder": "poundex",
+      "supplierName": "Poundex",
+      "registration": "registered",
+      "files": 1,
+      "bytes": 7041,
+      "signaledFiles": 1
+    }
+  ],
+  "extensions": [
+    {
+      "name": ".json",
+      "files": 10478,
+      "bytes": 54429894595
+    },
+    {
+      "name": ".csv",
+      "files": 496,
+      "bytes": 38977945508
+    },
+    {
+      "name": ".jpg",
+      "files": 34760,
+      "bytes": 9772809277
+    },
+    {
+      "name": "[none]",
+      "files": 12758,
+      "bytes": 6657504901
+    },
+    {
+      "name": ".html",
+      "files": 15411,
+      "bytes": 1054157152
+    },
+    {
+      "name": ".00-scene-source",
+      "files": 1093,
+      "bytes": 691988068
+    },
+    {
+      "name": ".jsonl",
+      "files": 8,
+      "bytes": 359237304
+    },
+    {
+      "name": ".01-scene-source",
+      "files": 329,
+      "bytes": 180610335
+    },
+    {
+      "name": ".40-scene-source",
+      "files": 191,
+      "bytes": 119329317
+    },
+    {
+      "name": ".25-scene-source",
+      "files": 139,
+      "bytes": 83299146
+    },
+    {
+      "name": ".05-scene-source",
+      "files": 100,
+      "bytes": 53473374
+    },
+    {
+      "name": ".55-scene-source",
+      "files": 66,
+      "bytes": 34982368
+    },
+    {
+      "name": ".99-scene-source",
+      "files": 59,
+      "bytes": 34280040
+    },
+    {
+      "name": ".04-scene-source",
+      "files": 57,
+      "bytes": 27291655
+    },
+    {
+      "name": ".75-scene-source",
+      "files": 44,
+      "bytes": 25219626
+    },
+    {
+      "name": ".03-scene-source",
+      "files": 35,
+      "bytes": 21047770
+    },
+    {
+      "name": ".22-scene-source",
+      "files": 26,
+      "bytes": 18565191
+    },
+    {
+      "name": ".50-scene-source",
+      "files": 26,
+      "bytes": 16715337
+    },
+    {
+      "name": ".08-scene-source",
+      "files": 38,
+      "bytes": 16562417
+    },
+    {
+      "name": ".30-scene-source",
+      "files": 24,
+      "bytes": 12507300
+    },
+    {
+      "name": ".02-scene-source",
+      "files": 22,
+      "bytes": 11974161
+    },
+    {
+      "name": ".85-scene-source",
+      "files": 19,
+      "bytes": 11571078
+    },
+    {
+      "name": ".corrupt-20260708-0507",
+      "files": 1,
+      "bytes": 11438764
+    },
+    {
+      "name": ".35-scene-source",
+      "files": 21,
+      "bytes": 10783121
+    },
+    {
+      "name": ".24-scene-source",
+      "files": 19,
+      "bytes": 10642907
+    },
+    {
+      "name": ".21-scene-source",
+      "files": 15,
+      "bytes": 9030920
+    },
+    {
+      "name": ".61-scene-source",
+      "files": 7,
+      "bytes": 8357129
+    },
+    {
+      "name": ".png",
+      "files": 144,
+      "bytes": 8187260
+    },
+    {
+      "name": ".65-scene-source",
+      "files": 11,
+      "bytes": 7840041
+    },
+    {
+      "name": ".57-scene-source",
+      "files": 12,
+      "bytes": 6663467
+    },
+    {
+      "name": ".31-scene-source",
+      "files": 13,
+      "bytes": 5600480
+    },
+    {
+      "name": ".12-scene-source",
+      "files": 10,
+      "bytes": 5534770
+    },
+    {
+      "name": ".bak",
+      "files": 2,
+      "bytes": 5321179
+    },
+    {
+      "name": ".60-scene-source",
+      "files": 7,
+      "bytes": 5250105
+    },
+    {
+      "name": ".16-scene-source",
+      "files": 7,
+      "bytes": 4967801
+    },
+    {
+      "name": ".15-scene-source",
+      "files": 10,
+      "bytes": 4665527
+    },
+    {
+      "name": ".00-source",
+      "files": 13,
+      "bytes": 4586584
+    },
+    {
+      "name": ".33-scene-source",
+      "files": 7,
+      "bytes": 4362437
+    },
+    {
+      "name": ".tmp",
+      "files": 12,
+      "bytes": 3938395
+    },
+    {
+      "name": ".32-scene-source",
+      "files": 7,
+      "bytes": 3412287
+    },
+    {
+      "name": ".corrupt-20260702-atomic-write",
+      "files": 1,
+      "bytes": 3336790
+    },
+    {
+      "name": ".06-scene-source",
+      "files": 7,
+      "bytes": 3240766
+    },
+    {
+      "name": ".pdf",
+      "files": 1,
+      "bytes": 2711068
+    },
+    {
+      "name": ".14-scene-source",
+      "files": 5,
+      "bytes": 2616119
+    },
+    {
+      "name": ".js",
+      "files": 8,
+      "bytes": 2426958
+    },
+    {
+      "name": ".56-scene-source",
+      "files": 4,
+      "bytes": 2415640
+    },
+    {
+      "name": ".23-scene-source",
+      "files": 5,
+      "bytes": 2413701
+    },
+    {
+      "name": ".52-scene-source",
+      "files": 5,
+      "bytes": 2400940
+    },
+    {
+      "name": ".48-scene-source",
+      "files": 6,
+      "bytes": 2382343
+    },
+    {
+      "name": ".64-scene-source",
+      "files": 5,
+      "bytes": 2266956
+    },
+    {
+      "name": ".xml",
+      "files": 1,
+      "bytes": 2260314
+    },
+    {
+      "name": ".41-scene-source",
+      "files": 3,
+      "bytes": 1827275
+    },
+    {
+      "name": ".07-scene-source",
+      "files": 4,
+      "bytes": 1443625
+    },
+    {
+      "name": ".47-scene-source",
+      "files": 3,
+      "bytes": 1413726
+    },
+    {
+      "name": ".36-scene-source",
+      "files": 2,
+      "bytes": 1320492
+    },
+    {
+      "name": ".73-scene-source",
+      "files": 3,
+      "bytes": 1171160
+    },
+    {
+      "name": ".62-scene-source",
+      "files": 2,
+      "bytes": 1155528
+    },
+    {
+      "name": ".34-scene-source",
+      "files": 2,
+      "bytes": 1141086
+    },
+    {
+      "name": ".10-scene-source",
+      "files": 2,
+      "bytes": 1104802
+    },
+    {
+      "name": ".38-scene-source",
+      "files": 2,
+      "bytes": 1072993
+    },
+    {
+      "name": ".05-source",
+      "files": 1,
+      "bytes": 982802
+    },
+    {
+      "name": ".11-scene-source",
+      "files": 1,
+      "bytes": 828999
+    },
+    {
+      "name": ".txt",
+      "files": 26,
+      "bytes": 641346
+    },
+    {
+      "name": ".70-scene-source",
+      "files": 2,
+      "bytes": 616642
+    },
+    {
+      "name": ".y2151-brn-source",
+      "files": 1,
+      "bytes": 602656
+    },
+    {
+      "name": ".18-scene-source",
+      "files": 1,
+      "bytes": 546802
+    },
+    {
+      "name": ".17-scene-source",
+      "files": 2,
+      "bytes": 542312
+    },
+    {
+      "name": ".68-scene-source",
+      "files": 1,
+      "bytes": 468910
+    },
+    {
+      "name": ".40-source",
+      "files": 2,
+      "bytes": 468650
+    },
+    {
+      "name": ".63-scene-source",
+      "files": 2,
+      "bytes": 396446
+    },
+    {
+      "name": ".tsv",
+      "files": 1,
+      "bytes": 357011
+    },
+    {
+      "name": ".58-scene-source",
+      "files": 1,
+      "bytes": 350646
+    },
+    {
+      "name": ".99-source",
+      "files": 1,
+      "bytes": 86090
+    },
+    {
+      "name": ".tmp-27523-1783484013694-4",
+      "files": 1,
+      "bytes": 0
+    },
+    {
+      "name": ".tmp-27523-1783484013694-5",
+      "files": 1,
+      "bytes": 0
+    },
+    {
+      "name": ".tmp-27523-1783484013694-6",
+      "files": 1,
+      "bytes": 0
+    }
+  ],
+  "signals": [
+    {
+      "signal": "dated-name",
+      "files": 53205
+    },
+    {
+      "signal": "temp-or-cache-name",
+      "files": 11309
+    },
+    {
+      "signal": "sample-or-preview-name",
+      "files": 351
+    },
+    {
+      "signal": "partial-name",
+      "files": 140
+    },
+    {
+      "signal": "backup-or-old-name",
+      "files": 67
+    },
+    {
+      "signal": "zero-byte",
+      "files": 22
+    },
+    {
+      "signal": "loose-file-outside-supplier-folder",
+      "files": 6
+    }
+  ],
+  "largestFiles": [
+    {
+      "path": "data/raw/arteriors/arteriors-list-all-statuses-20260630.json",
+      "layer": "raw",
+      "supplierFolder": "arteriors",
+      "supplierName": "Arteriors",
+      "sizeBytes": 515854202,
+      "modifiedAt": "2026-06-30T04:10:56.000Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/raw/arteriors/arteriors-list-all-20260630.json",
+      "layer": "raw",
+      "supplierFolder": "arteriors",
+      "supplierName": "Arteriors",
+      "sizeBytes": 424186066,
+      "modifiedAt": "2026-06-29T19:05:42.000Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/raw/arteriors/arteriors-list-all-20260629.json",
+      "layer": "raw",
+      "supplierFolder": "arteriors",
+      "supplierName": "Arteriors",
+      "sizeBytes": 420967935,
+      "modifiedAt": "2026-06-28T21:05:00.000Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/raw/surya/surya-detail-state-20260703.json",
+      "layer": "raw",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 403832428,
+      "modifiedAt": "2026-07-03T00:05:09.000Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/raw/surya/recovery/surya-detail-state-20260703-before-final-zero-and-rug-size-clean.json",
+      "layer": "raw",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 403009749,
+      "modifiedAt": "2026-07-02T23:57:22.000Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/raw/surya/recovery/surya-detail-state-20260703-before-bridge-20260703072721.json",
+      "layer": "raw",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 401434885,
+      "modifiedAt": "2026-07-02T23:27:22.000Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/raw/surya/recovery/surya-detail-state-20260703-before-bridge-20260703071043.json",
+      "layer": "raw",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 400897477,
+      "modifiedAt": "2026-07-02T23:10:44.000Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial.json",
+      "layer": "processed",
+      "supplierFolder": "safavieh",
+      "supplierName": "Safavieh",
+      "sizeBytes": 389871971,
+      "modifiedAt": "2026-07-13T04:17:10.385Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial.csv",
+      "layer": "processed",
+      "supplierFolder": "safavieh",
+      "supplierName": "Safavieh",
+      "sizeBytes": 355492381,
+      "modifiedAt": "2026-07-05T12:19:13.000Z",
+      "extension": ".csv",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 4.json",
+      "layer": "processed",
+      "supplierFolder": "safavieh",
+      "supplierName": "Safavieh",
+      "sizeBytes": 352192159,
+      "modifiedAt": "2026-07-13T04:17:18.616Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 3.json",
+      "layer": "processed",
+      "supplierFolder": "safavieh",
+      "supplierName": "Safavieh",
+      "sizeBytes": 352190241,
+      "modifiedAt": "2026-07-13T04:17:13.894Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 2.json",
+      "layer": "processed",
+      "supplierFolder": "safavieh",
+      "supplierName": "Safavieh",
+      "sizeBytes": 352189156,
+      "modifiedAt": "2026-07-13T04:17:15.311Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial.before-safavieh-json-link-scene-20260705.json",
+      "layer": "processed",
+      "supplierFolder": "safavieh",
+      "supplierName": "Safavieh",
+      "sizeBytes": 340127296,
+      "modifiedAt": "2026-07-13T04:17:00.107Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/raw/leftbank-art/leftbank-art-full-site-details-details-20260707.jsonl",
+      "layer": "raw",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 338285270,
+      "modifiedAt": "2026-07-07T18:17:42.000Z",
+      "extension": ".jsonl",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/safavieh/safavieh-rugs-a-aa-20260702.json",
+      "layer": "processed",
+      "supplierFolder": "safavieh",
+      "supplierName": "Safavieh",
+      "sizeBytes": 317587168,
+      "modifiedAt": "2026-07-13T04:17:06.645Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-table-1600.json",
+      "layer": "processed",
+      "supplierFolder": "safavieh",
+      "supplierName": "Safavieh",
+      "sizeBytes": 303694502,
+      "modifiedAt": "2026-07-13T04:16:56.670Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-table-normalized-debug.json",
+      "layer": "processed",
+      "supplierFolder": "safavieh",
+      "supplierName": "Safavieh",
+      "sizeBytes": 303687437,
+      "modifiedAt": "2026-07-13T04:16:58.380Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial.before-json-contract-20260704.json",
+      "layer": "processed",
+      "supplierFolder": "safavieh",
+      "supplierName": "Safavieh",
+      "sizeBytes": 303686208,
+      "modifiedAt": "2026-07-13T04:17:02.253Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/leftbank-global-drive-url-map-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 204055406,
+      "modifiedAt": "2026-07-15T14:42:22.319Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/blue/leftbank-art-blue-049-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 179853649,
+      "modifiedAt": "2026-07-13T05:43:57.000Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/blue/leftbank-art-blue-050-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 179772640,
+      "modifiedAt": "2026-07-13T06:44:14.000Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/blue/leftbank-art-blue-048-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 179609247,
+      "modifiedAt": "2026-07-12T07:34:06.000Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/blue/leftbank-art-blue-047-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 179380407,
+      "modifiedAt": "2026-07-12T05:51:56.000Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/blue/leftbank-art-blue-046-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 179327386,
+      "modifiedAt": "2026-07-10T20:14:28.000Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/blue/leftbank-art-blue-054-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 179073308,
+      "modifiedAt": "2026-07-13T13:33:27.815Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/blue/leftbank-art-blue-053-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 178766326,
+      "modifiedAt": "2026-07-13T12:26:11.549Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/blue/leftbank-art-blue-044-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 178612865,
+      "modifiedAt": "2026-07-10T17:54:53.000Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/cream/leftbank-art-cream-013-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 178587811,
+      "modifiedAt": "2026-07-15T10:27:29.874Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/blue/leftbank-art-blue-056-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 178478357,
+      "modifiedAt": "2026-07-13T15:50:47.871Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/gray/leftbank-art-gray-027-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 178446916,
+      "modifiedAt": "2026-07-14T22:22:26.298Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/cream/leftbank-art-cream-012-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 178423800,
+      "modifiedAt": "2026-07-15T09:37:21.107Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/blue/leftbank-art-blue-045-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 178332542,
+      "modifiedAt": "2026-07-10T18:56:27.000Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/gray/leftbank-art-gray-023-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 178307212,
+      "modifiedAt": "2026-07-14T18:16:00.700Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/blue/leftbank-art-blue-051-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 178139864,
+      "modifiedAt": "2026-07-13T10:26:25.066Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/gray/leftbank-art-gray-025-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 178011026,
+      "modifiedAt": "2026-07-14T20:16:29.826Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/blue/leftbank-art-blue-055-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 177988972,
+      "modifiedAt": "2026-07-13T14:41:50.139Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/gray/leftbank-art-gray-026-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 177917255,
+      "modifiedAt": "2026-07-14T21:21:43.611Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/cream/leftbank-art-cream-011-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 177712699,
+      "modifiedAt": "2026-07-15T08:47:17.581Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/gray/leftbank-art-gray-024-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 177707539,
+      "modifiedAt": "2026-07-14T19:21:58.844Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/blue/leftbank-art-blue-052-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 177537711,
+      "modifiedAt": "2026-07-13T11:26:56.560Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/blue/leftbank-art-blue-058-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 177497324,
+      "modifiedAt": "2026-07-13T18:43:04.066Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/cream/leftbank-art-cream-009-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 177465283,
+      "modifiedAt": "2026-07-15T06:51:33.936Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/cream/leftbank-art-cream-002-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 177275666,
+      "modifiedAt": "2026-07-15T01:10:21.656Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/blue/leftbank-art-blue-031-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 177228974,
+      "modifiedAt": "2026-07-13T04:16:55.896Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/gray/leftbank-art-gray-017-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 177217691,
+      "modifiedAt": "2026-07-14T12:08:10.898Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/cream/leftbank-art-cream-007-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 177189729,
+      "modifiedAt": "2026-07-15T05:15:24.393Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/gray/leftbank-art-gray-007-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 177152218,
+      "modifiedAt": "2026-07-14T03:24:05.779Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/cream/leftbank-art-cream-004-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 177051472,
+      "modifiedAt": "2026-07-15T02:47:40.393Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/gray/leftbank-art-gray-011-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 176985218,
+      "modifiedAt": "2026-07-14T07:05:53.367Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/full-site-shards-run-20260708/gray/leftbank-art-gray-015-a-aa-20260707-drive-1000.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 176959707,
+      "modifiedAt": "2026-07-14T10:12:16.716Z",
+      "extension": ".json",
+      "signals": [
+        "dated-name"
+      ]
+    }
+  ],
+  "signaledExamples": [
+    {
+      "path": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial.before-safavieh-json-link-scene-20260705.json",
+      "layer": "processed",
+      "supplierFolder": "safavieh",
+      "supplierName": "Safavieh",
+      "sizeBytes": 340127296,
+      "modifiedAt": "2026-07-13T04:17:00.107Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial.before-json-contract-20260704.json",
+      "layer": "processed",
+      "supplierFolder": "safavieh",
+      "supplierName": "Safavieh",
+      "sizeBytes": 303686208,
+      "modifiedAt": "2026-07-13T04:17:02.253Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/surya/surya-a-aa-20260703-detail-partial.before-json-contract-20260704.json",
+      "layer": "processed",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 135565725,
+      "modifiedAt": "2026-07-13T04:16:44.543Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/surya/surya-a-aa-20260702-detail-partial.before-json-contract-20260702.json",
+      "layer": "processed",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 134616647,
+      "modifiedAt": "2026-07-13T04:16:42.600Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260710-preview-fixed-partial.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 35999125,
+      "modifiedAt": "2026-07-10T05:26:00.000Z",
+      "extension": ".json",
+      "signals": [
+        "sample-or-preview-name",
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260710-verified-rows-preview-fixed-partial.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 28254743,
+      "modifiedAt": "2026-07-10T05:28:25.000Z",
+      "extension": ".json",
+      "signals": [
+        "sample-or-preview-name",
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260707-corrected-v4-partial-preview-repair-upload.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 27259477,
+      "modifiedAt": "2026-07-07T09:07:51.000Z",
+      "extension": ".json",
+      "signals": [
+        "sample-or-preview-name",
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260707-corrected-v4-partial-preview-repair-normalized.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 27259028,
+      "modifiedAt": "2026-07-07T09:04:44.000Z",
+      "extension": ".json",
+      "signals": [
+        "sample-or-preview-name",
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260707-corrected-v3-partial-preview-repair-normalized.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 27256256,
+      "modifiedAt": "2026-07-07T09:00:35.000Z",
+      "extension": ".json",
+      "signals": [
+        "sample-or-preview-name",
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260707-corrected-v4-partial-preview-repair-source.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 27245192,
+      "modifiedAt": "2026-07-07T09:02:34.000Z",
+      "extension": ".json",
+      "signals": [
+        "sample-or-preview-name",
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260707-corrected-v3-partial-preview-repair-source.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 27197608,
+      "modifiedAt": "2026-07-07T08:54:10.000Z",
+      "extension": ".json",
+      "signals": [
+        "sample-or-preview-name",
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/vig/vig-a-aa-20260710-partial-normalized.before-json-contract-20260704.json",
+      "layer": "processed",
+      "supplierFolder": "vig",
+      "supplierName": "VIG",
+      "sizeBytes": 10236969,
+      "modifiedAt": "2026-07-09T19:32:44.000Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/vig/vig-a-aa-20260701-partial-normalized.before-json-contract-20260704.json",
+      "layer": "processed",
+      "supplierFolder": "vig",
+      "supplierName": "VIG",
+      "sizeBytes": 9686353,
+      "modifiedAt": "2026-07-04T10:47:48.000Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/vig/vig-a-aa-20260701-partial-normalized.before-json-contract-20260702.json",
+      "layer": "processed",
+      "supplierFolder": "vig",
+      "supplierName": "VIG",
+      "sizeBytes": 9475140,
+      "modifiedAt": "2026-07-02T15:52:46.000Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/vig/vig-a-aa-20260701-partial.before-json-contract-20260702.json",
+      "layer": "processed",
+      "supplierFolder": "vig",
+      "supplierName": "VIG",
+      "sizeBytes": 9444133,
+      "modifiedAt": "2026-07-03T08:01:04.000Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/global-views/global-views-a-aa-20260701-partial-primary-drive-canva-url.before-json-contract-20260702.json",
+      "layer": "processed",
+      "supplierFolder": "global-views",
+      "supplierName": "Global Views",
+      "sizeBytes": 8322957,
+      "modifiedAt": "2026-07-13T04:16:39.655Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/caracole/caracole-a-aa-20260703-partial.before-json-contract-20260704.json",
+      "layer": "processed",
+      "supplierFolder": "caracole",
+      "supplierName": "Caracole",
+      "sizeBytes": 4438848,
+      "modifiedAt": "2026-07-04T10:46:29.000Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260710-verified-rows-preview-fixed-partial-excluded-backend-unverified.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 320876,
+      "modifiedAt": "2026-07-10T05:28:25.000Z",
+      "extension": ".json",
+      "signals": [
+        "sample-or-preview-name",
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/artmax/artmax-main-image-normalization-20260708/mapping.json.tmp-27523-1783484013694-4",
+      "layer": "processed",
+      "supplierFolder": "artmax",
+      "supplierName": "Artmax",
+      "sizeBytes": 0,
+      "modifiedAt": "2026-07-08T04:15:24.531Z",
+      "extension": ".tmp-27523-1783484013694-4",
+      "signals": [
+        "zero-byte",
+        "temp-or-cache-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/artmax/artmax-main-image-normalization-20260708/mapping.json.tmp-27523-1783484013694-5",
+      "layer": "processed",
+      "supplierFolder": "artmax",
+      "supplierName": "Artmax",
+      "sizeBytes": 0,
+      "modifiedAt": "2026-07-08T04:15:24.532Z",
+      "extension": ".tmp-27523-1783484013694-5",
+      "signals": [
+        "zero-byte",
+        "temp-or-cache-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/artmax/artmax-main-image-normalization-20260708/mapping.json.tmp-27523-1783484013694-6",
+      "layer": "processed",
+      "supplierFolder": "artmax",
+      "supplierName": "Artmax",
+      "sizeBytes": 0,
+      "modifiedAt": "2026-07-08T04:15:24.532Z",
+      "extension": ".tmp-27523-1783484013694-6",
+      "signals": [
+        "zero-byte",
+        "temp-or-cache-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/raw/surya/recovery/surya-detail-state-20260703-before-final-zero-and-rug-size-clean.json",
+      "layer": "raw",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 403009749,
+      "modifiedAt": "2026-07-02T23:57:22.000Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/raw/surya/recovery/surya-detail-state-20260703-before-bridge-20260703072721.json",
+      "layer": "raw",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 401434885,
+      "modifiedAt": "2026-07-02T23:27:22.000Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/raw/surya/recovery/surya-detail-state-20260703-before-bridge-20260703071043.json",
+      "layer": "raw",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 400897477,
+      "modifiedAt": "2026-07-02T23:10:44.000Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial.json",
+      "layer": "processed",
+      "supplierFolder": "safavieh",
+      "supplierName": "Safavieh",
+      "sizeBytes": 389871971,
+      "modifiedAt": "2026-07-13T04:17:10.385Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial.csv",
+      "layer": "processed",
+      "supplierFolder": "safavieh",
+      "supplierName": "Safavieh",
+      "sizeBytes": 355492381,
+      "modifiedAt": "2026-07-05T12:19:13.000Z",
+      "extension": ".csv",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 4.json",
+      "layer": "processed",
+      "supplierFolder": "safavieh",
+      "supplierName": "Safavieh",
+      "sizeBytes": 352192159,
+      "modifiedAt": "2026-07-13T04:17:18.616Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 3.json",
+      "layer": "processed",
+      "supplierFolder": "safavieh",
+      "supplierName": "Safavieh",
+      "sizeBytes": 352190241,
+      "modifiedAt": "2026-07-13T04:17:13.894Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 2.json",
+      "layer": "processed",
+      "supplierFolder": "safavieh",
+      "supplierName": "Safavieh",
+      "sizeBytes": 352189156,
+      "modifiedAt": "2026-07-13T04:17:15.311Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/raw/dovetail/dovetail-detail-cache-20260630.json",
+      "layer": "raw",
+      "supplierFolder": "dovetail",
+      "supplierName": "Dovetail",
+      "sizeBytes": 165977230,
+      "modifiedAt": "2026-06-30T16:46:35.000Z",
+      "extension": ".json",
+      "signals": [
+        "temp-or-cache-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/surya/surya-a-aa-20260703-detail-partial.json",
+      "layer": "processed",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 152951071,
+      "modifiedAt": "2026-07-13T04:16:38.493Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/surya/surya-a-aa-20260708-image-repaired-partial 2.json",
+      "layer": "processed",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 152558761,
+      "modifiedAt": "2026-07-13T04:16:43.755Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/surya/surya-a-aa-20260708-image-repaired-partial 3.json",
+      "layer": "processed",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 152554419,
+      "modifiedAt": "2026-07-13T04:16:41.513Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/surya/surya-a-aa-20260708-image-repaired-partial.json",
+      "layer": "processed",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 151100298,
+      "modifiedAt": "2026-07-13T04:16:46.200Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/surya/surya-a-aa-20260709-image-repaired-partial 2.json",
+      "layer": "processed",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 150485449,
+      "modifiedAt": "2026-07-13T04:16:45.202Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/surya/surya-a-aa-20260709-image-repaired-partial.json",
+      "layer": "processed",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 150484961,
+      "modifiedAt": "2026-07-13T04:16:43.361Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/surya/surya-a-aa-20260702-detail-partial.json",
+      "layer": "processed",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 148607387,
+      "modifiedAt": "2026-07-13T04:16:39.627Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/surya/surya-a-aa-20260703-detail-partial.csv",
+      "layer": "processed",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 136759869,
+      "modifiedAt": "2026-07-04T10:47:35.000Z",
+      "extension": ".csv",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/surya/surya-a-aa-20260708-image-repaired-partial.csv",
+      "layer": "processed",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 134908121,
+      "modifiedAt": "2026-07-08T15:55:10.000Z",
+      "extension": ".csv",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/surya/surya-a-aa-20260709-image-repaired-partial.csv",
+      "layer": "processed",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 134292789,
+      "modifiedAt": "2026-07-08T17:17:08.000Z",
+      "extension": ".csv",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/surya/surya-a-aa-20260702-detail-partial.csv",
+      "layer": "processed",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 132400810,
+      "modifiedAt": "2026-07-02T15:52:46.000Z",
+      "extension": ".csv",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/intermediate/safavieh/safavieh-image-head-cache-20260702.json",
+      "layer": "intermediate",
+      "supplierFolder": "safavieh",
+      "supplierName": "Safavieh",
+      "sizeBytes": 122511836,
+      "modifiedAt": "2026-07-02T23:33:09.000Z",
+      "extension": ".json",
+      "signals": [
+        "temp-or-cache-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/modway/modway-a-aa-20260701.before-json-contract-20260704.json",
+      "layer": "processed",
+      "supplierFolder": "modway",
+      "supplierName": "Modway",
+      "sizeBytes": 70414965,
+      "modifiedAt": "2026-07-04T10:46:44.000Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/modway/modway-a-aa-20260701.before-json-contract-20260702.json",
+      "layer": "processed",
+      "supplierFolder": "modway",
+      "supplierName": "Modway",
+      "sizeBytes": 68821733,
+      "modifiedAt": "2026-07-02T15:52:41.000Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/modway/modway-a-aa-20260630-partial.json",
+      "layer": "processed",
+      "supplierFolder": "modway",
+      "supplierName": "Modway",
+      "sizeBytes": 68821219,
+      "modifiedAt": "2026-06-30T14:30:17.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/modway/modway-a-aa-20260630-partial.csv",
+      "layer": "processed",
+      "supplierFolder": "modway",
+      "supplierName": "Modway",
+      "sizeBytes": 66494771,
+      "modifiedAt": "2026-06-30T14:30:17.000Z",
+      "extension": ".csv",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/meridian/meridian-a-aa-20260703-uploadable 2.before-json-contract-20260704.json",
+      "layer": "processed",
+      "supplierFolder": "meridian",
+      "supplierName": "Meridian",
+      "sizeBytes": 60540599,
+      "modifiedAt": "2026-07-04T10:46:43.000Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/fourhands/fourhands-a-aa-20260702.before-json-contract-20260704.json",
+      "layer": "processed",
+      "supplierFolder": "fourhands",
+      "supplierName": "Four Hands",
+      "sizeBytes": 47368211,
+      "modifiedAt": "2026-07-04T10:46:42.000Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/fourhands/fourhands-a-aa-20260702.before-json-contract-20260702.json",
+      "layer": "processed",
+      "supplierFolder": "fourhands",
+      "supplierName": "Four Hands",
+      "sizeBytes": 44426226,
+      "modifiedAt": "2026-07-02T15:52:40.000Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/globalviews-surya/globalviews-surya-a-aa-20260701-partial.json",
+      "layer": "processed",
+      "supplierFolder": "globalviews-surya",
+      "supplierName": "Global Views / Surya 共用旧目录",
+      "sizeBytes": 39176624,
+      "modifiedAt": "2026-07-13T04:16:40.399Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260710-final-partial.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 37989810,
+      "modifiedAt": "2026-07-10T06:59:52.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260710-cost-inventory-recalculated-image-prepared-partial.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 37956494,
+      "modifiedAt": "2026-07-10T06:59:47.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260710-cost-inventory-recalculated-partial.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 37486063,
+      "modifiedAt": "2026-07-10T06:39:08.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260710-final-partial.csv",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 36097490,
+      "modifiedAt": "2026-07-10T06:59:52.000Z",
+      "extension": ".csv",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260710-cost-inventory-recalculated-image-prepared-partial.csv",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 36055515,
+      "modifiedAt": "2026-07-10T06:10:55.000Z",
+      "extension": ".csv",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260710-image-normalized-price-fixed-partial.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 36021612,
+      "modifiedAt": "2026-07-10T04:36:43.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260710-image-normalized-price-fixed-partial-v2-henry.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 35979212,
+      "modifiedAt": "2026-07-10T05:20:09.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260710-cost-inventory-recalculated-partial.csv",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 35595029,
+      "modifiedAt": "2026-07-10T06:39:08.000Z",
+      "extension": ".csv",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260710-frontend-standard-price-fixed-partial.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 34950940,
+      "modifiedAt": "2026-07-10T03:53:02.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260710-scene-selection-fixed-partial.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 34623556,
+      "modifiedAt": "2026-07-10T04:01:29.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260710-scene-selection-fixed-partial-v2.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 34590512,
+      "modifiedAt": "2026-07-10T04:41:49.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260710-public-price-corrected-partial.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 34395601,
+      "modifiedAt": "2026-07-09T20:06:47.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/globalviews-surya/globalviews-surya-a-aa-20260701-partial.csv",
+      "layer": "processed",
+      "supplierFolder": "globalviews-surya",
+      "supplierName": "Global Views / Surya 共用旧目录",
+      "sizeBytes": 33655912,
+      "modifiedAt": "2026-06-30T19:41:26.000Z",
+      "extension": ".csv",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260710-frontend-standard-price-fixed-partial.csv",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 33089318,
+      "modifiedAt": "2026-07-10T03:53:02.000Z",
+      "extension": ".csv",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260710-public-price-corrected-partial.csv",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 32534096,
+      "modifiedAt": "2026-07-09T20:06:48.000Z",
+      "extension": ".csv",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/surya/surya-a-aa-20260701-partial.json",
+      "layer": "processed",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 31924137,
+      "modifiedAt": "2026-07-13T04:16:42.694Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260710-verified-rows-image-prepared-partial.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 29229227,
+      "modifiedAt": "2026-07-10T06:10:40.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260709-list-price-preview-filtered-json-edgefit.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 28423879,
+      "modifiedAt": "2026-07-08T17:44:38.000Z",
+      "extension": ".json",
+      "signals": [
+        "sample-or-preview-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/surya/surya-a-aa-20260701-partial.csv",
+      "layer": "processed",
+      "supplierFolder": "surya",
+      "supplierName": "Surya",
+      "sizeBytes": 27445029,
+      "modifiedAt": "2026-06-30T19:41:27.000Z",
+      "extension": ".csv",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260707-corrected-v2-partial-normalized-final-cookie.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 27386054,
+      "modifiedAt": "2026-07-07T06:41:08.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260707-corrected-v2-partial-normalized-final.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 27385935,
+      "modifiedAt": "2026-07-07T06:41:09.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260709-list-price-preview-filtered.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 27320363,
+      "modifiedAt": "2026-07-08T16:42:23.000Z",
+      "extension": ".json",
+      "signals": [
+        "sample-or-preview-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260707-corrected-v2-partial-normalized.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 27256055,
+      "modifiedAt": "2026-07-07T06:20:16.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260707-corrected-v2-partial-normalized-repair-source.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 27231257,
+      "modifiedAt": "2026-07-07T06:26:14.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260707-corrected-v2-partial-normalized-upload.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 27218966,
+      "modifiedAt": "2026-07-07T06:41:08.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260709-list-price-preview-repair.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 27206384,
+      "modifiedAt": "2026-07-08T16:41:13.000Z",
+      "extension": ".json",
+      "signals": [
+        "sample-or-preview-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260709-list-price-corrected-partial.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 27158019,
+      "modifiedAt": "2026-07-08T16:40:30.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260707-corrected-v2-partial.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 26168684,
+      "modifiedAt": "2026-07-07T06:07:24.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/deco-marche/deco-marche-a-aa-20260703.before-json-contract-20260704.json",
+      "layer": "processed",
+      "supplierFolder": "deco-marche",
+      "supplierName": "Deco Marche",
+      "sizeBytes": 26068896,
+      "modifiedAt": "2026-07-13T04:17:11.087Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/intermediate/furniture-of-america/foa-offline-partial-state-20260705.json",
+      "layer": "intermediate",
+      "supplierFolder": "furniture-of-america",
+      "supplierName": "Furniture of America",
+      "sizeBytes": 25873967,
+      "modifiedAt": "2026-07-06T09:19:34.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260709-list-price-preview-filtered.csv",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 25498693,
+      "modifiedAt": "2026-07-08T16:42:23.000Z",
+      "extension": ".csv",
+      "signals": [
+        "sample-or-preview-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260709-list-price-corrected-partial.csv",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 25370035,
+      "modifiedAt": "2026-07-08T16:40:30.000Z",
+      "extension": ".csv",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260707-option-c-partial.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 24786578,
+      "modifiedAt": "2026-07-07T02:03:55.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260707-corrected-v2-partial.csv",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 24442542,
+      "modifiedAt": "2026-07-07T06:07:24.000Z",
+      "extension": ".csv",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/dvkap/dvkap-a-aa-20260708-ai-pillow-sample-repair.json",
+      "layer": "processed",
+      "supplierFolder": "dvkap",
+      "supplierName": "DV Kap",
+      "sizeBytes": 24181720,
+      "modifiedAt": "2026-07-08T11:48:03.000Z",
+      "extension": ".json",
+      "signals": [
+        "sample-or-preview-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/deco-marche/deco-marche-a-aa-20260703.before-json-contract-20260702.json",
+      "layer": "processed",
+      "supplierFolder": "deco-marche",
+      "supplierName": "Deco Marche",
+      "sizeBytes": 23855202,
+      "modifiedAt": "2026-07-13T04:17:11.020Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260707-corrected-partial-normalized-sample20.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 23776637,
+      "modifiedAt": "2026-07-07T03:59:41.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/dvkap/dvkap-a-aa-20260630.before-json-contract-20260704.json",
+      "layer": "processed",
+      "supplierFolder": "dvkap",
+      "supplierName": "DV Kap",
+      "sizeBytes": 23484362,
+      "modifiedAt": "2026-07-04T10:46:41.000Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260707-corrected-partial-normalized.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 23032051,
+      "modifiedAt": "2026-07-07T05:11:52.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260707-corrected-partial-normalized-repair2-source.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 23031710,
+      "modifiedAt": "2026-07-07T05:11:15.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260707-corrected-partial-normalized-repair-source.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 23028869,
+      "modifiedAt": "2026-07-07T05:06:00.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/classic-home/classic-home-a-aa-20260630-complete.before-json-contract-20260704.json",
+      "layer": "processed",
+      "supplierFolder": "classic-home",
+      "supplierName": "Classic Home",
+      "sizeBytes": 22749224,
+      "modifiedAt": "2026-07-04T10:46:29.000Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/leftbank-art-sample-a-aa-20260707.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 22275567,
+      "modifiedAt": "2026-07-13T04:16:39.212Z",
+      "extension": ".json",
+      "signals": [
+        "sample-or-preview-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/leftbank-art-sample-a-aa-20260707-colorprobe2.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 22263908,
+      "modifiedAt": "2026-07-13T04:16:39.153Z",
+      "extension": ".json",
+      "signals": [
+        "sample-or-preview-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/dvkap/dvkap-a-aa-20260630.before-json-contract-20260702.json",
+      "layer": "processed",
+      "supplierFolder": "dvkap",
+      "supplierName": "DV Kap",
+      "sizeBytes": 22182563,
+      "modifiedAt": "2026-07-02T15:52:39.000Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260707-option-c-partial.csv",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 22121877,
+      "modifiedAt": "2026-07-07T02:03:55.000Z",
+      "extension": ".csv",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/leftbank-art/leftbank-art-sample-a-aa-20260707-colorprobe.json",
+      "layer": "processed",
+      "supplierFolder": "leftbank-art",
+      "supplierName": "Leftbank Art",
+      "sizeBytes": 22075493,
+      "modifiedAt": "2026-07-13T04:16:46.642Z",
+      "extension": ".json",
+      "signals": [
+        "sample-or-preview-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260707-corrected-partial-normalized-sample50.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 21831846,
+      "modifiedAt": "2026-07-07T04:04:55.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/ashley/ashley-a-aa-20260707-corrected-partial.json",
+      "layer": "processed",
+      "supplierFolder": "ashley",
+      "supplierName": "Ashley",
+      "sizeBytes": 21821615,
+      "modifiedAt": "2026-07-07T04:03:28.000Z",
+      "extension": ".json",
+      "signals": [
+        "partial-name",
+        "dated-name"
+      ]
+    },
+    {
+      "path": "data/processed/classic-home/classic-home-a-aa-20260630-complete.before-json-contract-20260702.json",
+      "layer": "processed",
+      "supplierFolder": "classic-home",
+      "supplierName": "Classic Home",
+      "sizeBytes": 21770556,
+      "modifiedAt": "2026-07-02T15:52:38.000Z",
+      "extension": ".json",
+      "signals": [
+        "backup-or-old-name",
+        "dated-name"
+      ]
+    }
+  ],
+  "registrationGaps": {
+    "unexpectedFolders": [
+      "_run-20260629",
+      "globalviews-surya"
+    ],
+    "looseFiles": [
+      "data/.DS_Store",
+      "data/intermediate/.DS_Store",
+      "data/processed/.DS_Store",
+      "data/processed/ashley.verified-union-conflicts-20260711T055753Z-48934.jsonl",
+      "data/raw/.DS_Store",
+      "data/raw/meridian-sitemap-20260703.xml"
+    ],
+    "missingExpectedFoldersByLayer": {
+      "raw": [],
+      "processed": [],
+      "intermediate": [
+        "acme",
+        "arteriors",
+        "ashley",
+        "bernhardt",
+        "best-master-furniture",
+        "caracole",
+        "classic-home",
+        "coaster",
+        "crestview-collection",
+        "deco-marche",
+        "fourhands",
+        "global-views",
+        "john-richard",
+        "leftbank-art",
+        "meridian",
+        "modway",
+        "phillips-collection",
+        "surya",
+        "tov",
+        "uttermost"
+      ]
+    },
+    "emptyExpectedFoldersByLayer": {
+      "raw": [
+        "jonathan-charles",
+        "safavieh",
+        "universal-furniture",
+        "vig"
+      ],
+      "processed": [],
+      "intermediate": [
+        "allstate",
+        "dovetail",
+        "eichholtz"
+      ]
+    }
+  }
+}
