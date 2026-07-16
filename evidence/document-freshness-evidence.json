@@ -1,0 +1,2897 @@
+{
+  "generatedAt": "2026-07-16T05:58:28.937Z",
+  "snapshotOnly": true,
+  "method": "Read-only file metadata, SHA-256 identity, existing six-pattern risk scan, and test-record evidence-field audit.",
+  "statusDefinitions": {
+    "pattern-scan-clean-unsigned": "指定高风险模式未命中，但没有业务语义签名，不能称为全部准确或最新。",
+    "complete-history-not-current": "历史记录包含 Result、Method、QA、Timing 四类证据，但不自动成为当前规则。",
+    "incomplete-history": "历史记录缺少至少一类关键证据。",
+    "duplicate-history": "同名副本候选；必须先比较独有内容，禁止按文件名直接删除。"
+  },
+  "truthLayers": [
+    {
+      "id": "identity",
+      "label": "文件身份",
+      "proof": "路径 + 大小 + 修改时间 + SHA-256",
+      "meaning": "证明本次审计看到的是哪一个字节快照。"
+    },
+    {
+      "id": "contract",
+      "label": "合同一致",
+      "proof": "冲突扫描 + 机器测试",
+      "meaning": "证明没有命中已知旧规则；不覆盖未知业务错误。"
+    },
+    {
+      "id": "business",
+      "label": "业务签署",
+      "proof": "实时抽样 + current manifest + 审核人",
+      "meaning": "只有这一层完成，才允许称为当前生产真源。"
+    }
+  ],
+  "summary": {
+    "ruleCandidates": 50,
+    "coreRules": 12,
+    "defaultRules": 1,
+    "supplierRules": 37,
+    "rulePatternScanClean": 50,
+    "semanticSigned": 0,
+    "testRecords": 121,
+    "testCompleteHistory": 3,
+    "testIncompleteHistory": 116,
+    "testDuplicateHistory": 2,
+    "totalDocuments": 171
+  },
+  "currentDataSelection": {
+    "signed": 0,
+    "singleCandidate": 21,
+    "ambiguous": 15,
+    "sharded": 1,
+    "note": "规则文件清洁不等于数据 current 已确定；15 家数据候选仍冲突，Leftbank 仍按分片聚合。"
+  },
+  "documents": [
+    {
+      "file": "AGENTS.md",
+      "bytes": 6402,
+      "modifiedAt": "2026-07-15T11:38:20.598Z",
+      "sha256": "9444f2278fa8dad840055e2107ee05cb2423afd2bbb4239e76d3d1073c467e15",
+      "layer": "core-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "当前规则候选已存在；文件日期和哈希只证明快照身份，不证明全部业务语义仍正确。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "在同一合同版本中完成冲突复核、测试和发布签名。"
+    },
+    {
+      "file": "docs/canva-template-layout-v1.md",
+      "bytes": 11285,
+      "modifiedAt": "2026-07-16T04:20:44.772Z",
+      "sha256": "f6fd54cfd3c855c76fe96b142fd278eae0d6d0c9d47f776e74c425b9809668ea",
+      "layer": "core-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "当前规则候选已存在；文件日期和哈希只证明快照身份，不证明全部业务语义仍正确。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "在同一合同版本中完成冲突复核、测试和发布签名。"
+    },
+    {
+      "file": "docs/canva-workflow-plugin-rules.md",
+      "bytes": 18328,
+      "modifiedAt": "2026-07-16T04:20:37.262Z",
+      "sha256": "85cf82314350885a77c99c99bfa9f3cc52c357de3800c42ada4a548bfabc7cab",
+      "layer": "core-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "当前规则候选已存在；文件日期和哈希只证明快照身份，不证明全部业务语义仍正确。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "在同一合同版本中完成冲突复核、测试和发布签名。"
+    },
+    {
+      "file": "docs/final-documentation-plan.md",
+      "bytes": 3226,
+      "modifiedAt": "2026-06-28T18:44:53.000Z",
+      "sha256": "e25ed31475521975073fc284aa0b246b0b3f90a4b320a7755cc96048b7385ed6",
+      "layer": "core-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "当前规则候选已存在；文件日期和哈希只证明快照身份，不证明全部业务语义仍正确。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "在同一合同版本中完成冲突复核、测试和发布签名。"
+    },
+    {
+      "file": "docs/image-selection-and-normalization-rules-v1.md",
+      "bytes": 62212,
+      "modifiedAt": "2026-07-16T04:37:32.248Z",
+      "sha256": "2b93a32d6d45ef2d80e188b19d8684b83243bc0d6adff58bc07ccfb509b3f4dc",
+      "layer": "core-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "当前规则候选已存在；文件日期和哈希只证明快照身份，不证明全部业务语义仍正确。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "在同一合同版本中完成冲突复核、测试和发布签名。"
+    },
+    {
+      "file": "docs/one-page-fill-workflow-v1.md",
+      "bytes": 38191,
+      "modifiedAt": "2026-07-16T04:20:55.427Z",
+      "sha256": "45dd9c48e65b0c8a88f599f00b276140f16f3e46af5034e041607665a60d0ab9",
+      "layer": "core-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "当前规则候选已存在；文件日期和哈希只证明快照身份，不证明全部业务语义仍正确。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "在同一合同版本中完成冲突复核、测试和发布签名。"
+    },
+    {
+      "file": "docs/pricing-and-dimensions-rules-v1.md",
+      "bytes": 23169,
+      "modifiedAt": "2026-07-16T04:22:57.597Z",
+      "sha256": "826f0ccf2ef202958ae8892ca74dcd2afc35c1baa4d7985988c087fda1687904",
+      "layer": "core-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "当前规则候选已存在；文件日期和哈希只证明快照身份，不证明全部业务语义仍正确。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "在同一合同版本中完成冲突复核、测试和发布签名。"
+    },
+    {
+      "file": "docs/supplier-bulk-extraction-workflow-v1.md",
+      "bytes": 27921,
+      "modifiedAt": "2026-07-16T04:25:50.484Z",
+      "sha256": "c12f5c58a009f77ce86d20bdd233444dd0c623207a75ec9d427920613cc517bc",
+      "layer": "core-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "当前规则候选已存在；文件日期和哈希只证明快照身份，不证明全部业务语义仍正确。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "在同一合同版本中完成冲突复核、测试和发布签名。"
+    },
+    {
+      "file": "docs/supplier-verification-risk-rules-v1.md",
+      "bytes": 6977,
+      "modifiedAt": "2026-07-16T04:22:38.072Z",
+      "sha256": "17b4629c41015b5caf27f7af7df2c84750eafeea8e415aed1eb9cb6d1b69357d",
+      "layer": "core-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "当前规则候选已存在；文件日期和哈希只证明快照身份，不证明全部业务语义仍正确。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "在同一合同版本中完成冲突复核、测试和发布签名。"
+    },
+    {
+      "file": "google-sheet-template/google-sheet-master-template-spec.md",
+      "bytes": 18552,
+      "modifiedAt": "2026-07-16T04:21:47.865Z",
+      "sha256": "c819f98e42182eda8cb99d079955fd74b465b13ca8388f9c1938a728665ad124",
+      "layer": "core-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "当前规则候选已存在；文件日期和哈希只证明快照身份，不证明全部业务语义仍正确。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "在同一合同版本中完成冲突复核、测试和发布签名。"
+    },
+    {
+      "file": "google-sheet-template/sheet-template-columns.md",
+      "bytes": 10398,
+      "modifiedAt": "2026-07-16T04:21:48.020Z",
+      "sha256": "5d7ee4069254bf1538ac05b14b440012bcd1dc83563bcf5647f60dca55c7f4a9",
+      "layer": "core-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "当前规则候选已存在；文件日期和哈希只证明快照身份，不证明全部业务语义仍正确。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "在同一合同版本中完成冲突复核、测试和发布签名。"
+    },
+    {
+      "file": "START_HERE.md",
+      "bytes": 18922,
+      "modifiedAt": "2026-07-16T05:04:59.635Z",
+      "sha256": "e820b5742f5f1dddf04aff18693bc4b9534f9976bc25c6138a78d2dacc39d81b",
+      "layer": "core-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "当前规则候选已存在；文件日期和哈希只证明快照身份，不证明全部业务语义仍正确。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "在同一合同版本中完成冲突复核、测试和发布签名。"
+    },
+    {
+      "file": "docs/suppliers/default.md",
+      "bytes": 14499,
+      "modifiedAt": "2026-07-16T04:21:27.233Z",
+      "sha256": "e70d9343e3d81cb8d55ae9fb5f3fd81e1e47128bd71dc2408ffd1182f4fd30b1",
+      "layer": "default-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "当前规则候选已存在；文件日期和哈希只证明快照身份，不证明全部业务语义仍正确。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "在同一合同版本中完成冲突复核、测试和发布签名。"
+    },
+    {
+      "file": "docs/suppliers/accent-decor.md",
+      "bytes": 11259,
+      "modifiedAt": "2026-07-16T04:35:09.159Z",
+      "sha256": "56986a2d0747884ff7f184c4f41f9d921669a1bb41f7388ed79ed1d1fa783470",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/acme.md",
+      "bytes": 13135,
+      "modifiedAt": "2026-07-16T04:35:09.315Z",
+      "sha256": "ad4b7428a1af200d1ab245d6c1c57a6185b600fab9b24bf2ac41b1dcc2fb7960",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/allstate.md",
+      "bytes": 15838,
+      "modifiedAt": "2026-07-16T04:37:32.404Z",
+      "sha256": "b4bf5d104bd6c4022e1f2ec08599f0bd4af51c2a26c5315fbbfb0903a2fce44c",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/arteriors.md",
+      "bytes": 14136,
+      "modifiedAt": "2026-07-16T04:35:09.611Z",
+      "sha256": "a8bd7c5a3092962fede3258e6b6907f6965ec530b9aee12386b0bdb48271fbfc",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/artmax.md",
+      "bytes": 5997,
+      "modifiedAt": "2026-07-16T04:35:09.761Z",
+      "sha256": "48945140346553830e7c834d051a4872014c410f57f0fc271994d24666261774",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/ashley.md",
+      "bytes": 52658,
+      "modifiedAt": "2026-07-15T09:07:23.548Z",
+      "sha256": "00817dbeea474b38fffe2f368941b79aea13b6515178035d3a63e8e33b2589b8",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/azzurro-living.md",
+      "bytes": 12405,
+      "modifiedAt": "2026-07-15T08:45:54.215Z",
+      "sha256": "e66305f59f0fd292c3aff8e7b3e7e70298631e16a2f656422c2734e364b47e0f",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/bernhardt.md",
+      "bytes": 15716,
+      "modifiedAt": "2026-07-16T04:35:09.912Z",
+      "sha256": "27720d3d54ca71e426051461cdd26fccf9bf154342a67d3e850f47c75ec98bf6",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/best-master-furniture.md",
+      "bytes": 19836,
+      "modifiedAt": "2026-07-16T04:35:10.060Z",
+      "sha256": "35b2821978434e00018c55706223bbdb139bf80a8e22f66246f5c19424c405cb",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/caracole.md",
+      "bytes": 6846,
+      "modifiedAt": "2026-07-16T04:35:10.206Z",
+      "sha256": "fc7575c1ac11c7f89b18272dc56386eb1d1d93fe0460ac341ad157f021105fd4",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/cfc.md",
+      "bytes": 4821,
+      "modifiedAt": "2026-07-03T11:19:21.000Z",
+      "sha256": "d1409b5729239ff41551cd9ec61d08db348034e2984814d4fe7f4f675136c967",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/classic-home.md",
+      "bytes": 8353,
+      "modifiedAt": "2026-07-16T04:35:10.358Z",
+      "sha256": "29764a9dd670995f3b758fc4ebdbcaf244cea84a6eeb654ca7e2f06df25e0fb4",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/coaster.md",
+      "bytes": 39860,
+      "modifiedAt": "2026-07-16T04:36:08.347Z",
+      "sha256": "6ceffc7137997103579ac8f4c81c0a20e46855b4eab27433a60013e0deddad54",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/crestview-collection.md",
+      "bytes": 5851,
+      "modifiedAt": "2026-07-15T10:08:10.141Z",
+      "sha256": "5ce6c163e1956a143fb886ab63a090b1ae2a7a3a804c3bd86d0d917f959a29bf",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/deco-marche.md",
+      "bytes": 5450,
+      "modifiedAt": "2026-07-15T10:13:50.156Z",
+      "sha256": "85934e8ec4543405f0ab972f9d8095ecfaa1b08bec06e5b7826f961314a226bb",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/dovetail.md",
+      "bytes": 5851,
+      "modifiedAt": "2026-07-16T04:35:48.126Z",
+      "sha256": "84c02e60ff97de0dfb9c220b38fa4585dad28cf2b3d8c888b8fc8039583ccc88",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/dvkap.md",
+      "bytes": 6747,
+      "modifiedAt": "2026-07-16T04:35:36.877Z",
+      "sha256": "99739475257803aadfd12b59ee36b2ff7fc81358bea8484b29c0e7bd1d4ce58e",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/eichholtz.md",
+      "bytes": 7579,
+      "modifiedAt": "2026-07-16T04:33:29.480Z",
+      "sha256": "b07f1be78cfd1915c904c74f6b5a2a52d1d26391ce32c189f337f859027a33a5",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/four-hands.md",
+      "bytes": 10105,
+      "modifiedAt": "2026-07-16T04:35:37.025Z",
+      "sha256": "c0d952878820c79c22053ec749fb10441f975c84a55504e88739899da9146c01",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/furniture-of-america.md",
+      "bytes": 46401,
+      "modifiedAt": "2026-07-06T10:32:47.000Z",
+      "sha256": "aaf04f813a93c28e1011ccf867192b8f08334c8254cb32523645ddf4df15253f",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/global-views.md",
+      "bytes": 5742,
+      "modifiedAt": "2026-07-03T04:01:09.000Z",
+      "sha256": "3cd9375a730dd18a6d2e9f1110f03063ac7f7445f4d19dcefe01882e15bb2444",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/john-richard.md",
+      "bytes": 7063,
+      "modifiedAt": "2026-07-07T09:30:37.000Z",
+      "sha256": "8ef3e5d45286843d387e2fbea65a4c6deebdb3a6ac07de5a4a1bca48322a087d",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/jonathan-charles.md",
+      "bytes": 4825,
+      "modifiedAt": "2026-07-16T04:33:29.633Z",
+      "sha256": "7339860308e82ab1d4c76f1b9001d364b7633cbffcb960129e81ab0a943943cd",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/leftbank-art.md",
+      "bytes": 125593,
+      "modifiedAt": "2026-07-16T05:22:30.275Z",
+      "sha256": "899d8133c882514e0bb14a81c0956627016f75e17362ce8916e40e0cef5f9e17",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/meridian.md",
+      "bytes": 5029,
+      "modifiedAt": "2026-07-16T04:35:37.323Z",
+      "sha256": "df90121ffe5b883b5f1ffc9cc9483f6147445149bae671d662b4aff2f94fe828",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/modway.md",
+      "bytes": 12906,
+      "modifiedAt": "2026-07-16T04:35:37.471Z",
+      "sha256": "6abfecde1169903069f3f5fa6cb7d826a5256f8238a967feafd19423f571e7f4",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/noir.md",
+      "bytes": 4979,
+      "modifiedAt": "2026-07-16T04:37:32.586Z",
+      "sha256": "c0840e0a1665aa853dea9eb8db2f8c467e596585624b403486e2640766228ab6",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/phillips-collection.md",
+      "bytes": 8340,
+      "modifiedAt": "2026-07-16T04:33:29.781Z",
+      "sha256": "14c2b91b89d29f0bd8ca153d02757a2cb4db2b2b83b60e2e7c1e76c401f06fa7",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/poundex.md",
+      "bytes": 4742,
+      "modifiedAt": "2026-07-16T04:35:47.968Z",
+      "sha256": "3ed69ac1e054c2cab1db64c098aa399e303b56135cc9ef61e921d6410661ab1b",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/replica.md",
+      "bytes": 4789,
+      "modifiedAt": "2026-07-08T10:30:35.000Z",
+      "sha256": "5c9f79a2c51b0902648eeb4d85d36dfeffc76b8084a4d4e8150208043e2e5fb5",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/safavieh.md",
+      "bytes": 11782,
+      "modifiedAt": "2026-07-16T04:35:48.270Z",
+      "sha256": "98777c92e1bf855b078de8b0d1eae29659e990c24fdadd08337b2439ed8461f8",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/sunpan.md",
+      "bytes": 5288,
+      "modifiedAt": "2026-07-16T04:35:37.764Z",
+      "sha256": "ee4dd8af74073708b93b2013a849c06babad462898540dc6216b981dfb2d8049",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/surya.md",
+      "bytes": 12690,
+      "modifiedAt": "2026-07-08T17:25:46.000Z",
+      "sha256": "620497135a8655342b92a0fb276affd416af14f6c91acab39ab471d70385d912",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/tov.md",
+      "bytes": 10592,
+      "modifiedAt": "2026-07-16T04:37:32.892Z",
+      "sha256": "b1f4b7f38ea8bf5adf1e347d34841556e9d30639c0ecef496a05940ca2cd6b53",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/universal-furniture.md",
+      "bytes": 10142,
+      "modifiedAt": "2026-07-16T04:33:29.929Z",
+      "sha256": "6707c90c865bbbb00992f8d72d2df0756a77db4d44da7e15293cde9e0a2decee",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/uttermost.md",
+      "bytes": 10409,
+      "modifiedAt": "2026-07-16T04:35:38.062Z",
+      "sha256": "7cf711da3a64f035684e1db3c79b21fe537651ebf8529625635c70e16056d0f0",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/suppliers/vig.md",
+      "bytes": 15643,
+      "modifiedAt": "2026-07-16T04:37:32.742Z",
+      "sha256": "9db415f9768feef0e64fb5fe001a0bc7fdea9bf24f1046f25f8714798ba752c9",
+      "layer": "supplier-rule",
+      "status": "pattern-scan-clean-unsigned",
+      "statusLabel": "高风险模式未命中 · 仍未签署",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "供应商专属规则候选已存在；只有 current manifest 与实时抽样共同签署后，才能称为该供应商当前生产规则。",
+      "evidenceLimit": "只通过本轮 6 类高风险模式扫描；未重新登录供应商网站，也未完成逐条业务语义签署。",
+      "nextAction": "实时抽样最快来源、价格、库存和图片规则后签署 supplier current manifest。"
+    },
+    {
+      "file": "docs/test-runs/a-column-plain-sequence-correction-2026-07-03.md",
+      "bytes": 2224,
+      "modifiedAt": "2026-07-03T09:09:38.000Z",
+      "sha256": "90c62d6ad1ae0260dc009fe249455874ea8dd07e0c0cdce1a61139d6c2910402",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/accent-decor-test-2026-06-20.md",
+      "bytes": 4103,
+      "modifiedAt": "2026-06-20T10:03:53.000Z",
+      "sha256": "18063b8e85b8b3b87cbcdefe003ee515479b7a87671612fcbdfa42d7ae1c74bd",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/accent-decor-test-2026-07-02.md",
+      "bytes": 10935,
+      "modifiedAt": "2026-07-03T08:06:15.000Z",
+      "sha256": "8920899f48a0264140947df51815a0a1692df04015540a23b5fe18bdf0c717df",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/accent-decor-test-2026-07-10.md",
+      "bytes": 6262,
+      "modifiedAt": "2026-07-10T05:41:24.000Z",
+      "sha256": "6da9808b5b08b9e60d1fe915c3d38260980778182ce15ee0a8c61384f80409f1",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/accent-decor-test-2026-07-14.md",
+      "bytes": 1313,
+      "modifiedAt": "2026-07-14T11:54:24.890Z",
+      "sha256": "d913c9912dfb3ed4abacad2d35661a92ae2e63f071e5638409cc3b94419b9950",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/acme-test-2026-06-20.md",
+      "bytes": 5369,
+      "modifiedAt": "2026-06-20T09:42:13.000Z",
+      "sha256": "5a3ecd2ecf0ebf9d90ed84adee20c763c6e27603291ffd680d5d3356a5af9a4c",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/acme-test-2026-07-03.md",
+      "bytes": 10851,
+      "modifiedAt": "2026-07-04T09:54:55.000Z",
+      "sha256": "5e0fd5abc61b14a46fb6029a0efe31e6dd87c5d621a995a6ce63233118710503",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/acme-test-2026-07-14.md",
+      "bytes": 1506,
+      "modifiedAt": "2026-07-14T12:02:19.906Z",
+      "sha256": "79dfc7395914b73cf12eb99a9de555f767b18c33242314a1581301b07fda6066",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/acme-test-2026-07-15.md",
+      "bytes": 1603,
+      "modifiedAt": "2026-07-15T04:09:01.456Z",
+      "sha256": "cb1f0c8ea4f3f7095da0490e3b5185914d4c34dfdd6b4fcd9b643dae41fc79c8",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/allstate-test-2026-06-20.md",
+      "bytes": 9136,
+      "modifiedAt": "2026-06-21T04:46:42.000Z",
+      "sha256": "97948cd7d91dca27c8944b62c88e44d58276814c6bdbf586565b9742572ca989",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/allstate-test-2026-06-21.md",
+      "bytes": 5534,
+      "modifiedAt": "2026-06-21T04:53:01.000Z",
+      "sha256": "75aa26afcdfde6778fe60e718dd7874f9cd4a8dd3269575bc1199d42eab8a2ca",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/allstate-test-2026-06-29.md",
+      "bytes": 5829,
+      "modifiedAt": "2026-06-30T10:46:12.000Z",
+      "sha256": "17e3351807984b9a61156a9f876dde18d89f4f1f17770034def79809bb2b4e60",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/allstate-test-2026-07-09.md",
+      "bytes": 4921,
+      "modifiedAt": "2026-07-08T17:26:41.000Z",
+      "sha256": "1f196c8bd5d2bde6b84fb25e45142e88b7fede123cf42e3f0194640b18f16b18",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/allstate-test-2026-07-15.md",
+      "bytes": 1412,
+      "modifiedAt": "2026-07-15T07:56:06.323Z",
+      "sha256": "53814a4bda438527ff37a9347bc53e08c7fe0b40b8f91a2b5f3fc81d60742acf",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/arteriors-test-2026-06-21.md",
+      "bytes": 9303,
+      "modifiedAt": "2026-06-21T06:53:53.000Z",
+      "sha256": "e1b1cc44217b9f46746954d0d7ee5b1cdc8ab229586f7a7c05737d7204af9d34",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/arteriors-test-2026-06-29.md",
+      "bytes": 1770,
+      "modifiedAt": "2026-06-29T01:01:30.000Z",
+      "sha256": "32bbe6b1ccd68747682b9513f925d424994cf8c7a1700894ecacb1feccf126d3",
+      "layer": "test-record",
+      "status": "complete-history-not-current",
+      "statusLabel": "四类证据齐全 · 仍是历史",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "Result、Method、QA、Timing 四类结构存在；尚未证明结论符合今天的合同。",
+      "nextAction": "保留为历史证据；由 current manifest 明确引用时才参与当前决策。"
+    },
+    {
+      "file": "docs/test-runs/arteriors-test-2026-06-30.md",
+      "bytes": 13173,
+      "modifiedAt": "2026-06-30T16:09:29.000Z",
+      "sha256": "b6028d0a6b97e493d75f87b9ce010d4212d0fea870744a99adaa623fbee3f20c",
+      "layer": "test-record",
+      "status": "complete-history-not-current",
+      "statusLabel": "四类证据齐全 · 仍是历史",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "Result、Method、QA、Timing 四类结构存在；尚未证明结论符合今天的合同。",
+      "nextAction": "保留为历史证据；由 current manifest 明确引用时才参与当前决策。"
+    },
+    {
+      "file": "docs/test-runs/arteriors-test-2026-07-15.md",
+      "bytes": 1269,
+      "modifiedAt": "2026-07-15T08:11:43.525Z",
+      "sha256": "e2063667cf7889d33453aadc1a5657426d88cbb33a23ec077b286b14ab44e083",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/artmax-test-2026-07-08.md",
+      "bytes": 4877,
+      "modifiedAt": "2026-07-08T06:28:06.000Z",
+      "sha256": "b491b62de062d51886eb41f1399856242e13e614a2576341c34af9cfe61a644e",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/artmax-test-2026-07-15.md",
+      "bytes": 1191,
+      "modifiedAt": "2026-07-15T08:36:23.018Z",
+      "sha256": "67e0fbd6ef92a8a5741c79b295a3472bf52abf780a4eff06c5afd0144b6aa2c9",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/ashley-catalog-export-itemstatus-bulk-2026-07-06.md",
+      "bytes": 62090,
+      "modifiedAt": "2026-07-07T09:19:25.000Z",
+      "sha256": "c578ca0fbe5ead4262e8134c1f62a5dacf06529d718938a7a817abe31535251b",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/ashley-direct-interface-discovery-2026-07-01.md",
+      "bytes": 4301,
+      "modifiedAt": "2026-07-01T12:08:02.000Z",
+      "sha256": "1929d10558da20a4da1b7652304b7904c4e7a3ce6f31599baa8a7e3d633c2208",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/ashley-itemstatus-api-discovery-2026-07-06.md",
+      "bytes": 3239,
+      "modifiedAt": "2026-07-06T05:59:58.000Z",
+      "sha256": "5e28db7ce612a527f2e708f93901df67f106a44c3c0d344a52d8f8fd50b96498",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/ashley-repair-2026-07-09.md",
+      "bytes": 5127,
+      "modifiedAt": "2026-07-09T20:11:26.000Z",
+      "sha256": "68d51ec398bb479e8971caa953caa97a9ba826d1bd988929192e08a957f5d778",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/ashley-repair-2026-07-10.md",
+      "bytes": 9536,
+      "modifiedAt": "2026-07-10T07:15:54.000Z",
+      "sha256": "1f8f6f3aeb70bf46686e94c5b7ecc05ce50c24a8e8fff331969bb1e7cda698e4",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/ashley-test-2026-07-15.md",
+      "bytes": 1911,
+      "modifiedAt": "2026-07-15T09:07:23.704Z",
+      "sha256": "e8136f79b735ebc46db52c002e1da7779654405f28cf4001766ae154b436845f",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/ashley-test-page-2026-06-19.md",
+      "bytes": 2715,
+      "modifiedAt": "2026-06-19T14:47:32.000Z",
+      "sha256": "28e7b255acb35279b0575729124c7d264c0adda83e8407173d16630e998209c6",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/azzurro-living-test-2026-06-21.md",
+      "bytes": 12444,
+      "modifiedAt": "2026-06-21T10:03:34.000Z",
+      "sha256": "f208f669eec4567d1f6229d210e5feef1f7949f7a0e505ff96539debff0d76c6",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/azzurro-living-test-2026-07-03.md",
+      "bytes": 7245,
+      "modifiedAt": "2026-07-05T10:22:21.000Z",
+      "sha256": "ecdd9bd44b903678cc7357a839ced6d181a4e751f3b38fd42b66a0d030c0f33f",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/azzurro-living-test-2026-07-15.md",
+      "bytes": 1574,
+      "modifiedAt": "2026-07-15T08:45:54.375Z",
+      "sha256": "4e1eec9fe61a95047d40ff595d9baa429b13ba4f8dfa3bcaada156c6019454f5",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/bernhardt-test-2026-06-21.md",
+      "bytes": 10539,
+      "modifiedAt": "2026-06-21T12:15:47.000Z",
+      "sha256": "2a293fb05d0a4243ca484b949681f4ffa74a5a2f122c0a6068fa52ff02f7b6b2",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/bernhardt-test-2026-07-01.md",
+      "bytes": 15752,
+      "modifiedAt": "2026-07-05T09:58:43.000Z",
+      "sha256": "9a0c09558ee5b442ca782f5131b635f2b603293f522c10c3c8f52d4c77931aac",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/bernhardt-test-2026-07-05.md",
+      "bytes": 2747,
+      "modifiedAt": "2026-07-05T09:58:43.000Z",
+      "sha256": "eb67b6ab208520f3bf9748a546fa48be010030f6b062ced37ac41246d792fa3b",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/bernhardt-test-2026-07-08.md",
+      "bytes": 3777,
+      "modifiedAt": "2026-07-08T04:41:35.000Z",
+      "sha256": "41a581bfa43bad64b7bc6defa9833af65e1655291fdee92da5c897ae615fd2d8",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/bernhardt-test-2026-07-10.md",
+      "bytes": 4552,
+      "modifiedAt": "2026-07-09T20:08:52.000Z",
+      "sha256": "93a1f58123170fba1d11eabdf6fc3588d00421599fd96b0740467813393017cf",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/bernhardt-test-2026-07-15.md",
+      "bytes": 1250,
+      "modifiedAt": "2026-07-15T09:18:18.469Z",
+      "sha256": "b609d3f6dfba73e07c305938a4dceb094c6428f74f85bd00e73b7ecf802abec8",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/best-master-furniture-test-2026-06-21.md",
+      "bytes": 16042,
+      "modifiedAt": "2026-06-22T10:23:12.000Z",
+      "sha256": "83b95c249838eab7d8536e29aae3e10697bf89be850cab03eb39370bd124edf8",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/best-master-furniture-test-2026-06-22.md",
+      "bytes": 3893,
+      "modifiedAt": "2026-06-22T10:26:04.000Z",
+      "sha256": "61890bf2db35909912b17a2e33a6b5d6ef2e865c808cac269bb21f48a16e695c",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/best-master-furniture-test-2026-06-23.md",
+      "bytes": 7407,
+      "modifiedAt": "2026-06-23T10:39:40.000Z",
+      "sha256": "bf837f8ea301e3c35ab7e86cade407d0802b398f98639bec8acd67f09c0650ad",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/best-master-furniture-test-2026-07-05.md",
+      "bytes": 12772,
+      "modifiedAt": "2026-07-06T04:32:19.000Z",
+      "sha256": "4221698e7ea28439c16b4e329fa279213dd1db969de238ad1ec9e64ff392de11",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/best-master-furniture-test-2026-07-15.md",
+      "bytes": 1137,
+      "modifiedAt": "2026-07-15T09:32:43.023Z",
+      "sha256": "f5e51c857f2255a7e60667a45b175773bf2466ca38ac92ca8948ef44b8741ee4",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/bulk-suppliers-2026-06-29.md",
+      "bytes": 10733,
+      "modifiedAt": "2026-06-29T16:52:07.000Z",
+      "sha256": "409514f7c7eb93069373a2b7c73be928fa3db040e0249fdb53d46538c486661c",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/canva-fill-assistant-sequence-link-update-2026-07-02.md",
+      "bytes": 21098,
+      "modifiedAt": "2026-07-15T11:48:59.376Z",
+      "sha256": "b7cbcf59904a58ff52d2191cea9f92f51b1948a96fbd35d68d6ade92388960a9",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/canva-link-extractor-poc-2026-06-24.md",
+      "bytes": 5793,
+      "modifiedAt": "2026-06-24T11:41:46.000Z",
+      "sha256": "763bcba3e5c4d38bf668aefe8455ff8cbf00633acf2ade248587ced443384585",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/canva-sdk-page-16-fill-poc-2026-06-24.md",
+      "bytes": 5698,
+      "modifiedAt": "2026-06-27T06:29:02.000Z",
+      "sha256": "84f6252e2a3d640958075d16ba7611c6a40416f5357ac8d01998cf640ab735ea",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/canva-team-app-build-2026-06-26.md",
+      "bytes": 20328,
+      "modifiedAt": "2026-07-15T11:48:58.908Z",
+      "sha256": "c4217a1a79c1ab34fd7501c6f0c065c835737632e13ef84a02e2e09379e238dd",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/caracole-test-2026-07-03.md",
+      "bytes": 5924,
+      "modifiedAt": "2026-07-04T10:20:08.000Z",
+      "sha256": "c988ca6b48b71e6f23aad204cfc5e4785bac7eb51e11a61800bcc3a0dc181ccc",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/caracole-test-2026-07-15.md",
+      "bytes": 953,
+      "modifiedAt": "2026-07-15T09:54:39.728Z",
+      "sha256": "5f61b970d8a12e32a8e91fe88fe318e5d79ba0e8cfa089eebeec50fddf909017",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/cfc-test-2026-07-03.md",
+      "bytes": 4655,
+      "modifiedAt": "2026-07-03T11:19:22.000Z",
+      "sha256": "b65cf1af837122337b0bd89afb23944552cac3f3e6c97e3a87f28020f4277732",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/classic-home-test-2026-06-29.md",
+      "bytes": 2654,
+      "modifiedAt": "2026-06-29T17:55:39.000Z",
+      "sha256": "68d33459ca80d142ec29254df5199f2a9298a1f76fbed3d8a0c72072c1ea7437",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/classic-home-test-2026-06-30.md",
+      "bytes": 4446,
+      "modifiedAt": "2026-06-30T10:53:41.000Z",
+      "sha256": "7c2e2cdff3bf2f72e53ef5075e071afa83f50d79dba48eb33f40485e2b5fc2e3",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/classic-home-test-2026-07-08.md",
+      "bytes": 3128,
+      "modifiedAt": "2026-07-08T12:19:25.000Z",
+      "sha256": "8d28549891474644dea9366c2099273d128bd7885b03549a63298596e4a6f705",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/coaster-image-pattern-audit-2026-07-01.md",
+      "bytes": 5682,
+      "modifiedAt": "2026-07-01T02:25:11.000Z",
+      "sha256": "ceb8bb5fdcdf54c79cea01599d2422669b50d809cec546045f8e3f0298260acc",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/coaster-test-2026-06-29.md",
+      "bytes": 3443,
+      "modifiedAt": "2026-06-29T02:04:56.000Z",
+      "sha256": "b769043d391e0551512da80383bc6a3721033921f3c57d1d65dd4406bff2d73e",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/coaster-test-2026-06-30 2.md",
+      "bytes": 3763,
+      "modifiedAt": "2026-06-30T16:34:41.000Z",
+      "sha256": "223a8db08d4d0702ba1c7c8a5c6ce825c9f42463b478c20d723634865571e818",
+      "layer": "test-record",
+      "status": "duplicate-history",
+      "statusLabel": "重复历史候选 · 禁止直接删除",
+      "machineSignals": [
+        "重复文件名候选"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "先比较内容并合并独有证据，再归档副本。"
+    },
+    {
+      "file": "docs/test-runs/coaster-test-2026-06-30.md",
+      "bytes": 7279,
+      "modifiedAt": "2026-06-30T17:40:42.000Z",
+      "sha256": "7eba977233e18cc3579d969b2f56145f0e0124579a5ca0ea2122c88c6521e9d3",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/coaster-test-2026-07-01.md",
+      "bytes": 64332,
+      "modifiedAt": "2026-07-03T01:36:08.000Z",
+      "sha256": "b62ca8eb323a519a5587f3b5342c7de8688f69988c9c47ff8fddbe93e81f68a3",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/coaster-test-2026-07-15.md",
+      "bytes": 634,
+      "modifiedAt": "2026-07-15T09:59:32.496Z",
+      "sha256": "c0d5c349cc0c6d3e5666e1da24426e40256887573097c8b6879a301a304b10c5",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/crestview-collection-test-2026-07-05.md",
+      "bytes": 3484,
+      "modifiedAt": "2026-07-05T11:27:08.000Z",
+      "sha256": "f00bf61431aed3e041cf96a353f9534bb7e27d5236c68c86758543c4d837726d",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/crestview-collection-test-2026-07-15.md",
+      "bytes": 687,
+      "modifiedAt": "2026-07-15T10:08:10.313Z",
+      "sha256": "79b8eaf9185deeba4d7dabf9b13383412531b7b3800b2cf24fa0da7cb072bfec",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/deco-marche-test-2026-07-03.md",
+      "bytes": 4887,
+      "modifiedAt": "2026-07-03T09:28:11.000Z",
+      "sha256": "68dc8b29443ec60867aec2db90c0c597fb4f622bb9b732953d29c240d41265db",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/deco-marche-test-2026-07-15.md",
+      "bytes": 771,
+      "modifiedAt": "2026-07-15T10:13:50.318Z",
+      "sha256": "b66d3442fc52faf8ecceeaf276b1eea27e3117bda4ed9858fe3ebddfa965a37e",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/dovetail-test-2026-06-30.md",
+      "bytes": 4047,
+      "modifiedAt": "2026-06-30T16:49:48.000Z",
+      "sha256": "d4e668ff55cf5d6452652549204647abcb06f1f2099ead1a446898aecb83d777",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/dovetail-test-2026-07-15.md",
+      "bytes": 643,
+      "modifiedAt": "2026-07-15T10:24:45.440Z",
+      "sha256": "6be315fff55c691ed6c196580c59dba08f66bbb252b296838b84052825b334b0",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/drive-image-url-canva-fix-2026-07-01.md",
+      "bytes": 7078,
+      "modifiedAt": "2026-07-01T10:20:28.000Z",
+      "sha256": "c713d1003bb6ee2a6564e115906b7b54753d32bb6d7933d3603a8e3fb7a9ca9c",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/drive-permanent-images-organize-2026-07-08.md",
+      "bytes": 2450,
+      "modifiedAt": "2026-07-08T11:16:13.000Z",
+      "sha256": "5b4b08c6026d307f6451563a3b1629de357d6f7d82ff94882b626360c7f09fcd",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/dvkap-in-app-auth-2026-07-03.md",
+      "bytes": 6838,
+      "modifiedAt": "2026-07-03T06:51:11.000Z",
+      "sha256": "e539d56131513d47bb819a3cb191de43f2b2d057c4a13fce0fd6a4e492004c4a",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/dvkap-test-2026-06-30.md",
+      "bytes": 3927,
+      "modifiedAt": "2026-06-30T16:54:56.000Z",
+      "sha256": "0e00e4549aa1d1c983bb7de4d31a70543c4705789d7ebae289623f2ab026b609",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/dvkap-test-2026-07-08.md",
+      "bytes": 2986,
+      "modifiedAt": "2026-07-08T13:43:23.000Z",
+      "sha256": "5b92b1759ac365acc0969ee68ce7e1d43cf8bb524118a804f2857289d872922b",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/eichholtz-test-2026-07-01.md",
+      "bytes": 5979,
+      "modifiedAt": "2026-07-01T02:58:36.000Z",
+      "sha256": "688ac2e85561333732134307daeb6aa726c542a426550e74ae80ddb25fcbcdf4",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/eichholtz-test-2026-07-08.md",
+      "bytes": 3086,
+      "modifiedAt": "2026-07-08T12:12:07.000Z",
+      "sha256": "c637cceb38fbcb0c00f5f38faaf945975df251cbea92e9a3c9ff04aadf37cff7",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/four-hands-copy-paste-retest-2026-06-21.md",
+      "bytes": 3610,
+      "modifiedAt": "2026-06-21T06:53:29.000Z",
+      "sha256": "a7ce1adbb2f1618d9ca62e8f76d65bade951d971144e5addf92a235f1f87f57e",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/four-hands-fill-pages-26-27-2026-06-26.md",
+      "bytes": 3691,
+      "modifiedAt": "2026-06-26T08:09:35.000Z",
+      "sha256": "3f90bb2f068d8bda11b9e51e30d17d8a8c3b09afaa826762b12ab2a75a2739cb",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/four-hands-full-site-extraction-2026-06-28.md",
+      "bytes": 3192,
+      "modifiedAt": "2026-07-15T11:48:59.064Z",
+      "sha256": "3f37143849e0f602f52a7290d1497a8d804287036d0ccccf47da13c39a786e4f",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/four-hands-in-app-auth-2026-07-03.md",
+      "bytes": 4701,
+      "modifiedAt": "2026-07-03T06:30:19.000Z",
+      "sha256": "190c0d37426eebf205b3d7ad72bf08218cbbbc792b47da874059bae71cf4ac96",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/four-hands-inventory-eta-refresh-2026-07-02.md",
+      "bytes": 3689,
+      "modifiedAt": "2026-07-02T11:07:30.000Z",
+      "sha256": "8b0bd6bfcd4a76c38c20ee035a1a88592489127f5120b0b190630529ff69cd5f",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/four-hands-json-api-discovery-2026-06-26.md",
+      "bytes": 17627,
+      "modifiedAt": "2026-07-15T11:48:59.217Z",
+      "sha256": "78ece4e0d99686f3d0cd6a6d108371dbd33485ed0d5c1fbf6dd764b32af6e979",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/four-hands-refresh-2026-07-01.md",
+      "bytes": 3639,
+      "modifiedAt": "2026-07-01T16:23:55.000Z",
+      "sha256": "5a7e316e9c21ddc10af122f15fd013cc20c3612d514421fc890e3a36bc1c59f5",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/four-hands-test-2026-06-25.md",
+      "bytes": 7230,
+      "modifiedAt": "2026-06-25T09:44:05.000Z",
+      "sha256": "f43784d9d5a6774df7bd7a92df3760678efaee4710bfa290915eccccd1b99118",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/furniture-of-america-test-2026-07-05.md",
+      "bytes": 56459,
+      "modifiedAt": "2026-07-06T10:33:07.000Z",
+      "sha256": "ab8b293400d0cb1878b761fc1096b20aa8ccfacffd8339c09765612f1e403e27",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/global-views-surya-test-2026-07-01.md",
+      "bytes": 7165,
+      "modifiedAt": "2026-07-01T08:03:38.000Z",
+      "sha256": "1589ffe3857196af5d143b6889909761af031abdb1e757f61c1ca09acaa44a96",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/global-views-test-2026-07-03.md",
+      "bytes": 3305,
+      "modifiedAt": "2026-07-03T04:01:55.000Z",
+      "sha256": "188d3a5716504948bf5696af138e290da34015a405d95aed394bce346399f3eb",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/john-richard-test-2026-07-01.md",
+      "bytes": 7032,
+      "modifiedAt": "2026-07-07T09:27:36.000Z",
+      "sha256": "6d68ff2d0aef177be254e4226a3420cb7f455cac49d8f8ec42896cfe6cbf1f84",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/john-richard-test-2026-07-07.md",
+      "bytes": 3031,
+      "modifiedAt": "2026-07-07T09:33:55.000Z",
+      "sha256": "6a43e790effc1a7bc6cd123fa013c30cd7d02a07279211c4a81cf44521571a96",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/jonathan-charles-test-2026-07-02.md",
+      "bytes": 4615,
+      "modifiedAt": "2026-07-01T17:31:19.000Z",
+      "sha256": "9613f0f75b2a0b0cf3b445292a637bc75ed7c13eef56009598e33a8c45d7e26d",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/json-contract-standardization-2026-07-02.md",
+      "bytes": 5526,
+      "modifiedAt": "2026-07-04T12:05:27.000Z",
+      "sha256": "68f457cd0a323409df29b7c8222f1b279fcd6acbf7c373387afaca4b3b284f94",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/json-contract-standardization-2026-07-04.md",
+      "bytes": 4010,
+      "modifiedAt": "2026-07-04T15:50:59.000Z",
+      "sha256": "73d7d7a446f1818115181166bf2d0e020f57eb66c907f77afbaa701e39627ca5",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/leftbank-art-test-2026-07-07.md",
+      "bytes": 202889,
+      "modifiedAt": "2026-07-16T05:22:30.427Z",
+      "sha256": "b72b1713188cd1c1583779dc319fdcad5b3bc6f5441da974eccc5cd1349fd14e",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/leftbank-art-test-2026-07-11.md",
+      "bytes": 3401,
+      "modifiedAt": "2026-07-11T06:25:30.000Z",
+      "sha256": "67d481dcb417ca37cb513980c6939d90cb6fd6144ec2dbdb805d4014bd140f31",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/leftbank-art-test-2026-07-12.md",
+      "bytes": 1642,
+      "modifiedAt": "2026-07-12T06:05:02.810Z",
+      "sha256": "36138d6f4a1e57ce7d37e3a0dca0d67dcc917ca9499d46cfca1879838112cbca",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/meridian-test-2026-07-03.md",
+      "bytes": 4476,
+      "modifiedAt": "2026-07-05T09:58:42.000Z",
+      "sha256": "c6fad490fe433be4d5e9097e2e7e5c5f08f7980446ebc4681e163be5516dbf53",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/mix-suppliers-sdk-poc-2026-06-25.md",
+      "bytes": 20716,
+      "modifiedAt": "2026-06-25T11:39:45.000Z",
+      "sha256": "328d8da6f9f244e102f099f379f60ec470efdf9b71b1138c3f9ef6390185e70a",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/mix-suppliers-test-2026-06-23.md",
+      "bytes": 4302,
+      "modifiedAt": "2026-06-23T15:29:08.000Z",
+      "sha256": "5a6428db9e46edfd73efc635022356574577d576381d2d24081635a405a4b870",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/modway-test-2026-06-29.md",
+      "bytes": 1385,
+      "modifiedAt": "2026-06-28T23:06:53.000Z",
+      "sha256": "6a59953f257cf9c908d4e70ff81759be4a3062225040ec067eeac066c16d62c9",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/modway-test-2026-06-30.md",
+      "bytes": 16233,
+      "modifiedAt": "2026-06-30T14:34:46.000Z",
+      "sha256": "edb0ebe70532750beedb35ea72d8ff83797799dbf81252eec20c3179934adc2b",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/modway-test-2026-07-01.md",
+      "bytes": 4648,
+      "modifiedAt": "2026-07-01T15:40:12.000Z",
+      "sha256": "bf795ccac140cc5a45845c5995cf345d0c09b7f71b6563d30d0d969510cdfd8b",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/noir-test-2026-07-01.md",
+      "bytes": 7503,
+      "modifiedAt": "2026-07-02T07:54:32.000Z",
+      "sha256": "85eee1d18cbc6e037e7d780a0c02b735dae70e08b8bdd4dc0dba333a91f6abf2",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/phillips-collection-test-2026-07-01.md",
+      "bytes": 14410,
+      "modifiedAt": "2026-07-01T08:18:08.000Z",
+      "sha256": "da2d078f26410474778f8ff910ecd7b1eac6bcf07c5be25a72d81f57be605a59",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/poundex-test-2026-07-05.md",
+      "bytes": 7492,
+      "modifiedAt": "2026-07-05T13:55:50.000Z",
+      "sha256": "5a61104d0acdd33f30bd224f83b23b8245efadac49dffdaccd9711c0d8348491",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/pricing-multiplier-refresh-2026-06-30.md",
+      "bytes": 1133,
+      "modifiedAt": "2026-06-29T22:34:10.000Z",
+      "sha256": "e86c8f057df71de8d3a947484d01189c4349bfa5eb6276c11bbcd9b1c6ab4539",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/replica-test-2026-07-08.md",
+      "bytes": 6254,
+      "modifiedAt": "2026-07-08T10:33:10.000Z",
+      "sha256": "701f77835ef3ca4aadd7c6cc6a18cc0ac33cbaf812b31bd71ca61a956c413e9a",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/safavieh-test-2026-07-02.md",
+      "bytes": 22497,
+      "modifiedAt": "2026-07-05T12:37:27.000Z",
+      "sha256": "ed480a1d9efca444f4d9b7d4d6333a9f59d5d52ec050e958bd64184ba44e493b",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/scene-image-rules-recheck-2026-06-30.md",
+      "bytes": 9290,
+      "modifiedAt": "2026-06-30T10:45:50.000Z",
+      "sha256": "12b4d7136e16bacc6a3574616f2925282aca07bd53d8dd6a644f1172c481e518",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/sunpan-test-2026-07-02.md",
+      "bytes": 4662,
+      "modifiedAt": "2026-07-01T19:13:18.000Z",
+      "sha256": "716ddb9f392db9999605a129f7a065bd293dd5667dd361ce5e4615c43e8ca360",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/supplier-copy-paste-strategy-retest-2026-06-21.md",
+      "bytes": 4514,
+      "modifiedAt": "2026-06-21T07:04:12.000Z",
+      "sha256": "45897d6d8c31fd51934445ff86b8dadd0ab18dc1da767afa9725268815800ebb",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/supplier-index-polish-2026-07-03.md",
+      "bytes": 4893,
+      "modifiedAt": "2026-07-03T09:27:53.000Z",
+      "sha256": "39ea4abe9956396e65541e6bbdcc4aec4f88ce279a11541dac2e94c830d07148",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/supplier-sheet-migration-2026-07-02.md",
+      "bytes": 5252,
+      "modifiedAt": "2026-07-03T01:48:13.000Z",
+      "sha256": "4c1409b5ac76bdebfc68354b51cf8810babef30a7f811a4dc6db411e508d6dfe",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/supplier-system-contract-correction-2026-07-15.md",
+      "bytes": 2712,
+      "modifiedAt": "2026-07-15T11:48:59.533Z",
+      "sha256": "5b8cf174b1e46e88b758a3ef9795e8c6aad056e4aa85bf62a50cf1334167d53a",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/surya-test-2026-07-02.md",
+      "bytes": 2119,
+      "modifiedAt": "2026-07-02T10:12:44.000Z",
+      "sha256": "279bbfdd1a7a634884b8aa51b861c78424b1dc8afae4dd7b46da5f82fa257237",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/surya-test-2026-07-03.md",
+      "bytes": 3186,
+      "modifiedAt": "2026-07-03T00:37:56.000Z",
+      "sha256": "7f1aa65801d1e31891b3032f5439254bede88821a5a77a5aa58c483700cfe26d",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/surya-test-2026-07-09.md",
+      "bytes": 2569,
+      "modifiedAt": "2026-07-08T17:25:59.000Z",
+      "sha256": "d68a65a61b07808db1496fddab90ae53d4020bf85cb245887003df99cd1470b2",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/tov-test-2026-06-29.md",
+      "bytes": 14101,
+      "modifiedAt": "2026-06-30T10:46:00.000Z",
+      "sha256": "8ce0bbd2e8a30e100571140831ded92d4f2ed9913f8ba8eadea721b4cf978fa8",
+      "layer": "test-record",
+      "status": "complete-history-not-current",
+      "statusLabel": "四类证据齐全 · 仍是历史",
+      "machineSignals": [],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "Result、Method、QA、Timing 四类结构存在；尚未证明结论符合今天的合同。",
+      "nextAction": "保留为历史证据；由 current manifest 明确引用时才参与当前决策。"
+    },
+    {
+      "file": "docs/test-runs/tov-test-page-2026-06-20.md",
+      "bytes": 1902,
+      "modifiedAt": "2026-06-19T16:56:49.000Z",
+      "sha256": "66eaff974757775ead87a81669737a69414e265df7703392f9ed0c7ce1168c60",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/universal-furniture-test-2026-07-02.md",
+      "bytes": 13089,
+      "modifiedAt": "2026-07-09T20:34:36.000Z",
+      "sha256": "7ae1a0fc768c5b4039daba6e8ba09681e3b5f26e4683cb0785d3f55368dd18ca",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/universal-furniture-test-2026-07-10 2.md",
+      "bytes": 3204,
+      "modifiedAt": "2026-07-09T19:50:11.000Z",
+      "sha256": "791b95349d9c827322d121bb5fd80ad21220cf084aa301a6b97a4c07b5898190",
+      "layer": "test-record",
+      "status": "duplicate-history",
+      "statusLabel": "重复历史候选 · 禁止直接删除",
+      "machineSignals": [
+        "重复文件名候选"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "先比较内容并合并独有证据，再归档副本。"
+    },
+    {
+      "file": "docs/test-runs/universal-furniture-test-2026-07-10.md",
+      "bytes": 6544,
+      "modifiedAt": "2026-07-09T20:34:30.000Z",
+      "sha256": "de7c69323ec32b09fc93576d1182fa6c3d387664326bddfbc9d6248b0ca9b573",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/uttermost-test-2026-06-29.md",
+      "bytes": 1119,
+      "modifiedAt": "2026-06-28T21:34:25.000Z",
+      "sha256": "243da0b1be32a86ac387b64d028b0969d988703643192e39dcd7542fd2aee22e",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/uttermost-test-2026-06-30.md",
+      "bytes": 6765,
+      "modifiedAt": "2026-06-30T17:01:30.000Z",
+      "sha256": "af47b217606401c30236773e8838aa484751b6c8dd3b36cf42d573dd8e17bc92",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/uttermost-test-2026-07-01.md",
+      "bytes": 10714,
+      "modifiedAt": "2026-07-01T15:07:23.000Z",
+      "sha256": "bf31be07270714f54aa495e13500975712cc35fdfd6dbe6a10f53880e370fb64",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/vig-test-2026-07-01.md",
+      "bytes": 12807,
+      "modifiedAt": "2026-07-09T19:36:46.000Z",
+      "sha256": "58b38e764a2b766aaf6e02ba3ad6935d8b4cb89ab9af42d5bc0bec72a8870d75",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 method",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/vig-test-2026-07-10.md",
+      "bytes": 3878,
+      "modifiedAt": "2026-07-09T19:41:35.000Z",
+      "sha256": "97aed3f7ff727e2a37e9ce1252ef28fd2494132bcd7ed6f0de893588d92b7577",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    }
+  ]
+}
