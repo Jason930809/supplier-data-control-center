@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "image-proof-evidence-v1",
+  "generatedAt": "2026-07-16T03:51:51.382Z",
+  "measurementMethod": "直接读取公开证据文件字节中的 JPEG SOF 宽高，并计算 SHA-256；不信任 JSON 声明的 imageWidth/imageHeight。",
+  "assets": [
+    {
+      "id": "bernhardt-k1089-source",
+      "supplier": "Bernhardt",
+      "sku": "K1089",
+      "role": "before-source",
+      "file": "public/evidence/bernhardt-k1089-source.jpg",
+      "label": "BEFORE 原始场景图",
+      "expectedSquare": false,
+      "href": "evidence/bernhardt-k1089-source.jpg",
+      "bytes": 1444165,
+      "width": 5472,
+      "height": 3648,
+      "ratio": "3:2",
+      "square": false,
+      "expectationPassed": true,
+      "sha256": "c8b7d64e45f2abf487a80336fe916a5b3f835a4d7d7872b2cbbcf6f4a3db8380"
+    },
+    {
+      "id": "bernhardt-k1089-square",
+      "supplier": "Bernhardt",
+      "sku": "K1089",
+      "role": "after-json-square",
+      "file": "public/evidence/bernhardt-k1089-square.jpg",
+      "label": "AFTER JSON 方图",
+      "expectedSquare": true,
+      "href": "evidence/bernhardt-k1089-square.jpg",
+      "bytes": 466414,
+      "width": 1600,
+      "height": 1600,
+      "ratio": "1:1",
+      "square": true,
+      "expectationPassed": true,
+      "sha256": "142557d2151676a7d4acf16b42431abad079c7bb49e5c9a2cf9257101cc92a1f"
+    },
+    {
+      "id": "accent-decor-10090-comparison",
+      "supplier": "Accent Decor",
+      "sku": "10090.61",
+      "role": "comparison-board",
+      "file": "public/evidence/accent-decor-10090-before-after.jpg",
+      "label": "同 SKU 裁图 Before / After 证据板",
+      "expectedSquare": false,
+      "href": "evidence/accent-decor-10090-before-after.jpg",
+      "bytes": 267267,
+      "width": 1320,
+      "height": 760,
+      "ratio": "33:19",
+      "square": false,
+      "expectationPassed": true,
+      "sha256": "10d912c44089418d89842889041ef548c499631e963ae986ea827c8617bf6920"
+    },
+    {
+      "id": "accent-decor-crop-audit",
+      "supplier": "Accent Decor",
+      "sku": "10-SKU regression",
+      "role": "comparison-board",
+      "file": "public/evidence/accent-decor-crop-audit.jpg",
+      "label": "10 个 SKU 裁图回归证据板",
+      "expectedSquare": false,
+      "href": "evidence/accent-decor-crop-audit.jpg",
+      "bytes": 2462842,
+      "width": 2640,
+      "height": 3800,
+      "ratio": "66:95",
+      "square": false,
+      "expectationPassed": true,
+      "sha256": "be4980cdea3eb70cd54ab66ee7c64e38576cf1f18b864cec54fac36e48ecaa24"
+    }
+  ],
+  "bernhardtPair": {
+    "beforeId": "bernhardt-k1089-source",
+    "afterId": "bernhardt-k1089-square",
+    "sameSku": true,
+    "finalContract": "完整保留商品与场景，等比例缩放，短边补白，最终 URL 必须真实 1:1。"
+  },
+  "allExpectationsPassed": true
+}
