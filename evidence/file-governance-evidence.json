@@ -1,9 +1,9 @@
 {
   "schemaVersion": "file-governance-evidence-v1",
-  "generatedAt": "2026-07-16T04:42:57.326Z",
+  "generatedAt": "2026-07-16T05:10:46.870Z",
   "boundary": {
     "workspace": "/Volumes/CodexWorkspace",
-    "auditedCodeRuleFiles": 350,
+    "auditedCodeRuleFiles": 352,
     "auditedTestRecords": 121,
     "auditedDataAssets": 76613,
     "dataGiB": 105.03
@@ -13,25 +13,26 @@
     "mergeBeforeArchive": 2,
     "currentManifestsSigned": 0,
     "currentManifestsTotal": 37,
-    "rootRuntimeFilesPresent": 0,
+    "rootRuntimeFilesPresent": 3,
     "rootRuntimeFilesRequired": 3
   },
   "rootRuntimeContract": {
+    "location": "config/runtime-contract",
     "files": [
       {
-        "file": "package.json",
-        "present": false
+        "file": "config/runtime-contract/package.json",
+        "present": true
       },
       {
-        "file": "package-lock.json",
-        "present": false
+        "file": "config/runtime-contract/package-lock.json",
+        "present": true
       },
       {
-        "file": ".env.example",
-        "present": false
+        "file": "config/runtime-contract/.env.example",
+        "present": true
       }
     ],
-    "decision": "missing-blocks-portability"
+    "decision": "base-contract-present-migration-pending"
   },
   "duplicateEvidence": [
     {
@@ -81,7 +82,7 @@
     {
       "id": "scripts",
       "label": "抓取 / 修复 / 上传脚本",
-      "count": 300,
+      "count": 302,
       "flagged": 165,
       "decision": "inventory-before-retire",
       "plain": "没有 runner manifest 证明谁还在被调用；当前只能标记迁移、合并或退役候选，不能批量删除。"
