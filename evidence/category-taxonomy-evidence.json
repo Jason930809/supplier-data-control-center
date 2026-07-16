@@ -1,0 +1,1713 @@
+{
+  "generatedAt": "2026-07-16T03:33:42.632Z",
+  "schemaVersion": "category-taxonomy-contract-v1",
+  "taxonomyVersion": "category-taxonomy-v1-draft-20260716",
+  "status": "draft-awaiting-user-confirmation",
+  "productionApproved": false,
+  "summary": {
+    "suppliers": 37,
+    "sourceCategoryValues": 1735,
+    "sourceRowsRepresented": 387242,
+    "canonicalTypes": 53,
+    "rules": 67,
+    "auto": {
+      "values": 1060,
+      "rows": 198279
+    },
+    "review": {
+      "values": 642,
+      "rows": 44991
+    },
+    "blocked": {
+      "values": 33,
+      "rows": 143972
+    },
+    "humanDecisionValues": 675,
+    "humanDecisionRows": 188963
+  },
+  "decisionDefinitions": [
+    {
+      "id": "auto",
+      "label": "可自动建议",
+      "plainMeaning": "规则命中唯一商品类型；仍只是审核建议，用户确认前不改生产数据。"
+    },
+    {
+      "id": "review",
+      "label": "必须人工确认",
+      "plainMeaning": "可能有多个商品类型，必须看 SKU、标题或详情后决定。"
+    },
+    {
+      "id": "blocked",
+      "label": "禁止自动写入",
+      "plainMeaning": "当前值是风格、形状、房间等属性，直接写入品类一定会污染数据。"
+    }
+  ],
+  "redirectFields": [
+    {
+      "id": "bedSize",
+      "label": "Bed size",
+      "plainMeaning": "床的尺寸，例如 Queen、King，不再冒充商品品类。"
+    },
+    {
+      "id": "style",
+      "label": "Style",
+      "plainMeaning": "风格，例如 Modern、Coastal，只作为筛选属性。"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "plainMeaning": "形状，例如 L-Shape、Round，只作为筛选属性。"
+    },
+    {
+      "id": "room",
+      "label": "Room",
+      "plainMeaning": "使用空间，例如 Living Room，不等于商品类型。"
+    },
+    {
+      "id": "lifecycleStatus",
+      "label": "Lifecycle status",
+      "plainMeaning": "销售状态，例如 Closeout、Discontinued。"
+    },
+    {
+      "id": "assortment",
+      "label": "Assortment",
+      "plainMeaning": "系列、集合或营销分组，不等于商品类型。"
+    }
+  ],
+  "canonicalTypes": [
+    {
+      "id": "sectional-sofa",
+      "label": "Sectional Sofa",
+      "family": "Seating",
+      "plainMeaning": "组合式或转角沙发。",
+      "usage": {
+        "targetId": "sectional-sofa",
+        "label": "Sectional Sofa",
+        "values": 36,
+        "rows": 3763
+      }
+    },
+    {
+      "id": "loveseat",
+      "label": "Loveseat",
+      "family": "Seating",
+      "plainMeaning": "双人位小沙发。",
+      "usage": {
+        "targetId": "loveseat",
+        "label": "Loveseat",
+        "values": 21,
+        "rows": 1544
+      }
+    },
+    {
+      "id": "sleeper-sofa",
+      "label": "Sleeper Sofa",
+      "family": "Seating",
+      "plainMeaning": "可展开为床的沙发。",
+      "usage": {
+        "targetId": "sleeper-sofa",
+        "label": "Sleeper Sofa",
+        "values": 4,
+        "rows": 54
+      }
+    },
+    {
+      "id": "sofa",
+      "label": "Sofa",
+      "family": "Seating",
+      "plainMeaning": "普通沙发。",
+      "usage": {
+        "targetId": "sofa",
+        "label": "Sofa",
+        "values": 48,
+        "rows": 4329
+      }
+    },
+    {
+      "id": "dining-chair",
+      "label": "Dining Chair",
+      "family": "Seating",
+      "plainMeaning": "餐椅。",
+      "usage": {
+        "targetId": "dining-chair",
+        "label": "Dining Chair",
+        "values": 29,
+        "rows": 5043
+      }
+    },
+    {
+      "id": "office-chair",
+      "label": "Office Chair",
+      "family": "Seating",
+      "plainMeaning": "办公椅或书桌椅。",
+      "usage": {
+        "targetId": "office-chair",
+        "label": "Office Chair",
+        "values": 12,
+        "rows": 252
+      }
+    },
+    {
+      "id": "accent-chair",
+      "label": "Accent Chair",
+      "family": "Seating",
+      "plainMeaning": "单椅、休闲椅或装饰椅。",
+      "usage": {
+        "targetId": "accent-chair",
+        "label": "Accent Chair",
+        "values": 39,
+        "rows": 4002
+      }
+    },
+    {
+      "id": "rocking-chair",
+      "label": "Rocking Chair",
+      "family": "Seating",
+      "plainMeaning": "摇椅。",
+      "usage": {
+        "targetId": "rocking-chair",
+        "label": "Rocking Chair",
+        "values": 0,
+        "rows": 0
+      }
+    },
+    {
+      "id": "recliner",
+      "label": "Recliner",
+      "family": "Seating",
+      "plainMeaning": "躺椅。",
+      "usage": {
+        "targetId": "recliner",
+        "label": "Recliner",
+        "values": 8,
+        "rows": 321
+      }
+    },
+    {
+      "id": "bar-counter-stool",
+      "label": "Bar & Counter Stool",
+      "family": "Seating",
+      "plainMeaning": "吧椅或中岛椅。",
+      "usage": {
+        "targetId": "bar-counter-stool",
+        "label": "Bar & Counter Stool",
+        "values": 32,
+        "rows": 2985
+      }
+    },
+    {
+      "id": "ottoman",
+      "label": "Ottoman",
+      "family": "Seating",
+      "plainMeaning": "脚凳或软墩。",
+      "usage": {
+        "targetId": "ottoman",
+        "label": "Ottoman",
+        "values": 43,
+        "rows": 2424
+      }
+    },
+    {
+      "id": "bench",
+      "label": "Bench",
+      "family": "Seating",
+      "plainMeaning": "长凳。",
+      "usage": {
+        "targetId": "bench",
+        "label": "Bench",
+        "values": 40,
+        "rows": 1807
+      }
+    },
+    {
+      "id": "coffee-table",
+      "label": "Coffee Table",
+      "family": "Tables",
+      "plainMeaning": "茶几或客厅中心桌。",
+      "usage": {
+        "targetId": "coffee-table",
+        "label": "Coffee Table",
+        "values": 33,
+        "rows": 4528
+      }
+    },
+    {
+      "id": "end-side-table",
+      "label": "End & Side Table",
+      "family": "Tables",
+      "plainMeaning": "边桌、角几或小边几。",
+      "usage": {
+        "targetId": "end-side-table",
+        "label": "End & Side Table",
+        "values": 58,
+        "rows": 7917
+      }
+    },
+    {
+      "id": "console-table",
+      "label": "Console Table",
+      "family": "Tables",
+      "plainMeaning": "玄关桌或沙发背桌。",
+      "usage": {
+        "targetId": "console-table",
+        "label": "Console Table",
+        "values": 21,
+        "rows": 994
+      }
+    },
+    {
+      "id": "dining-table",
+      "label": "Dining Table",
+      "family": "Tables",
+      "plainMeaning": "餐桌。",
+      "usage": {
+        "targetId": "dining-table",
+        "label": "Dining Table",
+        "values": 35,
+        "rows": 3045
+      }
+    },
+    {
+      "id": "desk",
+      "label": "Desk",
+      "family": "Tables",
+      "plainMeaning": "书桌或办公桌。",
+      "usage": {
+        "targetId": "desk",
+        "label": "Desk",
+        "values": 33,
+        "rows": 934
+      }
+    },
+    {
+      "id": "nightstand",
+      "label": "Nightstand",
+      "family": "Storage",
+      "plainMeaning": "床头柜。",
+      "usage": {
+        "targetId": "nightstand",
+        "label": "Nightstand",
+        "values": 19,
+        "rows": 1476
+      }
+    },
+    {
+      "id": "dresser-vanity",
+      "label": "Dresser & Vanity",
+      "family": "Storage",
+      "plainMeaning": "梳妆台或卧室斗柜。",
+      "usage": {
+        "targetId": "dresser-vanity",
+        "label": "Dresser & Vanity",
+        "values": 40,
+        "rows": 2641
+      }
+    },
+    {
+      "id": "chest",
+      "label": "Chest",
+      "family": "Storage",
+      "plainMeaning": "抽屉柜或箱柜；仍需与普通收纳柜区分。",
+      "usage": {
+        "targetId": "chest",
+        "label": "Chest",
+        "values": 18,
+        "rows": 739
+      }
+    },
+    {
+      "id": "sideboard-buffet",
+      "label": "Sideboard & Buffet",
+      "family": "Storage",
+      "plainMeaning": "餐边柜或自助餐柜。",
+      "usage": {
+        "targetId": "sideboard-buffet",
+        "label": "Sideboard & Buffet",
+        "values": 33,
+        "rows": 1918
+      }
+    },
+    {
+      "id": "media-console",
+      "label": "Media Console",
+      "family": "Storage",
+      "plainMeaning": "电视柜或媒体柜。",
+      "usage": {
+        "targetId": "media-console",
+        "label": "Media Console",
+        "values": 8,
+        "rows": 471
+      }
+    },
+    {
+      "id": "cabinet",
+      "label": "Cabinet",
+      "family": "Storage",
+      "plainMeaning": "普通收纳柜。",
+      "usage": {
+        "targetId": "cabinet",
+        "label": "Cabinet",
+        "values": 46,
+        "rows": 1338
+      }
+    },
+    {
+      "id": "bookcase-shelving",
+      "label": "Bookcase & Shelving",
+      "family": "Storage",
+      "plainMeaning": "书柜或层架。",
+      "usage": {
+        "targetId": "bookcase-shelving",
+        "label": "Bookcase & Shelving",
+        "values": 19,
+        "rows": 438
+      }
+    },
+    {
+      "id": "headboard",
+      "label": "Headboard",
+      "family": "Bedroom",
+      "plainMeaning": "独立床头板。",
+      "usage": {
+        "targetId": "headboard",
+        "label": "Headboard",
+        "values": 5,
+        "rows": 899
+      }
+    },
+    {
+      "id": "bed",
+      "label": "Bed",
+      "family": "Bedroom",
+      "plainMeaning": "床；Queen、King 等另放 bedSize。",
+      "usage": {
+        "targetId": "bed",
+        "label": "Bed",
+        "values": 92,
+        "rows": 10512
+      }
+    },
+    {
+      "id": "mirror",
+      "label": "Mirror",
+      "family": "Wall Decor",
+      "plainMeaning": "镜子。",
+      "usage": {
+        "targetId": "mirror",
+        "label": "Mirror",
+        "values": 39,
+        "rows": 4031
+      }
+    },
+    {
+      "id": "photography-wall-art",
+      "label": "Photography Wall Art",
+      "family": "Wall Decor",
+      "plainMeaning": "摄影类墙面艺术。",
+      "usage": {
+        "targetId": "photography-wall-art",
+        "label": "Photography Wall Art",
+        "values": 2,
+        "rows": 2683
+      }
+    },
+    {
+      "id": "drawing-wall-art",
+      "label": "Drawing Wall Art",
+      "family": "Wall Decor",
+      "plainMeaning": "绘画或素描类墙面艺术。",
+      "usage": {
+        "targetId": "drawing-wall-art",
+        "label": "Drawing Wall Art",
+        "values": 1,
+        "rows": 390
+      }
+    },
+    {
+      "id": "mixed-media-wall-art",
+      "label": "Mixed Media Wall Art",
+      "family": "Wall Decor",
+      "plainMeaning": "混合媒介墙面艺术。",
+      "usage": {
+        "targetId": "mixed-media-wall-art",
+        "label": "Mixed Media Wall Art",
+        "values": 1,
+        "rows": 1423
+      }
+    },
+    {
+      "id": "wall-art",
+      "label": "Wall Art",
+      "family": "Wall Decor",
+      "plainMeaning": "无法继续细分媒介的墙面艺术。",
+      "usage": {
+        "targetId": "wall-art",
+        "label": "Wall Art",
+        "values": 33,
+        "rows": 25540
+      }
+    },
+    {
+      "id": "wall-art-set",
+      "label": "Wall Art Set",
+      "family": "Wall Decor",
+      "plainMeaning": "作为一套销售的墙面艺术组合。",
+      "usage": {
+        "targetId": "wall-art-set",
+        "label": "Wall Art Set",
+        "values": 1,
+        "rows": 310
+      }
+    },
+    {
+      "id": "wallpaper",
+      "label": "Wallpaper",
+      "family": "Wall Decor",
+      "plainMeaning": "墙纸。",
+      "usage": {
+        "targetId": "wallpaper",
+        "label": "Wallpaper",
+        "values": 1,
+        "rows": 372
+      }
+    },
+    {
+      "id": "runner-rug",
+      "label": "Runner Rug",
+      "family": "Rugs",
+      "plainMeaning": "长条走廊地毯。",
+      "usage": {
+        "targetId": "runner-rug",
+        "label": "Runner Rug",
+        "values": 1,
+        "rows": 52
+      }
+    },
+    {
+      "id": "area-rug",
+      "label": "Area Rug",
+      "family": "Rugs",
+      "plainMeaning": "区域地毯。",
+      "usage": {
+        "targetId": "area-rug",
+        "label": "Area Rug",
+        "values": 24,
+        "rows": 49897
+      }
+    },
+    {
+      "id": "chandelier",
+      "label": "Chandelier",
+      "family": "Lighting",
+      "plainMeaning": "吊灯中的枝形灯。",
+      "usage": {
+        "targetId": "chandelier",
+        "label": "Chandelier",
+        "values": 13,
+        "rows": 1203
+      }
+    },
+    {
+      "id": "pendant-light",
+      "label": "Pendant Light",
+      "family": "Lighting",
+      "plainMeaning": "单头或组合吊灯。",
+      "usage": {
+        "targetId": "pendant-light",
+        "label": "Pendant Light",
+        "values": 10,
+        "rows": 737
+      }
+    },
+    {
+      "id": "wall-sconce",
+      "label": "Wall Sconce",
+      "family": "Lighting",
+      "plainMeaning": "壁灯。",
+      "usage": {
+        "targetId": "wall-sconce",
+        "label": "Wall Sconce",
+        "values": 12,
+        "rows": 807
+      }
+    },
+    {
+      "id": "floor-lamp",
+      "label": "Floor Lamp",
+      "family": "Lighting",
+      "plainMeaning": "落地灯。",
+      "usage": {
+        "targetId": "floor-lamp",
+        "label": "Floor Lamp",
+        "values": 23,
+        "rows": 888
+      }
+    },
+    {
+      "id": "table-lamp",
+      "label": "Table Lamp",
+      "family": "Lighting",
+      "plainMeaning": "台灯或桌灯。",
+      "usage": {
+        "targetId": "table-lamp",
+        "label": "Table Lamp",
+        "values": 15,
+        "rows": 2427
+      }
+    },
+    {
+      "id": "decorative-pillow",
+      "label": "Decorative Pillow",
+      "family": "Textiles",
+      "plainMeaning": "装饰抱枕。",
+      "usage": {
+        "targetId": "decorative-pillow",
+        "label": "Decorative Pillow",
+        "values": 25,
+        "rows": 32487
+      }
+    },
+    {
+      "id": "bedding",
+      "label": "Bedding",
+      "family": "Textiles",
+      "plainMeaning": "被子、床罩或床品。",
+      "usage": {
+        "targetId": "bedding",
+        "label": "Bedding",
+        "values": 1,
+        "rows": 327
+      }
+    },
+    {
+      "id": "vase",
+      "label": "Vase",
+      "family": "Decor",
+      "plainMeaning": "花瓶。",
+      "usage": {
+        "targetId": "vase",
+        "label": "Vase",
+        "values": 21,
+        "rows": 4746
+      }
+    },
+    {
+      "id": "planter-pot",
+      "label": "Planter & Pot",
+      "family": "Decor",
+      "plainMeaning": "花盆或种植器。",
+      "usage": {
+        "targetId": "planter-pot",
+        "label": "Planter & Pot",
+        "values": 16,
+        "rows": 1674
+      }
+    },
+    {
+      "id": "decorative-jar",
+      "label": "Decorative Jar",
+      "family": "Decor",
+      "plainMeaning": "装饰罐。",
+      "usage": {
+        "targetId": "decorative-jar",
+        "label": "Decorative Jar",
+        "values": 5,
+        "rows": 274
+      }
+    },
+    {
+      "id": "decorative-urn",
+      "label": "Decorative Urn",
+      "family": "Decor",
+      "plainMeaning": "装饰瓮。",
+      "usage": {
+        "targetId": "decorative-urn",
+        "label": "Decorative Urn",
+        "values": 12,
+        "rows": 320
+      }
+    },
+    {
+      "id": "candleholder",
+      "label": "Candleholder",
+      "family": "Decor",
+      "plainMeaning": "烛台。",
+      "usage": {
+        "targetId": "candleholder",
+        "label": "Candleholder",
+        "values": 11,
+        "rows": 865
+      }
+    },
+    {
+      "id": "decorative-sculpture",
+      "label": "Decorative Sculpture",
+      "family": "Decor",
+      "plainMeaning": "装饰雕塑或摆件。",
+      "usage": {
+        "targetId": "decorative-sculpture",
+        "label": "Decorative Sculpture",
+        "values": 10,
+        "rows": 1530
+      }
+    },
+    {
+      "id": "decorative-bowl",
+      "label": "Decorative Bowl",
+      "family": "Decor",
+      "plainMeaning": "装饰碗。",
+      "usage": {
+        "targetId": "decorative-bowl",
+        "label": "Decorative Bowl",
+        "values": 15,
+        "rows": 1727
+      }
+    },
+    {
+      "id": "decorative-tray",
+      "label": "Decorative Tray",
+      "family": "Decor",
+      "plainMeaning": "装饰托盘。",
+      "usage": {
+        "targetId": "decorative-tray",
+        "label": "Decorative Tray",
+        "values": 9,
+        "rows": 533
+      }
+    },
+    {
+      "id": "decorative-box",
+      "label": "Decorative Box",
+      "family": "Decor",
+      "plainMeaning": "装饰盒。",
+      "usage": {
+        "targetId": "decorative-box",
+        "label": "Decorative Box",
+        "values": 10,
+        "rows": 646
+      }
+    },
+    {
+      "id": "floral-arrangement",
+      "label": "Floral Arrangement",
+      "family": "Decor",
+      "plainMeaning": "人造花艺组合。",
+      "usage": {
+        "targetId": "floral-arrangement",
+        "label": "Floral Arrangement",
+        "values": 0,
+        "rows": 0
+      }
+    },
+    {
+      "id": "dining-set",
+      "label": "Dining Set",
+      "family": "Sets",
+      "plainMeaning": "作为一套销售的餐桌椅组合。",
+      "usage": {
+        "targetId": "dining-set",
+        "label": "Dining Set",
+        "values": 6,
+        "rows": 707
+      }
+    }
+  ],
+  "ruleUsage": [
+    {
+      "ruleId": "attr-style",
+      "decision": "blocked",
+      "values": 13,
+      "rows": 138415
+    },
+    {
+      "ruleId": "area-rug",
+      "decision": "auto",
+      "values": 24,
+      "rows": 49897
+    },
+    {
+      "ruleId": "decorative-pillow",
+      "decision": "auto",
+      "values": 25,
+      "rows": 32487
+    },
+    {
+      "ruleId": "wall-art",
+      "decision": "auto",
+      "values": 33,
+      "rows": 25540
+    },
+    {
+      "ruleId": "no-safe-mapping",
+      "decision": "review",
+      "values": 497,
+      "rows": 22396
+    },
+    {
+      "ruleId": "generic-outdoor",
+      "decision": "review",
+      "values": 21,
+      "rows": 12663
+    },
+    {
+      "ruleId": "end-side-table",
+      "decision": "auto",
+      "values": 58,
+      "rows": 7917
+    },
+    {
+      "ruleId": "bed",
+      "decision": "auto",
+      "values": 63,
+      "rows": 7821
+    },
+    {
+      "ruleId": "dining-chair",
+      "decision": "auto",
+      "values": 29,
+      "rows": 5043
+    },
+    {
+      "ruleId": "vase",
+      "decision": "auto",
+      "values": 21,
+      "rows": 4746
+    },
+    {
+      "ruleId": "coffee-table",
+      "decision": "auto",
+      "values": 33,
+      "rows": 4528
+    },
+    {
+      "ruleId": "sofa",
+      "decision": "auto",
+      "values": 48,
+      "rows": 4329
+    },
+    {
+      "ruleId": "mirror",
+      "decision": "auto",
+      "values": 39,
+      "rows": 4031
+    },
+    {
+      "ruleId": "accent-chair",
+      "decision": "auto",
+      "values": 39,
+      "rows": 4002
+    },
+    {
+      "ruleId": "sectional-sofa",
+      "decision": "auto",
+      "values": 36,
+      "rows": 3763
+    },
+    {
+      "ruleId": "dining-table",
+      "decision": "auto",
+      "values": 35,
+      "rows": 3045
+    },
+    {
+      "ruleId": "bar-counter-stool",
+      "decision": "auto",
+      "values": 32,
+      "rows": 2985
+    },
+    {
+      "ruleId": "attr-shape",
+      "decision": "blocked",
+      "values": 9,
+      "rows": 2970
+    },
+    {
+      "ruleId": "bed-size-only",
+      "decision": "review",
+      "values": 29,
+      "rows": 2691
+    },
+    {
+      "ruleId": "photography-wall-art",
+      "decision": "auto",
+      "values": 2,
+      "rows": 2683
+    },
+    {
+      "ruleId": "dresser-vanity",
+      "decision": "auto",
+      "values": 40,
+      "rows": 2641
+    },
+    {
+      "ruleId": "generic-chair",
+      "decision": "review",
+      "values": 13,
+      "rows": 2614
+    },
+    {
+      "ruleId": "table-lamp",
+      "decision": "auto",
+      "values": 15,
+      "rows": 2427
+    },
+    {
+      "ruleId": "ottoman",
+      "decision": "auto",
+      "values": 43,
+      "rows": 2424
+    },
+    {
+      "ruleId": "generic-decor",
+      "decision": "review",
+      "values": 51,
+      "rows": 1944
+    },
+    {
+      "ruleId": "sideboard-buffet",
+      "decision": "auto",
+      "values": 33,
+      "rows": 1918
+    },
+    {
+      "ruleId": "bench",
+      "decision": "auto",
+      "values": 40,
+      "rows": 1807
+    },
+    {
+      "ruleId": "decorative-bowl",
+      "decision": "auto",
+      "values": 15,
+      "rows": 1727
+    },
+    {
+      "ruleId": "planter-pot",
+      "decision": "auto",
+      "values": 16,
+      "rows": 1674
+    },
+    {
+      "ruleId": "loveseat",
+      "decision": "auto",
+      "values": 21,
+      "rows": 1544
+    },
+    {
+      "ruleId": "decorative-sculpture",
+      "decision": "auto",
+      "values": 10,
+      "rows": 1530
+    },
+    {
+      "ruleId": "nightstand",
+      "decision": "auto",
+      "values": 19,
+      "rows": 1476
+    },
+    {
+      "ruleId": "mixed-media-wall-art",
+      "decision": "auto",
+      "values": 1,
+      "rows": 1423
+    },
+    {
+      "ruleId": "attr-lifecycle",
+      "decision": "blocked",
+      "values": 3,
+      "rows": 1398
+    },
+    {
+      "ruleId": "cabinet",
+      "decision": "auto",
+      "values": 46,
+      "rows": 1338
+    },
+    {
+      "ruleId": "chandelier",
+      "decision": "auto",
+      "values": 13,
+      "rows": 1203
+    },
+    {
+      "ruleId": "generic-table",
+      "decision": "review",
+      "values": 3,
+      "rows": 1038
+    },
+    {
+      "ruleId": "console-table",
+      "decision": "auto",
+      "values": 21,
+      "rows": 994
+    },
+    {
+      "ruleId": "desk",
+      "decision": "auto",
+      "values": 33,
+      "rows": 934
+    },
+    {
+      "ruleId": "headboard",
+      "decision": "auto",
+      "values": 5,
+      "rows": 899
+    },
+    {
+      "ruleId": "floor-lamp",
+      "decision": "auto",
+      "values": 23,
+      "rows": 888
+    },
+    {
+      "ruleId": "candleholder",
+      "decision": "auto",
+      "values": 11,
+      "rows": 865
+    },
+    {
+      "ruleId": "generic-lighting",
+      "decision": "review",
+      "values": 22,
+      "rows": 865
+    },
+    {
+      "ruleId": "wall-sconce",
+      "decision": "auto",
+      "values": 12,
+      "rows": 807
+    },
+    {
+      "ruleId": "chest",
+      "decision": "auto",
+      "values": 18,
+      "rows": 739
+    },
+    {
+      "ruleId": "pendant-light",
+      "decision": "auto",
+      "values": 10,
+      "rows": 737
+    },
+    {
+      "ruleId": "dining-set",
+      "decision": "auto",
+      "values": 6,
+      "rows": 707
+    },
+    {
+      "ruleId": "attr-assortment",
+      "decision": "blocked",
+      "values": 3,
+      "rows": 652
+    },
+    {
+      "ruleId": "decorative-box",
+      "decision": "auto",
+      "values": 10,
+      "rows": 646
+    },
+    {
+      "ruleId": "generic-console",
+      "decision": "review",
+      "values": 4,
+      "rows": 632
+    },
+    {
+      "ruleId": "attr-room",
+      "decision": "blocked",
+      "values": 5,
+      "rows": 537
+    },
+    {
+      "ruleId": "decorative-tray",
+      "decision": "auto",
+      "values": 9,
+      "rows": 533
+    },
+    {
+      "ruleId": "media-console",
+      "decision": "auto",
+      "values": 8,
+      "rows": 471
+    },
+    {
+      "ruleId": "bookcase-shelving",
+      "decision": "auto",
+      "values": 19,
+      "rows": 438
+    },
+    {
+      "ruleId": "drawing-wall-art",
+      "decision": "auto",
+      "values": 1,
+      "rows": 390
+    },
+    {
+      "ruleId": "wallpaper",
+      "decision": "auto",
+      "values": 1,
+      "rows": 372
+    },
+    {
+      "ruleId": "bedding",
+      "decision": "auto",
+      "values": 1,
+      "rows": 327
+    },
+    {
+      "ruleId": "recliner",
+      "decision": "auto",
+      "values": 8,
+      "rows": 321
+    },
+    {
+      "ruleId": "decorative-urn",
+      "decision": "auto",
+      "values": 12,
+      "rows": 320
+    },
+    {
+      "ruleId": "wall-art-set",
+      "decision": "auto",
+      "values": 1,
+      "rows": 310
+    },
+    {
+      "ruleId": "decorative-jar",
+      "decision": "auto",
+      "values": 5,
+      "rows": 274
+    },
+    {
+      "ruleId": "office-chair",
+      "decision": "auto",
+      "values": 12,
+      "rows": 252
+    },
+    {
+      "ruleId": "existing-chinese",
+      "decision": "review",
+      "values": 2,
+      "rows": 148
+    },
+    {
+      "ruleId": "sleeper-sofa",
+      "decision": "auto",
+      "values": 4,
+      "rows": 54
+    },
+    {
+      "ruleId": "runner-rug",
+      "decision": "auto",
+      "values": 1,
+      "rows": 52
+    }
+  ],
+  "topHumanDecisions": [
+    {
+      "supplier": "Safavieh",
+      "supplierId": "safavieh",
+      "current": "Modern",
+      "suggested": "Product type required",
+      "count": 47447,
+      "ruleId": "attr-style",
+      "decision": "blocked",
+      "reason": "该值只描述风格，不能直接写入商品品类。",
+      "redirectField": "style"
+    },
+    {
+      "supplier": "Safavieh",
+      "supplierId": "safavieh",
+      "current": "Traditional",
+      "suggested": "Product type required",
+      "count": 29896,
+      "ruleId": "attr-style",
+      "decision": "blocked",
+      "reason": "该值只描述风格，不能直接写入商品品类。",
+      "redirectField": "style"
+    },
+    {
+      "supplier": "Safavieh",
+      "supplierId": "safavieh",
+      "current": "Bohemian",
+      "suggested": "Product type required",
+      "count": 18194,
+      "ruleId": "attr-style",
+      "decision": "blocked",
+      "reason": "该值只描述风格，不能直接写入商品品类。",
+      "redirectField": "style"
+    },
+    {
+      "supplier": "Safavieh",
+      "supplierId": "safavieh",
+      "current": "Coastal",
+      "suggested": "Product type required",
+      "count": 17621,
+      "ruleId": "attr-style",
+      "decision": "blocked",
+      "reason": "该值只描述风格，不能直接写入商品品类。",
+      "redirectField": "style"
+    },
+    {
+      "supplier": "Safavieh",
+      "supplierId": "safavieh",
+      "current": "Indoor & Outdoor",
+      "suggested": "Outdoor Furniture — product type split required",
+      "count": 11958,
+      "ruleId": "generic-outdoor",
+      "decision": "review",
+      "reason": "户外只是使用场景，仍需识别椅、桌、沙发或套装。",
+      "redirectField": null
+    },
+    {
+      "supplier": "Safavieh",
+      "supplierId": "safavieh",
+      "current": "Scandinavian",
+      "suggested": "Product type required",
+      "count": 11626,
+      "ruleId": "attr-style",
+      "decision": "blocked",
+      "reason": "该值只描述风格，不能直接写入商品品类。",
+      "redirectField": "style"
+    },
+    {
+      "supplier": "Safavieh",
+      "supplierId": "safavieh",
+      "current": "Transitional Modern",
+      "suggested": "Product type required",
+      "count": 7515,
+      "ruleId": "attr-style",
+      "decision": "blocked",
+      "reason": "该值只描述风格，不能直接写入商品品类。",
+      "redirectField": "style"
+    },
+    {
+      "supplier": "Safavieh",
+      "supplierId": "safavieh",
+      "current": "Country / Farmhouse",
+      "suggested": "Product type required",
+      "count": 1586,
+      "ruleId": "attr-style",
+      "decision": "blocked",
+      "reason": "该值只描述风格，不能直接写入商品品类。",
+      "redirectField": "style"
+    },
+    {
+      "supplier": "Allstate",
+      "supplierId": "allstate",
+      "current": "Pre-made Items, Pre-potted Plants/Trees",
+      "suggested": "No safe product-type mapping",
+      "count": 1538,
+      "ruleId": "no-safe-mapping",
+      "decision": "review",
+      "reason": "当前来源文字不足以唯一判断商品类型，必须查看 SKU 样本、标题或详情。",
+      "redirectField": null
+    },
+    {
+      "supplier": "Safavieh",
+      "supplierId": "safavieh",
+      "current": "Mid-century Modern",
+      "suggested": "Product type required",
+      "count": 1381,
+      "ruleId": "attr-style",
+      "decision": "blocked",
+      "reason": "该值只描述风格，不能直接写入商品品类。",
+      "redirectField": "style"
+    },
+    {
+      "supplier": "Modway",
+      "supplierId": "modway",
+      "current": "Closeout",
+      "suggested": "Product type required",
+      "count": 1282,
+      "ruleId": "attr-lifecycle",
+      "decision": "blocked",
+      "reason": "该值是销售状态，不是商品类型。",
+      "redirectField": "lifecycleStatus"
+    },
+    {
+      "supplier": "Meridian",
+      "supplierId": "meridian",
+      "current": "L-Shape",
+      "suggested": "Product type required",
+      "count": 1259,
+      "ruleId": "attr-shape",
+      "decision": "blocked",
+      "reason": "该值只描述形状，必须从标题或详情继续识别商品类型。",
+      "redirectField": "shape"
+    },
+    {
+      "supplier": "Meridian",
+      "supplierId": "meridian",
+      "current": "Chairs",
+      "suggested": "Chair — product type split required",
+      "count": 1033,
+      "ruleId": "generic-chair",
+      "decision": "review",
+      "reason": "只知道是椅子，无法安全判断餐椅、单椅、办公椅或户外椅。",
+      "redirectField": null
+    },
+    {
+      "supplier": "Safavieh",
+      "supplierId": "safavieh",
+      "current": "Shag Flokati",
+      "suggested": "Product type required",
+      "count": 1016,
+      "ruleId": "attr-style",
+      "decision": "blocked",
+      "reason": "该值只描述风格，不能直接写入商品品类。",
+      "redirectField": "style"
+    },
+    {
+      "supplier": "Replica",
+      "supplierId": "replica-decor",
+      "current": "Container",
+      "suggested": "No safe product-type mapping",
+      "count": 831,
+      "ruleId": "no-safe-mapping",
+      "decision": "review",
+      "reason": "当前来源文字不足以唯一判断商品类型，必须查看 SKU 样本、标题或详情。",
+      "redirectField": null
+    },
+    {
+      "supplier": "ACME",
+      "supplierId": "acme",
+      "current": "Table",
+      "suggested": "Table — product type split required",
+      "count": 827,
+      "ruleId": "generic-table",
+      "decision": "review",
+      "reason": "只知道是桌子，无法安全判断餐桌、茶几、边桌或书桌。",
+      "redirectField": null
+    },
+    {
+      "supplier": "Meridian",
+      "supplierId": "meridian",
+      "current": "U-Shape",
+      "suggested": "Product type required",
+      "count": 785,
+      "ruleId": "attr-shape",
+      "decision": "blocked",
+      "reason": "该值只描述形状，必须从标题或详情继续识别商品类型。",
+      "redirectField": "shape"
+    },
+    {
+      "supplier": "Safavieh",
+      "supplierId": "safavieh",
+      "current": "Tropical",
+      "suggested": "Product type required",
+      "count": 780,
+      "ruleId": "attr-style",
+      "decision": "blocked",
+      "reason": "该值只描述风格，不能直接写入商品品类。",
+      "redirectField": "style"
+    },
+    {
+      "supplier": "Phillips Collection",
+      "supplierId": "phillips-collection",
+      "current": "Abstract",
+      "suggested": "No safe product-type mapping",
+      "count": 707,
+      "ruleId": "no-safe-mapping",
+      "decision": "review",
+      "reason": "当前来源文字不足以唯一判断商品类型，必须查看 SKU 样本、标题或详情。",
+      "redirectField": null
+    },
+    {
+      "supplier": "ACME",
+      "supplierId": "acme",
+      "current": "Chair",
+      "suggested": "Chair — product type split required",
+      "count": 685,
+      "ruleId": "generic-chair",
+      "decision": "review",
+      "reason": "只知道是椅子，无法安全判断餐椅、单椅、办公椅或户外椅。",
+      "redirectField": null
+    },
+    {
+      "supplier": "Safavieh",
+      "supplierId": "safavieh",
+      "current": "Rustic / Lodge",
+      "suggested": "Product type required",
+      "count": 621,
+      "ruleId": "attr-style",
+      "decision": "blocked",
+      "reason": "该值只描述风格，不能直接写入商品品类。",
+      "redirectField": "style"
+    },
+    {
+      "supplier": "Allstate",
+      "supplierId": "allstate",
+      "current": "Allstate Living Items",
+      "suggested": "Product type required",
+      "count": 616,
+      "ruleId": "attr-assortment",
+      "decision": "blocked",
+      "reason": "该值是系列或营销分组，必须回到商品本身识别类型。",
+      "redirectField": "assortment"
+    },
+    {
+      "supplier": "John Richard",
+      "supplierId": "john-richard",
+      "current": "Abstract",
+      "suggested": "No safe product-type mapping",
+      "count": 573,
+      "ruleId": "no-safe-mapping",
+      "decision": "review",
+      "reason": "当前来源文字不足以唯一判断商品类型，必须查看 SKU 样本、标题或详情。",
+      "redirectField": null
+    },
+    {
+      "supplier": "Meridian",
+      "supplierId": "meridian",
+      "current": "Curved",
+      "suggested": "Product type required",
+      "count": 553,
+      "ruleId": "attr-shape",
+      "decision": "blocked",
+      "reason": "该值只描述形状，必须从标题或详情继续识别商品类型。",
+      "redirectField": "shape"
+    }
+  ],
+  "supplierBreakdown": [
+    {
+      "id": "accent-decor",
+      "name": "Accent Decor",
+      "values": 77,
+      "rows": 4269,
+      "auto": 16,
+      "review": 60,
+      "blocked": 1
+    },
+    {
+      "id": "acme",
+      "name": "ACME",
+      "values": 31,
+      "rows": 3919,
+      "auto": 15,
+      "review": 16,
+      "blocked": 0
+    },
+    {
+      "id": "allstate",
+      "name": "Allstate",
+      "values": 2,
+      "rows": 2154,
+      "auto": 0,
+      "review": 1,
+      "blocked": 1
+    },
+    {
+      "id": "arteriors",
+      "name": "Arteriors",
+      "values": 55,
+      "rows": 2119,
+      "auto": 33,
+      "review": 22,
+      "blocked": 0
+    },
+    {
+      "id": "artmax",
+      "name": "Artmax",
+      "values": 22,
+      "rows": 1205,
+      "auto": 13,
+      "review": 8,
+      "blocked": 1
+    },
+    {
+      "id": "azzurro-living",
+      "name": "Azzurro Living",
+      "values": 18,
+      "rows": 452,
+      "auto": 16,
+      "review": 2,
+      "blocked": 0
+    },
+    {
+      "id": "ashley",
+      "name": "Ashley",
+      "values": 89,
+      "rows": 6155,
+      "auto": 48,
+      "review": 39,
+      "blocked": 2
+    },
+    {
+      "id": "bernhardt",
+      "name": "Bernhardt",
+      "values": 68,
+      "rows": 2663,
+      "auto": 45,
+      "review": 23,
+      "blocked": 0
+    },
+    {
+      "id": "best-master-furniture",
+      "name": "Best Master Furniture",
+      "values": 39,
+      "rows": 533,
+      "auto": 29,
+      "review": 10,
+      "blocked": 0
+    },
+    {
+      "id": "caracole",
+      "name": "Caracole",
+      "values": 24,
+      "rows": 1695,
+      "auto": 20,
+      "review": 4,
+      "blocked": 0
+    },
+    {
+      "id": "cfc",
+      "name": "CFC",
+      "values": 16,
+      "rows": 446,
+      "auto": 11,
+      "review": 5,
+      "blocked": 0
+    },
+    {
+      "id": "classic-home",
+      "name": "Classic Home",
+      "values": 38,
+      "rows": 4442,
+      "auto": 26,
+      "review": 12,
+      "blocked": 0
+    },
+    {
+      "id": "coaster",
+      "name": "Coaster",
+      "values": 52,
+      "rows": 4171,
+      "auto": 36,
+      "review": 16,
+      "blocked": 0
+    },
+    {
+      "id": "crestview-collection",
+      "name": "Crestview Collection",
+      "values": 43,
+      "rows": 3007,
+      "auto": 29,
+      "review": 14,
+      "blocked": 0
+    },
+    {
+      "id": "deco-marche",
+      "name": "Deco Marche",
+      "values": 126,
+      "rows": 8233,
+      "auto": 36,
+      "review": 90,
+      "blocked": 0
+    },
+    {
+      "id": "dovetail",
+      "name": "Dovetail",
+      "values": 41,
+      "rows": 7024,
+      "auto": 29,
+      "review": 12,
+      "blocked": 0
+    },
+    {
+      "id": "dvkap",
+      "name": "DV Kap",
+      "values": 9,
+      "rows": 14481,
+      "auto": 5,
+      "review": 4,
+      "blocked": 0
+    },
+    {
+      "id": "eichholtz",
+      "name": "Eichholtz",
+      "values": 70,
+      "rows": 2942,
+      "auto": 40,
+      "review": 30,
+      "blocked": 0
+    },
+    {
+      "id": "furniture-of-america",
+      "name": "Furniture of America",
+      "values": 65,
+      "rows": 5867,
+      "auto": 44,
+      "review": 21,
+      "blocked": 0
+    },
+    {
+      "id": "fourhands",
+      "name": "Four Hands",
+      "values": 99,
+      "rows": 17761,
+      "auto": 63,
+      "review": 36,
+      "blocked": 0
+    },
+    {
+      "id": "global-views",
+      "name": "Global Views",
+      "values": 87,
+      "rows": 5778,
+      "auto": 76,
+      "review": 11,
+      "blocked": 0
+    },
+    {
+      "id": "john-richard",
+      "name": "John Richard",
+      "values": 44,
+      "rows": 4163,
+      "auto": 25,
+      "review": 15,
+      "blocked": 4
+    },
+    {
+      "id": "jonathan-charles",
+      "name": "Jonathan Charles",
+      "values": 33,
+      "rows": 998,
+      "auto": 26,
+      "review": 7,
+      "blocked": 0
+    },
+    {
+      "id": "leftbank-art",
+      "name": "Leftbank Art",
+      "values": 1,
+      "rows": 14280,
+      "auto": 1,
+      "review": 0,
+      "blocked": 0
+    },
+    {
+      "id": "meridian",
+      "name": "Meridian",
+      "values": 48,
+      "rows": 13734,
+      "auto": 33,
+      "review": 9,
+      "blocked": 6
+    },
+    {
+      "id": "modway",
+      "name": "Modway",
+      "values": 55,
+      "rows": 9436,
+      "auto": 42,
+      "review": 12,
+      "blocked": 1
+    },
+    {
+      "id": "noir",
+      "name": "Noir",
+      "values": 27,
+      "rows": 1028,
+      "auto": 23,
+      "review": 4,
+      "blocked": 0
+    },
+    {
+      "id": "phillips-collection",
+      "name": "Phillips Collection",
+      "values": 38,
+      "rows": 4310,
+      "auto": 14,
+      "review": 24,
+      "blocked": 0
+    },
+    {
+      "id": "poundex",
+      "name": "Poundex",
+      "values": 40,
+      "rows": 1367,
+      "auto": 29,
+      "review": 11,
+      "blocked": 0
+    },
+    {
+      "id": "safavieh",
+      "name": "Safavieh",
+      "values": 28,
+      "rows": 151133,
+      "auto": 0,
+      "review": 15,
+      "blocked": 13
+    },
+    {
+      "id": "sunpan",
+      "name": "Sunpan",
+      "values": 62,
+      "rows": 2935,
+      "auto": 44,
+      "review": 18,
+      "blocked": 0
+    },
+    {
+      "id": "surya",
+      "name": "Surya",
+      "values": 86,
+      "rows": 71005,
+      "auto": 78,
+      "review": 8,
+      "blocked": 0
+    },
+    {
+      "id": "tov",
+      "name": "TOV",
+      "values": 47,
+      "rows": 2846,
+      "auto": 29,
+      "review": 18,
+      "blocked": 0
+    },
+    {
+      "id": "universal-furniture",
+      "name": "Universal",
+      "values": 30,
+      "rows": 682,
+      "auto": 15,
+      "review": 15,
+      "blocked": 0
+    },
+    {
+      "id": "uttermost",
+      "name": "Uttermost",
+      "values": 51,
+      "rows": 4636,
+      "auto": 34,
+      "review": 16,
+      "blocked": 1
+    },
+    {
+      "id": "vig",
+      "name": "VIG",
+      "values": 47,
+      "rows": 3120,
+      "auto": 37,
+      "review": 7,
+      "blocked": 3
+    },
+    {
+      "id": "replica-decor",
+      "name": "Replica",
+      "values": 27,
+      "rows": 2253,
+      "auto": 0,
+      "review": 27,
+      "blocked": 0
+    }
+  ],
+  "limitations": [
+    "All mappings are proposals from local candidate data, not signed current production sources.",
+    "Leftbank Art is represented by an available production shard, not the unfinished full catalog.",
+    "Review and blocked proposals cannot be auto-applied; production cleaning remains paused until the user confirms the exported review package."
+  ]
+}

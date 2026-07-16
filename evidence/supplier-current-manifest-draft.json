@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "manifestStatus": "draft-not-production",
-  "generatedAt": "2026-07-16T03:02:06.276Z",
+  "generatedAt": "2026-07-16T03:33:47.356Z",
   "summary": {
     "totalSuppliers": 37,
     "signed": 0,
@@ -2275,7 +2275,7 @@
       "status": "sharded-pending",
       "registry": {
         "latestTab": "Leftbank Art 20260707 partial",
-        "rows": 6066056,
+        "rows": 6116056,
         "migrationStatus": "verified-partial",
         "updatedAt": "2026-07-16"
       },
@@ -2288,7 +2288,7 @@
       },
       "rule": {
         "file": "docs/suppliers/leftbank-art.md",
-        "sha256": "7f986a9bc177a4d4f46f8d6a4f1f4023f0e55c3f447f732bdc235f118eccba0f"
+        "sha256": "61832044858826a41d7c561ca6ae06965891d6e64106ccbc22653183117dca67"
       },
       "test": {
         "status": "historical-evidence-only",

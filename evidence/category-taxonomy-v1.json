@@ -1,0 +1,1044 @@
+{
+  "schemaVersion": "category-taxonomy-contract-v1",
+  "taxonomyVersion": "category-taxonomy-v1-draft-20260716",
+  "status": "draft-awaiting-user-confirmation",
+  "scope": "Review suggestions for supplier source categories; this file is not approved for production cleaning.",
+  "principles": [
+    "Column J expresses one sellable product type only.",
+    "Size, style, shape, room, lifecycle and assortment are attributes, not product types.",
+    "Supplier source text is preserved in supplierCategoryRaw for traceability.",
+    "Only auto decisions may become machine suggestions; review and blocked decisions require a human answer.",
+    "The taxonomy version and matched rule ID travel with every proposal."
+  ],
+  "redirectFields": [
+    {
+      "id": "bedSize",
+      "label": "Bed size",
+      "plainMeaning": "床的尺寸，例如 Queen、King，不再冒充商品品类。"
+    },
+    {
+      "id": "style",
+      "label": "Style",
+      "plainMeaning": "风格，例如 Modern、Coastal，只作为筛选属性。"
+    },
+    {
+      "id": "shape",
+      "label": "Shape",
+      "plainMeaning": "形状，例如 L-Shape、Round，只作为筛选属性。"
+    },
+    {
+      "id": "room",
+      "label": "Room",
+      "plainMeaning": "使用空间，例如 Living Room，不等于商品类型。"
+    },
+    {
+      "id": "lifecycleStatus",
+      "label": "Lifecycle status",
+      "plainMeaning": "销售状态，例如 Closeout、Discontinued。"
+    },
+    {
+      "id": "assortment",
+      "label": "Assortment",
+      "plainMeaning": "系列、集合或营销分组，不等于商品类型。"
+    }
+  ],
+  "canonicalTypes": [
+    {
+      "id": "sectional-sofa",
+      "label": "Sectional Sofa",
+      "family": "Seating",
+      "plainMeaning": "组合式或转角沙发。"
+    },
+    {
+      "id": "loveseat",
+      "label": "Loveseat",
+      "family": "Seating",
+      "plainMeaning": "双人位小沙发。"
+    },
+    {
+      "id": "sleeper-sofa",
+      "label": "Sleeper Sofa",
+      "family": "Seating",
+      "plainMeaning": "可展开为床的沙发。"
+    },
+    {
+      "id": "sofa",
+      "label": "Sofa",
+      "family": "Seating",
+      "plainMeaning": "普通沙发。"
+    },
+    {
+      "id": "dining-chair",
+      "label": "Dining Chair",
+      "family": "Seating",
+      "plainMeaning": "餐椅。"
+    },
+    {
+      "id": "office-chair",
+      "label": "Office Chair",
+      "family": "Seating",
+      "plainMeaning": "办公椅或书桌椅。"
+    },
+    {
+      "id": "accent-chair",
+      "label": "Accent Chair",
+      "family": "Seating",
+      "plainMeaning": "单椅、休闲椅或装饰椅。"
+    },
+    {
+      "id": "rocking-chair",
+      "label": "Rocking Chair",
+      "family": "Seating",
+      "plainMeaning": "摇椅。"
+    },
+    {
+      "id": "recliner",
+      "label": "Recliner",
+      "family": "Seating",
+      "plainMeaning": "躺椅。"
+    },
+    {
+      "id": "bar-counter-stool",
+      "label": "Bar & Counter Stool",
+      "family": "Seating",
+      "plainMeaning": "吧椅或中岛椅。"
+    },
+    {
+      "id": "ottoman",
+      "label": "Ottoman",
+      "family": "Seating",
+      "plainMeaning": "脚凳或软墩。"
+    },
+    {
+      "id": "bench",
+      "label": "Bench",
+      "family": "Seating",
+      "plainMeaning": "长凳。"
+    },
+    {
+      "id": "coffee-table",
+      "label": "Coffee Table",
+      "family": "Tables",
+      "plainMeaning": "茶几或客厅中心桌。"
+    },
+    {
+      "id": "end-side-table",
+      "label": "End & Side Table",
+      "family": "Tables",
+      "plainMeaning": "边桌、角几或小边几。"
+    },
+    {
+      "id": "console-table",
+      "label": "Console Table",
+      "family": "Tables",
+      "plainMeaning": "玄关桌或沙发背桌。"
+    },
+    {
+      "id": "dining-table",
+      "label": "Dining Table",
+      "family": "Tables",
+      "plainMeaning": "餐桌。"
+    },
+    {
+      "id": "desk",
+      "label": "Desk",
+      "family": "Tables",
+      "plainMeaning": "书桌或办公桌。"
+    },
+    {
+      "id": "nightstand",
+      "label": "Nightstand",
+      "family": "Storage",
+      "plainMeaning": "床头柜。"
+    },
+    {
+      "id": "dresser-vanity",
+      "label": "Dresser & Vanity",
+      "family": "Storage",
+      "plainMeaning": "梳妆台或卧室斗柜。"
+    },
+    {
+      "id": "chest",
+      "label": "Chest",
+      "family": "Storage",
+      "plainMeaning": "抽屉柜或箱柜；仍需与普通收纳柜区分。"
+    },
+    {
+      "id": "sideboard-buffet",
+      "label": "Sideboard & Buffet",
+      "family": "Storage",
+      "plainMeaning": "餐边柜或自助餐柜。"
+    },
+    {
+      "id": "media-console",
+      "label": "Media Console",
+      "family": "Storage",
+      "plainMeaning": "电视柜或媒体柜。"
+    },
+    {
+      "id": "cabinet",
+      "label": "Cabinet",
+      "family": "Storage",
+      "plainMeaning": "普通收纳柜。"
+    },
+    {
+      "id": "bookcase-shelving",
+      "label": "Bookcase & Shelving",
+      "family": "Storage",
+      "plainMeaning": "书柜或层架。"
+    },
+    {
+      "id": "headboard",
+      "label": "Headboard",
+      "family": "Bedroom",
+      "plainMeaning": "独立床头板。"
+    },
+    {
+      "id": "bed",
+      "label": "Bed",
+      "family": "Bedroom",
+      "plainMeaning": "床；Queen、King 等另放 bedSize。"
+    },
+    {
+      "id": "mirror",
+      "label": "Mirror",
+      "family": "Wall Decor",
+      "plainMeaning": "镜子。"
+    },
+    {
+      "id": "photography-wall-art",
+      "label": "Photography Wall Art",
+      "family": "Wall Decor",
+      "plainMeaning": "摄影类墙面艺术。"
+    },
+    {
+      "id": "drawing-wall-art",
+      "label": "Drawing Wall Art",
+      "family": "Wall Decor",
+      "plainMeaning": "绘画或素描类墙面艺术。"
+    },
+    {
+      "id": "mixed-media-wall-art",
+      "label": "Mixed Media Wall Art",
+      "family": "Wall Decor",
+      "plainMeaning": "混合媒介墙面艺术。"
+    },
+    {
+      "id": "wall-art",
+      "label": "Wall Art",
+      "family": "Wall Decor",
+      "plainMeaning": "无法继续细分媒介的墙面艺术。"
+    },
+    {
+      "id": "wall-art-set",
+      "label": "Wall Art Set",
+      "family": "Wall Decor",
+      "plainMeaning": "作为一套销售的墙面艺术组合。"
+    },
+    {
+      "id": "wallpaper",
+      "label": "Wallpaper",
+      "family": "Wall Decor",
+      "plainMeaning": "墙纸。"
+    },
+    {
+      "id": "runner-rug",
+      "label": "Runner Rug",
+      "family": "Rugs",
+      "plainMeaning": "长条走廊地毯。"
+    },
+    {
+      "id": "area-rug",
+      "label": "Area Rug",
+      "family": "Rugs",
+      "plainMeaning": "区域地毯。"
+    },
+    {
+      "id": "chandelier",
+      "label": "Chandelier",
+      "family": "Lighting",
+      "plainMeaning": "吊灯中的枝形灯。"
+    },
+    {
+      "id": "pendant-light",
+      "label": "Pendant Light",
+      "family": "Lighting",
+      "plainMeaning": "单头或组合吊灯。"
+    },
+    {
+      "id": "wall-sconce",
+      "label": "Wall Sconce",
+      "family": "Lighting",
+      "plainMeaning": "壁灯。"
+    },
+    {
+      "id": "floor-lamp",
+      "label": "Floor Lamp",
+      "family": "Lighting",
+      "plainMeaning": "落地灯。"
+    },
+    {
+      "id": "table-lamp",
+      "label": "Table Lamp",
+      "family": "Lighting",
+      "plainMeaning": "台灯或桌灯。"
+    },
+    {
+      "id": "decorative-pillow",
+      "label": "Decorative Pillow",
+      "family": "Textiles",
+      "plainMeaning": "装饰抱枕。"
+    },
+    {
+      "id": "bedding",
+      "label": "Bedding",
+      "family": "Textiles",
+      "plainMeaning": "被子、床罩或床品。"
+    },
+    {
+      "id": "vase",
+      "label": "Vase",
+      "family": "Decor",
+      "plainMeaning": "花瓶。"
+    },
+    {
+      "id": "planter-pot",
+      "label": "Planter & Pot",
+      "family": "Decor",
+      "plainMeaning": "花盆或种植器。"
+    },
+    {
+      "id": "decorative-jar",
+      "label": "Decorative Jar",
+      "family": "Decor",
+      "plainMeaning": "装饰罐。"
+    },
+    {
+      "id": "decorative-urn",
+      "label": "Decorative Urn",
+      "family": "Decor",
+      "plainMeaning": "装饰瓮。"
+    },
+    {
+      "id": "candleholder",
+      "label": "Candleholder",
+      "family": "Decor",
+      "plainMeaning": "烛台。"
+    },
+    {
+      "id": "decorative-sculpture",
+      "label": "Decorative Sculpture",
+      "family": "Decor",
+      "plainMeaning": "装饰雕塑或摆件。"
+    },
+    {
+      "id": "decorative-bowl",
+      "label": "Decorative Bowl",
+      "family": "Decor",
+      "plainMeaning": "装饰碗。"
+    },
+    {
+      "id": "decorative-tray",
+      "label": "Decorative Tray",
+      "family": "Decor",
+      "plainMeaning": "装饰托盘。"
+    },
+    {
+      "id": "decorative-box",
+      "label": "Decorative Box",
+      "family": "Decor",
+      "plainMeaning": "装饰盒。"
+    },
+    {
+      "id": "floral-arrangement",
+      "label": "Floral Arrangement",
+      "family": "Decor",
+      "plainMeaning": "人造花艺组合。"
+    },
+    {
+      "id": "dining-set",
+      "label": "Dining Set",
+      "family": "Sets",
+      "plainMeaning": "作为一套销售的餐桌椅组合。"
+    }
+  ],
+  "rules": [
+    {
+      "id": "attr-style",
+      "priority": 1000,
+      "patterns": [
+        "^(modern|traditional|bohemian|coastal|scandinavian|transitional modern|country farmhouse|mid century modern|tropical|rustic lodge|glam|shag flokati)$"
+      ],
+      "decision": "blocked",
+      "suggested": "Product type required",
+      "redirectField": "style",
+      "reason": "该值只描述风格，不能直接写入商品品类。"
+    },
+    {
+      "id": "attr-lifecycle",
+      "priority": 990,
+      "patterns": [
+        "^(closeout|clearance|discontinued|new arrivals?|sale)$"
+      ],
+      "decision": "blocked",
+      "suggested": "Product type required",
+      "redirectField": "lifecycleStatus",
+      "reason": "该值是销售状态，不是商品类型。"
+    },
+    {
+      "id": "attr-shape",
+      "priority": 980,
+      "patterns": [
+        "^(l shape|u shape|curved|round|square|rectangle|rectangular|oval)$"
+      ],
+      "decision": "blocked",
+      "suggested": "Product type required",
+      "redirectField": "shape",
+      "reason": "该值只描述形状，必须从标题或详情继续识别商品类型。"
+    },
+    {
+      "id": "attr-room",
+      "priority": 970,
+      "patterns": [
+        "^(living room|bedroom|dining room|office|outdoor room)$"
+      ],
+      "decision": "blocked",
+      "suggested": "Product type required",
+      "redirectField": "room",
+      "reason": "该值只描述使用空间，不能替代商品类型。"
+    },
+    {
+      "id": "attr-assortment",
+      "priority": 960,
+      "patterns": [
+        "^(collection|collections|allstate living items|new products?|featured|assortment)$"
+      ],
+      "decision": "blocked",
+      "suggested": "Product type required",
+      "redirectField": "assortment",
+      "reason": "该值是系列或营销分组，必须回到商品本身识别类型。"
+    },
+    {
+      "id": "bed-size-only",
+      "priority": 950,
+      "patterns": [
+        "^(king|queen|cal king|california king|eastern king|twin|full|ck|ek)$"
+      ],
+      "decision": "review",
+      "targetId": "bed",
+      "suggested": "Bed",
+      "redirectField": "bedSize",
+      "reason": "可以判断是床，但尺寸必须移到 bedSize；自动写入前需确认没有床垫或床品混入。"
+    },
+    {
+      "id": "sectional-sofa",
+      "priority": 900,
+      "patterns": [
+        "sectional|modular sofa"
+      ],
+      "decision": "auto",
+      "targetId": "sectional-sofa",
+      "reason": "来源文字明确表示组合式沙发。"
+    },
+    {
+      "id": "loveseat",
+      "priority": 895,
+      "patterns": [
+        "loveseat"
+      ],
+      "decision": "auto",
+      "targetId": "loveseat",
+      "reason": "来源文字明确表示 Loveseat。"
+    },
+    {
+      "id": "sleeper-sofa",
+      "priority": 890,
+      "patterns": [
+        "sleeper sofa|sofa bed"
+      ],
+      "decision": "auto",
+      "targetId": "sleeper-sofa",
+      "reason": "来源文字明确表示可睡沙发。"
+    },
+    {
+      "id": "sofa",
+      "priority": 885,
+      "patterns": [
+        "sofa|couch|settee"
+      ],
+      "decision": "auto",
+      "targetId": "sofa",
+      "reason": "来源文字明确表示普通沙发。"
+    },
+    {
+      "id": "dining-chair",
+      "priority": 880,
+      "patterns": [
+        "dining chair"
+      ],
+      "decision": "auto",
+      "targetId": "dining-chair",
+      "reason": "来源文字明确表示餐椅。"
+    },
+    {
+      "id": "office-chair",
+      "priority": 875,
+      "patterns": [
+        "office chair|desk chair"
+      ],
+      "decision": "auto",
+      "targetId": "office-chair",
+      "reason": "来源文字明确表示办公椅。"
+    },
+    {
+      "id": "accent-chair",
+      "priority": 870,
+      "patterns": [
+        "accent chair|armchair|arm chair|lounge chair|club chair|occasional chair"
+      ],
+      "decision": "auto",
+      "targetId": "accent-chair",
+      "reason": "来源文字明确表示单椅或休闲椅。"
+    },
+    {
+      "id": "rocking-chair",
+      "priority": 865,
+      "patterns": [
+        "rocking chair"
+      ],
+      "decision": "auto",
+      "targetId": "rocking-chair",
+      "reason": "来源文字明确表示摇椅。"
+    },
+    {
+      "id": "recliner",
+      "priority": 860,
+      "patterns": [
+        "recliner"
+      ],
+      "decision": "auto",
+      "targetId": "recliner",
+      "reason": "来源文字明确表示躺椅。"
+    },
+    {
+      "id": "bar-counter-stool",
+      "priority": 855,
+      "patterns": [
+        "bar stool|counter stool|barstool"
+      ],
+      "decision": "auto",
+      "targetId": "bar-counter-stool",
+      "reason": "来源文字明确表示吧椅或中岛椅。"
+    },
+    {
+      "id": "ottoman",
+      "priority": 850,
+      "patterns": [
+        "ottoman|footstool|pouf"
+      ],
+      "decision": "auto",
+      "targetId": "ottoman",
+      "reason": "来源文字明确表示脚凳或软墩。"
+    },
+    {
+      "id": "bench",
+      "priority": 845,
+      "patterns": [
+        "bench"
+      ],
+      "decision": "auto",
+      "targetId": "bench",
+      "reason": "来源文字明确表示长凳。"
+    },
+    {
+      "id": "generic-chair",
+      "priority": 840,
+      "patterns": [
+        "^chairs?$"
+      ],
+      "decision": "review",
+      "suggested": "Chair — product type split required",
+      "reason": "只知道是椅子，无法安全判断餐椅、单椅、办公椅或户外椅。"
+    },
+    {
+      "id": "coffee-table",
+      "priority": 830,
+      "patterns": [
+        "coffee table|cocktail table"
+      ],
+      "decision": "auto",
+      "targetId": "coffee-table",
+      "reason": "来源文字明确表示茶几。"
+    },
+    {
+      "id": "end-side-table",
+      "priority": 825,
+      "patterns": [
+        "end table|side table|accent table|drink table"
+      ],
+      "decision": "auto",
+      "targetId": "end-side-table",
+      "reason": "来源文字明确表示边桌。"
+    },
+    {
+      "id": "console-table",
+      "priority": 820,
+      "patterns": [
+        "console table|sofa table|entry table"
+      ],
+      "decision": "auto",
+      "targetId": "console-table",
+      "reason": "来源文字明确表示玄关桌或沙发背桌。"
+    },
+    {
+      "id": "dining-table",
+      "priority": 815,
+      "patterns": [
+        "dining table|dinner table"
+      ],
+      "decision": "auto",
+      "targetId": "dining-table",
+      "reason": "来源文字明确表示餐桌。"
+    },
+    {
+      "id": "desk",
+      "priority": 810,
+      "patterns": [
+        "desk"
+      ],
+      "decision": "auto",
+      "targetId": "desk",
+      "reason": "来源文字明确表示书桌。"
+    },
+    {
+      "id": "generic-table",
+      "priority": 805,
+      "patterns": [
+        "^tables?$"
+      ],
+      "decision": "review",
+      "suggested": "Table — product type split required",
+      "reason": "只知道是桌子，无法安全判断餐桌、茶几、边桌或书桌。"
+    },
+    {
+      "id": "nightstand",
+      "priority": 800,
+      "patterns": [
+        "nightstand|bedside table"
+      ],
+      "decision": "auto",
+      "targetId": "nightstand",
+      "reason": "来源文字明确表示床头柜。"
+    },
+    {
+      "id": "dresser-vanity",
+      "priority": 795,
+      "patterns": [
+        "dresser|vanity|vanities"
+      ],
+      "decision": "auto",
+      "targetId": "dresser-vanity",
+      "reason": "来源文字明确表示梳妆台或卧室斗柜。"
+    },
+    {
+      "id": "sideboard-buffet",
+      "priority": 790,
+      "patterns": [
+        "sideboard|credenza|buffet"
+      ],
+      "decision": "auto",
+      "targetId": "sideboard-buffet",
+      "reason": "来源文字明确表示餐边柜。"
+    },
+    {
+      "id": "media-console",
+      "priority": 785,
+      "patterns": [
+        "media console|tv stand"
+      ],
+      "decision": "auto",
+      "targetId": "media-console",
+      "reason": "来源文字明确表示媒体柜。"
+    },
+    {
+      "id": "generic-console",
+      "priority": 780,
+      "patterns": [
+        "^consoles?$"
+      ],
+      "decision": "review",
+      "suggested": "Console — product type split required",
+      "reason": "Console 可能是玄关桌或媒体柜，必须看商品标题和尺寸。"
+    },
+    {
+      "id": "chest",
+      "priority": 775,
+      "patterns": [
+        "chest|chests"
+      ],
+      "decision": "auto",
+      "targetId": "chest",
+      "reason": "来源文字明确表示箱柜或斗柜。"
+    },
+    {
+      "id": "cabinet",
+      "priority": 770,
+      "patterns": [
+        "cabinet"
+      ],
+      "decision": "auto",
+      "targetId": "cabinet",
+      "reason": "来源文字明确表示收纳柜。"
+    },
+    {
+      "id": "bookcase-shelving",
+      "priority": 765,
+      "patterns": [
+        "bookcase|bookshelf|shelving"
+      ],
+      "decision": "auto",
+      "targetId": "bookcase-shelving",
+      "reason": "来源文字明确表示书柜或层架。"
+    },
+    {
+      "id": "headboard",
+      "priority": 760,
+      "patterns": [
+        "headboard"
+      ],
+      "decision": "auto",
+      "targetId": "headboard",
+      "reason": "来源文字明确表示独立床头板。"
+    },
+    {
+      "id": "bed",
+      "priority": 755,
+      "patterns": [
+        "bed"
+      ],
+      "decision": "auto",
+      "targetId": "bed",
+      "reason": "来源文字明确表示床。"
+    },
+    {
+      "id": "mirror",
+      "priority": 750,
+      "patterns": [
+        "mirror"
+      ],
+      "decision": "auto",
+      "targetId": "mirror",
+      "reason": "来源文字明确表示镜子。"
+    },
+    {
+      "id": "wall-art-set",
+      "priority": 745,
+      "patterns": [
+        "gallery walls? sets?|wall art sets?"
+      ],
+      "decision": "auto",
+      "targetId": "wall-art-set",
+      "reason": "来源文字明确表示成套墙面艺术。"
+    },
+    {
+      "id": "photography-wall-art",
+      "priority": 740,
+      "patterns": [
+        "photography"
+      ],
+      "decision": "auto",
+      "targetId": "photography-wall-art",
+      "reason": "来源文字明确表示摄影墙面艺术。"
+    },
+    {
+      "id": "drawing-wall-art",
+      "priority": 735,
+      "patterns": [
+        "drawing"
+      ],
+      "decision": "auto",
+      "targetId": "drawing-wall-art",
+      "reason": "来源文字明确表示绘画墙面艺术。"
+    },
+    {
+      "id": "mixed-media-wall-art",
+      "priority": 730,
+      "patterns": [
+        "mixed media"
+      ],
+      "decision": "auto",
+      "targetId": "mixed-media-wall-art",
+      "reason": "来源文字明确表示混合媒介墙面艺术。"
+    },
+    {
+      "id": "wallpaper",
+      "priority": 725,
+      "patterns": [
+        "wallpaper"
+      ],
+      "decision": "auto",
+      "targetId": "wallpaper",
+      "reason": "来源文字明确表示墙纸。"
+    },
+    {
+      "id": "wall-art",
+      "priority": 720,
+      "patterns": [
+        "wall art|painting|canvas|artwork|wall decor"
+      ],
+      "decision": "auto",
+      "targetId": "wall-art",
+      "reason": "来源文字明确表示墙面艺术，但媒介无法继续安全细分。"
+    },
+    {
+      "id": "runner-rug",
+      "priority": 715,
+      "patterns": [
+        "runner"
+      ],
+      "decision": "auto",
+      "targetId": "runner-rug",
+      "reason": "来源文字明确表示长条地毯。"
+    },
+    {
+      "id": "area-rug",
+      "priority": 710,
+      "patterns": [
+        "rug|carpet"
+      ],
+      "decision": "auto",
+      "targetId": "area-rug",
+      "reason": "来源文字明确表示地毯。"
+    },
+    {
+      "id": "chandelier",
+      "priority": 705,
+      "patterns": [
+        "chandelier"
+      ],
+      "decision": "auto",
+      "targetId": "chandelier",
+      "reason": "来源文字明确表示枝形吊灯。"
+    },
+    {
+      "id": "pendant-light",
+      "priority": 700,
+      "patterns": [
+        "pendant"
+      ],
+      "decision": "auto",
+      "targetId": "pendant-light",
+      "reason": "来源文字明确表示吊灯。"
+    },
+    {
+      "id": "wall-sconce",
+      "priority": 695,
+      "patterns": [
+        "wall sconce|sconce"
+      ],
+      "decision": "auto",
+      "targetId": "wall-sconce",
+      "reason": "来源文字明确表示壁灯。"
+    },
+    {
+      "id": "floor-lamp",
+      "priority": 690,
+      "patterns": [
+        "floor lamp"
+      ],
+      "decision": "auto",
+      "targetId": "floor-lamp",
+      "reason": "来源文字明确表示落地灯。"
+    },
+    {
+      "id": "table-lamp",
+      "priority": 685,
+      "patterns": [
+        "table lamp|desk lamp"
+      ],
+      "decision": "auto",
+      "targetId": "table-lamp",
+      "reason": "来源文字明确表示台灯。"
+    },
+    {
+      "id": "generic-lighting",
+      "priority": 680,
+      "patterns": [
+        "lamp|lighting"
+      ],
+      "decision": "review",
+      "suggested": "Lighting — product type split required",
+      "reason": "只知道是灯具，无法安全判断台灯、落地灯、吊灯或壁灯。"
+    },
+    {
+      "id": "decorative-pillow",
+      "priority": 675,
+      "patterns": [
+        "pillow|cushion"
+      ],
+      "decision": "auto",
+      "targetId": "decorative-pillow",
+      "reason": "来源文字明确表示装饰抱枕。"
+    },
+    {
+      "id": "bedding",
+      "priority": 670,
+      "patterns": [
+        "quilt|comforter|bedding"
+      ],
+      "decision": "auto",
+      "targetId": "bedding",
+      "reason": "来源文字明确表示床品。"
+    },
+    {
+      "id": "planter-pot",
+      "priority": 665,
+      "patterns": [
+        "planter|flower pot|plant pot"
+      ],
+      "decision": "auto",
+      "targetId": "planter-pot",
+      "reason": "来源文字明确表示花盆或种植器。"
+    },
+    {
+      "id": "vase",
+      "priority": 660,
+      "patterns": [
+        "vase"
+      ],
+      "decision": "auto",
+      "targetId": "vase",
+      "reason": "来源文字明确表示花瓶。"
+    },
+    {
+      "id": "decorative-jar",
+      "priority": 655,
+      "patterns": [
+        "bottle|jar"
+      ],
+      "decision": "auto",
+      "targetId": "decorative-jar",
+      "reason": "来源文字明确表示装饰瓶罐。"
+    },
+    {
+      "id": "decorative-urn",
+      "priority": 650,
+      "patterns": [
+        "urn"
+      ],
+      "decision": "auto",
+      "targetId": "decorative-urn",
+      "reason": "来源文字明确表示装饰瓮。"
+    },
+    {
+      "id": "candleholder",
+      "priority": 645,
+      "patterns": [
+        "candleholder|candle holder"
+      ],
+      "decision": "auto",
+      "targetId": "candleholder",
+      "reason": "来源文字明确表示烛台。"
+    },
+    {
+      "id": "decorative-sculpture",
+      "priority": 640,
+      "patterns": [
+        "sculpture"
+      ],
+      "decision": "auto",
+      "targetId": "decorative-sculpture",
+      "reason": "来源文字明确表示装饰雕塑。"
+    },
+    {
+      "id": "decorative-bowl",
+      "priority": 635,
+      "patterns": [
+        "bowl"
+      ],
+      "decision": "auto",
+      "targetId": "decorative-bowl",
+      "reason": "来源文字明确表示装饰碗。"
+    },
+    {
+      "id": "decorative-tray",
+      "priority": 630,
+      "patterns": [
+        "tray"
+      ],
+      "decision": "auto",
+      "targetId": "decorative-tray",
+      "reason": "来源文字明确表示装饰托盘。"
+    },
+    {
+      "id": "decorative-box",
+      "priority": 625,
+      "patterns": [
+        "box"
+      ],
+      "decision": "auto",
+      "targetId": "decorative-box",
+      "reason": "来源文字明确表示装饰盒。"
+    },
+    {
+      "id": "floral-arrangement",
+      "priority": 620,
+      "patterns": [
+        "floral arrangement|flower arrangement"
+      ],
+      "decision": "auto",
+      "targetId": "floral-arrangement",
+      "reason": "来源文字明确表示花艺组合。"
+    },
+    {
+      "id": "dining-set",
+      "priority": 615,
+      "patterns": [
+        "dining set"
+      ],
+      "decision": "auto",
+      "targetId": "dining-set",
+      "reason": "来源文字明确表示餐桌椅套装。"
+    },
+    {
+      "id": "generic-decor",
+      "priority": 300,
+      "patterns": [
+        "accessor|decor|object"
+      ],
+      "decision": "review",
+      "suggested": "Decorative Object — product type split required",
+      "reason": "装饰品范围过宽，必须结合标题、图片或详情继续细分。"
+    },
+    {
+      "id": "generic-outdoor",
+      "priority": 290,
+      "patterns": [
+        "outdoor|patio"
+      ],
+      "decision": "review",
+      "suggested": "Outdoor Furniture — product type split required",
+      "reason": "户外只是使用场景，仍需识别椅、桌、沙发或套装。"
+    },
+    {
+      "id": "existing-chinese",
+      "priority": 20,
+      "patterns": [
+        "^[\\u3400-\\u9fff]"
+      ],
+      "decision": "review",
+      "suggested": "Existing Chinese label — confirm canonical type",
+      "reason": "旧中文值可能来自不同历史规则，不能直接当成已确认标准。"
+    },
+    {
+      "id": "no-safe-mapping",
+      "priority": 10,
+      "patterns": [
+        ".*"
+      ],
+      "decision": "review",
+      "suggested": "No safe product-type mapping",
+      "reason": "当前来源文字不足以唯一判断商品类型，必须查看 SKU 样本、标题或详情。"
+    }
+  ]
+}
