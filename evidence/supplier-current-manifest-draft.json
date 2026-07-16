@@ -1,0 +1,3740 @@
+{
+  "schemaVersion": 1,
+  "manifestStatus": "draft-not-production",
+  "generatedAt": "2026-07-15T16:02:54.100Z",
+  "summary": {
+    "totalSuppliers": 37,
+    "signed": 0,
+    "ambiguous": 21,
+    "candidate": 15,
+    "sharded": 1,
+    "missing": 0,
+    "remoteMetadataMatched": 36
+  },
+  "suppliers": [
+    {
+      "key": "AccentDecor",
+      "id": "accent-decor",
+      "name": "Accent Decor",
+      "status": "candidate-pending",
+      "registry": {
+        "latestTab": "Accent Decor 20260710",
+        "rows": 4269,
+        "migrationStatus": "verified",
+        "updatedAt": "2026-07-10"
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 4269,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/accent-decor.md",
+        "sha256": "2b5fad9e1428fe354c6e0939cd02ede33c6a50cefc1c94bc3ca482215269417a"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/accent-decor-test-2026-07-14.md",
+          "sha256": "d913c9912dfb3ed4abacad2d35661a92ae2e63f071e5638409cc3b94419b9950"
+        },
+        "recordCount": 4
+      },
+      "dataset": {
+        "status": "candidate",
+        "parsedCandidates": 2,
+        "matchingRowCandidates": 1,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/accent-decor/accent-decor-a-aa-20260710.json",
+          "exists": true,
+          "bytes": 9061391,
+          "modifiedAt": "2026-07-10T05:06:31.000Z",
+          "sha256": "a9888706a8a96078a074155702a22b4ceb52d81917892e05c8a5fe4ea0e7a7c8",
+          "rows": 4269,
+          "score": 2640,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": "data/processed/accent-decor/accent-decor-a-aa-20260710.json",
+        "candidates": [
+          {
+            "file": "data/processed/accent-decor/accent-decor-a-aa-20260710.json",
+            "exists": true,
+            "bytes": 9061391,
+            "modifiedAt": "2026-07-10T05:06:31.000Z",
+            "sha256": "a9888706a8a96078a074155702a22b4ceb52d81917892e05c8a5fe4ea0e7a7c8",
+            "rows": 4269,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/accent-decor/accent-decor-a-aa-20260702.json",
+            "exists": true,
+            "bytes": 8761997,
+            "modifiedAt": "2026-07-04T10:46:22.000Z",
+            "sha256": "580807daa011ea5fde83eb53f4fd5d58a12fa7582e4e67c7cdd134c4b3f4ec8a",
+            "rows": 4284,
+            "score": 336,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "ACME",
+      "id": "acme",
+      "name": "ACME",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "ACME 20260703 partial",
+        "rows": 3919,
+        "migrationStatus": "verified-partial",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 3919,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/acme.md",
+        "sha256": "4732c29953201b637bad496da3afd2f22b39d15f3a3eb9bf9d09884ac75ca073"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/acme-test-2026-07-15.md",
+          "sha256": "cb1f0c8ea4f3f7095da0490e3b5185914d4c34dfdd6b4fcd9b643dae41fc79c8"
+        },
+        "recordCount": 4
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 4,
+        "matchingRowCandidates": 4,
+        "matchingDateAndRowCandidates": 4,
+        "machineTopCandidate": {
+          "file": "data/processed/acme/acme-a-aa-20260703-image-repaired-v2.json",
+          "exists": true,
+          "bytes": 9072354,
+          "modifiedAt": "2026-07-04T10:46:22.000Z",
+          "sha256": "83f88a408ca1db77e206bab6d2f04b9acf32c091005942ba90826497824ab1a3",
+          "rows": 3919,
+          "score": 2600,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/acme/acme-a-aa-20260703-image-repaired-v2.json",
+            "exists": true,
+            "bytes": 9072354,
+            "modifiedAt": "2026-07-04T10:46:22.000Z",
+            "sha256": "83f88a408ca1db77e206bab6d2f04b9acf32c091005942ba90826497824ab1a3",
+            "rows": 3919,
+            "score": 2600,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/acme/acme-a-aa-20260703-image-repaired.json",
+            "exists": true,
+            "bytes": 8845067,
+            "modifiedAt": "2026-07-04T09:54:43.000Z",
+            "sha256": "c3466040722393b9cc2e36588e0ee2ddc08a78f1ca71348ac0b38b90486bc36f",
+            "rows": 3919,
+            "score": 2600,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/acme/acme-a-aa-20260703-square-json.json",
+            "exists": true,
+            "bytes": 9047020,
+            "modifiedAt": "2026-07-04T09:54:43.000Z",
+            "sha256": "c38afe2a742047e76e6b0442849afab7b0bb012da841e3a9b4e1c6f446b5d564",
+            "rows": 3919,
+            "score": 2600,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/acme/acme-a-aa-20260703.json",
+            "exists": true,
+            "bytes": 8838963,
+            "modifiedAt": "2026-07-04T09:54:44.000Z",
+            "sha256": "ce5301c4103b1ba413709ebbeebd261f7d2edfc83bd805684c707604cac683b1",
+            "rows": 3919,
+            "score": 2600,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Allstate",
+      "id": "allstate",
+      "name": "Allstate",
+      "status": "candidate-pending",
+      "registry": {
+        "latestTab": "Allstate 20260709 partial",
+        "rows": 2154,
+        "migrationStatus": "partial",
+        "updatedAt": "2026-07-09"
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 2154,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/allstate.md",
+        "sha256": "e6893526e4a277c87362130177ad8bef7fd6936cd4cac9d0ef9043b22f57e875"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/allstate-test-2026-07-15.md",
+          "sha256": "53814a4bda438527ff37a9347bc53e08c7fe0b40b8f91a2b5f3fc81d60742acf"
+        },
+        "recordCount": 5
+      },
+      "dataset": {
+        "status": "candidate",
+        "parsedCandidates": 13,
+        "matchingRowCandidates": 1,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/allstate/allstate-a-aa-20260709-uploadable-partial-final.json",
+          "exists": true,
+          "bytes": 3659557,
+          "modifiedAt": "2026-07-13T04:16:54.870Z",
+          "sha256": "fa8a734edd118c360c299ebefc330ab15f12b711fd90b5e54701ba3a5b6c6376",
+          "rows": 2154,
+          "score": 2700,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": "data/processed/allstate/allstate-a-aa-20260709-uploadable-partial-final.json",
+        "candidates": [
+          {
+            "file": "data/processed/allstate/allstate-a-aa-20260709-uploadable-partial-final.json",
+            "exists": true,
+            "bytes": 3659557,
+            "modifiedAt": "2026-07-13T04:16:54.870Z",
+            "sha256": "fa8a734edd118c360c299ebefc330ab15f12b711fd90b5e54701ba3a5b6c6376",
+            "rows": 2154,
+            "score": 2700,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/allstate/allstate-a-aa-20260709-uploadable-partial-drive.json",
+            "exists": true,
+            "bytes": 3609104,
+            "modifiedAt": "2026-07-13T04:16:55.426Z",
+            "sha256": "e315fb18cabe47a3399d9e3f619a2db2f62f137a22031d1321da759bb3824679",
+            "rows": 2159,
+            "score": 698,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/allstate/allstate-a-aa-20260709-uploadable-partial-preimage.json",
+            "exists": true,
+            "bytes": 3627966,
+            "modifiedAt": "2026-07-13T04:16:55.364Z",
+            "sha256": "7cbef3f2123e7a94badf513d7a13e5fbde368ec9ea9c25fbe11583703f662112",
+            "rows": 2159,
+            "score": 698,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/allstate/allstate-a-aa-20260709.json",
+            "exists": true,
+            "bytes": 3337738,
+            "modifiedAt": "2026-07-13T04:16:54.852Z",
+            "sha256": "9a7ab14d516097e4a5c8ef27bd9d6551f447618d8ad043c8cce62551db585e9b",
+            "rows": 2164,
+            "score": 595,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/allstate/allstate-a-aa-20260708-uploadable-partial-w-reused-drive.json",
+            "exists": true,
+            "bytes": 3233865,
+            "modifiedAt": "2026-07-13T04:16:55.435Z",
+            "sha256": "d0aac6ae7c191b05eb946e3487f92f40c8f9aa4f61342c7c2c93d14e9465f7ca",
+            "rows": 2159,
+            "score": 398,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/allstate/allstate-a-aa-20260708-uploadable-partial.json",
+            "exists": true,
+            "bytes": 3265479,
+            "modifiedAt": "2026-07-13T04:16:55.416Z",
+            "sha256": "88fc51a3bc632870fa71ea54436c096364ac8b4e0f2d186bf0debcfbb900d829",
+            "rows": 2159,
+            "score": 398,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Arteriors",
+      "id": "arteriors",
+      "name": "Arteriors",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "Arteriors 20260630",
+        "rows": 2119,
+        "migrationStatus": "verified",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 2119,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/arteriors.md",
+        "sha256": "80f38afef93b20a747b42b42fb9509f3ae15e020863688f3e16964f831db9a2a"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/arteriors-test-2026-07-15.md",
+          "sha256": "e2063667cf7889d33453aadc1a5657426d88cbb33a23ec077b286b14ab44e083"
+        },
+        "recordCount": 4
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 2,
+        "matchingRowCandidates": 2,
+        "matchingDateAndRowCandidates": 2,
+        "machineTopCandidate": {
+          "file": "data/processed/arteriors/arteriors-a-aa-20260630.json",
+          "exists": true,
+          "bytes": 5401606,
+          "modifiedAt": "2026-07-04T10:46:23.000Z",
+          "sha256": "cd030f06bb7a139201511aff0835234daf6e451f2af58e81c38f0d2fecdb0cb2",
+          "rows": 2119,
+          "score": 2640,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/arteriors/arteriors-a-aa-20260630.json",
+            "exists": true,
+            "bytes": 5401606,
+            "modifiedAt": "2026-07-04T10:46:23.000Z",
+            "sha256": "cd030f06bb7a139201511aff0835234daf6e451f2af58e81c38f0d2fecdb0cb2",
+            "rows": 2119,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/arteriors/arteriors-a-aa-20260630-partial.json",
+            "exists": true,
+            "bytes": 5060411,
+            "modifiedAt": "2026-06-30T15:59:01.000Z",
+            "sha256": "bd4299da5138252b3119feb978a578be8271ef6f644f930c453895e4d7877470",
+            "rows": 2119,
+            "score": 2600,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Artmax",
+      "id": "artmax",
+      "name": "Artmax",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "Artmax 20260708 partial",
+        "rows": 1205,
+        "migrationStatus": "verified-partial",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 1205,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/artmax.md",
+        "sha256": "b718827d97dea6e099d61116757a32026b244787399450dfbc3cc444bd60109f"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/artmax-test-2026-07-15.md",
+          "sha256": "67e0fbd6ef92a8a5741c79b295a3472bf52abf780a4eff06c5afd0144b6aa2c9"
+        },
+        "recordCount": 2
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 4,
+        "matchingRowCandidates": 4,
+        "matchingDateAndRowCandidates": 4,
+        "machineTopCandidate": {
+          "file": "data/processed/artmax/artmax-a-aa-20260708-drive-edge-fit.json",
+          "exists": true,
+          "bytes": 2457581,
+          "modifiedAt": "2026-07-08T06:04:53.000Z",
+          "sha256": "76e3eaafacaa716d8cc65844fd20cf80894966e3548c9ad398b3fcb426287661",
+          "rows": 1205,
+          "score": 2660,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/artmax/artmax-a-aa-20260708-drive-edge-fit.json",
+            "exists": true,
+            "bytes": 2457581,
+            "modifiedAt": "2026-07-08T06:04:53.000Z",
+            "sha256": "76e3eaafacaa716d8cc65844fd20cf80894966e3548c9ad398b3fcb426287661",
+            "rows": 1205,
+            "score": 2660,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/artmax/artmax-a-aa-20260708-drive-main.json",
+            "exists": true,
+            "bytes": 2446988,
+            "modifiedAt": "2026-07-08T04:47:33.000Z",
+            "sha256": "9055ff91569b3693acd9e6148629b984cf75bb9268f62796f75cbb0eff32e864",
+            "rows": 1205,
+            "score": 2660,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/artmax/artmax-a-aa-20260708-variant-drive-edge-fit.json",
+            "exists": true,
+            "bytes": 2452324,
+            "modifiedAt": "2026-07-08T06:26:03.000Z",
+            "sha256": "fadad565f12d10d9a3122c83878865246c63a3616b2c7141142bd04b86212312",
+            "rows": 1205,
+            "score": 2660,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/artmax/artmax-a-aa-20260708.json",
+            "exists": true,
+            "bytes": 2229813,
+            "modifiedAt": "2026-07-08T04:18:09.000Z",
+            "sha256": "4fc0932be031242425afb1807c0ceb1c5472efc33f279fdc72f1cebb0b0321f8",
+            "rows": 1205,
+            "score": 2600,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Azzurro Living",
+      "id": "azzurro-living",
+      "name": "Azzurro Living",
+      "status": "candidate-pending",
+      "registry": {
+        "latestTab": "Azzurro Living 20260703",
+        "rows": 452,
+        "migrationStatus": "verified",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 452,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/azzurro-living.md",
+        "sha256": "e66305f59f0fd292c3aff8e7b3e7e70298631e16a2f656422c2734e364b47e0f"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/azzurro-living-test-2026-07-15.md",
+          "sha256": "4e1eec9fe61a95047d40ff595d9baa429b13ba4f8dfa3bcaada156c6019454f5"
+        },
+        "recordCount": 3
+      },
+      "dataset": {
+        "status": "candidate",
+        "parsedCandidates": 1,
+        "matchingRowCandidates": 1,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/azzurro-living/azzurro-living-a-aa-20260703.json",
+          "exists": true,
+          "bytes": 1369305,
+          "modifiedAt": "2026-07-13T04:16:40.728Z",
+          "sha256": "65f4c53c52d6757dbc431ca3316363ce10071364ec1a906b1a44bba969b7c851",
+          "rows": 452,
+          "score": 2640,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": "data/processed/azzurro-living/azzurro-living-a-aa-20260703.json",
+        "candidates": [
+          {
+            "file": "data/processed/azzurro-living/azzurro-living-a-aa-20260703.json",
+            "exists": true,
+            "bytes": 1369305,
+            "modifiedAt": "2026-07-13T04:16:40.728Z",
+            "sha256": "65f4c53c52d6757dbc431ca3316363ce10071364ec1a906b1a44bba969b7c851",
+            "rows": 452,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Ashley",
+      "id": "ashley",
+      "name": "Ashley",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "Ashley 20260710 partial",
+        "rows": 6155,
+        "migrationStatus": "verified-partial",
+        "updatedAt": "2026-07-10"
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 6155,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/ashley.md",
+        "sha256": "00817dbeea474b38fffe2f368941b79aea13b6515178035d3a63e8e33b2589b8"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/ashley-test-2026-07-15.md",
+          "sha256": "e8136f79b735ebc46db52c002e1da7779654405f28cf4001766ae154b436845f"
+        },
+        "recordCount": 7
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 18,
+        "matchingRowCandidates": 5,
+        "matchingDateAndRowCandidates": 5,
+        "machineTopCandidate": {
+          "file": "data/processed/ashley/ashley-a-aa-20260710-final-partial.json",
+          "exists": true,
+          "bytes": 37989810,
+          "modifiedAt": "2026-07-10T06:59:52.000Z",
+          "sha256": "b2047b7815a8b2f25f0ccbde5805398ed96fac0c7683326b5135da0c528d38e5",
+          "rows": 6155,
+          "score": 2700,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/ashley/ashley-a-aa-20260710-final-partial.json",
+            "exists": true,
+            "bytes": 37989810,
+            "modifiedAt": "2026-07-10T06:59:52.000Z",
+            "sha256": "b2047b7815a8b2f25f0ccbde5805398ed96fac0c7683326b5135da0c528d38e5",
+            "rows": 6155,
+            "score": 2700,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/ashley/ashley-a-aa-20260710-cost-inventory-recalculated-image-prepared-partial.json",
+            "exists": true,
+            "bytes": 37956494,
+            "modifiedAt": "2026-07-10T06:59:47.000Z",
+            "sha256": "e37480466209b51cb6528cabcb489911f3d7ae6a3ae61908840f4ad478c3ee50",
+            "rows": 6155,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/ashley/ashley-a-aa-20260710-cost-inventory-recalculated-partial.json",
+            "exists": true,
+            "bytes": 37486063,
+            "modifiedAt": "2026-07-10T06:39:08.000Z",
+            "sha256": "04c748e4d1669add17d25d1f570a57e31697d72cbe08c440fa3c652c7df07177",
+            "rows": 6155,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/ashley/ashley-a-aa-20260710-verified-rows-image-prepared-partial.json",
+            "exists": true,
+            "bytes": 29229227,
+            "modifiedAt": "2026-07-10T06:10:40.000Z",
+            "sha256": "ca205f7b5c4ff01fc8d72840736d07ab89520e95ffe6a30833083873fe84bcfa",
+            "rows": 6155,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/ashley/ashley-a-aa-20260710-verified-rows-preview-fixed-partial.json",
+            "exists": true,
+            "bytes": 28254743,
+            "modifiedAt": "2026-07-10T05:28:25.000Z",
+            "sha256": "32f2be2cf7a7a558efc6048554dec738d9d82292db423577e4b011b1e5d4aa4b",
+            "rows": 6155,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/ashley/ashley-a-aa-20260710-image-normalized-price-fixed-partial-v2-henry.json",
+            "exists": true,
+            "bytes": 35979212,
+            "modifiedAt": "2026-07-10T05:20:09.000Z",
+            "sha256": "a9f9231c13cc24a59cc5a53c83ce1aa9a9d52caf092aafc9f5da653fe8a10185",
+            "rows": 7721,
+            "score": 446,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Bernhardt",
+      "id": "bernhardt",
+      "name": "Bernhardt",
+      "status": "candidate-pending",
+      "registry": {
+        "latestTab": "Bernhardt 20260710",
+        "rows": 2663,
+        "migrationStatus": "verified",
+        "updatedAt": "2026-07-10"
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 2663,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/bernhardt.md",
+        "sha256": "6950a6d87f96143173c030b04ea128c5014d4ce59b90b4a6283874bb7d4f988d"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/bernhardt-test-2026-07-15.md",
+          "sha256": "b609d3f6dfba73e07c305938a4dceb094c6428f74f85bd00e73b7ecf802abec8"
+        },
+        "recordCount": 6
+      },
+      "dataset": {
+        "status": "candidate",
+        "parsedCandidates": 5,
+        "matchingRowCandidates": 1,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/bernhardt/bernhardt-a-aa-20260710.json",
+          "exists": true,
+          "bytes": 6287638,
+          "modifiedAt": "2026-07-09T19:58:40.000Z",
+          "sha256": "3813690f4c19e8affc0898674515bbdceda43d65b208b2739343ae105391b778",
+          "rows": 2663,
+          "score": 2640,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": "data/processed/bernhardt/bernhardt-a-aa-20260710.json",
+        "candidates": [
+          {
+            "file": "data/processed/bernhardt/bernhardt-a-aa-20260710.json",
+            "exists": true,
+            "bytes": 6287638,
+            "modifiedAt": "2026-07-09T19:58:40.000Z",
+            "sha256": "3813690f4c19e8affc0898674515bbdceda43d65b208b2739343ae105391b778",
+            "rows": 2663,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/bernhardt/bernhardt-a-aa-20260701.json",
+            "exists": true,
+            "bytes": 5808163,
+            "modifiedAt": "2026-07-05T09:42:21.000Z",
+            "sha256": "00d3565fa093677d4da1a0d1355181f23cbfc4457a2f575ad8febc1b6ab68f31",
+            "rows": 2645,
+            "score": 333,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/bernhardt/bernhardt-a-aa-20260705.json",
+            "exists": true,
+            "bytes": 6065892,
+            "modifiedAt": "2026-07-05T09:54:27.000Z",
+            "sha256": "b1817a54b958ce8c8e22a73c0ae60e6384303a8fd29ecd9e3669e6751489cc23",
+            "rows": 2645,
+            "score": 333,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/bernhardt/bernhardt-a-aa-20260708-image-selection.json",
+            "exists": true,
+            "bytes": 6229862,
+            "modifiedAt": "2026-07-08T03:58:18.000Z",
+            "sha256": "d49237fc6375b7ac6c1110452ebce194f519bc5ad93702a4f7a12ca4e6414cec",
+            "rows": 2645,
+            "score": 333,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/bernhardt/bernhardt-a-aa-20260708.json",
+            "exists": true,
+            "bytes": 6403800,
+            "modifiedAt": "2026-07-08T04:35:43.000Z",
+            "sha256": "eeea1d0b588311d3f01a8e5dd8e1b39e56b5813c26bf86b08abadd5b6e4a90f7",
+            "rows": 2645,
+            "score": 333,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Best Master Furniture",
+      "id": "best-master-furniture",
+      "name": "Best Master Furniture",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "Best Master Furniture 20260705 partial",
+        "rows": 533,
+        "migrationStatus": "verified-partial",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 533,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/best-master-furniture.md",
+        "sha256": "7b0db63bcd0636d9d8ff82155225453fc12d3a49da77881028afc95c1dd159ef"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/best-master-furniture-test-2026-07-15.md",
+          "sha256": "f5e51c857f2255a7e60667a45b175773bf2466ca38ac92ca8948ef44b8741ee4"
+        },
+        "recordCount": 5
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 4,
+        "matchingRowCandidates": 4,
+        "matchingDateAndRowCandidates": 4,
+        "machineTopCandidate": {
+          "file": "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705-drive-images.json",
+          "exists": true,
+          "bytes": 1659855,
+          "modifiedAt": "2026-07-13T04:16:46.673Z",
+          "sha256": "2a991b0525ea69d2ab996417c19b8d7b8a6a089e29b063876022206fd6873612",
+          "rows": 533,
+          "score": 2660,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705-drive-images.json",
+            "exists": true,
+            "bytes": 1659855,
+            "modifiedAt": "2026-07-13T04:16:46.673Z",
+            "sha256": "2a991b0525ea69d2ab996417c19b8d7b8a6a089e29b063876022206fd6873612",
+            "rows": 533,
+            "score": 2660,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705-drive-whiter-table-images.json",
+            "exists": true,
+            "bytes": 1735055,
+            "modifiedAt": "2026-07-13T04:16:46.668Z",
+            "sha256": "d328b5d76878956b756fd46e5f84e77263bf7c262baaad71fda883f8406a1511",
+            "rows": 533,
+            "score": 2660,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705-bed-standard-images.json",
+            "exists": true,
+            "bytes": 1739545,
+            "modifiedAt": "2026-07-13T04:16:46.660Z",
+            "sha256": "6a12ba32c97ab5b58b4dcb957f3aaff0e6b36668073debdf4ab8680ea0fefab0",
+            "rows": 533,
+            "score": 2600,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705.json",
+            "exists": true,
+            "bytes": 1414025,
+            "modifiedAt": "2026-07-13T04:16:46.656Z",
+            "sha256": "fde0b452850a544e252537ed3bc9262601452b0b0b746c3e7e4a10d8147b644e",
+            "rows": 533,
+            "score": 2600,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Caracole",
+      "id": "caracole",
+      "name": "Caracole",
+      "status": "candidate-pending",
+      "registry": {
+        "latestTab": "Caracole 20260703 partial",
+        "rows": 1695,
+        "migrationStatus": "partial",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 1695,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/caracole.md",
+        "sha256": "6a16fb9812c797936142f36fa601eb16547888c17243114f8be07942cceea7eb"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/caracole-test-2026-07-15.md",
+          "sha256": "5f61b970d8a12e32a8e91fe88fe318e5d79ba0e8cfa089eebeec50fddf909017"
+        },
+        "recordCount": 2
+      },
+      "dataset": {
+        "status": "candidate",
+        "parsedCandidates": 2,
+        "matchingRowCandidates": 1,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/caracole/caracole-a-aa-20260703-partial.json",
+          "exists": true,
+          "bytes": 4654902,
+          "modifiedAt": "2026-07-04T10:46:29.000Z",
+          "sha256": "3233b765b94e600faff78868ba44394a3fa543a08562f3978254cac6245fd527",
+          "rows": 1695,
+          "score": 2640,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": "data/processed/caracole/caracole-a-aa-20260703-partial.json",
+        "candidates": [
+          {
+            "file": "data/processed/caracole/caracole-a-aa-20260703-partial.json",
+            "exists": true,
+            "bytes": 4654902,
+            "modifiedAt": "2026-07-04T10:46:29.000Z",
+            "sha256": "3233b765b94e600faff78868ba44394a3fa543a08562f3978254cac6245fd527",
+            "rows": 1695,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/caracole/caracole-a-aa-20260703-complete.json",
+            "exists": true,
+            "bytes": 53054,
+            "modifiedAt": "2026-07-03T08:25:19.000Z",
+            "sha256": "e92e001025e326fa7d930c194751b82ae3e66036156f8d8a12cb889a2821fc24",
+            "rows": 20,
+            "score": -240,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "CFC",
+      "id": "cfc",
+      "name": "CFC",
+      "status": "candidate-pending",
+      "registry": {
+        "latestTab": "CFC 20260703",
+        "rows": 446,
+        "migrationStatus": "verified",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 446,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/cfc.md",
+        "sha256": "d1409b5729239ff41551cd9ec61d08db348034e2984814d4fe7f4f675136c967"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/cfc-test-2026-07-03.md",
+          "sha256": "b65cf1af837122337b0bd89afb23944552cac3f3e6c97e3a87f28020f4277732"
+        },
+        "recordCount": 1
+      },
+      "dataset": {
+        "status": "candidate",
+        "parsedCandidates": 1,
+        "matchingRowCandidates": 1,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/cfc/cfc-a-aa-20260703.json",
+          "exists": true,
+          "bytes": 978381,
+          "modifiedAt": "2026-07-04T10:46:29.000Z",
+          "sha256": "b6847f17f364379935034f8390d4afa396acb52da6453dfaa83254937bd61952",
+          "rows": 446,
+          "score": 2640,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": "data/processed/cfc/cfc-a-aa-20260703.json",
+        "candidates": [
+          {
+            "file": "data/processed/cfc/cfc-a-aa-20260703.json",
+            "exists": true,
+            "bytes": 978381,
+            "modifiedAt": "2026-07-04T10:46:29.000Z",
+            "sha256": "b6847f17f364379935034f8390d4afa396acb52da6453dfaa83254937bd61952",
+            "rows": 446,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Classic Home",
+      "id": "classic-home",
+      "name": "Classic Home",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "Classic Home 20260708",
+        "rows": 4442,
+        "migrationStatus": "verified",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 4442,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/classic-home.md",
+        "sha256": "84cadbb7c93e28c954e0cc4eac1de57b3f673fd68493e5c79ca82ddc1f74ad9e"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/classic-home-test-2026-07-08.md",
+          "sha256": "8d28549891474644dea9366c2099273d128bd7885b03549a63298596e4a6f705"
+        },
+        "recordCount": 3
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 2,
+        "matchingRowCandidates": 2,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/classic-home/classic-home-a-aa-20260708-complete.json",
+          "exists": true,
+          "bytes": 22570905,
+          "modifiedAt": "2026-07-08T12:14:59.000Z",
+          "sha256": "e198b9c63c7f842da3b8c4fc3a247996c5179a354d8e3aece52ef638aff29875",
+          "rows": 4442,
+          "score": 2700,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/classic-home/classic-home-a-aa-20260708-complete.json",
+            "exists": true,
+            "bytes": 22570905,
+            "modifiedAt": "2026-07-08T12:14:59.000Z",
+            "sha256": "e198b9c63c7f842da3b8c4fc3a247996c5179a354d8e3aece52ef638aff29875",
+            "rows": 4442,
+            "score": 2700,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/classic-home/classic-home-a-aa-20260630-complete.json",
+            "exists": true,
+            "bytes": 22950790,
+            "modifiedAt": "2026-07-04T10:46:30.000Z",
+            "sha256": "782ee9f728c3c60379f40895864fda831a206499c5e4860b674427423c7b2e37",
+            "rows": 4442,
+            "score": 2400,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Coaster",
+      "id": "coaster",
+      "name": "Coaster",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "Coaster 20260703 partial",
+        "rows": 4171,
+        "migrationStatus": "verified",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 4171,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/coaster.md",
+        "sha256": "e0b47c6b4742a7a49549a3312277d482493322c4206b32918b22ca1d720eb6ef"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/coaster-test-2026-07-15.md",
+          "sha256": "c0d5c349cc0c6d3e5666e1da24426e40256887573097c8b6879a301a304b10c5"
+        },
+        "recordCount": 5
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 4,
+        "matchingRowCandidates": 4,
+        "matchingDateAndRowCandidates": 0,
+        "machineTopCandidate": {
+          "file": "data/processed/coaster/coaster-a-aa-20260701-canva-url.json",
+          "exists": true,
+          "bytes": 19142706,
+          "modifiedAt": "2026-07-13T04:16:37.996Z",
+          "sha256": "2deedfdfb4b014cc2215566fed5677c244552fc02979aea48ca53e6fb51871fd",
+          "rows": 4171,
+          "score": 2360,
+          "dateMatch": false,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/coaster/coaster-a-aa-20260701-canva-url.json",
+            "exists": true,
+            "bytes": 19142706,
+            "modifiedAt": "2026-07-13T04:16:37.996Z",
+            "sha256": "2deedfdfb4b014cc2215566fed5677c244552fc02979aea48ca53e6fb51871fd",
+            "rows": 4171,
+            "score": 2360,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/coaster/coaster-a-aa-20260630-scene.json",
+            "exists": true,
+            "bytes": 7662925,
+            "modifiedAt": "2026-06-30T14:04:58.000Z",
+            "sha256": "6df353c58e3de0e7ca7d34f64f1b9aeb9d1a3e408c74b11aaee8b9c1002f1a83",
+            "rows": 4171,
+            "score": 2300,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/coaster/coaster-a-aa-20260630.json",
+            "exists": true,
+            "bytes": 6707742,
+            "modifiedAt": "2026-06-30T13:41:31.000Z",
+            "sha256": "1b245085818087dde1051e8d60cc633e788f25c25f22f10ef51740a9c0b0e1f2",
+            "rows": 4171,
+            "score": 2300,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/coaster/coaster-a-aa-20260701.json",
+            "exists": true,
+            "bytes": 18950507,
+            "modifiedAt": "2026-07-13T04:16:37.888Z",
+            "sha256": "a51094c0433be4a6df0926068a5f27528198963da5b318323cbef4d2bb3daa25",
+            "rows": 4171,
+            "score": 2300,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Crestview Collection",
+      "id": "crestview-collection",
+      "name": "Crestview Collection",
+      "status": "candidate-pending",
+      "registry": {
+        "latestTab": "Crestview Collection 20260705 partial",
+        "rows": 3007,
+        "migrationStatus": "verified-partial",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 3007,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/crestview-collection.md",
+        "sha256": "5ce6c163e1956a143fb886ab63a090b1ae2a7a3a804c3bd86d0d917f959a29bf"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/crestview-collection-test-2026-07-15.md",
+          "sha256": "79b8eaf9185deeba4d7dabf9b13383412531b7b3800b2cf24fa0da7cb072bfec"
+        },
+        "recordCount": 2
+      },
+      "dataset": {
+        "status": "candidate",
+        "parsedCandidates": 1,
+        "matchingRowCandidates": 1,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/crestview-collection/crestview-collection-a-aa-20260705-partial.json",
+          "exists": true,
+          "bytes": 6274912,
+          "modifiedAt": "2026-07-05T11:23:05.000Z",
+          "sha256": "f4811ff2ed84c9ed203b42bfb7c048f8f02fda89295d6fca0ebad23d314d10ce",
+          "rows": 3007,
+          "score": 2640,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": "data/processed/crestview-collection/crestview-collection-a-aa-20260705-partial.json",
+        "candidates": [
+          {
+            "file": "data/processed/crestview-collection/crestview-collection-a-aa-20260705-partial.json",
+            "exists": true,
+            "bytes": 6274912,
+            "modifiedAt": "2026-07-05T11:23:05.000Z",
+            "sha256": "f4811ff2ed84c9ed203b42bfb7c048f8f02fda89295d6fca0ebad23d314d10ce",
+            "rows": 3007,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Deco Marche",
+      "id": "deco-marche",
+      "name": "Deco Marche",
+      "status": "candidate-pending",
+      "registry": {
+        "latestTab": "Deco Marche 20260703 partial",
+        "rows": 8233,
+        "migrationStatus": "verified-partial",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 8233,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/deco-marche.md",
+        "sha256": "85934e8ec4543405f0ab972f9d8095ecfaa1b08bec06e5b7826f961314a226bb"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/deco-marche-test-2026-07-15.md",
+          "sha256": "b66d3442fc52faf8ecceeaf276b1eea27e3117bda4ed9858fe3ebddfa965a37e"
+        },
+        "recordCount": 2
+      },
+      "dataset": {
+        "status": "candidate",
+        "parsedCandidates": 1,
+        "matchingRowCandidates": 1,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/deco-marche/deco-marche-a-aa-20260703.json",
+          "exists": true,
+          "bytes": 27678108,
+          "modifiedAt": "2026-07-13T04:17:10.956Z",
+          "sha256": "a5a86bec000f454bcbee5961f41f96a2f3f2646ab962ae7bac318e4c32136ad9",
+          "rows": 8233,
+          "score": 2600,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": "data/processed/deco-marche/deco-marche-a-aa-20260703.json",
+        "candidates": [
+          {
+            "file": "data/processed/deco-marche/deco-marche-a-aa-20260703.json",
+            "exists": true,
+            "bytes": 27678108,
+            "modifiedAt": "2026-07-13T04:17:10.956Z",
+            "sha256": "a5a86bec000f454bcbee5961f41f96a2f3f2646ab962ae7bac318e4c32136ad9",
+            "rows": 8233,
+            "score": 2600,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Dovetail",
+      "id": "dovetail",
+      "name": "Dovetail",
+      "status": "candidate-pending",
+      "registry": {
+        "latestTab": "Dovetail 20260630",
+        "rows": 7024,
+        "migrationStatus": "verified",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 7024,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/dovetail.md",
+        "sha256": "2ce7e69fe76d65d5ebe689290bfbeb331499073c6da698ab18eff09c58421e40"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/dovetail-test-2026-07-15.md",
+          "sha256": "6be315fff55c691ed6c196580c59dba08f66bbb252b296838b84052825b334b0"
+        },
+        "recordCount": 2
+      },
+      "dataset": {
+        "status": "candidate",
+        "parsedCandidates": 1,
+        "matchingRowCandidates": 1,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/dovetail/dovetail-a-aa-20260630.json",
+          "exists": true,
+          "bytes": 17209489,
+          "modifiedAt": "2026-07-13T04:16:44.590Z",
+          "sha256": "b05079a7f85e970ff94f28f8871c12a00070df925a573aef70a6f5204b647692",
+          "rows": 7024,
+          "score": 2640,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": "data/processed/dovetail/dovetail-a-aa-20260630.json",
+        "candidates": [
+          {
+            "file": "data/processed/dovetail/dovetail-a-aa-20260630.json",
+            "exists": true,
+            "bytes": 17209489,
+            "modifiedAt": "2026-07-13T04:16:44.590Z",
+            "sha256": "b05079a7f85e970ff94f28f8871c12a00070df925a573aef70a6f5204b647692",
+            "rows": 7024,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Dvkap",
+      "id": "dvkap",
+      "name": "DV Kap",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "DV Kap 20260708",
+        "rows": 14481,
+        "migrationStatus": "verified",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 14481,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/dvkap.md",
+        "sha256": "8316ddc824609b11e256cf7a00302fdadbf5f8c4212c95ed125a1d8e2cb4528f"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/dvkap-test-2026-07-08.md",
+          "sha256": "5b92b1759ac365acc0969ee68ce7e1d43cf8bb524118a804f2857289d872922b"
+        },
+        "recordCount": 3
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 2,
+        "matchingRowCandidates": 2,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/dvkap/dvkap-a-aa-20260708-ai-pillow-full-repair.json",
+          "exists": true,
+          "bytes": 26572666,
+          "modifiedAt": "2026-07-08T13:37:25.000Z",
+          "sha256": "8fc4d00905ed5bf2343271fd8f66a4c9e7911f115e191b661911156203993ee0",
+          "rows": 14481,
+          "score": 2640,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/dvkap/dvkap-a-aa-20260708-ai-pillow-full-repair.json",
+            "exists": true,
+            "bytes": 26572666,
+            "modifiedAt": "2026-07-08T13:37:25.000Z",
+            "sha256": "8fc4d00905ed5bf2343271fd8f66a4c9e7911f115e191b661911156203993ee0",
+            "rows": 14481,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/dvkap/dvkap-a-aa-20260630.json",
+            "exists": true,
+            "bytes": 24179796,
+            "modifiedAt": "2026-07-04T10:46:41.000Z",
+            "sha256": "99a78c9b223590b10e084af1f5a91bd1ac15109504d9433ebf534fd778acba12",
+            "rows": 14481,
+            "score": 2340,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Eichholtz",
+      "id": "eichholtz",
+      "name": "Eichholtz",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "Eichholtz 20260708",
+        "rows": 2942,
+        "migrationStatus": "verified",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 2942,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/eichholtz.md",
+        "sha256": "5abc3e82c0e86c19a5dfc087e7cb95e6074f03c94b282b25c441f68f9ae71324"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/eichholtz-test-2026-07-08.md",
+          "sha256": "c637cceb38fbcb0c00f5f38faaf945975df251cbea92e9a3c9ff04aadf37cff7"
+        },
+        "recordCount": 2
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 3,
+        "matchingRowCandidates": 3,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/eichholtz/eichholtz-a-aa-20260708.json",
+          "exists": true,
+          "bytes": 7147502,
+          "modifiedAt": "2026-07-08T12:10:24.000Z",
+          "sha256": "3c6cfff1dacd0787f57225ac06f25d3eff4fa46850d1a086958e583ff8a2aa50",
+          "rows": 2942,
+          "score": 2640,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/eichholtz/eichholtz-a-aa-20260708.json",
+            "exists": true,
+            "bytes": 7147502,
+            "modifiedAt": "2026-07-08T12:10:24.000Z",
+            "sha256": "3c6cfff1dacd0787f57225ac06f25d3eff4fa46850d1a086958e583ff8a2aa50",
+            "rows": 2942,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/eichholtz/eichholtz-a-aa-20260701-canva-url.json",
+            "exists": true,
+            "bytes": 6989210,
+            "modifiedAt": "2026-07-04T10:46:42.000Z",
+            "sha256": "efb7e15b89456e70c51905ac5662d33e7e2996466c2630fdaf8b8a786aee2178",
+            "rows": 2942,
+            "score": 2400,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/eichholtz/eichholtz-a-aa-20260701.json",
+            "exists": true,
+            "bytes": 6517604,
+            "modifiedAt": "2026-07-01T02:57:14.000Z",
+            "sha256": "0df8d1a22831c6d9a6854168b8a34736ddc829d62693e3885743ee5f0d00cd0f",
+            "rows": 2942,
+            "score": 2340,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Furniture of America",
+      "id": "furniture-of-america",
+      "name": "Furniture of America",
+      "status": "candidate-pending",
+      "registry": {
+        "latestTab": "Furniture of America 20260705 partial",
+        "rows": 5867,
+        "migrationStatus": "verified-partial",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 5867,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/furniture-of-america.md",
+        "sha256": "aaf04f813a93c28e1011ccf867192b8f08334c8254cb32523645ddf4df15253f"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/furniture-of-america-test-2026-07-05.md",
+          "sha256": "ab8b293400d0cb1878b761fc1096b20aa8ccfacffd8339c09765612f1e403e27"
+        },
+        "recordCount": 1
+      },
+      "dataset": {
+        "status": "candidate",
+        "parsedCandidates": 1,
+        "matchingRowCandidates": 1,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/furniture-of-america/furniture-of-america-a-aa-20260705-partial.json",
+          "exists": true,
+          "bytes": 16155348,
+          "modifiedAt": "2026-07-06T10:30:10.000Z",
+          "sha256": "ebfc99ed6e174f194d6b9e426d26137362a408ca34231bac67b3752aa8d195dc",
+          "rows": 5867,
+          "score": 2640,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": "data/processed/furniture-of-america/furniture-of-america-a-aa-20260705-partial.json",
+        "candidates": [
+          {
+            "file": "data/processed/furniture-of-america/furniture-of-america-a-aa-20260705-partial.json",
+            "exists": true,
+            "bytes": 16155348,
+            "modifiedAt": "2026-07-06T10:30:10.000Z",
+            "sha256": "ebfc99ed6e174f194d6b9e426d26137362a408ca34231bac67b3752aa8d195dc",
+            "rows": 5867,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "FourHands",
+      "id": "fourhands",
+      "name": "Four Hands",
+      "status": "candidate-pending",
+      "registry": {
+        "latestTab": "Four Hands 20260713",
+        "rows": 17761,
+        "migrationStatus": "verified",
+        "updatedAt": "2026-07-13"
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 17761,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/four-hands.md",
+        "sha256": "7f878c4a79da8c658e9e52b2772130e849c831bd2bee9e55846df3326de054e8"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/four-hands-in-app-auth-2026-07-03.md",
+          "sha256": "190c0d37426eebf205b3d7ad72bf08218cbbbc792b47da874059bae71cf4ac96"
+        },
+        "recordCount": 8
+      },
+      "dataset": {
+        "status": "candidate",
+        "parsedCandidates": 3,
+        "matchingRowCandidates": 1,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/fourhands/fourhands-a-aa-20260713.json",
+          "exists": true,
+          "bytes": 45597760,
+          "modifiedAt": "2026-07-13T03:38:00.838Z",
+          "sha256": "82a6cd3ab9581d7a713be113979aee78fcd8950b9fb93d157f9b656d99ab5f90",
+          "rows": 17761,
+          "score": 2640,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": "data/processed/fourhands/fourhands-a-aa-20260713.json",
+        "candidates": [
+          {
+            "file": "data/processed/fourhands/fourhands-a-aa-20260713.json",
+            "exists": true,
+            "bytes": 45597760,
+            "modifiedAt": "2026-07-13T03:38:00.838Z",
+            "sha256": "82a6cd3ab9581d7a713be113979aee78fcd8950b9fb93d157f9b656d99ab5f90",
+            "rows": 17761,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/fourhands/fourhands-a-aa-20260701.json",
+            "exists": true,
+            "bytes": 43916434,
+            "modifiedAt": "2026-07-01T16:18:46.000Z",
+            "sha256": "576585617ec6e1591085dd4af90fba9df1571115e3f1180297ff92aada0e9a55",
+            "rows": 17834,
+            "score": 336,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/fourhands/fourhands-a-aa-20260702.json",
+            "exists": true,
+            "bytes": 48216553,
+            "modifiedAt": "2026-07-04T10:46:42.000Z",
+            "sha256": "d84e99f36326331ccab3e4539eb74c6ed0876bf190e3df85d7e5526c20369d84",
+            "rows": 17834,
+            "score": 336,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Global Views",
+      "id": "global-views",
+      "name": "Global Views",
+      "status": "candidate-pending",
+      "registry": {
+        "latestTab": "Global Views 20260703",
+        "rows": 5778,
+        "migrationStatus": "verified",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 5778,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/global-views.md",
+        "sha256": "3cd9375a730dd18a6d2e9f1110f03063ac7f7445f4d19dcefe01882e15bb2444"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/global-views-test-2026-07-03.md",
+          "sha256": "188d3a5716504948bf5696af138e290da34015a405d95aed394bce346399f3eb"
+        },
+        "recordCount": 2
+      },
+      "dataset": {
+        "status": "candidate",
+        "parsedCandidates": 6,
+        "matchingRowCandidates": 1,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/global-views/global-views-a-aa-20260703-detail-complete.json",
+          "exists": true,
+          "bytes": 11561654,
+          "modifiedAt": "2026-07-13T04:16:40.298Z",
+          "sha256": "dd90d093c7a20459c2e696e21371deb0550f62e735f1702c20a0c91e78e7bdfd",
+          "rows": 5778,
+          "score": 2700,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": "data/processed/global-views/global-views-a-aa-20260703-detail-complete.json",
+        "candidates": [
+          {
+            "file": "data/processed/global-views/global-views-a-aa-20260703-detail-complete.json",
+            "exists": true,
+            "bytes": 11561654,
+            "modifiedAt": "2026-07-13T04:16:40.298Z",
+            "sha256": "dd90d093c7a20459c2e696e21371deb0550f62e735f1702c20a0c91e78e7bdfd",
+            "rows": 5778,
+            "score": 2700,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/global-views/global-views-a-aa-20260701-partial-primary-drive-canva-url.json",
+            "exists": true,
+            "bytes": 9736875,
+            "modifiedAt": "2026-07-13T04:16:39.096Z",
+            "sha256": "134b4bd720a8c97e8f6b76b88037f0863ac42419d667b51470a9f00022d4f6d3",
+            "rows": 5780,
+            "score": 360,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/global-views/global-views-a-aa-20260701-partial-primary-drive.json",
+            "exists": true,
+            "bytes": 8445006,
+            "modifiedAt": "2026-07-13T04:16:40.243Z",
+            "sha256": "b72e6e5f2fabb9fbd899fac042cbbb127d95cb03ef022fdca51ec50db7e71af8",
+            "rows": 5780,
+            "score": 360,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/global-views/global-views-a-aa-20260701-detail-partial.json",
+            "exists": true,
+            "bytes": 9849596,
+            "modifiedAt": "2026-07-13T04:16:39.929Z",
+            "sha256": "49d062017ffdbfee8d7669c7cffd818d5fc96383f642ada11ab060deb3dd694e",
+            "rows": 5780,
+            "score": 300,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/global-views/global-views-a-aa-20260702-detail-partial.json",
+            "exists": true,
+            "bytes": 9849796,
+            "modifiedAt": "2026-07-13T04:16:39.956Z",
+            "sha256": "9a5256f054389c9cab6ecae7c5f698ebb51c279278bde54ab909ad480bf96816",
+            "rows": 5780,
+            "score": 300,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/global-views/global-views-a-aa-20260701-partial.json",
+            "exists": true,
+            "bytes": 7091374,
+            "modifiedAt": "2026-07-13T04:16:40.267Z",
+            "sha256": "9407b856bb54671bf91ac8913fc3243406b9b68a8d95bd22b15e193cf0799860",
+            "rows": 4501,
+            "score": 79,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "John Richard",
+      "id": "john-richard",
+      "name": "John Richard",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "John Richard 20260707",
+        "rows": 4163,
+        "migrationStatus": "verified",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 4163,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/john-richard.md",
+        "sha256": "8ef3e5d45286843d387e2fbea65a4c6deebdb3a6ac07de5a4a1bca48322a087d"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/john-richard-test-2026-07-07.md",
+          "sha256": "6a43e790effc1a7bc6cd123fa013c30cd7d02a07279211c4a81cf44521571a96"
+        },
+        "recordCount": 2
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 3,
+        "matchingRowCandidates": 3,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/john-richard/john-richard-a-aa-20260707-normalized.json",
+          "exists": true,
+          "bytes": 8670758,
+          "modifiedAt": "2026-07-07T09:29:25.000Z",
+          "sha256": "648526c76dd35eb313a6fe956539f262b76ce36d8c6091d3df1d50679c0e4880",
+          "rows": 4163,
+          "score": 2700,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/john-richard/john-richard-a-aa-20260707-normalized.json",
+            "exists": true,
+            "bytes": 8670758,
+            "modifiedAt": "2026-07-07T09:29:25.000Z",
+            "sha256": "648526c76dd35eb313a6fe956539f262b76ce36d8c6091d3df1d50679c0e4880",
+            "rows": 4163,
+            "score": 2700,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/john-richard/john-richard-a-aa-20260701-normalized.json",
+            "exists": true,
+            "bytes": 8670548,
+            "modifiedAt": "2026-07-07T09:24:22.000Z",
+            "sha256": "d701edd186ea9f46086fcd5fd9186423ed8db75e02ee0bd71adbc2eb093403a3",
+            "rows": 4163,
+            "score": 2400,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/john-richard/john-richard-a-aa-20260701.json",
+            "exists": true,
+            "bytes": 8242269,
+            "modifiedAt": "2026-07-07T09:20:41.000Z",
+            "sha256": "9de19b3fcc2f5ee2d1b7f3f126eea484bcaf46a7c5e282e9f24a46ab99135d11",
+            "rows": 4163,
+            "score": 2340,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Jonathan Charles",
+      "id": "jonathan-charles",
+      "name": "Jonathan Charles",
+      "status": "candidate-pending",
+      "registry": {
+        "latestTab": "Jonathan Charles 20260702",
+        "rows": 998,
+        "migrationStatus": "verified",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 998,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/jonathan-charles.md",
+        "sha256": "fbaad43492b7953c44d67a9370ab626b5a0813378ca7c47e40819b50e199334a"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/jonathan-charles-test-2026-07-02.md",
+          "sha256": "9613f0f75b2a0b0cf3b445292a637bc75ed7c13eef56009598e33a8c45d7e26d"
+        },
+        "recordCount": 1
+      },
+      "dataset": {
+        "status": "candidate",
+        "parsedCandidates": 1,
+        "matchingRowCandidates": 1,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/jonathan-charles/jonathan-charles-a-aa-20260702.json",
+          "exists": true,
+          "bytes": 4144572,
+          "modifiedAt": "2026-07-04T10:46:43.000Z",
+          "sha256": "db9f370df06a14a2eda7cb8797944dbe90fed18cf28f0355e39bf27603695a3c",
+          "rows": 998,
+          "score": 2640,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": "data/processed/jonathan-charles/jonathan-charles-a-aa-20260702.json",
+        "candidates": [
+          {
+            "file": "data/processed/jonathan-charles/jonathan-charles-a-aa-20260702.json",
+            "exists": true,
+            "bytes": 4144572,
+            "modifiedAt": "2026-07-04T10:46:43.000Z",
+            "sha256": "db9f370df06a14a2eda7cb8797944dbe90fed18cf28f0355e39bf27603695a3c",
+            "rows": 998,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Leftbank Art",
+      "id": "leftbank-art",
+      "name": "Leftbank Art",
+      "status": "sharded-pending",
+      "registry": {
+        "latestTab": "Leftbank Art 20260707 partial",
+        "rows": 5516056,
+        "migrationStatus": "verified-partial",
+        "updatedAt": "2026-07-15"
+      },
+      "remoteEvidence": {
+        "status": "sharded-needs-separate-proof",
+        "remoteColumnARows": null,
+        "issues": [
+          "latest data tab is not first"
+        ]
+      },
+      "rule": {
+        "file": "docs/suppliers/leftbank-art.md",
+        "sha256": "7eafbaf99252393b88ea6bb9cce23b949fae3b7b7c237c012161fca88f98c339"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/leftbank-art-test-2026-07-12.md",
+          "sha256": "36138d6f4a1e57ce7d37e3a0dca0d67dcc917ca9499d46cfca1879838112cbca"
+        },
+        "recordCount": 3
+      },
+      "dataset": {
+        "status": "sharded",
+        "parsedCandidates": 0,
+        "matchingRowCandidates": 0,
+        "matchingDateAndRowCandidates": 0,
+        "machineTopCandidate": null,
+        "proposedSelection": null,
+        "candidates": []
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Meridian",
+      "id": "meridian",
+      "name": "Meridian",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "Meridian 20260705",
+        "rows": 13734,
+        "migrationStatus": "verified",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 13734,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/meridian.md",
+        "sha256": "26ac085963b7a93c7633ffedc54ff2cf0a3aa90789b9a71319c3c0875e72716e"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/meridian-test-2026-07-03.md",
+          "sha256": "c6fad490fe433be4d5e9097e2e7e5c5f08f7980446ebc4681e163be5516dbf53"
+        },
+        "recordCount": 1
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 3,
+        "matchingRowCandidates": 2,
+        "matchingDateAndRowCandidates": 0,
+        "machineTopCandidate": {
+          "file": "data/processed/meridian/meridian-a-aa-20260703-uploadable 2.json",
+          "exists": true,
+          "bytes": 64172026,
+          "modifiedAt": "2026-07-04T10:46:44.000Z",
+          "sha256": "499a74148f00a647329acc8d329943b62b5b6ea671a834aa6ceb88f00ed03b38",
+          "rows": 13734,
+          "score": 2400,
+          "dateMatch": false,
+          "duplicateNameSignal": true
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/meridian/meridian-a-aa-20260703-uploadable 2.json",
+            "exists": true,
+            "bytes": 64172026,
+            "modifiedAt": "2026-07-04T10:46:44.000Z",
+            "sha256": "499a74148f00a647329acc8d329943b62b5b6ea671a834aa6ceb88f00ed03b38",
+            "rows": 13734,
+            "score": 2400,
+            "dateMatch": false,
+            "duplicateNameSignal": true
+          },
+          {
+            "file": "data/processed/meridian/meridian-a-aa-20260703-uploadable.json",
+            "exists": true,
+            "bytes": 64184185,
+            "modifiedAt": "2026-07-05T10:01:57.000Z",
+            "sha256": "a7e200bd5e03962fdf3691f849e971d51e3d58f901d5c3deefea5ad5749a7f09",
+            "rows": 13734,
+            "score": 2400,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/meridian/meridian-a-aa-20260703.json",
+            "exists": true,
+            "bytes": 61908111,
+            "modifiedAt": "2026-07-03T17:00:57.000Z",
+            "sha256": "fc0fac169bef927043a429feb0596237880bd5d3ead891470ed87431605c1e5d",
+            "rows": 14156,
+            "score": 309,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Modway",
+      "id": "modway",
+      "name": "Modway",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "Modway 20260701",
+        "rows": 9436,
+        "migrationStatus": "verified",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 9436,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/modway.md",
+        "sha256": "e513992bbeb1a7220d1ce3676ecf4142b7db22f5fef6f8ab213f33a98a028cf8"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/modway-test-2026-07-01.md",
+          "sha256": "bf795ccac140cc5a45845c5995cf345d0c09b7f71b6563d30d0d969510cdfd8b"
+        },
+        "recordCount": 3
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 3,
+        "matchingRowCandidates": 3,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/modway/modway-a-aa-20260701.json",
+          "exists": true,
+          "bytes": 70841261,
+          "modifiedAt": "2026-07-04T10:46:45.000Z",
+          "sha256": "92445e14d4d071d734ac305559b2b17c921d8152b1b0282d54db47e0af777ec5",
+          "rows": 9436,
+          "score": 2640,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/modway/modway-a-aa-20260701.json",
+            "exists": true,
+            "bytes": 70841261,
+            "modifiedAt": "2026-07-04T10:46:45.000Z",
+            "sha256": "92445e14d4d071d734ac305559b2b17c921d8152b1b0282d54db47e0af777ec5",
+            "rows": 9436,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/modway/modway-a-aa-20260630.json",
+            "exists": true,
+            "bytes": 68821733,
+            "modifiedAt": "2026-07-01T15:32:26.000Z",
+            "sha256": "c37e2776cf1df14f910b44ffaa6d63c2c04eeffecf8482541f843d89a446031d",
+            "rows": 9436,
+            "score": 2340,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/modway/modway-a-aa-20260630-partial.json",
+            "exists": true,
+            "bytes": 68821219,
+            "modifiedAt": "2026-06-30T14:30:17.000Z",
+            "sha256": "e29c8bc73dbb98dd35264f7c1a2ead404d815ab0eca819fee12d321af6d99e68",
+            "rows": 9436,
+            "score": 2300,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Noir",
+      "id": "noir",
+      "name": "Noir",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "Noir 20260701",
+        "rows": 1028,
+        "migrationStatus": "verified",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 1028,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/noir.md",
+        "sha256": "6d95dbffdc36c038499a5ae9148cb3f6d85eb12a8b4e5958a0043d31b75a38cc"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/noir-test-2026-07-01.md",
+          "sha256": "85eee1d18cbc6e037e7d780a0c02b735dae70e08b8bdd4dc0dba333a91f6abf2"
+        },
+        "recordCount": 1
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 2,
+        "matchingRowCandidates": 2,
+        "matchingDateAndRowCandidates": 2,
+        "machineTopCandidate": {
+          "file": "data/processed/noir/noir-a-aa-20260701-complete.json",
+          "exists": true,
+          "bytes": 2331095,
+          "modifiedAt": "2026-07-04T10:46:45.000Z",
+          "sha256": "02d8cc2d04fb5726c1c5b84c73f2ab6bbaa289a6bce325c7cec7e3248d472f9d",
+          "rows": 1028,
+          "score": 2700,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/noir/noir-a-aa-20260701-complete.json",
+            "exists": true,
+            "bytes": 2331095,
+            "modifiedAt": "2026-07-04T10:46:45.000Z",
+            "sha256": "02d8cc2d04fb5726c1c5b84c73f2ab6bbaa289a6bce325c7cec7e3248d472f9d",
+            "rows": 1028,
+            "score": 2700,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/noir/noir-a-aa-20260701-drive-complete.json",
+            "exists": true,
+            "bytes": 2238443,
+            "modifiedAt": "2026-07-02T07:52:48.000Z",
+            "sha256": "a501ae9d57ee6dc70a24bc84f3ab2fc77a490a843ced9d48f0fddab7ad2cab5e",
+            "rows": 1028,
+            "score": 2700,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Phillips Collection",
+      "id": "phillips-collection",
+      "name": "Phillips Collection",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "Phillips Collection 20260701",
+        "rows": 4310,
+        "migrationStatus": "verified",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 4310,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/phillips-collection.md",
+        "sha256": "2efcbb5a7de93ed16e9a6c4b66bbe25cade919bb9834729cba4461327fa8ef8b"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/phillips-collection-test-2026-07-01.md",
+          "sha256": "da2d078f26410474778f8ff910ecd7b1eac6bcf07c5be25a72d81f57be605a59"
+        },
+        "recordCount": 1
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 8,
+        "matchingRowCandidates": 7,
+        "matchingDateAndRowCandidates": 7,
+        "machineTopCandidate": {
+          "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-auth-imagefix-canva-url.json",
+          "exists": true,
+          "bytes": 14115459,
+          "modifiedAt": "2026-07-04T10:46:45.000Z",
+          "sha256": "aa6ba8f73c0699ef5594e0e9034c53007c4e167afcc0d779202c5e612b068905",
+          "rows": 4310,
+          "score": 2700,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-auth-imagefix-canva-url.json",
+            "exists": true,
+            "bytes": 14115459,
+            "modifiedAt": "2026-07-04T10:46:45.000Z",
+            "sha256": "aa6ba8f73c0699ef5594e0e9034c53007c4e167afcc0d779202c5e612b068905",
+            "rows": 4310,
+            "score": 2700,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-auth-imagefix.json",
+            "exists": true,
+            "bytes": 13379989,
+            "modifiedAt": "2026-07-01T07:58:06.000Z",
+            "sha256": "3087a0e858ede68d703ab76032b1157dd5e0210a341352efc80056d325013e37",
+            "rows": 4310,
+            "score": 2700,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-auth.json",
+            "exists": true,
+            "bytes": 12596314,
+            "modifiedAt": "2026-07-01T03:21:38.000Z",
+            "sha256": "a7e92842c895d6d7da31a2c81201aeda2e013bff3f2003316a15107f127690fb",
+            "rows": 4310,
+            "score": 2700,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-speedtest.json",
+            "exists": true,
+            "bytes": 11126985,
+            "modifiedAt": "2026-06-30T17:46:20.000Z",
+            "sha256": "098c7c7c8af8b14f0f8daf77a5bf0c6d6e4dabea8337751449c05d3e20897234",
+            "rows": 4310,
+            "score": 2700,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-partial.json",
+            "exists": true,
+            "bytes": 11896989,
+            "modifiedAt": "2026-06-30T19:40:33.000Z",
+            "sha256": "613f6a28ccc2e991b78295b1e49a2e578d1dc3579ae8a701f8563c4e051b0421",
+            "rows": 4310,
+            "score": 2660,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-imagefix-local-auth.json",
+            "exists": true,
+            "bytes": 12636833,
+            "modifiedAt": "2026-07-01T05:47:40.000Z",
+            "sha256": "ae3a1db985892a5ef93420a3f664d06d4da99b43cda0e23e847eb54c03433b7f",
+            "rows": 4310,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Poundex",
+      "id": "poundex",
+      "name": "Poundex",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "Poundex 20260705 partial",
+        "rows": 1367,
+        "migrationStatus": "verified-partial",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 1367,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/poundex.md",
+        "sha256": "2bd31e7db6deec91f7b54068d795e8621a44c1b252bdc74a33db0c35bb28bf87"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/poundex-test-2026-07-05.md",
+          "sha256": "5a61104d0acdd33f30bd224f83b23b8245efadac49dffdaccd9711c0d8348491"
+        },
+        "recordCount": 1
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 6,
+        "matchingRowCandidates": 4,
+        "matchingDateAndRowCandidates": 4,
+        "machineTopCandidate": {
+          "file": "data/processed/poundex/poundex-a-aa-20260705-normalized.json",
+          "exists": true,
+          "bytes": 5654573,
+          "modifiedAt": "2026-07-05T11:44:30.000Z",
+          "sha256": "65d58d2ddbc8056dc91655fcfe3a32ace62e70a4b8bea30aad5cb76914151307",
+          "rows": 1367,
+          "score": 2660,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/poundex/poundex-a-aa-20260705-normalized.json",
+            "exists": true,
+            "bytes": 5654573,
+            "modifiedAt": "2026-07-05T11:44:30.000Z",
+            "sha256": "65d58d2ddbc8056dc91655fcfe3a32ace62e70a4b8bea30aad5cb76914151307",
+            "rows": 1367,
+            "score": 2660,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/poundex/poundex-a-aa-20260705-table-normalized.json",
+            "exists": true,
+            "bytes": 5518080,
+            "modifiedAt": "2026-07-05T11:42:53.000Z",
+            "sha256": "c0214bcb57d58a3190574a2f6d7c5eee71a7961349d630ee14e1e98888bddf08",
+            "rows": 1367,
+            "score": 2660,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/poundex/poundex-a-aa-20260705-uploadable.json",
+            "exists": true,
+            "bytes": 5510580,
+            "modifiedAt": "2026-07-05T11:45:00.000Z",
+            "sha256": "70cb2db82106a1b6e38accfb02b75838d44a2086eab73ee34a63a3bb74d4136d",
+            "rows": 1367,
+            "score": 2660,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/poundex/poundex-a-aa-20260705-direct-ef.json",
+            "exists": true,
+            "bytes": 5648187,
+            "modifiedAt": "2026-07-13T04:16:47.833Z",
+            "sha256": "90fe0cf2512757104eff88e2d9f4584a4158a6468dee68b626bbf367f3050f95",
+            "rows": 1367,
+            "score": 2600,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/poundex/poundex-a-aa-20260705-uploadable-partial.json",
+            "exists": true,
+            "bytes": 5649724,
+            "modifiedAt": "2026-07-05T11:40:05.000Z",
+            "sha256": "fc4660d40382a422f982bcc27a47eb4ae5c52915eaceea01097d6e00eb748dd7",
+            "rows": 1369,
+            "score": 699,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/poundex/poundex-a-aa-20260705.json",
+            "exists": true,
+            "bytes": 5513102,
+            "modifiedAt": "2026-07-05T11:05:07.000Z",
+            "sha256": "01af56deeb2309fa8148e0d16f8df8e142f248395371f273267cae60ae67e090",
+            "rows": 1369,
+            "score": 599,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Safavieh",
+      "id": "safavieh",
+      "name": "Safavieh",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "Safavieh 20260702 partial",
+        "rows": 151133,
+        "migrationStatus": "verified",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 151133,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/safavieh.md",
+        "sha256": "af020b0958c75b46340103b67559b360fa16fdb0a55ca50e1e2a81d5e1bf1ad4"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/safavieh-test-2026-07-02.md",
+          "sha256": "ed480a1d9efca444f4d9b7d4d6333a9f59d5d52ec050e958bd64184ba44e493b"
+        },
+        "recordCount": 1
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 7,
+        "matchingRowCandidates": 6,
+        "matchingDateAndRowCandidates": 6,
+        "machineTopCandidate": {
+          "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 2.json",
+          "exists": true,
+          "bytes": 352189156,
+          "modifiedAt": "2026-07-13T04:17:15.311Z",
+          "sha256": "4f84148cf95f9d4b5e09168c48d4c96e09fdc3101112bbc4176f002ddcffeb3c",
+          "rows": 151133,
+          "score": 2700,
+          "dateMatch": true,
+          "duplicateNameSignal": true
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 2.json",
+            "exists": true,
+            "bytes": 352189156,
+            "modifiedAt": "2026-07-13T04:17:15.311Z",
+            "sha256": "4f84148cf95f9d4b5e09168c48d4c96e09fdc3101112bbc4176f002ddcffeb3c",
+            "rows": 151133,
+            "score": 2700,
+            "dateMatch": true,
+            "duplicateNameSignal": true
+          },
+          {
+            "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 3.json",
+            "exists": true,
+            "bytes": 352190241,
+            "modifiedAt": "2026-07-13T04:17:13.894Z",
+            "sha256": "26a001854efd8d3aa361572db19d998129db5d621d46a61403d1e53079f1cd4e",
+            "rows": 151133,
+            "score": 2700,
+            "dateMatch": true,
+            "duplicateNameSignal": true
+          },
+          {
+            "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 4.json",
+            "exists": true,
+            "bytes": 352192159,
+            "modifiedAt": "2026-07-13T04:17:18.616Z",
+            "sha256": "a5f9d912109ed444da896f5e68ace3aed13eda2619ae9a0407494f59bf4ceab1",
+            "rows": 151133,
+            "score": 2700,
+            "dateMatch": true,
+            "duplicateNameSignal": true
+          },
+          {
+            "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial.json",
+            "exists": true,
+            "bytes": 389871971,
+            "modifiedAt": "2026-07-13T04:17:10.385Z",
+            "sha256": "cf5c0d6aa5e8aff35f0d9edffe4e11d6d8601de42c8b5035d0b2ff7ddbb75f4e",
+            "rows": 151133,
+            "score": 2700,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-table-normalized-debug.json",
+            "exists": true,
+            "bytes": 303687437,
+            "modifiedAt": "2026-07-13T04:16:58.380Z",
+            "sha256": "ea72e40c30412eb33c7b5e3bab641505904b93bd0dcdadee360db1246741117d",
+            "rows": 151133,
+            "score": 2660,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-table-1600.json",
+            "exists": true,
+            "bytes": 303694502,
+            "modifiedAt": "2026-07-13T04:16:56.670Z",
+            "sha256": "c1cebe0fd0d14cb8254ba5ce75f7af7ca6d7c9ec0878786c77e82132a4ded473",
+            "rows": 151133,
+            "score": 2660,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Sunpan",
+      "id": "sunpan",
+      "name": "Sunpan",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "Sunpan 20260702",
+        "rows": 2935,
+        "migrationStatus": "verified",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 2935,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/sunpan.md",
+        "sha256": "4b4e5693bc21b0ba8aabab875f0c628b9510bc6a3877f43156cbc110b143e078"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/sunpan-test-2026-07-02.md",
+          "sha256": "716ddb9f392db9999605a129f7a065bd293dd5667dd361ce5e4615c43e8ca360"
+        },
+        "recordCount": 1
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 2,
+        "matchingRowCandidates": 2,
+        "matchingDateAndRowCandidates": 2,
+        "machineTopCandidate": {
+          "file": "data/processed/sunpan/sunpan-a-aa-20260702-canva-url.json",
+          "exists": true,
+          "bytes": 9678043,
+          "modifiedAt": "2026-07-13T04:16:37.747Z",
+          "sha256": "bc341d12e42bfc13f9e314d3f34764be350ecdaf9f175a7f80fb457ecfa4f14d",
+          "rows": 2935,
+          "score": 2700,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/sunpan/sunpan-a-aa-20260702-canva-url.json",
+            "exists": true,
+            "bytes": 9678043,
+            "modifiedAt": "2026-07-13T04:16:37.747Z",
+            "sha256": "bc341d12e42bfc13f9e314d3f34764be350ecdaf9f175a7f80fb457ecfa4f14d",
+            "rows": 2935,
+            "score": 2700,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/sunpan/sunpan-a-aa-20260702.json",
+            "exists": true,
+            "bytes": 9018595,
+            "modifiedAt": "2026-07-13T04:16:37.698Z",
+            "sha256": "fcbe64d46b03a73b98ad0ef1cb8a8139aec75fde6d3deee30b8a6d901cdbfb94",
+            "rows": 2935,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Surya",
+      "id": "surya",
+      "name": "Surya",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "Surya 20260709 partial",
+        "rows": 71005,
+        "migrationStatus": "partial",
+        "updatedAt": "2026-07-09"
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 71005,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/surya.md",
+        "sha256": "620497135a8655342b92a0fb276affd416af14f6c91acab39ab471d70385d912"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/surya-test-2026-07-09.md",
+          "sha256": "d68a65a61b07808db1496fddab90ae53d4020bf85cb245887003df99cd1470b2"
+        },
+        "recordCount": 4
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 11,
+        "matchingRowCandidates": 6,
+        "matchingDateAndRowCandidates": 2,
+        "machineTopCandidate": {
+          "file": "data/processed/surya/surya-a-aa-20260709-image-repaired-partial 2.json",
+          "exists": true,
+          "bytes": 150485449,
+          "modifiedAt": "2026-07-13T04:16:45.202Z",
+          "sha256": "09df67a3b06ced35c17e91d3157de081587fe5c6835fa9fa7ff857fbdda46f21",
+          "rows": 71005,
+          "score": 2640,
+          "dateMatch": true,
+          "duplicateNameSignal": true
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/surya/surya-a-aa-20260709-image-repaired-partial 2.json",
+            "exists": true,
+            "bytes": 150485449,
+            "modifiedAt": "2026-07-13T04:16:45.202Z",
+            "sha256": "09df67a3b06ced35c17e91d3157de081587fe5c6835fa9fa7ff857fbdda46f21",
+            "rows": 71005,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": true
+          },
+          {
+            "file": "data/processed/surya/surya-a-aa-20260709-image-repaired-partial.json",
+            "exists": true,
+            "bytes": 150484961,
+            "modifiedAt": "2026-07-13T04:16:43.361Z",
+            "sha256": "aaeb8b486eeee266229233f0fe53dfeca288f1ed11d8b952e54057267979ee34",
+            "rows": 71005,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/surya/surya-a-aa-20260703-detail-partial.json",
+            "exists": true,
+            "bytes": 152951071,
+            "modifiedAt": "2026-07-13T04:16:38.493Z",
+            "sha256": "9751b47312ddfbe69e90fda710dca2b8a35a1d36cfbeba58152793261c586484",
+            "rows": 71005,
+            "score": 2340,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/surya/surya-a-aa-20260708-image-repaired-partial 2.json",
+            "exists": true,
+            "bytes": 152558761,
+            "modifiedAt": "2026-07-13T04:16:43.755Z",
+            "sha256": "6bfaa05c230794adf59139bfd6fd7addd0e0d05d0cdd635cbfd325fc93db4f7e",
+            "rows": 71005,
+            "score": 2340,
+            "dateMatch": false,
+            "duplicateNameSignal": true
+          },
+          {
+            "file": "data/processed/surya/surya-a-aa-20260708-image-repaired-partial 3.json",
+            "exists": true,
+            "bytes": 152554419,
+            "modifiedAt": "2026-07-13T04:16:41.513Z",
+            "sha256": "fd558c5e43183d69e93d0137420e42c7205c99c20b6c5d8bf59a4f5a366e93ef",
+            "rows": 71005,
+            "score": 2340,
+            "dateMatch": false,
+            "duplicateNameSignal": true
+          },
+          {
+            "file": "data/processed/surya/surya-a-aa-20260708-image-repaired-partial.json",
+            "exists": true,
+            "bytes": 151100298,
+            "modifiedAt": "2026-07-13T04:16:46.200Z",
+            "sha256": "7bd08326acd03cfc430ecbc51948cc3995f4fb937fdb14ade3d4f64d89578ff8",
+            "rows": 71005,
+            "score": 2340,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "TOV",
+      "id": "tov",
+      "name": "TOV",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "TOV 20260629",
+        "rows": 2846,
+        "migrationStatus": "verified",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 2846,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/tov.md",
+        "sha256": "c3c1089c10b038273f64664f70d573a9a6b298290f41eefee9f047373fe21b68"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/tov-test-2026-06-29.md",
+          "sha256": "8ce0bbd2e8a30e100571140831ded92d4f2ed9913f8ba8eadea721b4cf978fa8"
+        },
+        "recordCount": 2
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 2,
+        "matchingRowCandidates": 2,
+        "matchingDateAndRowCandidates": 2,
+        "machineTopCandidate": {
+          "file": "data/processed/tov/tov-full-a-aa-20260629-scene-rebuilt.json",
+          "exists": true,
+          "bytes": 11347890,
+          "modifiedAt": "2026-07-04T10:47:38.000Z",
+          "sha256": "541e8d0b3a05c015b9e35ce66840e1ce289f6a4646c298b2e1d6209995e5f80e",
+          "rows": 2846,
+          "score": 2640,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/tov/tov-full-a-aa-20260629-scene-rebuilt.json",
+            "exists": true,
+            "bytes": 11347890,
+            "modifiedAt": "2026-07-04T10:47:38.000Z",
+            "sha256": "541e8d0b3a05c015b9e35ce66840e1ce289f6a4646c298b2e1d6209995e5f80e",
+            "rows": 2846,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/tov/tov-full-a-aa-20260629.json",
+            "exists": true,
+            "bytes": 9570141,
+            "modifiedAt": "2026-06-30T07:55:39.000Z",
+            "sha256": "eca436bb085e13cb863683d2c50a726d19c5d0d06b337cdf9a7cb58c5d26855f",
+            "rows": 2846,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Universal",
+      "id": "universal-furniture",
+      "name": "Universal",
+      "status": "candidate-pending",
+      "registry": {
+        "latestTab": "Universal 20260710",
+        "rows": 682,
+        "migrationStatus": "verified",
+        "updatedAt": "2026-07-10"
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 682,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/universal-furniture.md",
+        "sha256": "ce858864740986d373ce7e1089bed37480c664d45f96b71b008dc66677ff75ee"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/universal-furniture-test-2026-07-10.md",
+          "sha256": "de7c69323ec32b09fc93576d1182fa6c3d387664326bddfbc9d6248b0ca9b573"
+        },
+        "recordCount": 2
+      },
+      "dataset": {
+        "status": "candidate",
+        "parsedCandidates": 3,
+        "matchingRowCandidates": 1,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/universal-furniture/universal-furniture-a-aa-20260710.json",
+          "exists": true,
+          "bytes": 2010876,
+          "modifiedAt": "2026-07-09T20:26:55.000Z",
+          "sha256": "8702702b127315961320be3e5f848e584ebc2128bf19dee6542732b44434249c",
+          "rows": 682,
+          "score": 2640,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": "data/processed/universal-furniture/universal-furniture-a-aa-20260710.json",
+        "candidates": [
+          {
+            "file": "data/processed/universal-furniture/universal-furniture-a-aa-20260710.json",
+            "exists": true,
+            "bytes": 2010876,
+            "modifiedAt": "2026-07-09T20:26:55.000Z",
+            "sha256": "8702702b127315961320be3e5f848e584ebc2128bf19dee6542732b44434249c",
+            "rows": 682,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/universal-furniture/universal-furniture-a-aa-20260702.json",
+            "exists": true,
+            "bytes": 2690255,
+            "modifiedAt": "2026-07-07T12:10:14.000Z",
+            "sha256": "3a588f639f6d03310e5ecac8562c66f2cacea4afe45f4a522bb268473e282250",
+            "rows": 985,
+            "score": -104,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/universal-furniture/universal-furniture-a-aa-20260707.json",
+            "exists": true,
+            "bytes": 2690326,
+            "modifiedAt": "2026-07-07T12:20:04.000Z",
+            "sha256": "26246179a301c54015b515eab4b18038b707daa7b7b62e02114cc4d30d65733e",
+            "rows": 985,
+            "score": -104,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Uttermost",
+      "id": "uttermost",
+      "name": "Uttermost",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "Uttermost 20260701",
+        "rows": 4636,
+        "migrationStatus": "verified",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 4636,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/uttermost.md",
+        "sha256": "cff8222744822a7529756e1bfa78b09ebea202d52fc87ebad274702885b80809"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/uttermost-test-2026-07-01.md",
+          "sha256": "bf31be07270714f54aa495e13500975712cc35fdfd6dbe6a10f53880e370fb64"
+        },
+        "recordCount": 3
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 5,
+        "matchingRowCandidates": 3,
+        "matchingDateAndRowCandidates": 3,
+        "machineTopCandidate": {
+          "file": "data/processed/uttermost/uttermost-a-aa-20260701-complete.json",
+          "exists": true,
+          "bytes": 15437662,
+          "modifiedAt": "2026-07-04T10:47:39.000Z",
+          "sha256": "adac58e2534cfcb3ca2cc8ba5d312b4c70866ad1f25fbdb6b7059f1c74b07590",
+          "rows": 4636,
+          "score": 2700,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/uttermost/uttermost-a-aa-20260701-complete.json",
+            "exists": true,
+            "bytes": 15437662,
+            "modifiedAt": "2026-07-04T10:47:39.000Z",
+            "sha256": "adac58e2534cfcb3ca2cc8ba5d312b4c70866ad1f25fbdb6b7059f1c74b07590",
+            "rows": 4636,
+            "score": 2700,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/uttermost/uttermost-a-aa-20260701-highres-repaired.json",
+            "exists": true,
+            "bytes": 14974335,
+            "modifiedAt": "2026-07-01T15:02:29.000Z",
+            "sha256": "f5ed4097670ed7b247f30d684d9d36ff0c97ac34aadcc4c337ae631e0b300f51",
+            "rows": 4636,
+            "score": 2640,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/uttermost/uttermost-a-aa-20260701-partial.json",
+            "exists": true,
+            "bytes": 14706658,
+            "modifiedAt": "2026-07-01T15:01:38.000Z",
+            "sha256": "1d7fb02872f2f45074d7f381c524e6fd44149cb822d59f90c75c477ae64984b6",
+            "rows": 4636,
+            "score": 2600,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/uttermost/uttermost-a-aa-20260630-complete-scene-rebuilt.json",
+            "exists": true,
+            "bytes": 14705522,
+            "modifiedAt": "2026-06-30T10:41:34.000Z",
+            "sha256": "63f586baedb150ef92e8bcdf0545033479074e40c76bae3bd6f896aac903abd1",
+            "rows": 4630,
+            "score": 399,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/uttermost/uttermost-a-aa-20260630-complete.json",
+            "exists": true,
+            "bytes": 14249391,
+            "modifiedAt": "2026-07-01T08:41:08.000Z",
+            "sha256": "cbdfa67c28771efe1b5cf0ef4df839a81f0c7a3b8b9da706b17b556dfe89c17c",
+            "rows": 4630,
+            "score": 399,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "VIG",
+      "id": "vig",
+      "name": "VIG",
+      "status": "ambiguous-pending",
+      "registry": {
+        "latestTab": "VIG 20260710 partial",
+        "rows": 3120,
+        "migrationStatus": "verified-partial",
+        "updatedAt": "2026-07-10"
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 3120,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/vig.md",
+        "sha256": "4f4d3ed3877f96b86aff1581fbfcce924ed418839235e4edecec936805dfc515"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/vig-test-2026-07-10.md",
+          "sha256": "97aed3f7ff727e2a37e9ce1252ef28fd2494132bcd7ed6f0de893588d92b7577"
+        },
+        "recordCount": 2
+      },
+      "dataset": {
+        "status": "ambiguous",
+        "parsedCandidates": 4,
+        "matchingRowCandidates": 3,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/vig/vig-a-aa-20260710-partial-normalized.json",
+          "exists": true,
+          "bytes": 10236730,
+          "modifiedAt": "2026-07-09T19:35:34.000Z",
+          "sha256": "7bbe3d3d307adb213ea332ed05696b95c99edb68e49e9ff82b6e75df9a968be8",
+          "rows": 3120,
+          "score": 2700,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": null,
+        "candidates": [
+          {
+            "file": "data/processed/vig/vig-a-aa-20260710-partial-normalized.json",
+            "exists": true,
+            "bytes": 10236730,
+            "modifiedAt": "2026-07-09T19:35:34.000Z",
+            "sha256": "7bbe3d3d307adb213ea332ed05696b95c99edb68e49e9ff82b6e75df9a968be8",
+            "rows": 3120,
+            "score": 2700,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/vig/vig-a-aa-20260701-partial-normalized.json",
+            "exists": true,
+            "bytes": 10197157,
+            "modifiedAt": "2026-07-04T10:47:48.000Z",
+            "sha256": "fffe3bc5c54a94a6870f285207b24f30875f8c66ac57cdc25ceb6df225aecae3",
+            "rows": 3120,
+            "score": 2400,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/vig/vig-a-aa-20260701-partial.json",
+            "exists": true,
+            "bytes": 9649166,
+            "modifiedAt": "2026-07-09T19:35:33.000Z",
+            "sha256": "70f231ae3401ff0f489f33d6a1ef92cf6a6f234acf8edecf1b84f3f17b26b2be",
+            "rows": 3120,
+            "score": 2340,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/vig/vig-a-aa-20260701.json",
+            "exists": true,
+            "bytes": 316270,
+            "modifiedAt": "2026-07-01T07:32:55.000Z",
+            "sha256": "31b116362ef559a39181e7e7e9e5191c21f77c5874e1b1c28a2bfdbe7c07918a",
+            "rows": 100,
+            "score": -600,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    },
+    {
+      "key": "Replica",
+      "id": "replica-decor",
+      "name": "Replica",
+      "status": "candidate-pending",
+      "registry": {
+        "latestTab": "Replica 20260708 partial",
+        "rows": 2253,
+        "migrationStatus": "verified-partial",
+        "updatedAt": null
+      },
+      "remoteEvidence": {
+        "status": "metadata-and-rowcount-match",
+        "remoteColumnARows": 2253,
+        "issues": []
+      },
+      "rule": {
+        "file": "docs/suppliers/replica.md",
+        "sha256": "5c9f79a2c51b0902648eeb4d85d36dfeffc76b8084a4d4e8150208043e2e5fb5"
+      },
+      "test": {
+        "status": "historical-evidence-only",
+        "machineLatestCandidate": {
+          "file": "docs/test-runs/replica-test-2026-07-08.md",
+          "sha256": "701f77835ef3ca4aadd7c6cc6a18cc0ac33cbaf812b31bd71ca61a956c413e9a"
+        },
+        "recordCount": 1
+      },
+      "dataset": {
+        "status": "candidate",
+        "parsedCandidates": 1,
+        "matchingRowCandidates": 1,
+        "matchingDateAndRowCandidates": 1,
+        "machineTopCandidate": {
+          "file": "data/processed/replica-decor/replica-a-aa-20260708.json",
+          "exists": true,
+          "bytes": 5980002,
+          "modifiedAt": "2026-07-08T10:23:18.000Z",
+          "sha256": "afff578bd2d3f9fa168fb49436553e081da82906cf5aaba018976d852e6bdd34",
+          "rows": 2253,
+          "score": 2600,
+          "dateMatch": true,
+          "duplicateNameSignal": false
+        },
+        "proposedSelection": "data/processed/replica-decor/replica-a-aa-20260708.json",
+        "candidates": [
+          {
+            "file": "data/processed/replica-decor/replica-a-aa-20260708.json",
+            "exists": true,
+            "bytes": 5980002,
+            "modifiedAt": "2026-07-08T10:23:18.000Z",
+            "sha256": "afff578bd2d3f9fa168fb49436553e081da82906cf5aaba018976d852e6bdd34",
+            "rows": 2253,
+            "score": 2600,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          }
+        ]
+      },
+      "approval": {
+        "status": "pending",
+        "selectedDataset": null,
+        "selectedTest": null,
+        "reviewedBy": null,
+        "reviewedAt": null,
+        "rationale": null
+      },
+      "gates": {
+        "datasetIdentity": false,
+        "ruleIdentity": false,
+        "testIdentity": false,
+        "remoteTabReadback": false,
+        "priceContract": false,
+        "inventorySemantics": false,
+        "imageContract": false,
+        "categoryMapping": false
+      }
+    }
+  ]
+}
