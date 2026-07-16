@@ -1,6 +1,6 @@
 {
   "schemaVersion": "file-governance-evidence-v1",
-  "generatedAt": "2026-07-16T04:09:45.402Z",
+  "generatedAt": "2026-07-16T04:42:57.326Z",
   "boundary": {
     "workspace": "/Volumes/CodexWorkspace",
     "auditedCodeRuleFiles": 350,
@@ -74,7 +74,7 @@
       "id": "core-and-supplier-rules",
       "label": "总规则 + 供应商规则",
       "count": 50,
-      "flagged": 31,
+      "flagged": 0,
       "decision": "keep-and-repair",
       "plain": "这些文件决定以后怎么抓，不能因为旧内容多就删；先消除冲突，再由 current manifest 指向唯一有效版本。"
     },

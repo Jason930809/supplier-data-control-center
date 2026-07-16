@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "manifestStatus": "draft-not-production",
-  "generatedAt": "2026-07-16T04:09:49.859Z",
+  "generatedAt": "2026-07-16T04:43:00.784Z",
   "summary": {
     "totalSuppliers": 37,
     "signed": 0,
@@ -30,7 +30,7 @@
       },
       "rule": {
         "file": "docs/suppliers/accent-decor.md",
-        "sha256": "2b5fad9e1428fe354c6e0939cd02ede33c6a50cefc1c94bc3ca482215269417a"
+        "sha256": "56986a2d0747884ff7f184c4f41f9d921669a1bb41f7388ed79ed1d1fa783470"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -119,7 +119,7 @@
       },
       "rule": {
         "file": "docs/suppliers/acme.md",
-        "sha256": "4732c29953201b637bad496da3afd2f22b39d15f3a3eb9bf9d09884ac75ca073"
+        "sha256": "ad4b7428a1af200d1ab245d6c1c57a6185b600fab9b24bf2ac41b1dcc2fb7960"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -230,7 +230,7 @@
       },
       "rule": {
         "file": "docs/suppliers/allstate.md",
-        "sha256": "e6893526e4a277c87362130177ad8bef7fd6936cd4cac9d0ef9043b22f57e875"
+        "sha256": "b4bf5d104bd6c4022e1f2ec08599f0bd4af51c2a26c5315fbbfb0903a2fce44c"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -363,7 +363,7 @@
       },
       "rule": {
         "file": "docs/suppliers/arteriors.md",
-        "sha256": "80f38afef93b20a747b42b42fb9509f3ae15e020863688f3e16964f831db9a2a"
+        "sha256": "a8bd7c5a3092962fede3258e6b6907f6965ec530b9aee12386b0bdb48271fbfc"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -452,7 +452,7 @@
       },
       "rule": {
         "file": "docs/suppliers/artmax.md",
-        "sha256": "b718827d97dea6e099d61116757a32026b244787399450dfbc3cc444bd60109f"
+        "sha256": "48945140346553830e7c834d051a4872014c410f57f0fc271994d24666261774"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -774,7 +774,7 @@
       },
       "rule": {
         "file": "docs/suppliers/bernhardt.md",
-        "sha256": "6950a6d87f96143173c030b04ea128c5014d4ce59b90b4a6283874bb7d4f988d"
+        "sha256": "27720d3d54ca71e426051461cdd26fccf9bf154342a67d3e850f47c75ec98bf6"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -896,7 +896,7 @@
       },
       "rule": {
         "file": "docs/suppliers/best-master-furniture.md",
-        "sha256": "7b0db63bcd0636d9d8ff82155225453fc12d3a49da77881028afc95c1dd159ef"
+        "sha256": "35b2821978434e00018c55706223bbdb139bf80a8e22f66246f5c19424c405cb"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -1007,7 +1007,7 @@
       },
       "rule": {
         "file": "docs/suppliers/caracole.md",
-        "sha256": "6a16fb9812c797936142f36fa601eb16547888c17243114f8be07942cceea7eb"
+        "sha256": "fc7575c1ac11c7f89b18272dc56386eb1d1d93fe0460ac341ad157f021105fd4"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -1174,7 +1174,7 @@
       },
       "rule": {
         "file": "docs/suppliers/classic-home.md",
-        "sha256": "84cadbb7c93e28c954e0cc4eac1de57b3f673fd68493e5c79ca82ddc1f74ad9e"
+        "sha256": "29764a9dd670995f3b758fc4ebdbcaf244cea84a6eeb654ca7e2f06df25e0fb4"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -1263,7 +1263,7 @@
       },
       "rule": {
         "file": "docs/suppliers/coaster.md",
-        "sha256": "e0b47c6b4742a7a49549a3312277d482493322c4206b32918b22ca1d720eb6ef"
+        "sha256": "6ceffc7137997103579ac8f4c81c0a20e46855b4eab27433a60013e0deddad54"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -1530,7 +1530,7 @@
       },
       "rule": {
         "file": "docs/suppliers/dovetail.md",
-        "sha256": "2ce7e69fe76d65d5ebe689290bfbeb331499073c6da698ab18eff09c58421e40"
+        "sha256": "84c02e60ff97de0dfb9c220b38fa4585dad28cf2b3d8c888b8fc8039583ccc88"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -1608,7 +1608,7 @@
       },
       "rule": {
         "file": "docs/suppliers/dvkap.md",
-        "sha256": "8316ddc824609b11e256cf7a00302fdadbf5f8c4212c95ed125a1d8e2cb4528f"
+        "sha256": "99739475257803aadfd12b59ee36b2ff7fc81358bea8484b29c0e7bd1d4ce58e"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -1697,7 +1697,7 @@
       },
       "rule": {
         "file": "docs/suppliers/eichholtz.md",
-        "sha256": "5abc3e82c0e86c19a5dfc087e7cb95e6074f03c94b282b25c441f68f9ae71324"
+        "sha256": "b07f1be78cfd1915c904c74f6b5a2a52d1d26391ce32c189f337f859027a33a5"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -1875,7 +1875,7 @@
       },
       "rule": {
         "file": "docs/suppliers/four-hands.md",
-        "sha256": "7f878c4a79da8c658e9e52b2772130e849c831bd2bee9e55846df3326de054e8"
+        "sha256": "c0d952878820c79c22053ec749fb10441f975c84a55504e88739899da9146c01"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -2208,7 +2208,7 @@
       },
       "rule": {
         "file": "docs/suppliers/jonathan-charles.md",
-        "sha256": "fbaad43492b7953c44d67a9370ab626b5a0813378ca7c47e40819b50e199334a"
+        "sha256": "7339860308e82ab1d4c76f1b9001d364b7633cbffcb960129e81ab0a943943cd"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -2275,7 +2275,7 @@
       "status": "sharded-pending",
       "registry": {
         "latestTab": "Leftbank Art 20260707 partial",
-        "rows": 6116056,
+        "rows": 6166056,
         "migrationStatus": "verified-partial",
         "updatedAt": "2026-07-16"
       },
@@ -2288,7 +2288,7 @@
       },
       "rule": {
         "file": "docs/suppliers/leftbank-art.md",
-        "sha256": "61832044858826a41d7c561ca6ae06965891d6e64106ccbc22653183117dca67"
+        "sha256": "ecd980e508bf293b910156227feb6cc7fe128b5559b80ebafd326950ed46e7ab"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -2344,7 +2344,7 @@
       },
       "rule": {
         "file": "docs/suppliers/meridian.md",
-        "sha256": "26ac085963b7a93c7633ffedc54ff2cf0a3aa90789b9a71319c3c0875e72716e"
+        "sha256": "df90121ffe5b883b5f1ffc9cc9483f6147445149bae671d662b4aff2f94fe828"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -2444,7 +2444,7 @@
       },
       "rule": {
         "file": "docs/suppliers/modway.md",
-        "sha256": "e513992bbeb1a7220d1ce3676ecf4142b7db22f5fef6f8ab213f33a98a028cf8"
+        "sha256": "6abfecde1169903069f3f5fa6cb7d826a5256f8238a967feafd19423f571e7f4"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -2544,7 +2544,7 @@
       },
       "rule": {
         "file": "docs/suppliers/noir.md",
-        "sha256": "6d95dbffdc36c038499a5ae9148cb3f6d85eb12a8b4e5958a0043d31b75a38cc"
+        "sha256": "c0840e0a1665aa853dea9eb8db2f8c467e596585624b403486e2640766228ab6"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -2633,7 +2633,7 @@
       },
       "rule": {
         "file": "docs/suppliers/phillips-collection.md",
-        "sha256": "2efcbb5a7de93ed16e9a6c4b66bbe25cade919bb9834729cba4461327fa8ef8b"
+        "sha256": "14c2b91b89d29f0bd8ca153d02757a2cb4db2b2b83b60e2e7c1e76c401f06fa7"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -2766,7 +2766,7 @@
       },
       "rule": {
         "file": "docs/suppliers/poundex.md",
-        "sha256": "2bd31e7db6deec91f7b54068d795e8621a44c1b252bdc74a33db0c35bb28bf87"
+        "sha256": "3ed69ac1e054c2cab1db64c098aa399e303b56135cc9ef61e921d6410661ab1b"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -2899,7 +2899,7 @@
       },
       "rule": {
         "file": "docs/suppliers/safavieh.md",
-        "sha256": "af020b0958c75b46340103b67559b360fa16fdb0a55ca50e1e2a81d5e1bf1ad4"
+        "sha256": "98777c92e1bf855b078de8b0d1eae29659e990c24fdadd08337b2439ed8461f8"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -3032,7 +3032,7 @@
       },
       "rule": {
         "file": "docs/suppliers/sunpan.md",
-        "sha256": "4b4e5693bc21b0ba8aabab875f0c628b9510bc6a3877f43156cbc110b143e078"
+        "sha256": "ee4dd8af74073708b93b2013a849c06babad462898540dc6216b981dfb2d8049"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -3254,7 +3254,7 @@
       },
       "rule": {
         "file": "docs/suppliers/tov.md",
-        "sha256": "c3c1089c10b038273f64664f70d573a9a6b298290f41eefee9f047373fe21b68"
+        "sha256": "b1f4b7f38ea8bf5adf1e347d34841556e9d30639c0ecef496a05940ca2cd6b53"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -3343,7 +3343,7 @@
       },
       "rule": {
         "file": "docs/suppliers/universal-furniture.md",
-        "sha256": "ce858864740986d373ce7e1089bed37480c664d45f96b71b008dc66677ff75ee"
+        "sha256": "6707c90c865bbbb00992f8d72d2df0756a77db4d44da7e15293cde9e0a2decee"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -3443,7 +3443,7 @@
       },
       "rule": {
         "file": "docs/suppliers/uttermost.md",
-        "sha256": "cff8222744822a7529756e1bfa78b09ebea202d52fc87ebad274702885b80809"
+        "sha256": "7cf711da3a64f035684e1db3c79b21fe537651ebf8529625635c70e16056d0f0"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -3565,7 +3565,7 @@
       },
       "rule": {
         "file": "docs/suppliers/vig.md",
-        "sha256": "4f4d3ed3877f96b86aff1581fbfcce924ed418839235e4edecec936805dfc515"
+        "sha256": "9db415f9768feef0e64fb5fe001a0bc7fdea9bf24f1046f25f8714798ba752c9"
       },
       "test": {
         "status": "historical-evidence-only",
