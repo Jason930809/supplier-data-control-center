@@ -1,6 +1,6 @@
 {
   "schemaVersion": "current-candidate-diff-v1",
-  "generatedAt": "2026-07-16T05:58:26.943Z",
+  "generatedAt": "2026-07-16T06:15:25.189Z",
   "plainMeaning": "先用最新标签日期和注册表行数限定比较范围，再按 SKU 对齐 27 列逐格比较。文件名、行数或日期相同不再被当成内容相同。",
   "summary": {
     "ambiguousSuppliers": 15,
