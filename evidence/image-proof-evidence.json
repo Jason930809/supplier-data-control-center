@@ -1,6 +1,6 @@
 {
   "schemaVersion": "image-proof-evidence-v1",
-  "generatedAt": "2026-07-16T05:10:46.018Z",
+  "generatedAt": "2026-07-16T05:30:33.830Z",
   "measurementMethod": "直接读取公开证据文件字节中的 JPEG SOF 宽高，并计算 SHA-256；不信任 JSON 声明的 imageWidth/imageHeight。",
   "assets": [
     {

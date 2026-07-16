@@ -1,0 +1,3147 @@
+{
+  "schemaVersion": "current-candidate-diff-v1",
+  "generatedAt": "2026-07-16T05:30:19.805Z",
+  "plainMeaning": "先用最新标签日期和注册表行数限定比较范围，再按 SKU 对齐 27 列逐格比较。文件名、行数或日期相同不再被当成内容相同。",
+  "summary": {
+    "ambiguousSuppliers": 15,
+    "comparisons": 38,
+    "realConflictComparisons": 38,
+    "equivalentComparisons": 0,
+    "suppliersWithRealConflicts": 15,
+    "clearContractRecommendations": 7,
+    "tiedRecommendations": 8,
+    "recommendationsDifferentFromFilenameHeuristic": 0
+  },
+  "mostChangedColumns": [
+    {
+      "header": "JSON",
+      "changedCells": 502086
+    },
+    {
+      "header": "#",
+      "changedCells": 364994
+    },
+    {
+      "header": "图片链接",
+      "changedCells": 56817
+    },
+    {
+      "header": "image url",
+      "changedCells": 45220
+    },
+    {
+      "header": "成本",
+      "changedCells": 23476
+    },
+    {
+      "header": "库存",
+      "changedCells": 22232
+    },
+    {
+      "header": "品类",
+      "changedCells": 10425
+    },
+    {
+      "header": "描述",
+      "changedCells": 8328
+    },
+    {
+      "header": "Size",
+      "changedCells": 8280
+    },
+    {
+      "header": "Weight",
+      "changedCells": 8280
+    },
+    {
+      "header": "Volume",
+      "changedCells": 8202
+    },
+    {
+      "header": "颜色",
+      "changedCells": 8109
+    }
+  ],
+  "suppliers": [
+    {
+      "key": "ACME",
+      "name": "ACME",
+      "registryRows": 3919,
+      "selected": {
+        "file": "data/processed/acme/acme-a-aa-20260703-image-repaired-v2.json",
+        "sha256": "83f88a408ca1db77e206bab6d2f04b9acf32c091005942ba90826497824ab1a3"
+      },
+      "currentScopeCandidates": 4,
+      "mostChangedColumns": [
+        {
+          "header": "JSON",
+          "changedCells": 11757
+        },
+        {
+          "header": "image url",
+          "changedCells": 5244
+        },
+        {
+          "header": "图片链接",
+          "changedCells": 4000
+        },
+        {
+          "header": "品类",
+          "changedCells": 68
+        }
+      ],
+      "candidateAudits": [
+        {
+          "file": "data/processed/acme/acme-a-aa-20260703-image-repaired-v2.json",
+          "sha256": "83f88a408ca1db77e206bab6d2f04b9acf32c091005942ba90826497824ab1a3",
+          "modifiedAt": "2026-07-04T10:46:22.000Z",
+          "heuristicSelected": true,
+          "contract": {
+            "rows": 3919,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 2,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 40,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/acme/acme-a-aa-20260703-image-repaired.json",
+          "sha256": "c3466040722393b9cc2e36588e0ee2ddc08a78f1ca71348ac0b38b90486bc36f",
+          "modifiedAt": "2026-07-04T09:54:43.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 3919,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 2,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 40,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/acme/acme-a-aa-20260703-square-json.json",
+          "sha256": "c38afe2a742047e76e6b0442849afab7b0bb012da841e3a9b4e1c6f446b5d564",
+          "modifiedAt": "2026-07-04T09:54:43.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 3919,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 2,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 40,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/acme/acme-a-aa-20260703.json",
+          "sha256": "ce5301c4103b1ba413709ebbeebd261f7d2edfc83bd805684c707604cac683b1",
+          "modifiedAt": "2026-07-04T09:54:44.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 3919,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 2,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 40,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        }
+      ],
+      "machineRecommendation": {
+        "status": "tied-requires-business-review",
+        "file": null,
+        "bestScoreFiles": [
+          "data/processed/acme/acme-a-aa-20260703-image-repaired-v2.json",
+          "data/processed/acme/acme-a-aa-20260703.json",
+          "data/processed/acme/acme-a-aa-20260703-image-repaired.json",
+          "data/processed/acme/acme-a-aa-20260703-square-json.json"
+        ],
+        "differsFromFilenameHeuristic": false,
+        "blockingScore": 40,
+        "runnerUpBlockingScore": 40,
+        "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+      },
+      "comparisons": [
+        {
+          "file": "data/processed/acme/acme-a-aa-20260703-image-repaired.json",
+          "sha256": "c3466040722393b9cc2e36588e0ee2ddc08a78f1ca71348ac0b38b90486bc36f",
+          "classification": "real-content-conflict",
+          "changedRows": 3919,
+          "changedCells": 3919,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 3919
+            }
+          ],
+          "sampleChangedSkus": [
+            "00626",
+            "00627",
+            "00630",
+            "00632W",
+            "00634"
+          ]
+        },
+        {
+          "file": "data/processed/acme/acme-a-aa-20260703-square-json.json",
+          "sha256": "c38afe2a742047e76e6b0442849afab7b0bb012da841e3a9b4e1c6f446b5d564",
+          "classification": "real-content-conflict",
+          "changedRows": 3919,
+          "changedCells": 8575,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 3919
+            },
+            {
+              "index": 27,
+              "header": "image url",
+              "changedCells": 2622
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 2000
+            },
+            {
+              "index": 10,
+              "header": "品类",
+              "changedCells": 34
+            }
+          ],
+          "sampleChangedSkus": [
+            "00626",
+            "00627",
+            "00630",
+            "00632W",
+            "00634"
+          ]
+        },
+        {
+          "file": "data/processed/acme/acme-a-aa-20260703.json",
+          "sha256": "ce5301c4103b1ba413709ebbeebd261f7d2edfc83bd805684c707604cac683b1",
+          "classification": "real-content-conflict",
+          "changedRows": 3919,
+          "changedCells": 8575,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 3919
+            },
+            {
+              "index": 27,
+              "header": "image url",
+              "changedCells": 2622
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 2000
+            },
+            {
+              "index": 10,
+              "header": "品类",
+              "changedCells": 34
+            }
+          ],
+          "sampleChangedSkus": [
+            "00626",
+            "00627",
+            "00630",
+            "00632W",
+            "00634"
+          ]
+        }
+      ],
+      "realConflictComparisons": 3,
+      "equivalentComparisons": 0
+    },
+    {
+      "key": "Arteriors",
+      "name": "Arteriors",
+      "registryRows": 2119,
+      "selected": {
+        "file": "data/processed/arteriors/arteriors-a-aa-20260630.json",
+        "sha256": "cd030f06bb7a139201511aff0835234daf6e451f2af58e81c38f0d2fecdb0cb2"
+      },
+      "currentScopeCandidates": 2,
+      "mostChangedColumns": [
+        {
+          "header": "#",
+          "changedCells": 2119
+        },
+        {
+          "header": "JSON",
+          "changedCells": 2119
+        },
+        {
+          "header": "Size",
+          "changedCells": 1
+        }
+      ],
+      "candidateAudits": [
+        {
+          "file": "data/processed/arteriors/arteriors-a-aa-20260630.json",
+          "sha256": "cd030f06bb7a139201511aff0835234daf6e451f2af58e81c38f0d2fecdb0cb2",
+          "modifiedAt": "2026-07-04T10:46:23.000Z",
+          "heuristicSelected": true,
+          "contract": {
+            "rows": 2119,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/arteriors/arteriors-a-aa-20260630-partial.json",
+          "sha256": "bd4299da5138252b3119feb978a578be8271ef6f644f930c453895e4d7877470",
+          "modifiedAt": "2026-06-30T15:59:01.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 2119,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 2119,
+            "legacyCostMode": 2119,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 42380,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        }
+      ],
+      "machineRecommendation": {
+        "status": "clear-contract-lead",
+        "file": "data/processed/arteriors/arteriors-a-aa-20260630.json",
+        "bestScoreFiles": [
+          "data/processed/arteriors/arteriors-a-aa-20260630.json"
+        ],
+        "differsFromFilenameHeuristic": false,
+        "blockingScore": 0,
+        "runnerUpBlockingScore": 42380,
+        "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+      },
+      "comparisons": [
+        {
+          "file": "data/processed/arteriors/arteriors-a-aa-20260630-partial.json",
+          "sha256": "bd4299da5138252b3119feb978a578be8271ef6f644f930c453895e4d7877470",
+          "classification": "real-content-conflict",
+          "changedRows": 2119,
+          "changedCells": 4239,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 1,
+              "header": "#",
+              "changedCells": 2119
+            },
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 2119
+            },
+            {
+              "index": 11,
+              "header": "Size",
+              "changedCells": 1
+            }
+          ],
+          "sampleChangedSkus": [
+            "GDPTI03-711",
+            "PTI31-659",
+            "PTC78-252",
+            "PTC79-SH027",
+            "GDPTI02-711"
+          ]
+        }
+      ],
+      "realConflictComparisons": 1,
+      "equivalentComparisons": 0
+    },
+    {
+      "key": "Artmax",
+      "name": "Artmax",
+      "registryRows": 1205,
+      "selected": {
+        "file": "data/processed/artmax/artmax-a-aa-20260708-drive-edge-fit.json",
+        "sha256": "76e3eaafacaa716d8cc65844fd20cf80894966e3548c9ad398b3fcb426287661"
+      },
+      "currentScopeCandidates": 4,
+      "mostChangedColumns": [
+        {
+          "header": "JSON",
+          "changedCells": 2552
+        },
+        {
+          "header": "图片链接",
+          "changedCells": 2552
+        },
+        {
+          "header": "image url",
+          "changedCells": 141
+        }
+      ],
+      "candidateAudits": [
+        {
+          "file": "data/processed/artmax/artmax-a-aa-20260708-drive-edge-fit.json",
+          "sha256": "76e3eaafacaa716d8cc65844fd20cf80894966e3548c9ad398b3fcb426287661",
+          "modifiedAt": "2026-07-08T06:04:53.000Z",
+          "heuristicSelected": true,
+          "contract": {
+            "rows": 1205,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/artmax/artmax-a-aa-20260708-drive-main.json",
+          "sha256": "9055ff91569b3693acd9e6148629b984cf75bb9268f62796f75cbb0eff32e864",
+          "modifiedAt": "2026-07-08T04:47:33.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 1205,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/artmax/artmax-a-aa-20260708-variant-drive-edge-fit.json",
+          "sha256": "fadad565f12d10d9a3122c83878865246c63a3616b2c7141142bd04b86212312",
+          "modifiedAt": "2026-07-08T06:26:03.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 1205,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/artmax/artmax-a-aa-20260708.json",
+          "sha256": "4fc0932be031242425afb1807c0ceb1c5472efc33f279fdc72f1cebb0b0321f8",
+          "modifiedAt": "2026-07-08T04:18:09.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 1205,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        }
+      ],
+      "machineRecommendation": {
+        "status": "tied-requires-business-review",
+        "file": null,
+        "bestScoreFiles": [
+          "data/processed/artmax/artmax-a-aa-20260708-variant-drive-edge-fit.json",
+          "data/processed/artmax/artmax-a-aa-20260708-drive-edge-fit.json",
+          "data/processed/artmax/artmax-a-aa-20260708-drive-main.json",
+          "data/processed/artmax/artmax-a-aa-20260708.json"
+        ],
+        "differsFromFilenameHeuristic": false,
+        "blockingScore": 0,
+        "runnerUpBlockingScore": 0,
+        "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+      },
+      "comparisons": [
+        {
+          "file": "data/processed/artmax/artmax-a-aa-20260708-drive-main.json",
+          "sha256": "9055ff91569b3693acd9e6148629b984cf75bb9268f62796f75cbb0eff32e864",
+          "classification": "real-content-conflict",
+          "changedRows": 1205,
+          "changedCells": 2410,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 1205
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 1205
+            }
+          ],
+          "sampleChangedSkus": [
+            "4F05-S",
+            "4F08-FM",
+            "4F08-S",
+            "4F09-CF",
+            "4F09-ET"
+          ]
+        },
+        {
+          "file": "data/processed/artmax/artmax-a-aa-20260708-variant-drive-edge-fit.json",
+          "sha256": "fadad565f12d10d9a3122c83878865246c63a3616b2c7141142bd04b86212312",
+          "classification": "real-content-conflict",
+          "changedRows": 142,
+          "changedCells": 425,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 142
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 142
+            },
+            {
+              "index": 27,
+              "header": "image url",
+              "changedCells": 141
+            }
+          ],
+          "sampleChangedSkus": [
+            "4F08-FM",
+            "4F10-FM",
+            "1944-FM1",
+            "1965-FM1",
+            "1973-FM"
+          ]
+        },
+        {
+          "file": "data/processed/artmax/artmax-a-aa-20260708.json",
+          "sha256": "4fc0932be031242425afb1807c0ceb1c5472efc33f279fdc72f1cebb0b0321f8",
+          "classification": "real-content-conflict",
+          "changedRows": 1205,
+          "changedCells": 2410,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 1205
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 1205
+            }
+          ],
+          "sampleChangedSkus": [
+            "4F05-S",
+            "4F08-FM",
+            "4F08-S",
+            "4F09-CF",
+            "4F09-ET"
+          ]
+        }
+      ],
+      "realConflictComparisons": 3,
+      "equivalentComparisons": 0
+    },
+    {
+      "key": "Ashley",
+      "name": "Ashley",
+      "registryRows": 6155,
+      "selected": {
+        "file": "data/processed/ashley/ashley-a-aa-20260710-final-partial.json",
+        "sha256": "b2047b7815a8b2f25f0ccbde5805398ed96fac0c7683326b5135da0c528d38e5"
+      },
+      "currentScopeCandidates": 5,
+      "mostChangedColumns": [
+        {
+          "header": "JSON",
+          "changedCells": 18724
+        },
+        {
+          "header": "#",
+          "changedCells": 6155
+        },
+        {
+          "header": "库存",
+          "changedCells": 1120
+        },
+        {
+          "header": "图片链接",
+          "changedCells": 1052
+        },
+        {
+          "header": "成本",
+          "changedCells": 286
+        },
+        {
+          "header": "卖价",
+          "changedCells": 34
+        }
+      ],
+      "candidateAudits": [
+        {
+          "file": "data/processed/ashley/ashley-a-aa-20260710-final-partial.json",
+          "sha256": "b2047b7815a8b2f25f0ccbde5805398ed96fac0c7683326b5135da0c528d38e5",
+          "modifiedAt": "2026-07-10T06:59:52.000Z",
+          "heuristicSelected": true,
+          "contract": {
+            "rows": 6155,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/ashley/ashley-a-aa-20260710-cost-inventory-recalculated-image-prepared-partial.json",
+          "sha256": "e37480466209b51cb6528cabcb489911f3d7ae6a3ae61908840f4ad478c3ee50",
+          "modifiedAt": "2026-07-10T06:59:47.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 6155,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/ashley/ashley-a-aa-20260710-cost-inventory-recalculated-partial.json",
+          "sha256": "04c748e4d1669add17d25d1f570a57e31697d72cbe08c440fa3c652c7df07177",
+          "modifiedAt": "2026-07-10T06:39:08.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 6155,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/ashley/ashley-a-aa-20260710-verified-rows-image-prepared-partial.json",
+          "sha256": "ca205f7b5c4ff01fc8d72840736d07ab89520e95ffe6a30833083873fe84bcfa",
+          "modifiedAt": "2026-07-10T06:10:40.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 6155,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/ashley/ashley-a-aa-20260710-verified-rows-preview-fixed-partial.json",
+          "sha256": "32f2be2cf7a7a558efc6048554dec738d9d82292db423577e4b011b1e5d4aa4b",
+          "modifiedAt": "2026-07-10T05:28:25.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 6155,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        }
+      ],
+      "machineRecommendation": {
+        "status": "tied-requires-business-review",
+        "file": null,
+        "bestScoreFiles": [
+          "data/processed/ashley/ashley-a-aa-20260710-final-partial.json",
+          "data/processed/ashley/ashley-a-aa-20260710-cost-inventory-recalculated-image-prepared-partial.json",
+          "data/processed/ashley/ashley-a-aa-20260710-cost-inventory-recalculated-partial.json",
+          "data/processed/ashley/ashley-a-aa-20260710-verified-rows-image-prepared-partial.json",
+          "data/processed/ashley/ashley-a-aa-20260710-verified-rows-preview-fixed-partial.json"
+        ],
+        "differsFromFilenameHeuristic": false,
+        "blockingScore": 0,
+        "runnerUpBlockingScore": 0,
+        "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+      },
+      "comparisons": [
+        {
+          "file": "data/processed/ashley/ashley-a-aa-20260710-cost-inventory-recalculated-image-prepared-partial.json",
+          "sha256": "e37480466209b51cb6528cabcb489911f3d7ae6a3ae61908840f4ad478c3ee50",
+          "classification": "real-content-conflict",
+          "changedRows": 263,
+          "changedCells": 526,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 263
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 263
+            }
+          ],
+          "sampleChangedSkus": [
+            "PKG022060",
+            "PKG023836",
+            "B376B1",
+            "B376-31",
+            "B376-36"
+          ]
+        },
+        {
+          "file": "data/processed/ashley/ashley-a-aa-20260710-cost-inventory-recalculated-partial.json",
+          "sha256": "04c748e4d1669add17d25d1f570a57e31697d72cbe08c440fa3c652c7df07177",
+          "classification": "real-content-conflict",
+          "changedRows": 6151,
+          "changedCells": 6414,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 6151
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 263
+            }
+          ],
+          "sampleChangedSkus": [
+            "PKG022060",
+            "PKG023836",
+            "93605S1",
+            "9360531",
+            "9360546"
+          ]
+        },
+        {
+          "file": "data/processed/ashley/ashley-a-aa-20260710-verified-rows-image-prepared-partial.json",
+          "sha256": "ca205f7b5c4ff01fc8d72840736d07ab89520e95ffe6a30833083873fe84bcfa",
+          "classification": "real-content-conflict",
+          "changedRows": 6155,
+          "changedCells": 7138,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 6155
+            },
+            {
+              "index": 7,
+              "header": "库存",
+              "changedCells": 560
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 263
+            },
+            {
+              "index": 13,
+              "header": "成本",
+              "changedCells": 143
+            },
+            {
+              "index": 15,
+              "header": "卖价",
+              "changedCells": 17
+            }
+          ],
+          "sampleChangedSkus": [
+            "PKG022060",
+            "PKG023836",
+            "93605S1",
+            "9360531",
+            "9360546"
+          ]
+        },
+        {
+          "file": "data/processed/ashley/ashley-a-aa-20260710-verified-rows-preview-fixed-partial.json",
+          "sha256": "32f2be2cf7a7a558efc6048554dec738d9d82292db423577e4b011b1e5d4aa4b",
+          "classification": "real-content-conflict",
+          "changedRows": 6155,
+          "changedCells": 13293,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 1,
+              "header": "#",
+              "changedCells": 6155
+            },
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 6155
+            },
+            {
+              "index": 7,
+              "header": "库存",
+              "changedCells": 560
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 263
+            },
+            {
+              "index": 13,
+              "header": "成本",
+              "changedCells": 143
+            },
+            {
+              "index": 15,
+              "header": "卖价",
+              "changedCells": 17
+            }
+          ],
+          "sampleChangedSkus": [
+            "PKG022060",
+            "PKG023836",
+            "93605S1",
+            "9360531",
+            "9360546"
+          ]
+        }
+      ],
+      "realConflictComparisons": 4,
+      "equivalentComparisons": 0
+    },
+    {
+      "key": "Best Master Furniture",
+      "name": "Best Master Furniture",
+      "registryRows": 533,
+      "selected": {
+        "file": "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705-drive-images.json",
+        "sha256": "2a991b0525ea69d2ab996417c19b8d7b8a6a089e29b063876022206fd6873612"
+      },
+      "currentScopeCandidates": 4,
+      "mostChangedColumns": [
+        {
+          "header": "JSON",
+          "changedCells": 1279
+        },
+        {
+          "header": "图片链接",
+          "changedCells": 1279
+        }
+      ],
+      "candidateAudits": [
+        {
+          "file": "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705-drive-images.json",
+          "sha256": "2a991b0525ea69d2ab996417c19b8d7b8a6a089e29b063876022206fd6873612",
+          "modifiedAt": "2026-07-13T04:16:46.673Z",
+          "heuristicSelected": true,
+          "contract": {
+            "rows": 533,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705-drive-whiter-table-images.json",
+          "sha256": "d328b5d76878956b756fd46e5f84e77263bf7c262baaad71fda883f8406a1511",
+          "modifiedAt": "2026-07-13T04:16:46.668Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 533,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705-bed-standard-images.json",
+          "sha256": "6a12ba32c97ab5b58b4dcb957f3aaff0e6b36668073debdf4ab8680ea0fefab0",
+          "modifiedAt": "2026-07-13T04:16:46.660Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 533,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705.json",
+          "sha256": "fde0b452850a544e252537ed3bc9262601452b0b0b746c3e7e4a10d8147b644e",
+          "modifiedAt": "2026-07-13T04:16:46.656Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 533,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        }
+      ],
+      "machineRecommendation": {
+        "status": "tied-requires-business-review",
+        "file": null,
+        "bestScoreFiles": [
+          "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705-drive-images.json",
+          "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705-drive-whiter-table-images.json",
+          "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705-bed-standard-images.json",
+          "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705.json"
+        ],
+        "differsFromFilenameHeuristic": false,
+        "blockingScore": 0,
+        "runnerUpBlockingScore": 0,
+        "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+      },
+      "comparisons": [
+        {
+          "file": "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705-drive-whiter-table-images.json",
+          "sha256": "d328b5d76878956b756fd46e5f84e77263bf7c262baaad71fda883f8406a1511",
+          "classification": "real-content-conflict",
+          "changedRows": 362,
+          "changedCells": 724,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 362
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 362
+            }
+          ],
+          "sampleChangedSkus": [
+            "CD0593CH",
+            "B52VDG",
+            "B54VBLK",
+            "B55W",
+            "HY7163VG"
+          ]
+        },
+        {
+          "file": "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705-bed-standard-images.json",
+          "sha256": "6a12ba32c97ab5b58b4dcb957f3aaff0e6b36668073debdf4ab8680ea0fefab0",
+          "classification": "real-content-conflict",
+          "changedRows": 384,
+          "changedCells": 768,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 384
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 384
+            }
+          ],
+          "sampleChangedSkus": [
+            "CD0593CH",
+            "B52VDG",
+            "B54VBLK",
+            "B55W",
+            "HY7163VG"
+          ]
+        },
+        {
+          "file": "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705.json",
+          "sha256": "fde0b452850a544e252537ed3bc9262601452b0b0b746c3e7e4a10d8147b644e",
+          "classification": "real-content-conflict",
+          "changedRows": 533,
+          "changedCells": 1066,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 533
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 533
+            }
+          ],
+          "sampleChangedSkus": [
+            "HL32C",
+            "CD0593CH",
+            "B52VDG",
+            "B54VBLK",
+            "B55W"
+          ]
+        }
+      ],
+      "realConflictComparisons": 3,
+      "equivalentComparisons": 0
+    },
+    {
+      "key": "Coaster",
+      "name": "Coaster",
+      "registryRows": 4171,
+      "selected": {
+        "file": "data/processed/coaster/coaster-a-aa-20260701-canva-url.json",
+        "sha256": "2deedfdfb4b014cc2215566fed5677c244552fc02979aea48ca53e6fb51871fd"
+      },
+      "currentScopeCandidates": 4,
+      "mostChangedColumns": [
+        {
+          "header": "#",
+          "changedCells": 12513
+        },
+        {
+          "header": "JSON",
+          "changedCells": 12513
+        },
+        {
+          "header": "品类",
+          "changedCells": 10357
+        },
+        {
+          "header": "描述",
+          "changedCells": 8328
+        },
+        {
+          "header": "image url",
+          "changedCells": 8311
+        },
+        {
+          "header": "图片链接",
+          "changedCells": 8304
+        }
+      ],
+      "candidateAudits": [
+        {
+          "file": "data/processed/coaster/coaster-a-aa-20260701-canva-url.json",
+          "sha256": "2deedfdfb4b014cc2215566fed5677c244552fc02979aea48ca53e6fb51871fd",
+          "modifiedAt": "2026-07-13T04:16:37.996Z",
+          "heuristicSelected": true,
+          "contract": {
+            "rows": 4171,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 2000,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 40000,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/coaster/coaster-a-aa-20260630-scene.json",
+          "sha256": "6df353c58e3de0e7ca7d34f64f1b9aeb9d1a3e408c74b11aaee8b9c1002f1a83",
+          "modifiedAt": "2026-06-30T14:04:58.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 4171,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 4171,
+            "legacyCostMode": 4171,
+            "missingJsonPrice": 120,
+            "missingProductUrl": 4171,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 127530,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/coaster/coaster-a-aa-20260630.json",
+          "sha256": "1b245085818087dde1051e8d60cc633e788f25c25f22f10ef51740a9c0b0e1f2",
+          "modifiedAt": "2026-06-30T13:41:31.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 4171,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 4171,
+            "legacyCostMode": 4171,
+            "missingJsonPrice": 125,
+            "missingProductUrl": 4171,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 127630,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/coaster/coaster-a-aa-20260701.json",
+          "sha256": "a51094c0433be4a6df0926068a5f27528198963da5b318323cbef4d2bb3daa25",
+          "modifiedAt": "2026-07-13T04:16:37.888Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 4171,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 4171,
+            "legacyCostMode": 4171,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 4171,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 125130,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        }
+      ],
+      "machineRecommendation": {
+        "status": "clear-contract-lead",
+        "file": "data/processed/coaster/coaster-a-aa-20260701-canva-url.json",
+        "bestScoreFiles": [
+          "data/processed/coaster/coaster-a-aa-20260701-canva-url.json"
+        ],
+        "differsFromFilenameHeuristic": false,
+        "blockingScore": 40000,
+        "runnerUpBlockingScore": 125130,
+        "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+      },
+      "comparisons": [
+        {
+          "file": "data/processed/coaster/coaster-a-aa-20260630-scene.json",
+          "sha256": "6df353c58e3de0e7ca7d34f64f1b9aeb9d1a3e408c74b11aaee8b9c1002f1a83",
+          "classification": "real-content-conflict",
+          "changedRows": 4171,
+          "changedCells": 55248,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 1,
+              "header": "#",
+              "changedCells": 4171
+            },
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 4171
+            },
+            {
+              "index": 10,
+              "header": "品类",
+              "changedCells": 4171
+            },
+            {
+              "index": 2,
+              "header": "描述",
+              "changedCells": 4164
+            },
+            {
+              "index": 27,
+              "header": "image url",
+              "changedCells": 4159
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 4152
+            },
+            {
+              "index": 11,
+              "header": "Size",
+              "changedCells": 4126
+            },
+            {
+              "index": 23,
+              "header": "Weight",
+              "changedCells": 4126
+            }
+          ],
+          "sampleChangedSkus": [
+            "200702",
+            "200703",
+            "200703M",
+            "200704",
+            "200705"
+          ]
+        },
+        {
+          "file": "data/processed/coaster/coaster-a-aa-20260630.json",
+          "sha256": "1b245085818087dde1051e8d60cc633e788f25c25f22f10ef51740a9c0b0e1f2",
+          "classification": "real-content-conflict",
+          "changedRows": 4171,
+          "changedCells": 55238,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 1,
+              "header": "#",
+              "changedCells": 4171
+            },
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 4171
+            },
+            {
+              "index": 10,
+              "header": "品类",
+              "changedCells": 4171
+            },
+            {
+              "index": 2,
+              "header": "描述",
+              "changedCells": 4164
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 4152
+            },
+            {
+              "index": 27,
+              "header": "image url",
+              "changedCells": 4152
+            },
+            {
+              "index": 11,
+              "header": "Size",
+              "changedCells": 4126
+            },
+            {
+              "index": 23,
+              "header": "Weight",
+              "changedCells": 4126
+            }
+          ],
+          "sampleChangedSkus": [
+            "200702",
+            "200703",
+            "200703M",
+            "200704",
+            "200705"
+          ]
+        },
+        {
+          "file": "data/processed/coaster/coaster-a-aa-20260701.json",
+          "sha256": "a51094c0433be4a6df0926068a5f27528198963da5b318323cbef4d2bb3daa25",
+          "classification": "real-content-conflict",
+          "changedRows": 4171,
+          "changedCells": 20388,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 1,
+              "header": "#",
+              "changedCells": 4171
+            },
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 4171
+            },
+            {
+              "index": 26,
+              "header": "Box Weight",
+              "changedCells": 2651
+            },
+            {
+              "index": 25,
+              "header": "Box Dimensions",
+              "changedCells": 2637
+            },
+            {
+              "index": 22,
+              "header": "材质",
+              "changedCells": 2323
+            },
+            {
+              "index": 13,
+              "header": "成本",
+              "changedCells": 2094
+            },
+            {
+              "index": 10,
+              "header": "品类",
+              "changedCells": 2015
+            },
+            {
+              "index": 21,
+              "header": "颜色",
+              "changedCells": 181
+            }
+          ],
+          "sampleChangedSkus": [
+            "200702",
+            "200703",
+            "200703M",
+            "200704",
+            "200705"
+          ]
+        }
+      ],
+      "realConflictComparisons": 3,
+      "equivalentComparisons": 0
+    },
+    {
+      "key": "Meridian",
+      "name": "Meridian",
+      "registryRows": 13734,
+      "selected": {
+        "file": "data/processed/meridian/meridian-a-aa-20260703-uploadable 2.json",
+        "sha256": "499a74148f00a647329acc8d329943b62b5b6ea671a834aa6ceb88f00ed03b38"
+      },
+      "currentScopeCandidates": 2,
+      "mostChangedColumns": [
+        {
+          "header": "图片链接",
+          "changedCells": 4682
+        }
+      ],
+      "candidateAudits": [
+        {
+          "file": "data/processed/meridian/meridian-a-aa-20260703-uploadable 2.json",
+          "sha256": "499a74148f00a647329acc8d329943b62b5b6ea671a834aa6ceb88f00ed03b38",
+          "modifiedAt": "2026-07-04T10:46:44.000Z",
+          "heuristicSelected": true,
+          "contract": {
+            "rows": 13734,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/meridian/meridian-a-aa-20260703-uploadable.json",
+          "sha256": "a7e200bd5e03962fdf3691f849e971d51e3d58f901d5c3deefea5ad5749a7f09",
+          "modifiedAt": "2026-07-05T10:01:57.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 13734,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        }
+      ],
+      "machineRecommendation": {
+        "status": "tied-requires-business-review",
+        "file": null,
+        "bestScoreFiles": [
+          "data/processed/meridian/meridian-a-aa-20260703-uploadable.json",
+          "data/processed/meridian/meridian-a-aa-20260703-uploadable 2.json"
+        ],
+        "differsFromFilenameHeuristic": false,
+        "blockingScore": 0,
+        "runnerUpBlockingScore": 0,
+        "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+      },
+      "comparisons": [
+        {
+          "file": "data/processed/meridian/meridian-a-aa-20260703-uploadable.json",
+          "sha256": "a7e200bd5e03962fdf3691f849e971d51e3d58f901d5c3deefea5ad5749a7f09",
+          "classification": "real-content-conflict",
+          "changedRows": 4682,
+          "changedCells": 4682,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 4682
+            }
+          ],
+          "sampleChangedSkus": [
+            "77024Natural",
+            "77025Beige-C",
+            "77025Black-C",
+            "77025Brown-C",
+            "77025Cream-C"
+          ]
+        }
+      ],
+      "realConflictComparisons": 1,
+      "equivalentComparisons": 0
+    },
+    {
+      "key": "Noir",
+      "name": "Noir",
+      "registryRows": 1028,
+      "selected": {
+        "file": "data/processed/noir/noir-a-aa-20260701-complete.json",
+        "sha256": "02d8cc2d04fb5726c1c5b84c73f2ab6bbaa289a6bce325c7cec7e3248d472f9d"
+      },
+      "currentScopeCandidates": 2,
+      "mostChangedColumns": [
+        {
+          "header": "#",
+          "changedCells": 1028
+        },
+        {
+          "header": "JSON",
+          "changedCells": 1028
+        },
+        {
+          "header": "图片链接",
+          "changedCells": 1028
+        },
+        {
+          "header": "image url",
+          "changedCells": 1028
+        }
+      ],
+      "candidateAudits": [
+        {
+          "file": "data/processed/noir/noir-a-aa-20260701-complete.json",
+          "sha256": "02d8cc2d04fb5726c1c5b84c73f2ab6bbaa289a6bce325c7cec7e3248d472f9d",
+          "modifiedAt": "2026-07-04T10:46:45.000Z",
+          "heuristicSelected": true,
+          "contract": {
+            "rows": 1028,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/noir/noir-a-aa-20260701-drive-complete.json",
+          "sha256": "a501ae9d57ee6dc70a24bc84f3ab2fc77a490a843ced9d48f0fddab7ad2cab5e",
+          "modifiedAt": "2026-07-02T07:52:48.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 1028,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 1028,
+            "legacyCostMode": 1028,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 1028,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 30840,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        }
+      ],
+      "machineRecommendation": {
+        "status": "clear-contract-lead",
+        "file": "data/processed/noir/noir-a-aa-20260701-complete.json",
+        "bestScoreFiles": [
+          "data/processed/noir/noir-a-aa-20260701-complete.json"
+        ],
+        "differsFromFilenameHeuristic": false,
+        "blockingScore": 0,
+        "runnerUpBlockingScore": 30840,
+        "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+      },
+      "comparisons": [
+        {
+          "file": "data/processed/noir/noir-a-aa-20260701-drive-complete.json",
+          "sha256": "a501ae9d57ee6dc70a24bc84f3ab2fc77a490a843ced9d48f0fddab7ad2cab5e",
+          "classification": "real-content-conflict",
+          "changedRows": 1028,
+          "changedCells": 4112,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 1,
+              "header": "#",
+              "changedCells": 1028
+            },
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 1028
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 1028
+            },
+            {
+              "index": 27,
+              "header": "image url",
+              "changedCells": 1028
+            }
+          ],
+          "sampleChangedSkus": [
+            "LZR013",
+            "LZR014",
+            "LZR015",
+            "LZR016",
+            "LZR018"
+          ]
+        }
+      ],
+      "realConflictComparisons": 1,
+      "equivalentComparisons": 0
+    },
+    {
+      "key": "Phillips Collection",
+      "name": "Phillips Collection",
+      "registryRows": 4310,
+      "selected": {
+        "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-auth-imagefix-canva-url.json",
+        "sha256": "aa6ba8f73c0699ef5594e0e9034c53007c4e167afcc0d779202c5e612b068905"
+      },
+      "currentScopeCandidates": 7,
+      "mostChangedColumns": [
+        {
+          "header": "#",
+          "changedCells": 25860
+        },
+        {
+          "header": "JSON",
+          "changedCells": 25860
+        },
+        {
+          "header": "图片链接",
+          "changedCells": 25860
+        },
+        {
+          "header": "image url",
+          "changedCells": 25860
+        },
+        {
+          "header": "库存",
+          "changedCells": 12924
+        },
+        {
+          "header": "成本",
+          "changedCells": 12924
+        }
+      ],
+      "candidateAudits": [
+        {
+          "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-auth-imagefix-canva-url.json",
+          "sha256": "aa6ba8f73c0699ef5594e0e9034c53007c4e167afcc0d779202c5e612b068905",
+          "modifiedAt": "2026-07-04T10:46:45.000Z",
+          "heuristicSelected": true,
+          "contract": {
+            "rows": 4310,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 2,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 40,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-auth-imagefix.json",
+          "sha256": "3087a0e858ede68d703ab76032b1157dd5e0210a341352efc80056d325013e37",
+          "modifiedAt": "2026-07-01T07:58:06.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 4310,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 4310,
+            "legacyCostMode": 4310,
+            "missingJsonPrice": 2,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 86240,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-auth.json",
+          "sha256": "a7e92842c895d6d7da31a2c81201aeda2e013bff3f2003316a15107f127690fb",
+          "modifiedAt": "2026-07-01T03:21:38.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 4310,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 4310,
+            "legacyCostMode": 4310,
+            "missingJsonPrice": 2,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 86240,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-speedtest.json",
+          "sha256": "098c7c7c8af8b14f0f8daf77a5bf0c6d6e4dabea8337751449c05d3e20897234",
+          "modifiedAt": "2026-06-30T17:46:20.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 4310,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 4310,
+            "legacyCostMode": 4310,
+            "missingJsonPrice": 4310,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 172400,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-partial.json",
+          "sha256": "613f6a28ccc2e991b78295b1e49a2e578d1dc3579ae8a701f8563c4e051b0421",
+          "modifiedAt": "2026-06-30T19:40:33.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 4310,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 4310,
+            "legacyCostMode": 4310,
+            "missingJsonPrice": 4310,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 172400,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-imagefix-local-auth.json",
+          "sha256": "ae3a1db985892a5ef93420a3f664d06d4da99b43cda0e23e847eb54c03433b7f",
+          "modifiedAt": "2026-07-01T05:47:40.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 4310,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 4310,
+            "legacyCostMode": 4310,
+            "missingJsonPrice": 2,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 86240,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-partial.json",
+          "sha256": "91a91fb0e5401c56883deeb13d5c8f86dde9b0f14ade390e140f6c809b7a85cc",
+          "modifiedAt": "2026-07-01T05:44:19.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 4310,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 4310,
+            "legacyCostMode": 4310,
+            "missingJsonPrice": 4310,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 172400,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        }
+      ],
+      "machineRecommendation": {
+        "status": "clear-contract-lead",
+        "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-auth-imagefix-canva-url.json",
+        "bestScoreFiles": [
+          "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-auth-imagefix-canva-url.json"
+        ],
+        "differsFromFilenameHeuristic": false,
+        "blockingScore": 40,
+        "runnerUpBlockingScore": 86240,
+        "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+      },
+      "comparisons": [
+        {
+          "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-auth-imagefix.json",
+          "sha256": "3087a0e858ede68d703ab76032b1157dd5e0210a341352efc80056d325013e37",
+          "classification": "real-content-conflict",
+          "changedRows": 4310,
+          "changedCells": 17240,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 1,
+              "header": "#",
+              "changedCells": 4310
+            },
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 4310
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 4310
+            },
+            {
+              "index": 27,
+              "header": "image url",
+              "changedCells": 4310
+            }
+          ],
+          "sampleChangedSkus": [
+            "ID103306",
+            "ID110819",
+            "ID111083",
+            "ID111100",
+            "ID111104"
+          ]
+        },
+        {
+          "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-auth.json",
+          "sha256": "a7e92842c895d6d7da31a2c81201aeda2e013bff3f2003316a15107f127690fb",
+          "classification": "real-content-conflict",
+          "changedRows": 4310,
+          "changedCells": 17240,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 1,
+              "header": "#",
+              "changedCells": 4310
+            },
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 4310
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 4310
+            },
+            {
+              "index": 27,
+              "header": "image url",
+              "changedCells": 4310
+            }
+          ],
+          "sampleChangedSkus": [
+            "ID103306",
+            "ID110819",
+            "ID111083",
+            "ID111100",
+            "ID111104"
+          ]
+        },
+        {
+          "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-speedtest.json",
+          "sha256": "098c7c7c8af8b14f0f8daf77a5bf0c6d6e4dabea8337751449c05d3e20897234",
+          "classification": "real-content-conflict",
+          "changedRows": 4310,
+          "changedCells": 25856,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 1,
+              "header": "#",
+              "changedCells": 4310
+            },
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 4310
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 4310
+            },
+            {
+              "index": 27,
+              "header": "image url",
+              "changedCells": 4310
+            },
+            {
+              "index": 7,
+              "header": "库存",
+              "changedCells": 4308
+            },
+            {
+              "index": 13,
+              "header": "成本",
+              "changedCells": 4308
+            }
+          ],
+          "sampleChangedSkus": [
+            "ID103306",
+            "ID110819",
+            "ID111083",
+            "ID111100",
+            "ID111104"
+          ]
+        },
+        {
+          "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-partial.json",
+          "sha256": "613f6a28ccc2e991b78295b1e49a2e578d1dc3579ae8a701f8563c4e051b0421",
+          "classification": "real-content-conflict",
+          "changedRows": 4310,
+          "changedCells": 25856,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 1,
+              "header": "#",
+              "changedCells": 4310
+            },
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 4310
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 4310
+            },
+            {
+              "index": 27,
+              "header": "image url",
+              "changedCells": 4310
+            },
+            {
+              "index": 7,
+              "header": "库存",
+              "changedCells": 4308
+            },
+            {
+              "index": 13,
+              "header": "成本",
+              "changedCells": 4308
+            }
+          ],
+          "sampleChangedSkus": [
+            "ID103306",
+            "ID110819",
+            "ID111083",
+            "ID111100",
+            "ID111104"
+          ]
+        },
+        {
+          "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-imagefix-local-auth.json",
+          "sha256": "ae3a1db985892a5ef93420a3f664d06d4da99b43cda0e23e847eb54c03433b7f",
+          "classification": "real-content-conflict",
+          "changedRows": 4310,
+          "changedCells": 17240,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 1,
+              "header": "#",
+              "changedCells": 4310
+            },
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 4310
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 4310
+            },
+            {
+              "index": 27,
+              "header": "image url",
+              "changedCells": 4310
+            }
+          ],
+          "sampleChangedSkus": [
+            "ID103306",
+            "ID110819",
+            "ID111083",
+            "ID111100",
+            "ID111104"
+          ]
+        },
+        {
+          "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-partial.json",
+          "sha256": "91a91fb0e5401c56883deeb13d5c8f86dde9b0f14ade390e140f6c809b7a85cc",
+          "classification": "real-content-conflict",
+          "changedRows": 4310,
+          "changedCells": 25856,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 1,
+              "header": "#",
+              "changedCells": 4310
+            },
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 4310
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 4310
+            },
+            {
+              "index": 27,
+              "header": "image url",
+              "changedCells": 4310
+            },
+            {
+              "index": 7,
+              "header": "库存",
+              "changedCells": 4308
+            },
+            {
+              "index": 13,
+              "header": "成本",
+              "changedCells": 4308
+            }
+          ],
+          "sampleChangedSkus": [
+            "ID103306",
+            "ID110819",
+            "ID111083",
+            "ID111100",
+            "ID111104"
+          ]
+        }
+      ],
+      "realConflictComparisons": 6,
+      "equivalentComparisons": 0
+    },
+    {
+      "key": "Poundex",
+      "name": "Poundex",
+      "registryRows": 1367,
+      "selected": {
+        "file": "data/processed/poundex/poundex-a-aa-20260705-normalized.json",
+        "sha256": "65d58d2ddbc8056dc91655fcfe3a32ace62e70a4b8bea30aad5cb76914151307"
+      },
+      "currentScopeCandidates": 4,
+      "mostChangedColumns": [
+        {
+          "header": "JSON",
+          "changedCells": 2734
+        },
+        {
+          "header": "图片链接",
+          "changedCells": 2734
+        }
+      ],
+      "candidateAudits": [
+        {
+          "file": "data/processed/poundex/poundex-a-aa-20260705-normalized.json",
+          "sha256": "65d58d2ddbc8056dc91655fcfe3a32ace62e70a4b8bea30aad5cb76914151307",
+          "modifiedAt": "2026-07-05T11:44:30.000Z",
+          "heuristicSelected": true,
+          "contract": {
+            "rows": 1367,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/poundex/poundex-a-aa-20260705-table-normalized.json",
+          "sha256": "c0214bcb57d58a3190574a2f6d7c5eee71a7961349d630ee14e1e98888bddf08",
+          "modifiedAt": "2026-07-05T11:42:53.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 1367,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/poundex/poundex-a-aa-20260705-uploadable.json",
+          "sha256": "70cb2db82106a1b6e38accfb02b75838d44a2086eab73ee34a63a3bb74d4136d",
+          "modifiedAt": "2026-07-05T11:45:00.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 1367,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/poundex/poundex-a-aa-20260705-direct-ef.json",
+          "sha256": "90fe0cf2512757104eff88e2d9f4584a4158a6468dee68b626bbf367f3050f95",
+          "modifiedAt": "2026-07-13T04:16:47.833Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 1367,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        }
+      ],
+      "machineRecommendation": {
+        "status": "tied-requires-business-review",
+        "file": null,
+        "bestScoreFiles": [
+          "data/processed/poundex/poundex-a-aa-20260705-direct-ef.json",
+          "data/processed/poundex/poundex-a-aa-20260705-uploadable.json",
+          "data/processed/poundex/poundex-a-aa-20260705-normalized.json",
+          "data/processed/poundex/poundex-a-aa-20260705-table-normalized.json"
+        ],
+        "differsFromFilenameHeuristic": false,
+        "blockingScore": 0,
+        "runnerUpBlockingScore": 0,
+        "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+      },
+      "comparisons": [
+        {
+          "file": "data/processed/poundex/poundex-a-aa-20260705-table-normalized.json",
+          "sha256": "c0214bcb57d58a3190574a2f6d7c5eee71a7961349d630ee14e1e98888bddf08",
+          "classification": "real-content-conflict",
+          "changedRows": 1367,
+          "changedCells": 1367,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 1367
+            }
+          ],
+          "sampleChangedSkus": [
+            "F1907",
+            "F1937",
+            "F1939",
+            "F1940",
+            "F1941"
+          ]
+        },
+        {
+          "file": "data/processed/poundex/poundex-a-aa-20260705-uploadable.json",
+          "sha256": "70cb2db82106a1b6e38accfb02b75838d44a2086eab73ee34a63a3bb74d4136d",
+          "classification": "real-content-conflict",
+          "changedRows": 1367,
+          "changedCells": 2734,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 1367
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 1367
+            }
+          ],
+          "sampleChangedSkus": [
+            "F1907",
+            "F1937",
+            "F1939",
+            "F1940",
+            "F1941"
+          ]
+        },
+        {
+          "file": "data/processed/poundex/poundex-a-aa-20260705-direct-ef.json",
+          "sha256": "90fe0cf2512757104eff88e2d9f4584a4158a6468dee68b626bbf367f3050f95",
+          "classification": "real-content-conflict",
+          "changedRows": 1367,
+          "changedCells": 1367,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 1367
+            }
+          ],
+          "sampleChangedSkus": [
+            "F1907",
+            "F1937",
+            "F1939",
+            "F1940",
+            "F1941"
+          ]
+        }
+      ],
+      "realConflictComparisons": 3,
+      "equivalentComparisons": 0
+    },
+    {
+      "key": "Safavieh",
+      "name": "Safavieh",
+      "registryRows": 151133,
+      "selected": {
+        "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 2.json",
+        "sha256": "4f84148cf95f9d4b5e09168c48d4c96e09fdc3101112bbc4176f002ddcffeb3c"
+      },
+      "currentScopeCandidates": 6,
+      "mostChangedColumns": [
+        {
+          "header": "JSON",
+          "changedCells": 408454
+        },
+        {
+          "header": "#",
+          "changedCells": 302266
+        },
+        {
+          "header": "图片链接",
+          "changedCells": 677
+        }
+      ],
+      "candidateAudits": [
+        {
+          "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 2.json",
+          "sha256": "4f84148cf95f9d4b5e09168c48d4c96e09fdc3101112bbc4176f002ddcffeb3c",
+          "modifiedAt": "2026-07-13T04:17:15.311Z",
+          "heuristicSelected": true,
+          "contract": {
+            "rows": 151133,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 23,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 2300,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 3.json",
+          "sha256": "26a001854efd8d3aa361572db19d998129db5d621d46a61403d1e53079f1cd4e",
+          "modifiedAt": "2026-07-13T04:17:13.894Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 151133,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 23,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 2300,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 4.json",
+          "sha256": "a5f9d912109ed444da896f5e68ace3aed13eda2619ae9a0407494f59bf4ceab1",
+          "modifiedAt": "2026-07-13T04:17:18.616Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 151133,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 23,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 2300,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial.json",
+          "sha256": "cf5c0d6aa5e8aff35f0d9edffe4e11d6d8601de42c8b5035d0b2ff7ddbb75f4e",
+          "modifiedAt": "2026-07-13T04:17:10.385Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 151133,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 23,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 2300,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-table-normalized-debug.json",
+          "sha256": "ea72e40c30412eb33c7b5e3bab641505904b93bd0dcdadee360db1246741117d",
+          "modifiedAt": "2026-07-13T04:16:58.380Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 151133,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 23,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 151133,
+            "legacyCostMode": 151133,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 151133,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 4536290,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-table-1600.json",
+          "sha256": "c1cebe0fd0d14cb8254ba5ce75f7af7ca6d7c9ec0878786c77e82132a4ded473",
+          "modifiedAt": "2026-07-13T04:16:56.670Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 151133,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 23,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 151133,
+            "legacyCostMode": 151133,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 151133,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 4536290,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        }
+      ],
+      "machineRecommendation": {
+        "status": "tied-requires-business-review",
+        "file": null,
+        "bestScoreFiles": [
+          "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 4.json",
+          "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 2.json",
+          "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 3.json",
+          "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial.json"
+        ],
+        "differsFromFilenameHeuristic": false,
+        "blockingScore": 2300,
+        "runnerUpBlockingScore": 2300,
+        "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+      },
+      "comparisons": [
+        {
+          "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 3.json",
+          "sha256": "26a001854efd8d3aa361572db19d998129db5d621d46a61403d1e53079f1cd4e",
+          "classification": "real-content-conflict",
+          "changedRows": 3,
+          "changedCells": 3,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 3
+            }
+          ],
+          "sampleChangedSkus": [
+            "CYR171A-5",
+            "CYR172A-5",
+            "VRS669A-28"
+          ]
+        },
+        {
+          "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 4.json",
+          "sha256": "a5f9d912109ed444da896f5e68ace3aed13eda2619ae9a0407494f59bf4ceab1",
+          "classification": "real-content-conflict",
+          "changedRows": 7,
+          "changedCells": 7,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 7
+            }
+          ],
+          "sampleChangedSkus": [
+            "CYR171A-5",
+            "CYR171A-8",
+            "CYR172A-5",
+            "CYR172A-8",
+            "VRS669A-28"
+          ]
+        },
+        {
+          "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial.json",
+          "sha256": "cf5c0d6aa5e8aff35f0d9edffe4e11d6d8601de42c8b5035d0b2ff7ddbb75f4e",
+          "classification": "real-content-conflict",
+          "changedRows": 106162,
+          "changedCells": 106178,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 106178
+            }
+          ],
+          "sampleChangedSkus": [
+            "CYR171A-5",
+            "CYR171A-8",
+            "CYR172A-5",
+            "CYR172A-8",
+            "VRS669A-28"
+          ]
+        },
+        {
+          "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-table-normalized-debug.json",
+          "sha256": "ea72e40c30412eb33c7b5e3bab641505904b93bd0dcdadee360db1246741117d",
+          "classification": "real-content-conflict",
+          "changedRows": 151110,
+          "changedCells": 302333,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 1,
+              "header": "#",
+              "changedCells": 151133
+            },
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 151133
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 67
+            }
+          ],
+          "sampleChangedSkus": [
+            "CYR171A-5",
+            "CYR171A-8",
+            "CYR172A-5",
+            "CYR172A-8",
+            "VRS669A-28"
+          ]
+        },
+        {
+          "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-table-1600.json",
+          "sha256": "c1cebe0fd0d14cb8254ba5ce75f7af7ca6d7c9ec0878786c77e82132a4ded473",
+          "classification": "real-content-conflict",
+          "changedRows": 151110,
+          "changedCells": 302876,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 1,
+              "header": "#",
+              "changedCells": 151133
+            },
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 151133
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 610
+            }
+          ],
+          "sampleChangedSkus": [
+            "CYR171A-5",
+            "CYR171A-8",
+            "CYR172A-5",
+            "CYR172A-8",
+            "VRS669A-28"
+          ]
+        }
+      ],
+      "realConflictComparisons": 5,
+      "equivalentComparisons": 0
+    },
+    {
+      "key": "Sunpan",
+      "name": "Sunpan",
+      "registryRows": 2935,
+      "selected": {
+        "file": "data/processed/sunpan/sunpan-a-aa-20260702-canva-url.json",
+        "sha256": "bc341d12e42bfc13f9e314d3f34764be350ecdaf9f175a7f80fb457ecfa4f14d"
+      },
+      "currentScopeCandidates": 2,
+      "mostChangedColumns": [
+        {
+          "header": "#",
+          "changedCells": 2935
+        },
+        {
+          "header": "JSON",
+          "changedCells": 2935
+        }
+      ],
+      "candidateAudits": [
+        {
+          "file": "data/processed/sunpan/sunpan-a-aa-20260702-canva-url.json",
+          "sha256": "bc341d12e42bfc13f9e314d3f34764be350ecdaf9f175a7f80fb457ecfa4f14d",
+          "modifiedAt": "2026-07-13T04:16:37.747Z",
+          "heuristicSelected": true,
+          "contract": {
+            "rows": 2935,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/sunpan/sunpan-a-aa-20260702.json",
+          "sha256": "fcbe64d46b03a73b98ad0ef1cb8a8139aec75fde6d3deee30b8a6d901cdbfb94",
+          "modifiedAt": "2026-07-13T04:16:37.698Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 2935,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 2935,
+            "legacyCostMode": 2935,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 58700,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        }
+      ],
+      "machineRecommendation": {
+        "status": "clear-contract-lead",
+        "file": "data/processed/sunpan/sunpan-a-aa-20260702-canva-url.json",
+        "bestScoreFiles": [
+          "data/processed/sunpan/sunpan-a-aa-20260702-canva-url.json"
+        ],
+        "differsFromFilenameHeuristic": false,
+        "blockingScore": 0,
+        "runnerUpBlockingScore": 58700,
+        "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+      },
+      "comparisons": [
+        {
+          "file": "data/processed/sunpan/sunpan-a-aa-20260702.json",
+          "sha256": "fcbe64d46b03a73b98ad0ef1cb8a8139aec75fde6d3deee30b8a6d901cdbfb94",
+          "classification": "real-content-conflict",
+          "changedRows": 2935,
+          "changedCells": 5870,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 1,
+              "header": "#",
+              "changedCells": 2935
+            },
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 2935
+            }
+          ],
+          "sampleChangedSkus": [
+            "103772",
+            "112987",
+            "111273",
+            "111274",
+            "112945"
+          ]
+        }
+      ],
+      "realConflictComparisons": 1,
+      "equivalentComparisons": 0
+    },
+    {
+      "key": "Surya",
+      "name": "Surya",
+      "registryRows": 71005,
+      "selected": {
+        "file": "data/processed/surya/surya-a-aa-20260709-image-repaired-partial 2.json",
+        "sha256": "09df67a3b06ced35c17e91d3157de081587fe5c6835fa9fa7ff857fbdda46f21"
+      },
+      "currentScopeCandidates": 2,
+      "mostChangedColumns": [
+        {
+          "header": "JSON",
+          "changedCells": 13
+        },
+        {
+          "header": "图片链接",
+          "changedCells": 13
+        }
+      ],
+      "candidateAudits": [
+        {
+          "file": "data/processed/surya/surya-a-aa-20260709-image-repaired-partial 2.json",
+          "sha256": "09df67a3b06ced35c17e91d3157de081587fe5c6835fa9fa7ff857fbdda46f21",
+          "modifiedAt": "2026-07-13T04:16:45.202Z",
+          "heuristicSelected": true,
+          "contract": {
+            "rows": 71005,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 6172,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 123440,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/surya/surya-a-aa-20260709-image-repaired-partial.json",
+          "sha256": "aaeb8b486eeee266229233f0fe53dfeca288f1ed11d8b952e54057267979ee34",
+          "modifiedAt": "2026-07-13T04:16:43.361Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 71005,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 6172,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 123440,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        }
+      ],
+      "machineRecommendation": {
+        "status": "tied-requires-business-review",
+        "file": null,
+        "bestScoreFiles": [
+          "data/processed/surya/surya-a-aa-20260709-image-repaired-partial 2.json",
+          "data/processed/surya/surya-a-aa-20260709-image-repaired-partial.json"
+        ],
+        "differsFromFilenameHeuristic": false,
+        "blockingScore": 123440,
+        "runnerUpBlockingScore": 123440,
+        "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+      },
+      "comparisons": [
+        {
+          "file": "data/processed/surya/surya-a-aa-20260709-image-repaired-partial.json",
+          "sha256": "aaeb8b486eeee266229233f0fe53dfeca288f1ed11d8b952e54057267979ee34",
+          "classification": "real-content-conflict",
+          "changedRows": 13,
+          "changedCells": 26,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 13
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 13
+            }
+          ],
+          "sampleChangedSkus": [
+            "FNO2304-1616",
+            "FNO2304-23",
+            "FNO2304-576",
+            "FNO2304-810",
+            "FNO2304-912"
+          ]
+        }
+      ],
+      "realConflictComparisons": 1,
+      "equivalentComparisons": 0
+    },
+    {
+      "key": "TOV",
+      "name": "TOV",
+      "registryRows": 2846,
+      "selected": {
+        "file": "data/processed/tov/tov-full-a-aa-20260629-scene-rebuilt.json",
+        "sha256": "541e8d0b3a05c015b9e35ce66840e1ce289f6a4646c298b2e1d6209995e5f80e"
+      },
+      "currentScopeCandidates": 2,
+      "mostChangedColumns": [
+        {
+          "header": "#",
+          "changedCells": 2846
+        },
+        {
+          "header": "JSON",
+          "changedCells": 2846
+        }
+      ],
+      "candidateAudits": [
+        {
+          "file": "data/processed/tov/tov-full-a-aa-20260629-scene-rebuilt.json",
+          "sha256": "541e8d0b3a05c015b9e35ce66840e1ce289f6a4646c298b2e1d6209995e5f80e",
+          "modifiedAt": "2026-07-04T10:47:38.000Z",
+          "heuristicSelected": true,
+          "contract": {
+            "rows": 2846,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/tov/tov-full-a-aa-20260629.json",
+          "sha256": "eca436bb085e13cb863683d2c50a726d19c5d0d06b337cdf9a7cb58c5d26855f",
+          "modifiedAt": "2026-06-30T07:55:39.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 2846,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 2846,
+            "legacyCostMode": 2846,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 56920,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        }
+      ],
+      "machineRecommendation": {
+        "status": "clear-contract-lead",
+        "file": "data/processed/tov/tov-full-a-aa-20260629-scene-rebuilt.json",
+        "bestScoreFiles": [
+          "data/processed/tov/tov-full-a-aa-20260629-scene-rebuilt.json"
+        ],
+        "differsFromFilenameHeuristic": false,
+        "blockingScore": 0,
+        "runnerUpBlockingScore": 56920,
+        "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+      },
+      "comparisons": [
+        {
+          "file": "data/processed/tov/tov-full-a-aa-20260629.json",
+          "sha256": "eca436bb085e13cb863683d2c50a726d19c5d0d06b337cdf9a7cb58c5d26855f",
+          "classification": "real-content-conflict",
+          "changedRows": 2846,
+          "changedCells": 5692,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 1,
+              "header": "#",
+              "changedCells": 2846
+            },
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 2846
+            }
+          ],
+          "sampleChangedSkus": [
+            "TOV-OC55020",
+            "TOV-OC55028",
+            "TOV-B54255",
+            "TOV-OC21007",
+            "TOV-OC21008"
+          ]
+        }
+      ],
+      "realConflictComparisons": 1,
+      "equivalentComparisons": 0
+    },
+    {
+      "key": "Uttermost",
+      "name": "Uttermost",
+      "registryRows": 4636,
+      "selected": {
+        "file": "data/processed/uttermost/uttermost-a-aa-20260701-complete.json",
+        "sha256": "adac58e2534cfcb3ca2cc8ba5d312b4c70866ad1f25fbdb6b7059f1c74b07590"
+      },
+      "currentScopeCandidates": 3,
+      "mostChangedColumns": [
+        {
+          "header": "#",
+          "changedCells": 9272
+        },
+        {
+          "header": "JSON",
+          "changedCells": 9272
+        },
+        {
+          "header": "图片链接",
+          "changedCells": 4636
+        },
+        {
+          "header": "image url",
+          "changedCells": 4636
+        },
+        {
+          "header": "成本",
+          "changedCells": 1
+        }
+      ],
+      "candidateAudits": [
+        {
+          "file": "data/processed/uttermost/uttermost-a-aa-20260701-complete.json",
+          "sha256": "adac58e2534cfcb3ca2cc8ba5d312b4c70866ad1f25fbdb6b7059f1c74b07590",
+          "modifiedAt": "2026-07-04T10:47:39.000Z",
+          "heuristicSelected": true,
+          "contract": {
+            "rows": 4636,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 0,
+            "legacyCostMode": 0,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 0,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/uttermost/uttermost-a-aa-20260701-highres-repaired.json",
+          "sha256": "f5ed4097670ed7b247f30d684d9d36ff0c97ac34aadcc4c337ae631e0b300f51",
+          "modifiedAt": "2026-07-01T15:02:29.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 4636,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 4636,
+            "legacyCostMode": 4636,
+            "missingJsonPrice": 0,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 92720,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        },
+        {
+          "file": "data/processed/uttermost/uttermost-a-aa-20260701-partial.json",
+          "sha256": "1d7fb02872f2f45074d7f381c524e6fd44149cb822d59f90c75c477ae64984b6",
+          "modifiedAt": "2026-07-01T15:01:38.000Z",
+          "heuristicSelected": false,
+          "contract": {
+            "rows": 4636,
+            "invalidRowWidth": 0,
+            "missingSku": 0,
+            "duplicateSkuRows": 0,
+            "jsonParseErrors": 0,
+            "nonSpecialPriceMode": 4636,
+            "legacyCostMode": 4636,
+            "missingJsonPrice": 1,
+            "missingProductUrl": 0,
+            "missingImageUrl": 0,
+            "missingTitle": 0,
+            "blockingScore": 92740,
+            "measurementBoundary": "只检查本地 27 列与 C JSON 合同；图片真实像素、价格业务含义和远程回读仍需独立门禁。"
+          }
+        }
+      ],
+      "machineRecommendation": {
+        "status": "clear-contract-lead",
+        "file": "data/processed/uttermost/uttermost-a-aa-20260701-complete.json",
+        "bestScoreFiles": [
+          "data/processed/uttermost/uttermost-a-aa-20260701-complete.json"
+        ],
+        "differsFromFilenameHeuristic": false,
+        "blockingScore": 0,
+        "runnerUpBlockingScore": 92720,
+        "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+      },
+      "comparisons": [
+        {
+          "file": "data/processed/uttermost/uttermost-a-aa-20260701-highres-repaired.json",
+          "sha256": "f5ed4097670ed7b247f30d684d9d36ff0c97ac34aadcc4c337ae631e0b300f51",
+          "classification": "real-content-conflict",
+          "changedRows": 4636,
+          "changedCells": 18544,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 1,
+              "header": "#",
+              "changedCells": 4636
+            },
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 4636
+            },
+            {
+              "index": 5,
+              "header": "图片链接",
+              "changedCells": 4636
+            },
+            {
+              "index": 27,
+              "header": "image url",
+              "changedCells": 4636
+            }
+          ],
+          "sampleChangedSkus": [
+            "R22631",
+            "R22630",
+            "30760-1",
+            "R21429",
+            "W26182-1"
+          ]
+        },
+        {
+          "file": "data/processed/uttermost/uttermost-a-aa-20260701-partial.json",
+          "sha256": "1d7fb02872f2f45074d7f381c524e6fd44149cb822d59f90c75c477ae64984b6",
+          "classification": "real-content-conflict",
+          "changedRows": 4636,
+          "changedCells": 9273,
+          "addedSkus": 0,
+          "removedSkus": 0,
+          "topChangedColumns": [
+            {
+              "index": 1,
+              "header": "#",
+              "changedCells": 4636
+            },
+            {
+              "index": 3,
+              "header": "JSON",
+              "changedCells": 4636
+            },
+            {
+              "index": 13,
+              "header": "成本",
+              "changedCells": 1
+            }
+          ],
+          "sampleChangedSkus": [
+            "R22631",
+            "R22630",
+            "30760-1",
+            "R21429",
+            "W26182-1"
+          ]
+        }
+      ],
+      "realConflictComparisons": 2,
+      "equivalentComparisons": 0
+    }
+  ]
+}

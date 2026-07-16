@@ -1,6 +1,6 @@
 {
   "schemaVersion": "file-governance-evidence-v1",
-  "generatedAt": "2026-07-16T05:10:46.870Z",
+  "generatedAt": "2026-07-16T05:30:34.928Z",
   "boundary": {
     "workspace": "/Volumes/CodexWorkspace",
     "auditedCodeRuleFiles": 352,

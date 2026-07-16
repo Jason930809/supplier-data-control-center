@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "manifestStatus": "draft-not-production",
-  "generatedAt": "2026-07-16T05:10:51.040Z",
+  "generatedAt": "2026-07-16T05:30:39.644Z",
   "summary": {
     "totalSuppliers": 37,
     "signed": 0,
-    "ambiguous": 21,
-    "candidate": 15,
+    "ambiguous": 15,
+    "candidate": 21,
     "sharded": 1,
     "missing": 0,
     "remoteMetadataMatched": 36
@@ -45,6 +45,10 @@
         "parsedCandidates": 2,
         "matchingRowCandidates": 1,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/accent-decor/accent-decor-a-aa-20260710.json",
           "exists": true,
@@ -57,6 +61,7 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": "data/processed/accent-decor/accent-decor-a-aa-20260710.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/accent-decor/accent-decor-a-aa-20260710.json",
@@ -134,6 +139,10 @@
         "parsedCandidates": 4,
         "matchingRowCandidates": 4,
         "matchingDateAndRowCandidates": 4,
+        "currentScopeCandidates": 4,
+        "currentScopeUniqueHashes": 4,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 3,
         "machineTopCandidate": {
           "file": "data/processed/acme/acme-a-aa-20260703-image-repaired-v2.json",
           "exists": true,
@@ -146,6 +155,42 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": null,
+        "contentDiff": {
+          "realConflictComparisons": 3,
+          "equivalentComparisons": 0,
+          "mostChangedColumns": [
+            {
+              "header": "JSON",
+              "changedCells": 11757
+            },
+            {
+              "header": "image url",
+              "changedCells": 5244
+            },
+            {
+              "header": "图片链接",
+              "changedCells": 4000
+            },
+            {
+              "header": "品类",
+              "changedCells": 68
+            }
+          ],
+          "machineRecommendation": {
+            "status": "tied-requires-business-review",
+            "file": null,
+            "bestScoreFiles": [
+              "data/processed/acme/acme-a-aa-20260703-image-repaired-v2.json",
+              "data/processed/acme/acme-a-aa-20260703.json",
+              "data/processed/acme/acme-a-aa-20260703-image-repaired.json",
+              "data/processed/acme/acme-a-aa-20260703-square-json.json"
+            ],
+            "differsFromFilenameHeuristic": false,
+            "blockingScore": 40,
+            "runnerUpBlockingScore": 40,
+            "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+          }
+        },
         "candidates": [
           {
             "file": "data/processed/acme/acme-a-aa-20260703-image-repaired-v2.json",
@@ -245,6 +290,10 @@
         "parsedCandidates": 13,
         "matchingRowCandidates": 1,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/allstate/allstate-a-aa-20260709-uploadable-partial-final.json",
           "exists": true,
@@ -257,6 +306,7 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": "data/processed/allstate/allstate-a-aa-20260709-uploadable-partial-final.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/allstate/allstate-a-aa-20260709-uploadable-partial-final.json",
@@ -323,6 +373,83 @@
             "score": 398,
             "dateMatch": false,
             "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/allstate/allstate-a-aa-20260708.json",
+            "exists": true,
+            "bytes": 3270960,
+            "modifiedAt": "2026-07-13T04:16:54.842Z",
+            "sha256": "afc31adbc1994b53fe0d03598bd0afb4a72a1770da28e8fcaf583ad4987eacd5",
+            "rows": 2164,
+            "score": 295,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/allstate/allstate-a-aa-20260629-drive-pilot10.json",
+            "exists": true,
+            "bytes": 929911,
+            "modifiedAt": "2026-07-13T04:16:54.877Z",
+            "sha256": "5f1c6a2077dae5cf7bec82b885fef74dda3e88cde404790ae6fcd34faaaa101c",
+            "rows": 616,
+            "score": -354,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/allstate/allstate-a-aa-20260629-drive-pilot5.json",
+            "exists": true,
+            "bytes": 929967,
+            "modifiedAt": "2026-07-13T04:16:55.440Z",
+            "sha256": "47dd4663955ac05c113809f11759f22a9103b061f0ddce48dd46c9edadc29582",
+            "rows": 616,
+            "score": -354,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/allstate/allstate-a-aa-20260629-drive-scene-rebuilt-canva-url.json",
+            "exists": true,
+            "bytes": 1406042,
+            "modifiedAt": "2026-07-13T04:16:54.862Z",
+            "sha256": "9441bc687c6f9940c5dce98183d7dcf89f5fcf3d242e202048840cac5f6f579a",
+            "rows": 616,
+            "score": -354,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/allstate/allstate-a-aa-20260629-drive-scene-rebuilt.json",
+            "exists": true,
+            "bytes": 1275074,
+            "modifiedAt": "2026-07-13T04:16:54.834Z",
+            "sha256": "2fc38fa837cf1ccacb05e77e0c367a7d20ad9bc47ba2bdde53730c6e2b8ab9de",
+            "rows": 616,
+            "score": -354,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/allstate/allstate-a-aa-20260629-drive.json",
+            "exists": true,
+            "bytes": 1000886,
+            "modifiedAt": "2026-07-13T04:16:55.357Z",
+            "sha256": "25260d3699cd2624381e665ef13c1a2cc018a50187ce0b9fd54abcc2d6a80c6d",
+            "rows": 616,
+            "score": -354,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/allstate/allstate-a-aa-20260629.json",
+            "exists": true,
+            "bytes": 929666,
+            "modifiedAt": "2026-07-13T04:16:55.370Z",
+            "sha256": "0bca424f8c997d523326f26d851bedfe5ecf2f868653a32ca63be4e2d9aab81f",
+            "rows": 616,
+            "score": -414,
+            "dateMatch": false,
+            "duplicateNameSignal": false
           }
         ]
       },
@@ -378,6 +505,10 @@
         "parsedCandidates": 2,
         "matchingRowCandidates": 2,
         "matchingDateAndRowCandidates": 2,
+        "currentScopeCandidates": 2,
+        "currentScopeUniqueHashes": 2,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 1,
         "machineTopCandidate": {
           "file": "data/processed/arteriors/arteriors-a-aa-20260630.json",
           "exists": true,
@@ -390,6 +521,35 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": null,
+        "contentDiff": {
+          "realConflictComparisons": 1,
+          "equivalentComparisons": 0,
+          "mostChangedColumns": [
+            {
+              "header": "#",
+              "changedCells": 2119
+            },
+            {
+              "header": "JSON",
+              "changedCells": 2119
+            },
+            {
+              "header": "Size",
+              "changedCells": 1
+            }
+          ],
+          "machineRecommendation": {
+            "status": "clear-contract-lead",
+            "file": "data/processed/arteriors/arteriors-a-aa-20260630.json",
+            "bestScoreFiles": [
+              "data/processed/arteriors/arteriors-a-aa-20260630.json"
+            ],
+            "differsFromFilenameHeuristic": false,
+            "blockingScore": 0,
+            "runnerUpBlockingScore": 42380,
+            "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+          }
+        },
         "candidates": [
           {
             "file": "data/processed/arteriors/arteriors-a-aa-20260630.json",
@@ -467,6 +627,10 @@
         "parsedCandidates": 4,
         "matchingRowCandidates": 4,
         "matchingDateAndRowCandidates": 4,
+        "currentScopeCandidates": 4,
+        "currentScopeUniqueHashes": 4,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 3,
         "machineTopCandidate": {
           "file": "data/processed/artmax/artmax-a-aa-20260708-drive-edge-fit.json",
           "exists": true,
@@ -479,6 +643,38 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": null,
+        "contentDiff": {
+          "realConflictComparisons": 3,
+          "equivalentComparisons": 0,
+          "mostChangedColumns": [
+            {
+              "header": "JSON",
+              "changedCells": 2552
+            },
+            {
+              "header": "图片链接",
+              "changedCells": 2552
+            },
+            {
+              "header": "image url",
+              "changedCells": 141
+            }
+          ],
+          "machineRecommendation": {
+            "status": "tied-requires-business-review",
+            "file": null,
+            "bestScoreFiles": [
+              "data/processed/artmax/artmax-a-aa-20260708-variant-drive-edge-fit.json",
+              "data/processed/artmax/artmax-a-aa-20260708-drive-edge-fit.json",
+              "data/processed/artmax/artmax-a-aa-20260708-drive-main.json",
+              "data/processed/artmax/artmax-a-aa-20260708.json"
+            ],
+            "differsFromFilenameHeuristic": false,
+            "blockingScore": 0,
+            "runnerUpBlockingScore": 0,
+            "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+          }
+        },
         "candidates": [
           {
             "file": "data/processed/artmax/artmax-a-aa-20260708-drive-edge-fit.json",
@@ -578,6 +774,10 @@
         "parsedCandidates": 1,
         "matchingRowCandidates": 1,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/azzurro-living/azzurro-living-a-aa-20260703.json",
           "exists": true,
@@ -590,6 +790,7 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": "data/processed/azzurro-living/azzurro-living-a-aa-20260703.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/azzurro-living/azzurro-living-a-aa-20260703.json",
@@ -656,6 +857,10 @@
         "parsedCandidates": 18,
         "matchingRowCandidates": 5,
         "matchingDateAndRowCandidates": 5,
+        "currentScopeCandidates": 5,
+        "currentScopeUniqueHashes": 5,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 4,
         "machineTopCandidate": {
           "file": "data/processed/ashley/ashley-a-aa-20260710-final-partial.json",
           "exists": true,
@@ -668,6 +873,51 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": null,
+        "contentDiff": {
+          "realConflictComparisons": 4,
+          "equivalentComparisons": 0,
+          "mostChangedColumns": [
+            {
+              "header": "JSON",
+              "changedCells": 18724
+            },
+            {
+              "header": "#",
+              "changedCells": 6155
+            },
+            {
+              "header": "库存",
+              "changedCells": 1120
+            },
+            {
+              "header": "图片链接",
+              "changedCells": 1052
+            },
+            {
+              "header": "成本",
+              "changedCells": 286
+            },
+            {
+              "header": "卖价",
+              "changedCells": 34
+            }
+          ],
+          "machineRecommendation": {
+            "status": "tied-requires-business-review",
+            "file": null,
+            "bestScoreFiles": [
+              "data/processed/ashley/ashley-a-aa-20260710-final-partial.json",
+              "data/processed/ashley/ashley-a-aa-20260710-cost-inventory-recalculated-image-prepared-partial.json",
+              "data/processed/ashley/ashley-a-aa-20260710-cost-inventory-recalculated-partial.json",
+              "data/processed/ashley/ashley-a-aa-20260710-verified-rows-image-prepared-partial.json",
+              "data/processed/ashley/ashley-a-aa-20260710-verified-rows-preview-fixed-partial.json"
+            ],
+            "differsFromFilenameHeuristic": false,
+            "blockingScore": 0,
+            "runnerUpBlockingScore": 0,
+            "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+          }
+        },
         "candidates": [
           {
             "file": "data/processed/ashley/ashley-a-aa-20260710-final-partial.json",
@@ -734,6 +984,138 @@
             "score": 446,
             "dateMatch": true,
             "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/ashley/ashley-a-aa-20260710-image-normalized-price-fixed-partial.json",
+            "exists": true,
+            "bytes": 36021612,
+            "modifiedAt": "2026-07-10T04:36:43.000Z",
+            "sha256": "a3b4c4e639dd0b95bca7f807c6d24cb0a3203402321a15d3f5756d70d8dfbf73",
+            "rows": 7721,
+            "score": 446,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/ashley/ashley-a-aa-20260710-frontend-standard-price-fixed-partial.json",
+            "exists": true,
+            "bytes": 34950940,
+            "modifiedAt": "2026-07-10T03:53:02.000Z",
+            "sha256": "0dbdf788169db79452bc2f1ecb48cccb30e1ee2d63c398e9079031b70dfea2d9",
+            "rows": 7721,
+            "score": 386,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/ashley/ashley-a-aa-20260710-preview-fixed-partial.json",
+            "exists": true,
+            "bytes": 35999125,
+            "modifiedAt": "2026-07-10T05:26:00.000Z",
+            "sha256": "fcd7b00b677da1a53225b5124c80c12bee4ba793ede407dfd79f8d3908430e06",
+            "rows": 7721,
+            "score": 386,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/ashley/ashley-a-aa-20260710-public-price-corrected-partial.json",
+            "exists": true,
+            "bytes": 34395601,
+            "modifiedAt": "2026-07-09T20:06:47.000Z",
+            "sha256": "dd0b227910cab421a343f8e6aa186076169f3e9a63ef53e7a10c1219fc0c6cc6",
+            "rows": 7721,
+            "score": 386,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/ashley/ashley-a-aa-20260710-scene-selection-fixed-partial-v2.json",
+            "exists": true,
+            "bytes": 34590512,
+            "modifiedAt": "2026-07-10T04:41:49.000Z",
+            "sha256": "6dbf5e999044ece09a4faaee9814b87de94fed3472146e03447596bc56bde992",
+            "rows": 7721,
+            "score": 386,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/ashley/ashley-a-aa-20260710-scene-selection-fixed-partial.json",
+            "exists": true,
+            "bytes": 34623556,
+            "modifiedAt": "2026-07-10T04:01:29.000Z",
+            "sha256": "15bd733445ea165e043350704c99770067627563ff684e5386542ae4bb5ee41d",
+            "rows": 7721,
+            "score": 386,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/ashley/ashley-a-aa-20260707-corrected-partial-normalized.json",
+            "exists": true,
+            "bytes": 23032051,
+            "modifiedAt": "2026-07-07T05:11:52.000Z",
+            "sha256": "b697ef58e2277882718319904d17aff7434b8a35e25ad4ab52048559a807f80f",
+            "rows": 7255,
+            "score": 221,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/ashley/ashley-a-aa-20260707-corrected-v2-partial-normalized-upload.json",
+            "exists": true,
+            "bytes": 27218966,
+            "modifiedAt": "2026-07-07T06:41:08.000Z",
+            "sha256": "f11bfa36d8b98431339e913e74f1efdc34a7c8ff889593252f24d8f5ba171ae8",
+            "rows": 7463,
+            "score": 187,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/ashley/ashley-a-aa-20260707-corrected-v3-partial-preview-repair-normalized.json",
+            "exists": true,
+            "bytes": 27256256,
+            "modifiedAt": "2026-07-07T09:00:35.000Z",
+            "sha256": "5e65c3e0f39da61c872922f54e8578ac0a3bf1a951b3fff51bf1365192e1f1a3",
+            "rows": 7463,
+            "score": 187,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/ashley/ashley-a-aa-20260707-corrected-v2-partial-normalized-final-cookie.json",
+            "exists": true,
+            "bytes": 27386054,
+            "modifiedAt": "2026-07-07T06:41:08.000Z",
+            "sha256": "b3f23f931333e439fbd9b198697ede3b7d9c50c1a93b5e6b43e391ca1efa716c",
+            "rows": 7521,
+            "score": 178,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/ashley/ashley-a-aa-20260707-corrected-v2-partial-normalized-final.json",
+            "exists": true,
+            "bytes": 27385935,
+            "modifiedAt": "2026-07-07T06:41:09.000Z",
+            "sha256": "b42912cf75567e76fdbc79c8acafe52709d4f356accd4a161b814db58b9ac745",
+            "rows": 7521,
+            "score": 178,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/ashley/ashley-a-aa-20260707-corrected-v2-partial-normalized.json",
+            "exists": true,
+            "bytes": 27256055,
+            "modifiedAt": "2026-07-07T06:20:16.000Z",
+            "sha256": "f49aa3935148165247ef395bf7396c067af720d22e0fee780d84a3939bf7f32e",
+            "rows": 7521,
+            "score": 178,
+            "dateMatch": false,
+            "duplicateNameSignal": false
           }
         ]
       },
@@ -789,6 +1171,10 @@
         "parsedCandidates": 5,
         "matchingRowCandidates": 1,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/bernhardt/bernhardt-a-aa-20260710.json",
           "exists": true,
@@ -801,6 +1187,7 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": "data/processed/bernhardt/bernhardt-a-aa-20260710.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/bernhardt/bernhardt-a-aa-20260710.json",
@@ -911,6 +1298,10 @@
         "parsedCandidates": 4,
         "matchingRowCandidates": 4,
         "matchingDateAndRowCandidates": 4,
+        "currentScopeCandidates": 4,
+        "currentScopeUniqueHashes": 4,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 3,
         "machineTopCandidate": {
           "file": "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705-drive-images.json",
           "exists": true,
@@ -923,6 +1314,34 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": null,
+        "contentDiff": {
+          "realConflictComparisons": 3,
+          "equivalentComparisons": 0,
+          "mostChangedColumns": [
+            {
+              "header": "JSON",
+              "changedCells": 1279
+            },
+            {
+              "header": "图片链接",
+              "changedCells": 1279
+            }
+          ],
+          "machineRecommendation": {
+            "status": "tied-requires-business-review",
+            "file": null,
+            "bestScoreFiles": [
+              "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705-drive-images.json",
+              "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705-drive-whiter-table-images.json",
+              "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705-bed-standard-images.json",
+              "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705.json"
+            ],
+            "differsFromFilenameHeuristic": false,
+            "blockingScore": 0,
+            "runnerUpBlockingScore": 0,
+            "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+          }
+        },
         "candidates": [
           {
             "file": "data/processed/best-master-furniture/best-master-furniture-a-aa-20260705-drive-images.json",
@@ -1022,6 +1441,10 @@
         "parsedCandidates": 2,
         "matchingRowCandidates": 1,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/caracole/caracole-a-aa-20260703-partial.json",
           "exists": true,
@@ -1034,6 +1457,7 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": "data/processed/caracole/caracole-a-aa-20260703-partial.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/caracole/caracole-a-aa-20260703-partial.json",
@@ -1111,6 +1535,10 @@
         "parsedCandidates": 1,
         "matchingRowCandidates": 1,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/cfc/cfc-a-aa-20260703.json",
           "exists": true,
@@ -1123,6 +1551,7 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": "data/processed/cfc/cfc-a-aa-20260703.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/cfc/cfc-a-aa-20260703.json",
@@ -1160,7 +1589,7 @@
       "key": "Classic Home",
       "id": "classic-home",
       "name": "Classic Home",
-      "status": "ambiguous-pending",
+      "status": "candidate-pending",
       "registry": {
         "latestTab": "Classic Home 20260708",
         "rows": 4442,
@@ -1185,10 +1614,14 @@
         "recordCount": 3
       },
       "dataset": {
-        "status": "ambiguous",
+        "status": "candidate",
         "parsedCandidates": 2,
         "matchingRowCandidates": 2,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/classic-home/classic-home-a-aa-20260708-complete.json",
           "exists": true,
@@ -1200,7 +1633,8 @@
           "dateMatch": true,
           "duplicateNameSignal": false
         },
-        "proposedSelection": null,
+        "proposedSelection": "data/processed/classic-home/classic-home-a-aa-20260708-complete.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/classic-home/classic-home-a-aa-20260708-complete.json",
@@ -1278,6 +1712,10 @@
         "parsedCandidates": 4,
         "matchingRowCandidates": 4,
         "matchingDateAndRowCandidates": 0,
+        "currentScopeCandidates": 4,
+        "currentScopeUniqueHashes": 4,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 3,
         "machineTopCandidate": {
           "file": "data/processed/coaster/coaster-a-aa-20260701-canva-url.json",
           "exists": true,
@@ -1290,6 +1728,47 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": null,
+        "contentDiff": {
+          "realConflictComparisons": 3,
+          "equivalentComparisons": 0,
+          "mostChangedColumns": [
+            {
+              "header": "#",
+              "changedCells": 12513
+            },
+            {
+              "header": "JSON",
+              "changedCells": 12513
+            },
+            {
+              "header": "品类",
+              "changedCells": 10357
+            },
+            {
+              "header": "描述",
+              "changedCells": 8328
+            },
+            {
+              "header": "image url",
+              "changedCells": 8311
+            },
+            {
+              "header": "图片链接",
+              "changedCells": 8304
+            }
+          ],
+          "machineRecommendation": {
+            "status": "clear-contract-lead",
+            "file": "data/processed/coaster/coaster-a-aa-20260701-canva-url.json",
+            "bestScoreFiles": [
+              "data/processed/coaster/coaster-a-aa-20260701-canva-url.json"
+            ],
+            "differsFromFilenameHeuristic": false,
+            "blockingScore": 40000,
+            "runnerUpBlockingScore": 125130,
+            "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+          }
+        },
         "candidates": [
           {
             "file": "data/processed/coaster/coaster-a-aa-20260701-canva-url.json",
@@ -1389,6 +1868,10 @@
         "parsedCandidates": 1,
         "matchingRowCandidates": 1,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/crestview-collection/crestview-collection-a-aa-20260705-partial.json",
           "exists": true,
@@ -1401,6 +1884,7 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": "data/processed/crestview-collection/crestview-collection-a-aa-20260705-partial.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/crestview-collection/crestview-collection-a-aa-20260705-partial.json",
@@ -1467,6 +1951,10 @@
         "parsedCandidates": 1,
         "matchingRowCandidates": 1,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/deco-marche/deco-marche-a-aa-20260703.json",
           "exists": true,
@@ -1479,6 +1967,7 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": "data/processed/deco-marche/deco-marche-a-aa-20260703.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/deco-marche/deco-marche-a-aa-20260703.json",
@@ -1545,6 +2034,10 @@
         "parsedCandidates": 1,
         "matchingRowCandidates": 1,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/dovetail/dovetail-a-aa-20260630.json",
           "exists": true,
@@ -1557,6 +2050,7 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": "data/processed/dovetail/dovetail-a-aa-20260630.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/dovetail/dovetail-a-aa-20260630.json",
@@ -1594,7 +2088,7 @@
       "key": "Dvkap",
       "id": "dvkap",
       "name": "DV Kap",
-      "status": "ambiguous-pending",
+      "status": "candidate-pending",
       "registry": {
         "latestTab": "DV Kap 20260708",
         "rows": 14481,
@@ -1619,10 +2113,14 @@
         "recordCount": 3
       },
       "dataset": {
-        "status": "ambiguous",
+        "status": "candidate",
         "parsedCandidates": 2,
         "matchingRowCandidates": 2,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/dvkap/dvkap-a-aa-20260708-ai-pillow-full-repair.json",
           "exists": true,
@@ -1634,7 +2132,8 @@
           "dateMatch": true,
           "duplicateNameSignal": false
         },
-        "proposedSelection": null,
+        "proposedSelection": "data/processed/dvkap/dvkap-a-aa-20260708-ai-pillow-full-repair.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/dvkap/dvkap-a-aa-20260708-ai-pillow-full-repair.json",
@@ -1683,7 +2182,7 @@
       "key": "Eichholtz",
       "id": "eichholtz",
       "name": "Eichholtz",
-      "status": "ambiguous-pending",
+      "status": "candidate-pending",
       "registry": {
         "latestTab": "Eichholtz 20260708",
         "rows": 2942,
@@ -1708,10 +2207,14 @@
         "recordCount": 2
       },
       "dataset": {
-        "status": "ambiguous",
+        "status": "candidate",
         "parsedCandidates": 3,
         "matchingRowCandidates": 3,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/eichholtz/eichholtz-a-aa-20260708.json",
           "exists": true,
@@ -1723,7 +2226,8 @@
           "dateMatch": true,
           "duplicateNameSignal": false
         },
-        "proposedSelection": null,
+        "proposedSelection": "data/processed/eichholtz/eichholtz-a-aa-20260708.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/eichholtz/eichholtz-a-aa-20260708.json",
@@ -1812,6 +2316,10 @@
         "parsedCandidates": 1,
         "matchingRowCandidates": 1,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/furniture-of-america/furniture-of-america-a-aa-20260705-partial.json",
           "exists": true,
@@ -1824,6 +2332,7 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": "data/processed/furniture-of-america/furniture-of-america-a-aa-20260705-partial.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/furniture-of-america/furniture-of-america-a-aa-20260705-partial.json",
@@ -1890,6 +2399,10 @@
         "parsedCandidates": 3,
         "matchingRowCandidates": 1,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/fourhands/fourhands-a-aa-20260713.json",
           "exists": true,
@@ -1902,6 +2415,7 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": "data/processed/fourhands/fourhands-a-aa-20260713.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/fourhands/fourhands-a-aa-20260713.json",
@@ -1990,6 +2504,10 @@
         "parsedCandidates": 6,
         "matchingRowCandidates": 1,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/global-views/global-views-a-aa-20260703-detail-complete.json",
           "exists": true,
@@ -2002,6 +2520,7 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": "data/processed/global-views/global-views-a-aa-20260703-detail-complete.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/global-views/global-views-a-aa-20260703-detail-complete.json",
@@ -2094,7 +2613,7 @@
       "key": "John Richard",
       "id": "john-richard",
       "name": "John Richard",
-      "status": "ambiguous-pending",
+      "status": "candidate-pending",
       "registry": {
         "latestTab": "John Richard 20260707",
         "rows": 4163,
@@ -2119,10 +2638,14 @@
         "recordCount": 2
       },
       "dataset": {
-        "status": "ambiguous",
+        "status": "candidate",
         "parsedCandidates": 3,
         "matchingRowCandidates": 3,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/john-richard/john-richard-a-aa-20260707-normalized.json",
           "exists": true,
@@ -2134,7 +2657,8 @@
           "dateMatch": true,
           "duplicateNameSignal": false
         },
-        "proposedSelection": null,
+        "proposedSelection": "data/processed/john-richard/john-richard-a-aa-20260707-normalized.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/john-richard/john-richard-a-aa-20260707-normalized.json",
@@ -2223,6 +2747,10 @@
         "parsedCandidates": 1,
         "matchingRowCandidates": 1,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/jonathan-charles/jonathan-charles-a-aa-20260702.json",
           "exists": true,
@@ -2235,6 +2763,7 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": "data/processed/jonathan-charles/jonathan-charles-a-aa-20260702.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/jonathan-charles/jonathan-charles-a-aa-20260702.json",
@@ -2275,7 +2804,7 @@
       "status": "sharded-pending",
       "registry": {
         "latestTab": "Leftbank Art 20260707 partial",
-        "rows": 6166056,
+        "rows": 6216056,
         "migrationStatus": "verified-partial",
         "updatedAt": "2026-07-16"
       },
@@ -2288,7 +2817,7 @@
       },
       "rule": {
         "file": "docs/suppliers/leftbank-art.md",
-        "sha256": "ecd980e508bf293b910156227feb6cc7fe128b5559b80ebafd326950ed46e7ab"
+        "sha256": "899d8133c882514e0bb14a81c0956627016f75e17362ce8916e40e0cef5f9e17"
       },
       "test": {
         "status": "historical-evidence-only",
@@ -2305,6 +2834,7 @@
         "matchingDateAndRowCandidates": 0,
         "machineTopCandidate": null,
         "proposedSelection": null,
+        "contentDiff": null,
         "candidates": []
       },
       "approval": {
@@ -2359,6 +2889,10 @@
         "parsedCandidates": 3,
         "matchingRowCandidates": 2,
         "matchingDateAndRowCandidates": 0,
+        "currentScopeCandidates": 2,
+        "currentScopeUniqueHashes": 2,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 1,
         "machineTopCandidate": {
           "file": "data/processed/meridian/meridian-a-aa-20260703-uploadable 2.json",
           "exists": true,
@@ -2371,6 +2905,28 @@
           "duplicateNameSignal": true
         },
         "proposedSelection": null,
+        "contentDiff": {
+          "realConflictComparisons": 1,
+          "equivalentComparisons": 0,
+          "mostChangedColumns": [
+            {
+              "header": "图片链接",
+              "changedCells": 4682
+            }
+          ],
+          "machineRecommendation": {
+            "status": "tied-requires-business-review",
+            "file": null,
+            "bestScoreFiles": [
+              "data/processed/meridian/meridian-a-aa-20260703-uploadable.json",
+              "data/processed/meridian/meridian-a-aa-20260703-uploadable 2.json"
+            ],
+            "differsFromFilenameHeuristic": false,
+            "blockingScore": 0,
+            "runnerUpBlockingScore": 0,
+            "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+          }
+        },
         "candidates": [
           {
             "file": "data/processed/meridian/meridian-a-aa-20260703-uploadable 2.json",
@@ -2430,7 +2986,7 @@
       "key": "Modway",
       "id": "modway",
       "name": "Modway",
-      "status": "ambiguous-pending",
+      "status": "candidate-pending",
       "registry": {
         "latestTab": "Modway 20260701",
         "rows": 9436,
@@ -2455,10 +3011,14 @@
         "recordCount": 3
       },
       "dataset": {
-        "status": "ambiguous",
+        "status": "candidate",
         "parsedCandidates": 3,
         "matchingRowCandidates": 3,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/modway/modway-a-aa-20260701.json",
           "exists": true,
@@ -2470,7 +3030,8 @@
           "dateMatch": true,
           "duplicateNameSignal": false
         },
-        "proposedSelection": null,
+        "proposedSelection": "data/processed/modway/modway-a-aa-20260701.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/modway/modway-a-aa-20260701.json",
@@ -2559,6 +3120,10 @@
         "parsedCandidates": 2,
         "matchingRowCandidates": 2,
         "matchingDateAndRowCandidates": 2,
+        "currentScopeCandidates": 2,
+        "currentScopeUniqueHashes": 2,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 1,
         "machineTopCandidate": {
           "file": "data/processed/noir/noir-a-aa-20260701-complete.json",
           "exists": true,
@@ -2571,6 +3136,39 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": null,
+        "contentDiff": {
+          "realConflictComparisons": 1,
+          "equivalentComparisons": 0,
+          "mostChangedColumns": [
+            {
+              "header": "#",
+              "changedCells": 1028
+            },
+            {
+              "header": "JSON",
+              "changedCells": 1028
+            },
+            {
+              "header": "图片链接",
+              "changedCells": 1028
+            },
+            {
+              "header": "image url",
+              "changedCells": 1028
+            }
+          ],
+          "machineRecommendation": {
+            "status": "clear-contract-lead",
+            "file": "data/processed/noir/noir-a-aa-20260701-complete.json",
+            "bestScoreFiles": [
+              "data/processed/noir/noir-a-aa-20260701-complete.json"
+            ],
+            "differsFromFilenameHeuristic": false,
+            "blockingScore": 0,
+            "runnerUpBlockingScore": 30840,
+            "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+          }
+        },
         "candidates": [
           {
             "file": "data/processed/noir/noir-a-aa-20260701-complete.json",
@@ -2648,6 +3246,10 @@
         "parsedCandidates": 8,
         "matchingRowCandidates": 7,
         "matchingDateAndRowCandidates": 7,
+        "currentScopeCandidates": 7,
+        "currentScopeUniqueHashes": 7,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 6,
         "machineTopCandidate": {
           "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-auth-imagefix-canva-url.json",
           "exists": true,
@@ -2660,6 +3262,47 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": null,
+        "contentDiff": {
+          "realConflictComparisons": 6,
+          "equivalentComparisons": 0,
+          "mostChangedColumns": [
+            {
+              "header": "#",
+              "changedCells": 25860
+            },
+            {
+              "header": "JSON",
+              "changedCells": 25860
+            },
+            {
+              "header": "图片链接",
+              "changedCells": 25860
+            },
+            {
+              "header": "image url",
+              "changedCells": 25860
+            },
+            {
+              "header": "库存",
+              "changedCells": 12924
+            },
+            {
+              "header": "成本",
+              "changedCells": 12924
+            }
+          ],
+          "machineRecommendation": {
+            "status": "clear-contract-lead",
+            "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-auth-imagefix-canva-url.json",
+            "bestScoreFiles": [
+              "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-auth-imagefix-canva-url.json"
+            ],
+            "differsFromFilenameHeuristic": false,
+            "blockingScore": 40,
+            "runnerUpBlockingScore": 86240,
+            "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+          }
+        },
         "candidates": [
           {
             "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-auth-imagefix-canva-url.json",
@@ -2726,6 +3369,28 @@
             "score": 2640,
             "dateMatch": true,
             "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-partial.json",
+            "exists": true,
+            "bytes": 11937942,
+            "modifiedAt": "2026-07-01T05:44:19.000Z",
+            "sha256": "91a91fb0e5401c56883deeb13d5c8f86dde9b0f14ade390e140f6c809b7a85cc",
+            "rows": 4310,
+            "score": 2600,
+            "dateMatch": true,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/phillips-collection/phillips-collection-a-aa-20260701-drive-auth-complete.json",
+            "exists": true,
+            "bytes": 13374772,
+            "modifiedAt": "2026-07-01T08:09:23.000Z",
+            "sha256": "4b95108038b67ac450a79dd82edd9d9f5293c47a15146f449e81c6b8722a3732",
+            "rows": 4308,
+            "score": 700,
+            "dateMatch": true,
+            "duplicateNameSignal": false
           }
         ]
       },
@@ -2781,6 +3446,10 @@
         "parsedCandidates": 6,
         "matchingRowCandidates": 4,
         "matchingDateAndRowCandidates": 4,
+        "currentScopeCandidates": 4,
+        "currentScopeUniqueHashes": 4,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 3,
         "machineTopCandidate": {
           "file": "data/processed/poundex/poundex-a-aa-20260705-normalized.json",
           "exists": true,
@@ -2793,6 +3462,34 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": null,
+        "contentDiff": {
+          "realConflictComparisons": 3,
+          "equivalentComparisons": 0,
+          "mostChangedColumns": [
+            {
+              "header": "JSON",
+              "changedCells": 2734
+            },
+            {
+              "header": "图片链接",
+              "changedCells": 2734
+            }
+          ],
+          "machineRecommendation": {
+            "status": "tied-requires-business-review",
+            "file": null,
+            "bestScoreFiles": [
+              "data/processed/poundex/poundex-a-aa-20260705-direct-ef.json",
+              "data/processed/poundex/poundex-a-aa-20260705-uploadable.json",
+              "data/processed/poundex/poundex-a-aa-20260705-normalized.json",
+              "data/processed/poundex/poundex-a-aa-20260705-table-normalized.json"
+            ],
+            "differsFromFilenameHeuristic": false,
+            "blockingScore": 0,
+            "runnerUpBlockingScore": 0,
+            "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+          }
+        },
         "candidates": [
           {
             "file": "data/processed/poundex/poundex-a-aa-20260705-normalized.json",
@@ -2914,6 +3611,10 @@
         "parsedCandidates": 7,
         "matchingRowCandidates": 6,
         "matchingDateAndRowCandidates": 6,
+        "currentScopeCandidates": 6,
+        "currentScopeUniqueHashes": 6,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 5,
         "machineTopCandidate": {
           "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 2.json",
           "exists": true,
@@ -2926,6 +3627,38 @@
           "duplicateNameSignal": true
         },
         "proposedSelection": null,
+        "contentDiff": {
+          "realConflictComparisons": 5,
+          "equivalentComparisons": 0,
+          "mostChangedColumns": [
+            {
+              "header": "JSON",
+              "changedCells": 408454
+            },
+            {
+              "header": "#",
+              "changedCells": 302266
+            },
+            {
+              "header": "图片链接",
+              "changedCells": 677
+            }
+          ],
+          "machineRecommendation": {
+            "status": "tied-requires-business-review",
+            "file": null,
+            "bestScoreFiles": [
+              "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 4.json",
+              "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 2.json",
+              "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 3.json",
+              "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial.json"
+            ],
+            "differsFromFilenameHeuristic": false,
+            "blockingScore": 2300,
+            "runnerUpBlockingScore": 2300,
+            "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+          }
+        },
         "candidates": [
           {
             "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702-uploadable-partial 2.json",
@@ -2992,6 +3725,17 @@
             "score": 2660,
             "dateMatch": true,
             "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/safavieh/safavieh-rugs-a-aa-20260702.json",
+            "exists": true,
+            "bytes": 317587168,
+            "modifiedAt": "2026-07-13T04:17:06.645Z",
+            "sha256": "be1af57aa9b7ed8e89b8b03567cb9dfebea2a1933e5f9b3bffec499a5598c0a4",
+            "rows": 158093,
+            "score": 554,
+            "dateMatch": true,
+            "duplicateNameSignal": false
           }
         ]
       },
@@ -3047,6 +3791,10 @@
         "parsedCandidates": 2,
         "matchingRowCandidates": 2,
         "matchingDateAndRowCandidates": 2,
+        "currentScopeCandidates": 2,
+        "currentScopeUniqueHashes": 2,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 1,
         "machineTopCandidate": {
           "file": "data/processed/sunpan/sunpan-a-aa-20260702-canva-url.json",
           "exists": true,
@@ -3059,6 +3807,31 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": null,
+        "contentDiff": {
+          "realConflictComparisons": 1,
+          "equivalentComparisons": 0,
+          "mostChangedColumns": [
+            {
+              "header": "#",
+              "changedCells": 2935
+            },
+            {
+              "header": "JSON",
+              "changedCells": 2935
+            }
+          ],
+          "machineRecommendation": {
+            "status": "clear-contract-lead",
+            "file": "data/processed/sunpan/sunpan-a-aa-20260702-canva-url.json",
+            "bestScoreFiles": [
+              "data/processed/sunpan/sunpan-a-aa-20260702-canva-url.json"
+            ],
+            "differsFromFilenameHeuristic": false,
+            "blockingScore": 0,
+            "runnerUpBlockingScore": 58700,
+            "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+          }
+        },
         "candidates": [
           {
             "file": "data/processed/sunpan/sunpan-a-aa-20260702-canva-url.json",
@@ -3136,6 +3909,10 @@
         "parsedCandidates": 11,
         "matchingRowCandidates": 6,
         "matchingDateAndRowCandidates": 2,
+        "currentScopeCandidates": 2,
+        "currentScopeUniqueHashes": 2,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 1,
         "machineTopCandidate": {
           "file": "data/processed/surya/surya-a-aa-20260709-image-repaired-partial 2.json",
           "exists": true,
@@ -3148,6 +3925,32 @@
           "duplicateNameSignal": true
         },
         "proposedSelection": null,
+        "contentDiff": {
+          "realConflictComparisons": 1,
+          "equivalentComparisons": 0,
+          "mostChangedColumns": [
+            {
+              "header": "JSON",
+              "changedCells": 13
+            },
+            {
+              "header": "图片链接",
+              "changedCells": 13
+            }
+          ],
+          "machineRecommendation": {
+            "status": "tied-requires-business-review",
+            "file": null,
+            "bestScoreFiles": [
+              "data/processed/surya/surya-a-aa-20260709-image-repaired-partial 2.json",
+              "data/processed/surya/surya-a-aa-20260709-image-repaired-partial.json"
+            ],
+            "differsFromFilenameHeuristic": false,
+            "blockingScore": 123440,
+            "runnerUpBlockingScore": 123440,
+            "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+          }
+        },
         "candidates": [
           {
             "file": "data/processed/surya/surya-a-aa-20260709-image-repaired-partial 2.json",
@@ -3214,6 +4017,61 @@
             "score": 2340,
             "dateMatch": false,
             "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/surya/surya-a-aa-20260702-detail-partial.json",
+            "exists": true,
+            "bytes": 148607387,
+            "modifiedAt": "2026-07-13T04:16:39.627Z",
+            "sha256": "0bad01f12351f14b6cb5d49a5e46260f4f80cbeb40881affa4d003b69892826a",
+            "rows": 71017,
+            "score": 340,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/surya/surya-a-aa-20260701-partial.json",
+            "exists": true,
+            "bytes": 31924137,
+            "modifiedAt": "2026-07-13T04:16:42.694Z",
+            "sha256": "9ac2e61e9289279ec7dbb42bd40cc076757259f6ab1bd9d3bb1a8c280e70bf99",
+            "rows": 19187,
+            "score": -390,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/surya/surya-a-aa-20260701-partial-primary-drive-canva-url.json",
+            "exists": true,
+            "bytes": 1109128,
+            "modifiedAt": "2026-07-13T04:16:44.555Z",
+            "sha256": "3cb2d634444c3146cdc61cf8b68a800b3c46bd2a95cbce62ebfcc760a5643b5f",
+            "rows": 810,
+            "score": -500,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/surya/surya-a-aa-20260701-partial-primary-drive.json",
+            "exists": true,
+            "bytes": 1126936,
+            "modifiedAt": "2026-07-13T04:16:40.254Z",
+            "sha256": "2ceee8946992463b4b9930fa3ac43e5229688be3030eb16e372e53684f8c31f5",
+            "rows": 810,
+            "score": -500,
+            "dateMatch": false,
+            "duplicateNameSignal": false
+          },
+          {
+            "file": "data/processed/surya/surya-a-aa-20260701-detail-partial.json",
+            "exists": true,
+            "bytes": 1514636,
+            "modifiedAt": "2026-07-13T04:16:39.640Z",
+            "sha256": "56f088525b4ff0ed337b0abb5660b703f554a9d07e709d874102c761cf59b422",
+            "rows": 810,
+            "score": -560,
+            "dateMatch": false,
+            "duplicateNameSignal": false
           }
         ]
       },
@@ -3269,6 +4127,10 @@
         "parsedCandidates": 2,
         "matchingRowCandidates": 2,
         "matchingDateAndRowCandidates": 2,
+        "currentScopeCandidates": 2,
+        "currentScopeUniqueHashes": 2,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 1,
         "machineTopCandidate": {
           "file": "data/processed/tov/tov-full-a-aa-20260629-scene-rebuilt.json",
           "exists": true,
@@ -3281,6 +4143,31 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": null,
+        "contentDiff": {
+          "realConflictComparisons": 1,
+          "equivalentComparisons": 0,
+          "mostChangedColumns": [
+            {
+              "header": "#",
+              "changedCells": 2846
+            },
+            {
+              "header": "JSON",
+              "changedCells": 2846
+            }
+          ],
+          "machineRecommendation": {
+            "status": "clear-contract-lead",
+            "file": "data/processed/tov/tov-full-a-aa-20260629-scene-rebuilt.json",
+            "bestScoreFiles": [
+              "data/processed/tov/tov-full-a-aa-20260629-scene-rebuilt.json"
+            ],
+            "differsFromFilenameHeuristic": false,
+            "blockingScore": 0,
+            "runnerUpBlockingScore": 56920,
+            "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+          }
+        },
         "candidates": [
           {
             "file": "data/processed/tov/tov-full-a-aa-20260629-scene-rebuilt.json",
@@ -3358,6 +4245,10 @@
         "parsedCandidates": 3,
         "matchingRowCandidates": 1,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/universal-furniture/universal-furniture-a-aa-20260710.json",
           "exists": true,
@@ -3370,6 +4261,7 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": "data/processed/universal-furniture/universal-furniture-a-aa-20260710.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/universal-furniture/universal-furniture-a-aa-20260710.json",
@@ -3458,6 +4350,10 @@
         "parsedCandidates": 5,
         "matchingRowCandidates": 3,
         "matchingDateAndRowCandidates": 3,
+        "currentScopeCandidates": 3,
+        "currentScopeUniqueHashes": 3,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 2,
         "machineTopCandidate": {
           "file": "data/processed/uttermost/uttermost-a-aa-20260701-complete.json",
           "exists": true,
@@ -3470,6 +4366,43 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": null,
+        "contentDiff": {
+          "realConflictComparisons": 2,
+          "equivalentComparisons": 0,
+          "mostChangedColumns": [
+            {
+              "header": "#",
+              "changedCells": 9272
+            },
+            {
+              "header": "JSON",
+              "changedCells": 9272
+            },
+            {
+              "header": "图片链接",
+              "changedCells": 4636
+            },
+            {
+              "header": "image url",
+              "changedCells": 4636
+            },
+            {
+              "header": "成本",
+              "changedCells": 1
+            }
+          ],
+          "machineRecommendation": {
+            "status": "clear-contract-lead",
+            "file": "data/processed/uttermost/uttermost-a-aa-20260701-complete.json",
+            "bestScoreFiles": [
+              "data/processed/uttermost/uttermost-a-aa-20260701-complete.json"
+            ],
+            "differsFromFilenameHeuristic": false,
+            "blockingScore": 0,
+            "runnerUpBlockingScore": 92720,
+            "boundary": "这是结构与 C JSON 合同推荐，不是价格、库存、图片像素和分类业务签署。"
+          }
+        },
         "candidates": [
           {
             "file": "data/processed/uttermost/uttermost-a-aa-20260701-complete.json",
@@ -3551,7 +4484,7 @@
       "key": "VIG",
       "id": "vig",
       "name": "VIG",
-      "status": "ambiguous-pending",
+      "status": "candidate-pending",
       "registry": {
         "latestTab": "VIG 20260710 partial",
         "rows": 3120,
@@ -3576,10 +4509,14 @@
         "recordCount": 2
       },
       "dataset": {
-        "status": "ambiguous",
+        "status": "candidate",
         "parsedCandidates": 4,
         "matchingRowCandidates": 3,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/vig/vig-a-aa-20260710-partial-normalized.json",
           "exists": true,
@@ -3591,7 +4528,8 @@
           "dateMatch": true,
           "duplicateNameSignal": false
         },
-        "proposedSelection": null,
+        "proposedSelection": "data/processed/vig/vig-a-aa-20260710-partial-normalized.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/vig/vig-a-aa-20260710-partial-normalized.json",
@@ -3691,6 +4629,10 @@
         "parsedCandidates": 1,
         "matchingRowCandidates": 1,
         "matchingDateAndRowCandidates": 1,
+        "currentScopeCandidates": 1,
+        "currentScopeUniqueHashes": 1,
+        "equivalentCurrentCandidates": 1,
+        "conflictingCurrentCandidates": 0,
         "machineTopCandidate": {
           "file": "data/processed/replica-decor/replica-a-aa-20260708.json",
           "exists": true,
@@ -3703,6 +4645,7 @@
           "duplicateNameSignal": false
         },
         "proposedSelection": "data/processed/replica-decor/replica-a-aa-20260708.json",
+        "contentDiff": null,
         "candidates": [
           {
             "file": "data/processed/replica-decor/replica-a-aa-20260708.json",
