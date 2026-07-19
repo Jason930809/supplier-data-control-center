@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T06:15:25.302Z",
+  "generatedAt": "2026-07-19T06:02:08.113Z",
   "schemaVersion": "category-taxonomy-contract-v1",
   "taxonomyVersion": "category-taxonomy-v1-draft-20260716",
   "status": "draft-awaiting-user-confirmation",
@@ -1707,7 +1707,7 @@
   ],
   "limitations": [
     "All mappings are proposals from local candidate data, not signed current production sources.",
-    "Leftbank Art is represented by an available production shard, not the unfinished full catalog.",
+    "Leftbank Art extraction is complete at 198 of 198 shards and 9,514,980 rows; this taxonomy review intentionally uses a verified shard sample rather than claiming a full category distribution.",
     "Review and blocked proposals cannot be auto-applied; production cleaning remains paused until the user confirms the exported review package."
   ]
 }

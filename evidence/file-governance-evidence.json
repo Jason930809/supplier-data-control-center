@@ -1,10 +1,10 @@
 {
   "schemaVersion": "file-governance-evidence-v1",
-  "generatedAt": "2026-07-16T06:15:27.029Z",
+  "generatedAt": "2026-07-19T06:02:09.289Z",
   "boundary": {
     "workspace": "/Volumes/CodexWorkspace",
-    "auditedCodeRuleFiles": 352,
-    "auditedTestRecords": 121,
+    "auditedCodeRuleFiles": 357,
+    "auditedTestRecords": 123,
     "auditedDataAssets": 76613,
     "dataGiB": 105.03
   },
@@ -82,16 +82,16 @@
     {
       "id": "scripts",
       "label": "抓取 / 修复 / 上传脚本",
-      "count": 302,
-      "flagged": 165,
+      "count": 307,
+      "flagged": 170,
       "decision": "inventory-before-retire",
       "plain": "没有 runner manifest 证明谁还在被调用；当前只能标记迁移、合并或退役候选，不能批量删除。"
     },
     {
       "id": "test-records",
       "label": "测试记录",
-      "count": 121,
-      "flagged": 118,
+      "count": 123,
+      "flagged": 120,
       "decision": "keep-as-history",
       "plain": "测试记录是历史证据，不是当前规则。只有 3 份四类证据齐全；其余应补标签，不应靠文件名猜最新版。"
     },

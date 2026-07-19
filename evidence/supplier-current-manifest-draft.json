@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "manifestStatus": "draft-not-production",
-  "generatedAt": "2026-07-16T06:15:31.861Z",
+  "generatedAt": "2026-07-19T06:02:13.767Z",
   "summary": {
     "totalSuppliers": 37,
     "signed": 0,
@@ -2803,10 +2803,10 @@
       "name": "Leftbank Art",
       "status": "sharded-pending",
       "registry": {
-        "latestTab": "Leftbank Art 20260707 partial",
-        "rows": 6216056,
-        "migrationStatus": "verified-partial",
-        "updatedAt": "2026-07-16"
+        "latestTab": "Leftbank Art 20260719",
+        "rows": 9514980,
+        "migrationStatus": "verified",
+        "updatedAt": "2026-07-19"
       },
       "remoteEvidence": {
         "status": "sharded-needs-separate-proof",
@@ -2817,15 +2817,15 @@
       },
       "rule": {
         "file": "docs/suppliers/leftbank-art.md",
-        "sha256": "899d8133c882514e0bb14a81c0956627016f75e17362ce8916e40e0cef5f9e17"
+        "sha256": "7e8568cd79ead96e6949632059dd92d39c2c8925dc6efc03718fcd228a456d49"
       },
       "test": {
         "status": "historical-evidence-only",
         "machineLatestCandidate": {
-          "file": "docs/test-runs/leftbank-art-test-2026-07-12.md",
-          "sha256": "36138d6f4a1e57ce7d37e3a0dca0d67dcc917ca9499d46cfca1879838112cbca"
+          "file": "docs/test-runs/leftbank-art-test-2026-07-19.md",
+          "sha256": "c3006e18ba15d6c3d39de21b40d08b63e8b76e7e3c06bc0401f38c41ee2cf628"
         },
-        "recordCount": 3
+        "recordCount": 5
       },
       "dataset": {
         "status": "sharded",

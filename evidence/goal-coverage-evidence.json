@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T06:15:27.138Z",
+  "generatedAt": "2026-07-19T06:02:09.397Z",
   "snapshotOnly": true,
   "method": "Parse the authoritative 28-point register and 19-point supplemental register, verify unique IDs and live page anchors, and preserve their explicit implementation states.",
   "warning": "47 / 47 listed means no request is omitted. It does not mean 47 / 47 completed. Only state=ready is complete for its stated page or audit deliverable; production cleaning remains separate.",
@@ -12,11 +12,11 @@
   "summary": {
     "total": 47,
     "listedWithEvidenceAnchor": 47,
-    "pageOrAuditReady": 25,
+    "pageOrAuditReady": 26,
     "productionOrImplementationPartial": 19,
     "userDecisionPending": 2,
-    "ongoing": 1,
-    "notComplete": 22,
+    "ongoing": 0,
+    "notComplete": 21,
     "original28": 28,
     "supplemental19": 19
   },
@@ -64,14 +64,14 @@
       "group": "original-28",
       "ordinal": 4,
       "id": "leftbank",
-      "title": "Leftbank 继续全量",
+      "title": "Leftbank 全量抓取完成",
       "href": "#decisions",
-      "evidence": "确认卡锁定继续；当前分片进度由生成证据实时显示。",
-      "state": "ongoing",
-      "stateLabel": "持续分片中",
+      "evidence": "最终审计确认 198 / 198 个分片、9,514,980 / 9,514,980 行完成并远程回读。",
+      "state": "ready",
+      "stateLabel": "全量抓取已完成",
       "anchorExists": true,
-      "completionMeaning": "工作仍在持续执行，尚未到完成状态。",
-      "nextOwner": "Codex runner"
+      "completionMeaning": "页面或审计交付已完成；不自动代表生产整改已完成。",
+      "nextOwner": "No open owner for this page deliverable"
     },
     {
       "group": "original-28",

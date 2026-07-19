@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T06:15:27.100Z",
+  "generatedAt": "2026-07-19T06:02:09.359Z",
   "snapshotOnly": true,
   "method": "Read-only file metadata, SHA-256 identity, existing six-pattern risk scan, and test-record evidence-field audit.",
   "statusDefinitions": {
@@ -35,18 +35,18 @@
     "supplierRules": 37,
     "rulePatternScanClean": 50,
     "semanticSigned": 0,
-    "testRecords": 121,
+    "testRecords": 123,
     "testCompleteHistory": 3,
-    "testIncompleteHistory": 116,
+    "testIncompleteHistory": 118,
     "testDuplicateHistory": 2,
-    "totalDocuments": 171
+    "totalDocuments": 173
   },
   "currentDataSelection": {
     "signed": 0,
     "singleCandidate": 21,
     "ambiguous": 15,
     "sharded": 1,
-    "note": "规则文件清洁不等于数据 current 已确定；15 家数据候选仍冲突，Leftbank 仍按分片聚合。"
+    "note": "规则文件清洁不等于数据 current 已确定；15 家数据候选仍冲突，Leftbank 已全量完成但仍按 198 个分片聚合证明。"
   },
   "documents": [
     {
@@ -555,9 +555,9 @@
     },
     {
       "file": "docs/suppliers/leftbank-art.md",
-      "bytes": 125593,
-      "modifiedAt": "2026-07-16T05:22:30.275Z",
-      "sha256": "899d8133c882514e0bb14a81c0956627016f75e17362ce8916e40e0cef5f9e17",
+      "bytes": 213540,
+      "modifiedAt": "2026-07-19T05:51:27.734Z",
+      "sha256": "7e8568cd79ead96e6949632059dd92d39c2c8925dc6efc03718fcd228a456d49",
       "layer": "supplier-rule",
       "status": "pattern-scan-clean-unsigned",
       "statusLabel": "高风险模式未命中 · 仍未签署",
@@ -2295,9 +2295,9 @@
     },
     {
       "file": "docs/test-runs/leftbank-art-test-2026-07-07.md",
-      "bytes": 202889,
-      "modifiedAt": "2026-07-16T05:22:30.427Z",
-      "sha256": "b72b1713188cd1c1583779dc319fdcad5b3bc6f5441da974eccc5cd1349fd14e",
+      "bytes": 254243,
+      "modifiedAt": "2026-07-18T01:18:40.275Z",
+      "sha256": "3684a79f2efadc9435a4f23bd323bb3a3c7a824a0c450250684786c6c49e8103",
       "layer": "test-record",
       "status": "incomplete-history",
       "statusLabel": "历史证据不完整",
@@ -2337,6 +2337,43 @@
       "status": "incomplete-history",
       "statusLabel": "历史证据不完整",
       "machineSignals": [
+        "缺少 method",
+        "缺少 qa",
+        "缺少 timing"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/leftbank-art-test-2026-07-18.md",
+      "bytes": 16672,
+      "modifiedAt": "2026-07-18T16:44:51.193Z",
+      "sha256": "d9d7156107a902c6b2a55d8543444e943e39ce8b87ca356592860c1a340d3dc7",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
+        "缺少 method",
+        "缺少 qa"
+      ],
+      "businessSigned": false,
+      "currentMeaning": "测试记录只证明当时发生过什么；它不是当前规则，也不能因日期较新就自动覆盖供应商规则。",
+      "evidenceLimit": "缺少一项或多项 Result、Method、QA、Timing 证据，不能据此宣布已完成。",
+      "nextAction": "保留原历史，不倒填虚构证据；新一轮重验另建完整记录。"
+    },
+    {
+      "file": "docs/test-runs/leftbank-art-test-2026-07-19.md",
+      "bytes": 9579,
+      "modifiedAt": "2026-07-19T05:51:27.876Z",
+      "sha256": "c3006e18ba15d6c3d39de21b40d08b63e8b76e7e3c06bc0401f38c41ee2cf628",
+      "layer": "test-record",
+      "status": "incomplete-history",
+      "statusLabel": "历史证据不完整",
+      "machineSignals": [
+        "缺少 result",
         "缺少 method",
         "缺少 qa",
         "缺少 timing"
